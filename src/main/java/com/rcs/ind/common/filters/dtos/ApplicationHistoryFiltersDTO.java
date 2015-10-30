@@ -3,12 +3,13 @@ package com.rcs.ind.common.filters.dtos;
 import java.util.Date;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
+import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	
 	private Long applicationHistoryId;
-	private String status;
+	private ApplicationStatusEnum status;
 	private Date startDate;
 	private Date endDate;
 	private Long applicationId;
@@ -22,11 +23,11 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 		this.applicationHistoryId = applicationHistoryId;
 	}
 	
-	public String getStatus() {
+	public ApplicationStatusEnum getStatus() {
 		return status;
 	}
 	
-	public void setStatus(String status) {
+	public void setStatus(ApplicationStatusEnum status) {
 		this.status = status;
 	}
 	

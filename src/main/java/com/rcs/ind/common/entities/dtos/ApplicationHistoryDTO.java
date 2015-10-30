@@ -3,11 +3,12 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.Date;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
 public class ApplicationHistoryDTO extends GenericEntityDTO {
 
 	private Long applicationHistoryId;
-	private String status;
+	private ApplicationStatusEnum status;
 	private Date startDate;
 	private Date endDate;
 	private ApplicationDTO application;
@@ -16,7 +17,7 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 	public ApplicationHistoryDTO() {
 	}
 
-	public ApplicationHistoryDTO(Long applicationHistoryId, String status, Date startDate, Date endDate, ApplicationDTO application, UserProfileDTO assignedUser) {
+	public ApplicationHistoryDTO(Long applicationHistoryId, ApplicationStatusEnum status, Date startDate, Date endDate, ApplicationDTO application, UserProfileDTO assignedUser) {
 		this.applicationHistoryId = applicationHistoryId;
 		this.status = status;
 		this.startDate = startDate;
@@ -34,12 +35,12 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 	}
 
 	
-	public String getStatus() {
+	public ApplicationStatusEnum getStatus() {
 		return status;
 	}
 
 	
-	public void setStatus(String status) {
+	public void setStatus(ApplicationStatusEnum status) {
 		this.status = status;
 	}
 
