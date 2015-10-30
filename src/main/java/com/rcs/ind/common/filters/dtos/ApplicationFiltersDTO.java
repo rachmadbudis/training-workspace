@@ -1,5 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
+import java.util.Locale;
+
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 
 
@@ -7,7 +9,7 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	
 	private Long applicationId;
 	private String smartflowNumber;
-	private String language;
+	private Locale language;
 	private Long userId;
 	
 	public Long getApplicationId() {
@@ -26,11 +28,11 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 		this.smartflowNumber = smartflowNumber;
 	}
 	
-	public String getLanguage() {
+	public Locale getLanguage() {
 		return language;
 	}
 	
-	public void setLanguage(String language) {
+	public void setLanguage(Locale language) {
 		this.language = language;
 	}
 	
