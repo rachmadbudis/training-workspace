@@ -6,7 +6,7 @@ import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 public class ReviewFiltersDTO extends PaginationFiltersDTO {
 	
 	private Long reviewId;
-	private String formId;
+	private String workflow;
 	private String questionId;
 	private String value;
 	private Long applicationId;
@@ -43,12 +43,12 @@ public class ReviewFiltersDTO extends PaginationFiltersDTO {
 		this.questionId = questionId;
 	}
 
-	public String getFormId() {
-		return formId;
+	public String getWorkflow() {
+		return workflow;
 	}
 
-	public void setFormId(String formId) {
-		this.formId = formId;
+	public void setWorkflow(String workflow) {
+		this.workflow = workflow;
 	}
 	
 	

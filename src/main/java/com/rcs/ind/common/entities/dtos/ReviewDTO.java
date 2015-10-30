@@ -5,7 +5,7 @@ import com.rcs.ind.common.dtos.GenericEntityDTO;
 public class ReviewDTO extends GenericEntityDTO {
 
 	private Long reviewId;
-	private String formId;
+	private String workflow;
 	private String questionId;
 	private String value;
 	private ApplicationDTO application;
@@ -13,9 +13,9 @@ public class ReviewDTO extends GenericEntityDTO {
 	public ReviewDTO() {
 	}
 
-	public ReviewDTO(Long reviewId, String formId, String questionId, String value, ApplicationDTO application) {
+	public ReviewDTO(Long reviewId, String workflow, String questionId, String value, ApplicationDTO application) {
 		this.reviewId = reviewId;
-		this.formId = formId;
+		this.workflow = workflow;
 		this.questionId = questionId;
 		this.value = value;
 		this.application = application;
@@ -30,14 +30,6 @@ public class ReviewDTO extends GenericEntityDTO {
 	}
 
 	
-	public String getFormId() {
-		return formId;
-	}
-
-	public void setFormId(String formId) {
-		this.formId = formId;
-	}
-
 	public String getQuestionId() {
 		return questionId;
 	}
@@ -61,5 +53,13 @@ public class ReviewDTO extends GenericEntityDTO {
 
 	public void setApplication(ApplicationDTO application) {
 		this.application = application;
+	}
+
+	public String getWorkflow() {
+		return workflow;
+	}
+
+	public void setWorkflow(String workflow) {
+		this.workflow = workflow;
 	}
 }

@@ -3,7 +3,7 @@ package com.rcs.ind.common.filters.dtos;
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 
 
-public class ApplicationPaginationFiltersDTO extends PaginationFiltersDTO {
+public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	
 	private Long applicationId;
 	private String smartflowNumber;

@@ -6,7 +6,7 @@ import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 	
 	private Long formAnswerId;
-	private Long questionNumber;
+	private Integer questionNumber;
 	private String answer;
 	private String translation;
 	private String language;
@@ -20,11 +20,11 @@ public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 		this.formAnswerId = formAnswerId;
 	}
 	
-	public Long getQuestionNumber() {
+	public Integer getQuestionNumber() {
 		return questionNumber;
 	}
 	
-	public void setQuestionNumber(Long questionNumber) {
+	public void setQuestionNumber(Integer questionNumber) {
 		this.questionNumber = questionNumber;
 	}
 	

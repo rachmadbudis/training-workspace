@@ -1,16 +1,18 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.Locale;
+
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
-public class UserDTO extends GenericEntityDTO {
+public class UserProfileDTO extends GenericEntityDTO {
 
 	private Long userId;
-	private String language;
+	private Locale language;
 
-	public UserDTO() {
+	public UserProfileDTO() {
 	}
 
-	public UserDTO(Long userId, String language) {
+	public UserProfileDTO(Long userId, Locale language) {
 		this.userId = userId;
 		this.language = language;
 	}
@@ -24,12 +26,12 @@ public class UserDTO extends GenericEntityDTO {
 	}
 
 	
-	public String getLanguage() {
+	public Locale getLanguage() {
 		return language;
 	}
 
 	
-	public void setLanguage(String language) {
+	public void setLanguage(Locale language) {
 		this.language = language;
 	}
 }

@@ -3,7 +3,7 @@ package com.rcs.ind.common.filters.dtos;
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 
 
-public class UserFiltersDTO extends PaginationFiltersDTO {
+public class UserProfileFiltersDTO extends PaginationFiltersDTO {
 
 	private Long userId;
 	private String language;

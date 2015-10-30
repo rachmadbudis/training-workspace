@@ -5,21 +5,17 @@ import com.rcs.ind.common.dtos.GenericEntityDTO;
 public class FormAnswerDTO extends GenericEntityDTO {
 
 	private Long formAnswerId;
-	private Long questionNumber;
+	private Integer questionNumber;
 	private String answer;
-	private String translation;
-	private String language;
 	private ApplicationDTO application;
 
 	public FormAnswerDTO() {
 	}
 
-	public FormAnswerDTO(Long formAnswerId, Long questionNumber, String answer, String translation, String language, ApplicationDTO application) {
+	public FormAnswerDTO(Long formAnswerId, Integer questionNumber, String answer, ApplicationDTO application) {
 		this.formAnswerId = formAnswerId;
 		this.questionNumber = questionNumber;
 		this.answer = answer;
-		this.translation = translation; 
-		this.language = language;
 		this.application = application;
 	}
 
@@ -32,12 +28,12 @@ public class FormAnswerDTO extends GenericEntityDTO {
 	}
 
 	
-	public Long getQuestionNumber() {
+	public Integer getQuestionNumber() {
 		return questionNumber;
 	}
 
 	
-	public void setQuestionNumber(Long questionNumber) {
+	public void setQuestionNumber(Integer questionNumber) {
 		this.questionNumber = questionNumber;
 	}
 
@@ -52,16 +48,6 @@ public class FormAnswerDTO extends GenericEntityDTO {
 	}
 
 	
-	public String getLanguage() {
-		return language;
-	}
-
-	
-	public void setLanguage(String language) {
-		this.language = language;
-	}
-
-	
 	public ApplicationDTO getApplication() {
 		return application;
 	}
@@ -71,11 +57,4 @@ public class FormAnswerDTO extends GenericEntityDTO {
 		this.application = application;
 	}
 
-	public String getTranslation() {
-		return translation;
-	}
-
-	public void setTranslation(String translation) {
-		this.translation = translation;
-	}
 }
