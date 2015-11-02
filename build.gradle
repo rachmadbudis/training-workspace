@@ -84,3 +84,5 @@ task wrapper(type: Wrapper) {
 eclipse.classpath.file.withXml { xml ->
     xml.asNode().'**'.findAll { it.name() == 'classpathentry' && it.'@path'.startsWith("src/test/")}*.@output = "test-bin"
 }
+
+check.dependsOn.remove(test)
