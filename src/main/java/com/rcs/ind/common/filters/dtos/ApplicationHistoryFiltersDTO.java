@@ -13,6 +13,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private Date startDate;
 	private Date endDate;
 	private Long applicationId;
+	private String smartflowNumber;
 	private Long assignedUserId;
 	
 	public Long getApplicationHistoryId() {
@@ -61,6 +62,14 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	
 	public void setAssignedUserId(Long assignedUserId) {
 		this.assignedUserId = assignedUserId;
+	}
+
+	public String getSmartflowNumber() {
+		return smartflowNumber;
+	}
+
+	public void setSmartflowNumber(String smartflowNumber) {
+		this.smartflowNumber = smartflowNumber;
 	}
 	
 }
