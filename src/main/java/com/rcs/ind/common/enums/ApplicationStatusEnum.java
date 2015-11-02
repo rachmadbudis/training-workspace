@@ -8,8 +8,10 @@ public enum ApplicationStatusEnum {
 	Translated("com.rcs.ind.application.status.translated"),
 	ReviewInProgress("com.rcs.ind.application.status.review.in.progress"),
 	Reviewed("com.rcs.ind.application.status.reviewed"),
-	Closed("com.rcs.ind.application.status.closed"),
-	Finished("com.rcs.ind.application.status.finished");
+	Printed("com.rcs.ind.application.status.printed"),
+	Finished("com.rcs.ind.application.status.finished"),
+	Closed("com.rcs.ind.application.status.closed");
+	
 
 	private final String key;
 
