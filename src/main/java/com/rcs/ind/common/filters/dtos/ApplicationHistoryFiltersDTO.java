@@ -1,6 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
 import java.util.Date;
+import java.util.Locale;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
@@ -14,6 +15,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private Date endDate;
 	private Long applicationId;
 	private String smartflowNumber;
+	private Locale language;
 	private Long assignedUserId;
 	
 	public Long getApplicationHistoryId() {
@@ -70,6 +72,14 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
+	}
+
+	public Locale getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Locale language) {
+		this.language = language;
 	}
 	
 }
