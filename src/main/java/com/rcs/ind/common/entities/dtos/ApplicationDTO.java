@@ -1,5 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
@@ -10,7 +11,9 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private String smartflowNumber;
 	private Locale language;
 	private UserProfileDTO createUser;
-
+	private List<DocumentDTO> documents;
+	private boolean completeOnSubmit;
+	
 	public ApplicationDTO() {
 	}
 
@@ -57,4 +60,19 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.createUser = createUser;
 	}
 
+    public List<DocumentDTO> getDocuments() {
+        return documents;
+    }
+
+    public void setDocuments(List<DocumentDTO> documents) {
+        this.documents = documents;
+    }
+
+    public boolean isCompleteOnSubmit() {
+        return completeOnSubmit;
+    }
+
+    public void setCompleteOnSubmit(boolean completeOnSubmit) {
+        this.completeOnSubmit = completeOnSubmit;
+    }
 }
