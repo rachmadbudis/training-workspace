@@ -98,6 +98,10 @@ public class JsonConverter {
 		return null;
 	}
 
+	public JavaType constructJavaType(Class<?> clazz) {
+		return mapper.getTypeFactory().constructType(clazz);
+	}
+
 	public JavaType constructParametricType(Class<?> container, Class<?>... content) {
 		return mapper.getTypeFactory().constructParametrizedType(container, container, content);
 	}
