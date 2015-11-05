@@ -11,6 +11,7 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 	private Date startDate;
 	private Date endDate;
 	private Locale language;
+	private Date appCreatedDate;
 	
 	public Long getApplicationId() {
 		return applicationId;
@@ -55,5 +56,13 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 
 	public void setLanguage(Locale language) {
 		this.language = language;
+	}
+
+	public Date getAppCreatedDate() {
+		return appCreatedDate;
+	}
+
+	public void setAppCreatedDate(Date appCreatedDate) {
+		this.appCreatedDate = appCreatedDate;
 	}
 }
