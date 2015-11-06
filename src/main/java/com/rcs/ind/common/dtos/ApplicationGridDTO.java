@@ -3,6 +3,8 @@ package com.rcs.ind.common.dtos;
 import java.util.Date;
 import java.util.Locale;
 
+import com.rcs.ind.common.enums.ApplicationStatusEnum;
+
 
 public class ApplicationGridDTO extends GenericEntityDTO {
 	
@@ -11,6 +13,7 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 	private Date startDate;
 	private Date endDate;
 	private Locale language;
+	private ApplicationStatusEnum status;
 	private Date appCreatedDate;
 	
 	public Long getApplicationId() {
@@ -64,5 +67,13 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 
 	public void setAppCreatedDate(Date appCreatedDate) {
 		this.appCreatedDate = appCreatedDate;
+	}
+
+	public ApplicationStatusEnum getStatus() {
+		return status;
+	}
+
+	public void setStatus(ApplicationStatusEnum status) {
+		this.status = status;
 	}
 }
