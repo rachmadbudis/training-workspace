@@ -1,12 +1,14 @@
 package com.rcs.ind.common.filters.dtos;
 
+import java.util.Locale;
+
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 
 
 public class UserProfileFiltersDTO extends PaginationFiltersDTO {
 
 	private Long userId;
-	private String language;
+	private Locale language;
 	
 	public Long getUserId() {
 		return userId;
@@ -15,13 +17,12 @@ public class UserProfileFiltersDTO extends PaginationFiltersDTO {
 	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
-	
-	public String getLanguage() {
+
+	public Locale getLanguage() {
 		return language;
 	}
-	
-	public void setLanguage(String language) {
+
+	public void setLanguage(Locale language) {
 		this.language = language;
 	}
-	
 }

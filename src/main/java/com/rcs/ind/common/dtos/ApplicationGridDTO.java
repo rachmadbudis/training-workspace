@@ -5,8 +5,7 @@ import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
-
-public class ApplicationGridDTO extends GenericEntityDTO {
+public class ApplicationGridDTO {
 	
 	private Long applicationId;
 	private String smartflowNumber;
@@ -14,7 +13,8 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 	private Date endDate;
 	private Locale language;
 	private ApplicationStatusEnum status;
-	private Date appCreatedDate;
+	private Date creationDate;
+	private Date modificationDate;
 	
 	public Long getApplicationId() {
 		return applicationId;
@@ -61,12 +61,20 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 		this.language = language;
 	}
 
-	public Date getAppCreatedDate() {
-		return appCreatedDate;
+	public Date getCreationDate() {
+		return creationDate;
 	}
 
-	public void setAppCreatedDate(Date appCreatedDate) {
-		this.appCreatedDate = appCreatedDate;
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+
+	public Date getModificationDate() {
+		return modificationDate;
+	}
+
+	public void setModificationDate(Date modificationDate) {
+		this.modificationDate = modificationDate;
 	}
 
 	public ApplicationStatusEnum getStatus() {
