@@ -4,14 +4,15 @@ import java.util.Date;
 import java.util.Locale;
 
 
-public class ApplicationGridDTO extends GenericEntityDTO {
+public class ApplicationGridDTO {
 	
 	private Long applicationId;
 	private String smartflowNumber;
 	private Date startDate;
 	private Date endDate;
 	private Locale language;
-	private Date appCreatedDate;
+	private Date creationDate;
+	private Date modificationDate;
 	
 	public Long getApplicationId() {
 		return applicationId;
@@ -58,11 +59,20 @@ public class ApplicationGridDTO extends GenericEntityDTO {
 		this.language = language;
 	}
 
-	public Date getAppCreatedDate() {
-		return appCreatedDate;
+	public Date getCreationDate() {
+		return creationDate;
 	}
 
-	public void setAppCreatedDate(Date appCreatedDate) {
-		this.appCreatedDate = appCreatedDate;
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
 	}
+
+	public Date getModificationDate() {
+		return modificationDate;
+	}
+
+	public void setModificationDate(Date modificationDate) {
+		this.modificationDate = modificationDate;
+	}
+
 }
