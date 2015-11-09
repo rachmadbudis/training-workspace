@@ -23,7 +23,7 @@ public enum LiferayRoleEnum {
 	TRANSLATOR("Translator", LiferayRoleTypeEnum.REGULAR),
 	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.REGULAR),
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.REGULAR),
-	
+
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
 	SITE_MEMBER("Site Member", LiferayRoleTypeEnum.SITE),
@@ -49,15 +49,15 @@ public enum LiferayRoleEnum {
 	public LiferayRoleTypeEnum getType() {
 		return this.type;
 	}
-	
+
 	public boolean equals(LiferayRoleDTO role) {
 		return equals(role.getName());
 	}
-	
+
 	public boolean equals(String name) {
 		return this.getName().equals(name);
 	}
-	
+
 	/**
 	 * Get IND specific role
 	 * 

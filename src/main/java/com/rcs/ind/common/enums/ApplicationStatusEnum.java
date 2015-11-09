@@ -1,6 +1,5 @@
 package com.rcs.ind.common.enums;
 
-
 public enum ApplicationStatusEnum {
 	CreateInProgress("com.rcs.ind.application.status.create.in.progress"),
 	New("com.rcs.ind.application.status.new"),
@@ -11,7 +10,6 @@ public enum ApplicationStatusEnum {
 	Printed("com.rcs.ind.application.status.printed"),
 	Finished("com.rcs.ind.application.status.finished"),
 	Closed("com.rcs.ind.application.status.closed");
-	
 
 	private final String key;
 

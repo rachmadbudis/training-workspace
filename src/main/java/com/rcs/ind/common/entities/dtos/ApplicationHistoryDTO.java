@@ -17,7 +17,8 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 	public ApplicationHistoryDTO() {
 	}
 
-	public ApplicationHistoryDTO(Long applicationHistoryId, ApplicationStatusEnum status, Date startDate, Date endDate, ApplicationDTO application, UserProfileDTO assignedUser) {
+	public ApplicationHistoryDTO(Long applicationHistoryId, ApplicationStatusEnum status, Date startDate, Date endDate, ApplicationDTO application,
+			UserProfileDTO assignedUser) {
 		this.applicationHistoryId = applicationHistoryId;
 		this.status = status;
 		this.startDate = startDate;
@@ -32,7 +33,7 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 		this.setStartDate(new Date());
 		this.setAssignedUser(assignedUser);
 	}
-	
+
 	public Long getApplicationHistoryId() {
 		return applicationHistoryId;
 	}
@@ -41,32 +42,26 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 		this.applicationHistoryId = applicationHistoryId;
 	}
 
-	
 	public ApplicationStatusEnum getStatus() {
 		return status;
 	}
 
-	
 	public void setStatus(ApplicationStatusEnum status) {
 		this.status = status;
 	}
 
-	
 	public Date getStartDate() {
 		return startDate;
 	}
 
-	
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	
 	public Date getEndDate() {
 		return endDate;
 	}
 
-	
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}

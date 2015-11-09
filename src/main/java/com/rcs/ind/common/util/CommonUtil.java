@@ -26,7 +26,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 public class CommonUtil {
 
 	private static final Logger logger = LoggerFactory.getLogger(CommonUtil.class);
-	
+
 	/**
 	 * Convert a Java object to JSON
 	 * 
@@ -91,7 +91,7 @@ public class CommonUtil {
 		}
 		return null;
 	}
-	
+
 	public static Object fromJson(String data, Class<?> type) {
 		try {
 			ObjectMapper om = new ObjectMapper();

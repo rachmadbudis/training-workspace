@@ -29,7 +29,6 @@ public class ReviewDTO extends GenericEntityDTO {
 		this.reviewId = reviewId;
 	}
 
-	
 	public String getQuestionId() {
 		return questionId;
 	}
@@ -42,7 +41,6 @@ public class ReviewDTO extends GenericEntityDTO {
 		return value;
 	}
 
-	
 	public void setValue(String value) {
 		this.value = value;
 	}

@@ -26,31 +26,27 @@ public class DocumentDTO extends GenericEntityDTO {
 		this.documentId = documentId;
 	}
 
-	
 	public String getFileName() {
 		return fileName;
 	}
 
-	
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
 
-	
 	public ApplicationDTO getApplication() {
 		return application;
 	}
 
-	
 	public void setApplication(ApplicationDTO application) {
 		this.application = application;
 	}
 
-    public byte[] getFile() {
-        return file;
-    }
+	public byte[] getFile() {
+		return file;
+	}
 
-    public void setFile(byte[] file) {
-        this.file = file;
-    }
+	public void setFile(byte[] file) {
+		this.file = file;
+	}
 }

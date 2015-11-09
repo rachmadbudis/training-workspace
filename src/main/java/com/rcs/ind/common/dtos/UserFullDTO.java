@@ -4,20 +4,22 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-public class UserFullDTO extends GenericEntityDTO {
+import com.rcs.ind.liferay.enums.LiferayRoleEnum;
+
+public class UserFullDTO {
 
 	private Long userId;
 	private Set<Locale> languages;
 	private String firstName;
 	private String lastName;
 	private String emailAddress;
-	private Set<String> roles;
+	private Set<LiferayRoleEnum> roles;
 
 	public UserFullDTO() {
-		this.roles = new HashSet<String>();
-	}	
+		this.roles = new HashSet<LiferayRoleEnum>();
+	}
 
-	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<String> roles) {
+	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles) {
 		this.userId = userId;
 		this.languages = languages;
 		this.firstName = firstName;
@@ -33,11 +35,11 @@ public class UserFullDTO extends GenericEntityDTO {
 	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
-	
+
 	public Set<Locale> getLanguages() {
 		return languages;
 	}
-	
+
 	public void setLanguages(Set<Locale> languages) {
 		this.languages = languages;
 	}
@@ -56,25 +58,25 @@ public class UserFullDTO extends GenericEntityDTO {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}	
-	
+	}
+
 	public String getEmailAddress() {
 		return emailAddress;
 	}
-	
+
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
 
-	public Set<String> getRoles() {
+	public Set<LiferayRoleEnum> getRoles() {
 		return roles;
 	}
-	
-	public void setRoles(Set<String> roles) {
+
+	public void setRoles(Set<LiferayRoleEnum> roles) {
 		this.roles = roles;
 	}
-	
-	public void addRoles(String role) {
+
+	public void addRoles(LiferayRoleEnum role) {
 		this.roles.add(role);
 	}
 }

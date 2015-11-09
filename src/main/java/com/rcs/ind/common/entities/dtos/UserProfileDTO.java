@@ -25,12 +25,10 @@ public class UserProfileDTO extends GenericEntityDTO {
 		this.userId = userId;
 	}
 
-	
 	public Locale getLanguage() {
 		return language;
 	}
 
-	
 	public void setLanguage(Locale language) {
 		this.language = language;
 	}

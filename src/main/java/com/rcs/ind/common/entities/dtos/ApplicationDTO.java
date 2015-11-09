@@ -13,7 +13,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private boolean completeOnSubmit;
-	
+
 	public ApplicationDTO() {
 	}
 
@@ -32,22 +32,18 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.applicationId = applicationId;
 	}
 
-	
 	public String getSmartflowNumber() {
 		return smartflowNumber;
 	}
 
-	
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
 	}
 
-	
 	public Locale getLanguage() {
 		return language;
 	}
 
-	
 	public void setLanguage(Locale language) {
 		this.language = language;
 	}
@@ -60,19 +56,19 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.createUser = createUser;
 	}
 
-    public List<DocumentDTO> getDocuments() {
-        return documents;
-    }
+	public List<DocumentDTO> getDocuments() {
+		return documents;
+	}
 
-    public void setDocuments(List<DocumentDTO> documents) {
-        this.documents = documents;
-    }
+	public void setDocuments(List<DocumentDTO> documents) {
+		this.documents = documents;
+	}
 
-    public boolean isCompleteOnSubmit() {
-        return completeOnSubmit;
-    }
+	public boolean isCompleteOnSubmit() {
+		return completeOnSubmit;
+	}
 
-    public void setCompleteOnSubmit(boolean completeOnSubmit) {
-        this.completeOnSubmit = completeOnSubmit;
-    }
+	public void setCompleteOnSubmit(boolean completeOnSubmit) {
+		this.completeOnSubmit = completeOnSubmit;
+	}
 }

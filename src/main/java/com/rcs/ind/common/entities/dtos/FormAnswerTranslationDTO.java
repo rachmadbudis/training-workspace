@@ -29,32 +29,26 @@ public class FormAnswerTranslationDTO extends GenericEntityDTO {
 		this.formAnswerTranslationId = formAnswerTranslationId;
 	}
 
-	
 	public String getAnswerTranslation() {
 		return answerTranslation;
 	}
 
-	
 	public void setAnswerTranslation(String answerTranslation) {
 		this.answerTranslation = answerTranslation;
 	}
 
-	
 	public Locale getLanguage() {
 		return language;
 	}
 
-	
 	public void setLanguage(Locale language) {
 		this.language = language;
 	}
 
-	
 	public FormAnswerDTO getFormAnswer() {
 		return formAnswer;
 	}
 
-	
 	public void setFormAnswer(FormAnswerDTO formAnswer) {
 		this.formAnswer = formAnswer;
 	}
