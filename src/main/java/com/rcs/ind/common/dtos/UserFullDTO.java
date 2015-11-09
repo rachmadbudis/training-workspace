@@ -1,26 +1,28 @@
 package com.rcs.ind.common.dtos;
 
+import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
 public class UserFullDTO extends GenericEntityDTO {
 
 	private Long userId;
-	private Set<Locale> language;
+	private Set<Locale> languages;
 	private String firstName;
 	private String lastName;
-	private String email;
+	private String emailAddress;
 	private Set<String> roles;
 
 	public UserFullDTO() {
+		this.roles = new HashSet<String>();
 	}	
 
-	public UserFullDTO(Long userId, Set<Locale> language, String firstName, String lastName, String email, Set<String> roles) {
+	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<String> roles) {
 		this.userId = userId;
-		this.language = language;
+		this.languages = languages;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.email = email;
+		this.emailAddress = emailAddress;
 		this.roles = roles;
 	}
 
@@ -32,12 +34,12 @@ public class UserFullDTO extends GenericEntityDTO {
 		this.userId = userId;
 	}
 	
-	public Set<Locale> getLanguage() {
-		return language;
+	public Set<Locale> getLanguages() {
+		return languages;
 	}
 	
-	public void setLanguage(Set<Locale> language) {
-		this.language = language;
+	public void setLanguages(Set<Locale> languages) {
+		this.languages = languages;
 	}
 
 	public String getFirstName() {
@@ -54,21 +56,25 @@ public class UserFullDTO extends GenericEntityDTO {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}	
+	
+	public String getEmailAddress() {
+		return emailAddress;
 	}
 	
-	public String getEmail() {
-		return email;
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
 	}
-	
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
+
 	public Set<String> getRoles() {
 		return roles;
 	}
 	
 	public void setRoles(Set<String> roles) {
 		this.roles = roles;
+	}
+	
+	public void addRoles(String role) {
+		this.roles.add(role);
 	}
 }
