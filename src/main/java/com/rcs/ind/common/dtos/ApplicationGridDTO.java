@@ -6,7 +6,7 @@ import java.util.Locale;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
 public class ApplicationGridDTO {
-	
+
 	private Long applicationId;
 	private String smartflowNumber;
 	private Date startDate;
@@ -15,7 +15,7 @@ public class ApplicationGridDTO {
 	private ApplicationStatusEnum status;
 	private Date creationDate;
 	private Date modificationDate;
-	
+
 	public Long getApplicationId() {
 		return applicationId;
 	}
@@ -24,35 +24,30 @@ public class ApplicationGridDTO {
 		this.applicationId = applicationId;
 	}
 
-	
 	public String getSmartflowNumber() {
 		return smartflowNumber;
 	}
 
-	
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
 	}
-	
+
 	public Date getStartDate() {
 		return startDate;
 	}
 
-	
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	
 	public Date getEndDate() {
 		return endDate;
 	}
 
-	
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	
+
 	public Locale getLanguage() {
 		return language;
 	}

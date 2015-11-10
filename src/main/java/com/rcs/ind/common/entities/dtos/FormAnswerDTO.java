@@ -27,32 +27,26 @@ public class FormAnswerDTO extends GenericEntityDTO {
 		this.formAnswerId = formAnswerId;
 	}
 
-	
 	public Integer getQuestionNumber() {
 		return questionNumber;
 	}
 
-	
 	public void setQuestionNumber(Integer questionNumber) {
 		this.questionNumber = questionNumber;
 	}
 
-	
 	public String getAnswer() {
 		return answer;
 	}
 
-	
 	public void setAnswer(String answer) {
 		this.answer = answer;
 	}
 
-	
 	public ApplicationDTO getApplication() {
 		return application;
 	}
 
-	
 	public void setApplication(ApplicationDTO application) {
 		this.application = application;
 	}
