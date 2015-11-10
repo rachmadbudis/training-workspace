@@ -1,8 +1,7 @@
 package com.rcs.ind.liferay.enums;
 
-import java.util.Arrays;
+import java.util.EnumSet;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import com.rcs.ind.liferay.dtos.LiferayRoleDTO;
@@ -64,7 +63,28 @@ public enum LiferayRoleEnum {
 	 * @param index
 	 * @return
 	 */
-	public static List<LiferayRoleEnum> getIndRoles() {
-		return Arrays.asList(EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR);
+	public static EnumSet<LiferayRoleEnum> getIndRoles() {
+		return EnumSet.of(EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR);
+	}
+
+	private static final Map<String, LiferayRoleEnum> LOOKUP = new HashMap<>();
+	static {
+		for (LiferayRoleEnum role : LiferayRoleEnum.values()) {
+			LOOKUP.put(role.getName(), role);
+		}
+	}
+	
+	public static boolean contains(LiferayRoleDTO role) {
+		return LOOKUP.containsKey(role.getName());
+	}
+	
+	/**
+	 * Get dataset permission type by key
+	 * 
+	 * @param key
+	 * @return
+	 */
+	public static LiferayRoleEnum get(String key) {
+		return LOOKUP.get(key);
 	}
 }
