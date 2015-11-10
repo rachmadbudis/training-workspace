@@ -4,18 +4,15 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class UserFullDTO {
 
 	private Long userId;
-	@JsonDeserialize(contentAs = Locale.class)
 	private Set<Locale> languages;
 	private String firstName;
 	private String lastName;
 	private String emailAddress;
-	@JsonDeserialize(contentAs = LiferayRoleEnum.class)
 	private Set<LiferayRoleEnum> roles;
 
 	public UserFullDTO() {
