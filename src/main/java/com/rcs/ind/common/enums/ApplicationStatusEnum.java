@@ -14,6 +14,7 @@ public enum ApplicationStatusEnum {
 	
 
 	private final String key;
+	private static ApplicationStatusEnum[] vals = values();
 
 	private ApplicationStatusEnum(String key) {
 		this.key = key;
@@ -22,4 +23,14 @@ public enum ApplicationStatusEnum {
 	public String getKey() {
 		return key;
 	}
+	
+	public ApplicationStatusEnum next()
+    {
+        return vals[(this.ordinal() + 1)];
+    }
+	
+	public ApplicationStatusEnum previous()
+    {
+        return ((this.ordinal() - 1) != -1) ? vals[(this.ordinal() - 1)] : null;
+    }
 }
