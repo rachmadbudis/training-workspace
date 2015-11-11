@@ -21,7 +21,7 @@ public enum LanguageEnum {
 		return language.getDisplayName();
 	}
 	
-	public Locale getDefaultLocale() {
+	public static Locale getDefaultLocale() {
 		return LanguageEnum.ENGLISH.getLanguage();
 	}
 }
