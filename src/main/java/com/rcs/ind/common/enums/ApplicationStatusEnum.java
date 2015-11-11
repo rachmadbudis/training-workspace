@@ -24,7 +24,7 @@ public enum ApplicationStatusEnum {
 	
 	public ApplicationStatusEnum next()
     {
-        return vals[(this.ordinal() + 1)];
+        return ((this.ordinal() + 1) != vals.length) ? vals[(this.ordinal() + 1)] : null;
     }
 	
 	public ApplicationStatusEnum previous()
