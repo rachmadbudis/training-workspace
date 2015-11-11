@@ -1,7 +1,5 @@
 package com.rcs.ind.common;
 
-import java.util.Locale;
-
 public class IndConstants {
 
 	private IndConstants() {
@@ -14,5 +12,4 @@ public class IndConstants {
 	
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
-	public static final Locale DEFAULT_LANGUAGE = Locale.ENGLISH;
 }
