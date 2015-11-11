@@ -4,6 +4,7 @@ import java.util.LinkedHashSet;
 import java.util.Locale;
 import java.util.Set;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class UserFullDTO {
