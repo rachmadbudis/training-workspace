@@ -1,22 +1,25 @@
 package com.rcs.ind.common.dtos;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Locale;
 import java.util.Set;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class UserFullDTO {
 
 	private Long userId;
+	@JsonDeserialize(as = LinkedHashSet.class)
 	private Set<Locale> languages;
 	private String firstName;
 	private String lastName;
 	private String emailAddress;
+	@JsonDeserialize(as = LinkedHashSet.class)
 	private Set<LiferayRoleEnum> roles;
 
 	public UserFullDTO() {
-		this.roles = new HashSet<LiferayRoleEnum>();
+		this.roles = new LinkedHashSet<LiferayRoleEnum>();
 	}
 
 	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles) {

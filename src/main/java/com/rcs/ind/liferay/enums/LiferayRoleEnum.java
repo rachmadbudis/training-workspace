@@ -4,8 +4,6 @@ import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.rcs.ind.liferay.dtos.LiferayRoleDTO;
-
 /**
  * Liferay Roles.
  */
@@ -49,10 +47,6 @@ public enum LiferayRoleEnum {
 		return this.type;
 	}
 
-	public boolean equals(LiferayRoleDTO role) {
-		return equals(role.getName());
-	}
-
 	public boolean equals(String name) {
 		return this.getName().equals(name);
 	}
@@ -74,8 +68,8 @@ public enum LiferayRoleEnum {
 		}
 	}
 	
-	public static boolean contains(LiferayRoleDTO role) {
-		return LOOKUP.containsKey(role.getName());
+	public static boolean contains(String name) {
+		return LOOKUP.containsKey(name);
 	}
 	
 	/**
