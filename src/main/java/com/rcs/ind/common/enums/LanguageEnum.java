@@ -3,9 +3,9 @@ package com.rcs.ind.common.enums;
 import java.util.Locale;
 
 public enum LanguageEnum {
-	ENGLISH(new Locale("en_GB")),
-	ARABIC(new Locale("ar_SY")),
-	DUTCH(new Locale("nl_NL"));
+	ENGLISH(new Locale("en","GB")),
+	ARABIC(new Locale("ar","SY")),
+	DUTCH(new Locale("nl","NL"));
 
 	private final Locale language;
 
