@@ -17,18 +17,23 @@ public class UserFullDTO {
 	private String emailAddress;
 	@JsonDeserialize(as = LinkedHashSet.class)
 	private Set<LiferayRoleEnum> roles;
+	private String location;
+	private String origin;
 
 	public UserFullDTO() {
 		this.roles = new LinkedHashSet<LiferayRoleEnum>();
 	}
 
-	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles) {
+	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles, String location,
+			String origin) {
 		this.userId = userId;
 		this.languages = languages;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailAddress = emailAddress;
 		this.roles = roles;
+		this.location = location;
+		this.origin = origin;
 	}
 
 	public Long getUserId() {
@@ -81,5 +86,21 @@ public class UserFullDTO {
 
 	public void addRoles(LiferayRoleEnum role) {
 		this.roles.add(role);
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public String getOrigin() {
+		return origin;
+	}
+
+	public void setOrigin(String origin) {
+		this.origin = origin;
 	}
 }

@@ -67,11 +67,11 @@ public enum LiferayRoleEnum {
 			LOOKUP.put(role.getName(), role);
 		}
 	}
-	
+
 	public static boolean contains(String name) {
 		return LOOKUP.containsKey(name);
 	}
-	
+
 	/**
 	 * Get dataset permission type by key
 	 * 
