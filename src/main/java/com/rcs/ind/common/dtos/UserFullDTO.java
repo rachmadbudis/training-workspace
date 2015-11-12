@@ -22,7 +22,7 @@ public class UserFullDTO {
 
 	public UserFullDTO() {
 		this.roles = new LinkedHashSet<LiferayRoleEnum>();
-	}	
+	}
 
 	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles, String location,
 			String origin) {
@@ -87,19 +87,19 @@ public class UserFullDTO {
 	public void addRoles(LiferayRoleEnum role) {
 		this.roles.add(role);
 	}
-	
+
 	public String getLocation() {
 		return location;
 	}
-	
+
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	public String getOrigin() {
 		return origin;
 	}
-	
+
 	public void setOrigin(String origin) {
 		this.origin = origin;
 	}

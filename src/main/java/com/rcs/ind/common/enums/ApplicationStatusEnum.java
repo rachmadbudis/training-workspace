@@ -21,14 +21,12 @@ public enum ApplicationStatusEnum {
 	public String getKey() {
 		return key;
 	}
-	
-	public ApplicationStatusEnum next()
-    {
-        return ((this.ordinal() + 1) != vals.length) ? vals[(this.ordinal() + 1)] : null;
-    }
-	
-	public ApplicationStatusEnum previous()
-    {
-        return ((this.ordinal() - 1) != -1) ? vals[(this.ordinal() - 1)] : null;
-    }
+
+	public ApplicationStatusEnum next() {
+		return ((this.ordinal() + 1) != vals.length) ? vals[(this.ordinal() + 1)] : null;
+	}
+
+	public ApplicationStatusEnum previous() {
+		return ((this.ordinal() - 1) != -1) ? vals[(this.ordinal() - 1)] : null;
+	}
 }
