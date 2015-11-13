@@ -10,6 +10,7 @@ public class UserProfileDTO extends GenericEntityDTO {
 	private Locale language;
 	private String location;
 	private String origin;
+	private String name;
 
 	public UserProfileDTO() {
 	}
@@ -51,5 +52,13 @@ public class UserProfileDTO extends GenericEntityDTO {
 
 	public void setOrigin(String origin) {
 		this.origin = origin;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }
