@@ -13,10 +13,14 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private List<ApplicationStatusEnum> statuses;
 	private Date startDate;
 	private Date endDate;
+	private Date creationStartDate;
+	private Date creationEndDate;
 	private Long applicationId;
 	private String smartflowNumber;
 	private Locale language;
 	private Long assignedUserId;
+	private List<Long> assignedUserIds;
+	private String assignedUserName;
 
 	public Long getApplicationHistoryId() {
 		return applicationHistoryId;
@@ -81,4 +85,37 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	public void setLanguage(Locale language) {
 		this.language = language;
 	}
+
+	public String getAssignedUserName() {
+		return assignedUserName;
+	}
+
+	public void setAssignedUserName(String assignedUserName) {
+		this.assignedUserName = assignedUserName;
+	}
+
+	public List<Long> getAssignedUserIds() {
+		return assignedUserIds;
+	}
+
+	public void setAssignedUserIds(List<Long> assignedUserIds) {
+		this.assignedUserIds = assignedUserIds;
+	}
+
+	public Date getCreationStartDate() {
+		return creationStartDate;
+	}
+
+	public void setCreationStartDate(Date creationStartDate) {
+		this.creationStartDate = creationStartDate;
+	}
+
+	public Date getCreationEndDate() {
+		return creationEndDate;
+	}
+
+	public void setCreationEndDate(Date creationEndDate) {
+		this.creationEndDate = creationEndDate;
+	}
+
 }
