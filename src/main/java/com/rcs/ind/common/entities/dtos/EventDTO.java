@@ -13,25 +13,20 @@ public class EventDTO extends GenericEntityDTO {
 	private long userId;
 	private String ip;
 	private String expertName;
-	private String funcName;
+	private String methodName;
 	private String reqPayload;
 	private String resPayload;
 
 	public EventDTO() {
 	}
-	
-
 
 	public EventDTO(Long eventId) {
 		super();
 		this.eventId = eventId;
 	}
 
-
-
-	public EventDTO(long eventId, Date eventTime, String userEmail,
-			long userId, String ip, String expertName, String funcName,
-			String reqPayload, String resPayload) {
+	public EventDTO(long eventId, Date eventTime, String userEmail, long userId, String ip, String expertName, String methodName, String reqPayload,
+			String resPayload) {
 		super();
 		this.eventId = eventId;
 		this.eventTime = eventTime;
@@ -39,7 +34,7 @@ public class EventDTO extends GenericEntityDTO {
 		this.userId = userId;
 		this.ip = ip;
 		this.expertName = expertName;
-		this.funcName = funcName;
+		this.setMethodName(methodName);
 		this.reqPayload = reqPayload;
 		this.resPayload = resPayload;
 	}
@@ -47,7 +42,6 @@ public class EventDTO extends GenericEntityDTO {
 	public void setEventId(Long eventId) {
 		this.eventId = eventId;
 	}
-
 
 	public Long getEventId() {
 		return eventId;
@@ -97,14 +91,6 @@ public class EventDTO extends GenericEntityDTO {
 		this.expertName = expertName;
 	}
 
-	public String getFuncName() {
-		return funcName;
-	}
-
-	public void setFuncName(String funcName) {
-		this.funcName = funcName;
-	}
-
 	public String getReqPayload() {
 		return reqPayload;
 	}
@@ -119,6 +105,14 @@ public class EventDTO extends GenericEntityDTO {
 
 	public void setResPayload(String resPayload) {
 		this.resPayload = resPayload;
+	}
+
+	public String getMethodName() {
+		return methodName;
+	}
+
+	public void setMethodName(String methodName) {
+		this.methodName = methodName;
 	}
 
 }
