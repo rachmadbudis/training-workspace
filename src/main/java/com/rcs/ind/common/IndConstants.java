@@ -13,5 +13,5 @@ public class IndConstants {
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
-	
+
 }
