@@ -3,6 +3,7 @@ package com.rcs.ind.common.enums;
 public enum ApplicationStatusEnum {
 	Empty("com.rcs.ind.application.status.empty"),
 	CreateInProgress("com.rcs.ind.application.status.create.in.progress"),
+	Proposed("com.rcs.ind.application.status.proposed"),
 	New("com.rcs.ind.application.status.new"),
 	TranslateInProgress("com.rcs.ind.application.status.translate.in.progress"),
 	Translated("com.rcs.ind.application.status.translated"),

@@ -20,6 +20,7 @@ public enum LiferayRoleEnum {
 	TRANSLATOR("Translator", LiferayRoleTypeEnum.REGULAR),
 	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.REGULAR),
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.REGULAR),
+	HOST("Host", LiferayRoleTypeEnum.REGULAR),
 
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
