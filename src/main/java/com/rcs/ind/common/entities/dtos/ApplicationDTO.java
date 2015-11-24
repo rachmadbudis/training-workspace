@@ -10,6 +10,8 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private Long applicationId;
 	private String smartflowNumber;
 	private Locale language;
+	private String location;
+	private Boolean registered;
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private boolean completeOnSubmit;
@@ -46,6 +48,22 @@ public class ApplicationDTO extends GenericEntityDTO {
 
 	public void setLanguage(Locale language) {
 		this.language = language;
+	}
+	
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	public Boolean isRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(Boolean registered) {
+		this.registered = registered;
 	}
 
 	public UserProfileDTO getCreateUser() {

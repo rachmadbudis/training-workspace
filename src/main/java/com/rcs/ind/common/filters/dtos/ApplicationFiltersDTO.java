@@ -9,6 +9,8 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	private Long applicationId;
 	private String smartflowNumber;
 	private Locale language;
+	private String location;
+	private Boolean registered;
 	private Long userId;
 
 	public Long getApplicationId() {
@@ -25,6 +27,22 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
+	}
+	
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	public Boolean isRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(Boolean registered) {
+		this.registered = registered;
 	}
 
 	public Locale getLanguage() {
