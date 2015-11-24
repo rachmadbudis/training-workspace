@@ -6,6 +6,7 @@ import java.util.Locale;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.LocationEnum;
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 
@@ -21,6 +22,24 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private Long assignedUserId;
 	private List<Long> assignedUserIds;
 	private String assignedUserName;
+	private LocationEnum location;
+	private Boolean registered;
+
+	public LocationEnum getLocation() {
+		return location;
+	}
+
+	public void setLocation(LocationEnum location) {
+		this.location = location;
+	}
+
+	public Boolean getRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(Boolean registered) {
+		this.registered = registered;
+	}
 
 	public Long getApplicationHistoryId() {
 		return applicationHistoryId;
