@@ -59,7 +59,7 @@ public enum LiferayRoleEnum {
 	 * @return
 	 */
 	public static EnumSet<LiferayRoleEnum> getIndRoles() {
-		return EnumSet.of(EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR);
+		return EnumSet.of(HOST, EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR);
 	}
 
 	private static final Map<String, LiferayRoleEnum> LOOKUP = new HashMap<>();
