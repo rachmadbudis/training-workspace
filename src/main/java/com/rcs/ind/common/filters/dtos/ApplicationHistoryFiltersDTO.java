@@ -21,6 +21,24 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private Long assignedUserId;
 	private List<Long> assignedUserIds;
 	private String assignedUserName;
+	private String location;
+	private Boolean registered;
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public Boolean getRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(Boolean registered) {
+		this.registered = registered;
+	}
 
 	public Long getApplicationHistoryId() {
 		return applicationHistoryId;
