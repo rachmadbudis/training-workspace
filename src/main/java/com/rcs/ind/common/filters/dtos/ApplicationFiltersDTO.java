@@ -37,7 +37,7 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 		this.location = location;
 	}
 	
-	public Boolean isRegistered() {
+	public Boolean getRegistered() {
 		return registered;
 	}
 

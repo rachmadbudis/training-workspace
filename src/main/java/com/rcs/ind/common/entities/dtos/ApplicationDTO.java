@@ -58,7 +58,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.location = location;
 	}
 	
-	public Boolean isRegistered() {
+	public Boolean getRegistered() {
 		return registered;
 	}
 
