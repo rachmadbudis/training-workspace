@@ -1,9 +1,9 @@
 package com.rcs.ind.common.enums;
 
 public enum LocationEnum {
-	IND_HEADQUARTERS("Ind Headquarters"),
+	IND_LOKET_ROTTERDAM("IND Loket Rotterdam"),
 	RIJSWIJK("Rijswijk"),
-	TER_APPLE("Ter apple");
+	TER_APEL("Ter Apel");
 
 	private final String location;
 
@@ -16,6 +16,6 @@ public enum LocationEnum {
 	}
 
 	public LocationEnum getDefaultLocation() {
-		return IND_HEADQUARTERS;
+		return IND_LOKET_ROTTERDAM;
 	}
 }
