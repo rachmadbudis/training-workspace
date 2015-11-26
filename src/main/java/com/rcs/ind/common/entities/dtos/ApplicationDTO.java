@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.ReleaseReason;
 
 public class ApplicationDTO extends GenericEntityDTO {
 
@@ -15,6 +16,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private boolean completeOnSubmit;
+	private ReleaseReason releaseReason;
 
 	public ApplicationDTO() {
 	}
@@ -88,5 +90,13 @@ public class ApplicationDTO extends GenericEntityDTO {
 
 	public void setCompleteOnSubmit(boolean completeOnSubmit) {
 		this.completeOnSubmit = completeOnSubmit;
+	}
+
+	public ReleaseReason getReleaseReason() {
+		return releaseReason;
+	}
+
+	public void setReleaseReason(ReleaseReason releaseReason) {
+		this.releaseReason = releaseReason;
 	}
 }
