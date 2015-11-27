@@ -3,6 +3,7 @@ package com.rcs.ind.common.filters.dtos;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
@@ -23,6 +24,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private String assignedUserName;
 	private String location;
 	private Boolean registered;
+	private Set<Locale> languages;
 
 	public String getLocation() {
 		return location;
@@ -134,6 +136,14 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 
 	public void setCreationEndDate(Date creationEndDate) {
 		this.creationEndDate = creationEndDate;
+	}
+
+	public Set<Locale> getLanguages() {
+		return languages;
+	}
+
+	public void setLanguages(Set<Locale> languages) {
+		this.languages = languages;
 	}
 
 }
