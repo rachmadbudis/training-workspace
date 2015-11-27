@@ -15,7 +15,6 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private Boolean registered;
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
-	private boolean completeOnSubmit;
 	private ApplicationReleaseReasonEnum releaseReason;
 
 	public ApplicationDTO() {
@@ -82,14 +81,6 @@ public class ApplicationDTO extends GenericEntityDTO {
 
 	public void setDocuments(List<DocumentDTO> documents) {
 		this.documents = documents;
-	}
-
-	public boolean isCompleteOnSubmit() {
-		return completeOnSubmit;
-	}
-
-	public void setCompleteOnSubmit(boolean completeOnSubmit) {
-		this.completeOnSubmit = completeOnSubmit;
 	}
 
 	public ApplicationReleaseReasonEnum getReleaseReason() {
