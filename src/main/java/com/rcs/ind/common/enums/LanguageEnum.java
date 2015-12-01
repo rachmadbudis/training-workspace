@@ -1,6 +1,7 @@
 package com.rcs.ind.common.enums;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -11,7 +12,18 @@ public enum LanguageEnum {
 	DUTCH(new Locale("nl", "NL"));
 
 	private final Locale language;
-	private static LanguageEnum[] vals = values();
+	private static final List<Map<String, String>> AUTOCOMPLETE_LIST;
+
+	static {
+		List<Map<String, String>> list = new ArrayList<>();
+		for (LanguageEnum language : values()) {
+			Map<String, String> tModel = new HashMap<>();
+			tModel.put("value", language.getLanguage().toString());
+			tModel.put("label", language.getDisplayLanguage());
+			list.add(Collections.unmodifiableMap(tModel));
+		}
+		AUTOCOMPLETE_LIST = Collections.unmodifiableList(list);
+	}
 
 	private LanguageEnum(Locale language) {
 		this.language = language;
@@ -30,14 +42,7 @@ public enum LanguageEnum {
 	}
 
 	public static List<Map<String, String>> getAutoCompleteLanguages() {
-		List<Map<String, String>> list = new ArrayList<>();
-		for (LanguageEnum languageEnum : vals) {
-			Map<String, String> tModel = new HashMap<>();
-			tModel.put("value", languageEnum.getLanguage().toString());
-			tModel.put("label", languageEnum.getDisplayLanguage());
-			list.add(tModel);
-		}
-		return list;
+		return AUTOCOMPLETE_LIST;
 	}
 
 }
