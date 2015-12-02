@@ -7,6 +7,7 @@ import java.util.Set;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 
@@ -25,6 +26,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private String location;
 	private Boolean registered;
 	private Set<Locale> languages;
+	private LiferayRoleEnum userRole;
 
 	public String getLocation() {
 		return location;
@@ -146,4 +148,11 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 		this.languages = languages;
 	}
 
+	public LiferayRoleEnum getUserRole() {
+		return userRole;
+	}
+
+	public void setUserRole(LiferayRoleEnum userRole) {
+		this.userRole = userRole;
+	}
 }
