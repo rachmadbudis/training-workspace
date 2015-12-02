@@ -11,6 +11,7 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	private Locale language;
 	private String location;
 	private Boolean registered;
+	private Boolean priority;
 	private Long userId;
 
 	public Long getApplicationId() {
@@ -59,6 +60,14 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 
 	public void setUserId(Long userId) {
 		this.userId = userId;
+	}
+
+	public Boolean getPriority() {
+		return priority;
+	}
+
+	public void setPriority(Boolean priority) {
+		this.priority = priority;
 	}
 
 }
