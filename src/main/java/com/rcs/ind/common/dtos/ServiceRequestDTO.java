@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ValidatorTypeEnum;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 public class ServiceRequestDTO<T> {
 
@@ -34,7 +33,7 @@ public class ServiceRequestDTO<T> {
 
 	// Request payload.
 	private T payload;
-	
+
 	/**
 	 * Roles owned by current user
 	 */
@@ -114,26 +113,29 @@ public class ServiceRequestDTO<T> {
 
 	/**
 	 * Get All roles owned by current user
+	 * 
 	 * @return List of roles in string, zero list will returned if user does not have any role.
 	 */
 	public List<String> getUserRoles() {
 		return userRoles;
 	}
-	
+
 	/**
 	 * set roles
+	 * 
 	 * @param ownedRoles
 	 */
 	public void setUserRoles(List<String> userRoles) {
 		this.userRoles = userRoles;
 	}
-	
-	public void addRole(String role){
+
+	public void addRole(String role) {
 		this.userRoles.add(role);
 	}
-	public boolean hasUserRole(String... roles){
+
+	public boolean hasUserRole(String... roles) {
 		for (String role : roles) {
-			if (userRoles.contains(role)){
+			if (userRoles.contains(role)) {
 				return true;
 			}
 		}
