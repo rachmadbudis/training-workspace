@@ -2,6 +2,7 @@ package com.rcs.ind.common.dtos;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Locale;
 
@@ -146,9 +147,9 @@ public class ServiceRequestDTO<T> {
 	 *            one or more role to be checked
 	 * @return return true if one of params belong to user, otherwise return false
 	 */
-	public boolean hasUserRole(LiferayRoleEnum... roles) {
+	public boolean hasUserRole(EnumSet<LiferayRoleEnum> roles) {
 		for (LiferayRoleEnum role : roles) {
-			if (userRoles.contains(role.toString())) {
+			if (userRoles.contains(role.getName())) {
 				return true;
 			}
 		}
