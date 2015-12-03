@@ -15,6 +15,7 @@ public class ApplicationGridDTO {
 	private ApplicationStatusEnum status;
 	private Date creationDate;
 	private Date modificationDate;
+	private Boolean priority;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -78,5 +79,13 @@ public class ApplicationGridDTO {
 
 	public void setStatus(ApplicationStatusEnum status) {
 		this.status = status;
+	}
+
+	public Boolean getPriority() {
+		return priority;
+	}
+
+	public void setPriority(Boolean priority) {
+		this.priority = priority;
 	}
 }
