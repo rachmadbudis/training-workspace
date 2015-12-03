@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ValidatorTypeEnum;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class ServiceRequestDTO<T> {
 
@@ -34,7 +34,7 @@ public class ServiceRequestDTO<T> {
 
 	// Request payload.
 	private T payload;
-	
+
 	/**
 	 * Roles owned by current user
 	 */
@@ -114,26 +114,41 @@ public class ServiceRequestDTO<T> {
 
 	/**
 	 * Get All roles owned by current user
+	 * 
 	 * @return List of roles in string, zero list will returned if user does not have any role.
 	 */
 	public List<String> getUserRoles() {
 		return userRoles;
 	}
-	
+
 	/**
 	 * set roles
+	 * 
 	 * @param ownedRoles
 	 */
 	public void setUserRoles(List<String> userRoles) {
 		this.userRoles = userRoles;
 	}
-	
-	public void addRole(String role){
+
+	/**
+	 * Helper method to add a role.
+	 * 
+	 * @param role
+	 */
+	public void addUserRole(String role) {
 		this.userRoles.add(role);
 	}
-	public boolean hasUserRole(String... roles){
-		for (String role : roles) {
-			if (userRoles.contains(role)){
+
+	/**
+	 * Check one or more roles belong to user or not
+	 * 
+	 * @param roles
+	 *            one or more role to be checked
+	 * @return return true if one of params belong to user, otherwise return false
+	 */
+	public boolean hasUserRole(LiferayRoleEnum... roles) {
+		for (LiferayRoleEnum role : roles) {
+			if (userRoles.contains(role.toString())) {
 				return true;
 			}
 		}
