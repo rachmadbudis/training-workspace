@@ -141,13 +141,23 @@ public class ServiceRequestDTO<T> {
 	}
 
 	/**
-	 * Check one or more roles belong to user or not
+	 * Check one user role
+	 * 
+	 * @param role
+	 * @return
+	 */
+	public boolean hasUserRole(LiferayRoleEnum role) {
+		return userRoles.contains(role.getName());
+	}
+	
+	/**
+	 * Check roles belong to user or not
 	 * 
 	 * @param roles
-	 *            one or more role to be checked
+	 *            set of role to be checked
 	 * @return return true if one of params belong to user, otherwise return false
 	 */
-	public boolean hasUserRole(EnumSet<LiferayRoleEnum> roles) {
+	public boolean hasUserRoles(EnumSet<LiferayRoleEnum> roles) {
 		for (LiferayRoleEnum role : roles) {
 			if (userRoles.contains(role.getName())) {
 				return true;
