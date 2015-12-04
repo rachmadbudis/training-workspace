@@ -1,10 +1,10 @@
 package com.rcs.ind.common.dtos;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
-import java.util.EnumSet;
-import java.util.List;
+import java.util.LinkedHashSet;
 import java.util.Locale;
+import java.util.Set;
 
 import com.rcs.ind.common.enums.ValidatorTypeEnum;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
@@ -39,7 +39,7 @@ public class ServiceRequestDTO<T> {
 	/**
 	 * Roles owned by current user
 	 */
-	private List<String> userRoles = new ArrayList<String>();
+	private Set<String> userRoles = Collections.synchronizedSet(new LinkedHashSet<String>());
 
 	public String getTimestamp() {
 		return timestamp;
@@ -118,7 +118,7 @@ public class ServiceRequestDTO<T> {
 	 * 
 	 * @return List of roles in string, zero list will returned if user does not have any role.
 	 */
-	public List<String> getUserRoles() {
+	public Set<String> getUserRoles() {
 		return userRoles;
 	}
 
@@ -127,7 +127,7 @@ public class ServiceRequestDTO<T> {
 	 * 
 	 * @param ownedRoles
 	 */
-	public void setUserRoles(List<String> userRoles) {
+	public void setUserRoles(Set<String> userRoles) {
 		this.userRoles = userRoles;
 	}
 
@@ -147,7 +147,7 @@ public class ServiceRequestDTO<T> {
 	 *            one or more role to be checked
 	 * @return return true if one of params belong to user, otherwise return false
 	 */
-	public boolean hasUserRole(EnumSet<LiferayRoleEnum> roles) {
+	public boolean hasUserRole(LiferayRoleEnum... roles) {
 		for (LiferayRoleEnum role : roles) {
 			if (userRoles.contains(role.getName())) {
 				return true;
