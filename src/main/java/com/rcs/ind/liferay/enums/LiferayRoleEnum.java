@@ -21,6 +21,7 @@ public enum LiferayRoleEnum {
 	TRANSLATOR("Translator", LiferayRoleTypeEnum.REGULAR),
 	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.REGULAR),
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.REGULAR),
+	AVIM("Avim", LiferayRoleTypeEnum.REGULAR),
 	
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
@@ -59,7 +60,7 @@ public enum LiferayRoleEnum {
 	 * @return
 	 */
 	public static EnumSet<LiferayRoleEnum> getIndRoles() {
-		return EnumSet.of(HOST, EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR);
+		return EnumSet.of(HOST, EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR, AVIM);
 	}
 
 	private static final Map<String, LiferayRoleEnum> LOOKUP = new HashMap<>();
