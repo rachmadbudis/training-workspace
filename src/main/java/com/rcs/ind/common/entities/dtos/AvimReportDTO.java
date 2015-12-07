@@ -11,6 +11,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 	private EurodacMatchReasonEnum reason;
 	private String country;
 	private ApplicationDTO applicationDTO;
+	private String smartflowNumber;
 
 	public AvimReportDTO() {
 	}
@@ -75,6 +76,14 @@ public class AvimReportDTO extends GenericEntityDTO {
 
 	public void setApplicationDTO(ApplicationDTO applicationDTO) {
 		this.applicationDTO = applicationDTO;
+	}
+
+	public String getSmartflowNumber() {
+		return smartflowNumber;
+	}
+
+	public void setSmartflowNumber(String smartflowNumber) {
+		this.smartflowNumber = smartflowNumber;
 	}
 
 }
