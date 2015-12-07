@@ -13,7 +13,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private Locale language;
 	private String location;
 	private Boolean registered;
-	private boolean priority;
+	private Boolean priority;
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
@@ -92,11 +92,11 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.releaseReason = releaseReason;
 	}
 
-	public boolean getPriority() {
+	public Boolean getPriority() {
 		return priority;
 	}
 
-	public void setPriority(boolean priority) {
+	public void setPriority(Boolean priority) {
 		this.priority = priority;
 	}
 }
