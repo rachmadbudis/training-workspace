@@ -12,6 +12,9 @@ public class IndConstants {
 	public static final String TRIPLE_FORMS = "TripleForms";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 
+	// TripleForms constants.
+	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
+	
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
 
