@@ -8,6 +8,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 	private Long avimReportId;
 	private boolean eurodacMatch;
 	private boolean euvisMatch;
+	private Integer vNumber;
 	private EurodacMatchReasonEnum reason;
 	private String country;
 	private ApplicationDTO applicationDTO;
@@ -16,7 +17,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 	public AvimReportDTO() {
 	}
 
-	public AvimReportDTO(Long avimReportId, boolean eurodacMatch, boolean euvisMatch, EurodacMatchReasonEnum reason, String country,
+	public AvimReportDTO(Long avimReportId, boolean eurodacMatch, boolean euvisMatch, Integer vNumber, EurodacMatchReasonEnum reason, String country,
 			ApplicationDTO applicationDTO) {
 		this.avimReportId = avimReportId;
 		this.eurodacMatch = eurodacMatch;
@@ -24,6 +25,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.reason = reason;
 		this.country = country;
 		this.applicationDTO = applicationDTO;
+		this.vNumber = vNumber;
 	}
 
 	public AvimReportDTO(Long avimReportId) {
@@ -84,6 +86,14 @@ public class AvimReportDTO extends GenericEntityDTO {
 
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
+	}
+
+	public Integer getvNumber() {
+		return vNumber;
+	}
+
+	public void setvNumber(Integer vNumber) {
+		this.vNumber = vNumber;
 	}
 
 }
