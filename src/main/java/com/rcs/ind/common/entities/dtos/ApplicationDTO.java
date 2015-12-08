@@ -14,6 +14,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private String location;
 	private Boolean registered;
 	private Boolean priority;
+	private String xmlAnswer;
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
@@ -98,5 +99,13 @@ public class ApplicationDTO extends GenericEntityDTO {
 
 	public void setPriority(Boolean priority) {
 		this.priority = priority;
+	}
+
+	public String getXmlAnswer() {
+		return xmlAnswer;
+	}
+
+	public void setXmlAnswer(String xmlAnswer) {
+		this.xmlAnswer = xmlAnswer;
 	}
 }
