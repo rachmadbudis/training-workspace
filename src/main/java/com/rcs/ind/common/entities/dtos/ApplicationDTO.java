@@ -94,11 +94,11 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.releaseReason = releaseReason;
 	}
 
-	public Boolean getPriority() {
+	public boolean getPriority() {
 		return priority;
 	}
 
-	public void setPriority(Boolean priority) {
+	public void setPriority(boolean priority) {
 		this.priority = priority;
 	}
 
