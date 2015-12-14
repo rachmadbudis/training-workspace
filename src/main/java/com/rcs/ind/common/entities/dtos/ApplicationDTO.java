@@ -13,7 +13,8 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private Locale language;
 	private String location;
 	private Boolean registered;
-	private Boolean priority;
+	/** use primitive type to make sure no null value */
+	private boolean priority;
 	private String xmlAnswer;
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
