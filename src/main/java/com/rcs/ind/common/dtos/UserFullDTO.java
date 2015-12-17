@@ -19,6 +19,10 @@ public class UserFullDTO {
 	private Set<LiferayRoleEnum> roles;
 	private String location;
 	private String origin;
+	private String phoneNumber;
+	private String currentPassword;
+	private String newPassword;
+	private String confirmPassword;
 
 	public UserFullDTO() {
 		this.roles = new LinkedHashSet<LiferayRoleEnum>();
@@ -103,4 +107,37 @@ public class UserFullDTO {
 	public void setOrigin(String origin) {
 		this.origin = origin;
 	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getCurrentPassword() {
+		return currentPassword;
+	}
+
+	public void setCurrentPassword(String currentPassword) {
+		this.currentPassword = currentPassword;
+	}
+
+	public String getNewPassword() {
+		return newPassword;
+	}
+
+	public void setNewPassword(String newPassword) {
+		this.newPassword = newPassword;
+	}
+
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+
 }
