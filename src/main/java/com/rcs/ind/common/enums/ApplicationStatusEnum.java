@@ -6,6 +6,8 @@ public enum ApplicationStatusEnum {
 	New("com.rcs.ind.application.status.new"),
 	TranslateInProgress("com.rcs.ind.application.status.translate.in.progress"),
 	Translated("com.rcs.ind.application.status.translated"),
+	PreparationInProgress("com.rcs.ind.application.status.preparation.in.progress"),
+	ReadyForInterview("com.rcs.ind.application.status.ready.for.interview"),
 	ReviewInProgress("com.rcs.ind.application.status.review.in.progress"),
 	Reviewed("com.rcs.ind.application.status.reviewed"),
 	Printed("com.rcs.ind.application.status.printed"),
