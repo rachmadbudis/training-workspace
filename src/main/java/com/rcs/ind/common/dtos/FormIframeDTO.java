@@ -1,11 +1,14 @@
 package com.rcs.ind.common.dtos;
 
+import java.util.Locale;
+
 public class FormIframeDTO {
 
 	private Long applicationId;
 	private String smartflowNumber;
+	private Locale language;
 	private String iframeUrl;
-	
+
 	public Long getApplicationId() {
 		return applicationId;
 	}
@@ -29,4 +32,13 @@ public class FormIframeDTO {
 	public void setIframeUrl(String iframeUrl) {
 		this.iframeUrl = iframeUrl;
 	}
+
+	public Locale getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Locale language) {
+		this.language = language;
+	}
+
 }
