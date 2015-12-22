@@ -1,7 +1,7 @@
 package com.rcs.ind.common.enums;
 
 
-public enum MartialStatusEnum {
+public enum MaritalStatusEnum {
 	Single ("Single"),
 	Married("Married"),
 	Divorced("Divorced"),
@@ -9,7 +9,7 @@ public enum MartialStatusEnum {
 
 	private final String key;
 
-	private MartialStatusEnum(String key) {
+	private MaritalStatusEnum(String key) {
 		this.key = key;
 	}	
 }

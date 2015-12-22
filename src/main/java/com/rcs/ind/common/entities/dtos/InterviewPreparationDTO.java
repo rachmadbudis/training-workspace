@@ -3,8 +3,7 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.Date;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
-import com.rcs.ind.common.enums.LocationEnum;
-import com.rcs.ind.common.enums.MartialStatusEnum;
+import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.NationalityEnum;
 import com.rcs.ind.common.enums.SexEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
@@ -23,7 +22,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private NationalityEnum nationality;
 	private String placeBirth;
 	private String countryBirth;
-	private MartialStatusEnum martialStatus;
+	private MaritalStatusEnum martialStatus;
 	private SexEnum sex;
 	private String eurodacClaimedCountry;
 	private String eurodacReason;
@@ -32,8 +31,8 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String euvisClaimedCountry;
 	private String expDateVisum;
 	private Long interpreter; /* user id from liferay with role translator */
-	private LocationEnum location;
-	private LocationEnum polLocation;
+	private String location;
+	private String polLocation;
 	private String track;
 	private String customQuestion;
 	private ApplicationDTO application;
@@ -141,11 +140,11 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.countryBirth = countryBirth;
 	}
 
-	public MartialStatusEnum getMartialStatus() {
+	public MaritalStatusEnum getMartialStatus() {
 		return martialStatus;
 	}
 
-	public void setMartialStatus(MartialStatusEnum martialStatus) {
+	public void setMartialStatus(MaritalStatusEnum martialStatus) {
 		this.martialStatus = martialStatus;
 	}
 
@@ -212,20 +211,20 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setInterpreter(Long interpreter) {
 		this.interpreter = interpreter;
 	}
-
-	public LocationEnum getLocation() {
+	
+	public String getLocation() {
 		return location;
 	}
-
-	public void setLocation(LocationEnum location) {
+	
+	public void setLocation(String location) {
 		this.location = location;
 	}
-
-	public LocationEnum getPolLocation() {
+	
+	public String getPolLocation() {
 		return polLocation;
 	}
-
-	public void setPolLocation(LocationEnum polLocation) {
+	
+	public void setPolLocation(String polLocation) {
 		this.polLocation = polLocation;
 	}
 
