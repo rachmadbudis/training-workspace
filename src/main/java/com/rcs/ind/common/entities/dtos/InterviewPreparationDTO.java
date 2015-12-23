@@ -7,6 +7,7 @@ import com.rcs.ind.common.enums.GenQuestionStatusEnum;
 import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.NationalityEnum;
 import com.rcs.ind.common.enums.SexEnum;
+import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
 public class InterviewPreparationDTO extends GenericEntityDTO {
@@ -37,7 +38,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String InterpreterRegistered;
 	private String location;
 	private String polLocation;
-	private String track;
+	private TrackEnum track;
 	private String customQuestion;
 	private GenQuestionStatusEnum status;
 
@@ -226,11 +227,11 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.polLocation = polLocation;
 	}
 
-	public String getTrack() {
+	public TrackEnum getTrack() {
 		return track;
 	}
 
-	public void setTrack(String track) {
+	public void setTrack(TrackEnum track) {
 		this.track = track;
 	}
 
