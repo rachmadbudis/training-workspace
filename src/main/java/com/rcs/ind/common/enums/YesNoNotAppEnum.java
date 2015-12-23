@@ -1,6 +1,5 @@
 package com.rcs.ind.common.enums;
 
-
 public enum YesNoNotAppEnum {
 	Yes("Yes"),
 	No("No"),

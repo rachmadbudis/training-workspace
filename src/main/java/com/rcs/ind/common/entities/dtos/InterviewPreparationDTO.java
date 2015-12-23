@@ -211,19 +211,19 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setInterpreter(Long interpreter) {
 		this.interpreter = interpreter;
 	}
-	
+
 	public String getLocation() {
 		return location;
 	}
-	
+
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	public String getPolLocation() {
 		return polLocation;
 	}
-	
+
 	public void setPolLocation(String polLocation) {
 		this.polLocation = polLocation;
 	}

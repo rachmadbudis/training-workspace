@@ -53,7 +53,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	public void setLanguage(Locale language) {
 		this.language = language;
 	}
-	
+
 	public String getLocation() {
 		return location;
 	}
@@ -61,7 +61,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	public Boolean getRegistered() {
 		return registered;
 	}

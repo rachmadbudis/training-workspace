@@ -14,7 +14,7 @@ public class IndConstants {
 
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
-	
+
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
 

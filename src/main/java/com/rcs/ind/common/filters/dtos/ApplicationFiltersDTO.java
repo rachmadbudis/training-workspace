@@ -29,7 +29,7 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
 	}
-	
+
 	public String getLocation() {
 		return location;
 	}
@@ -37,7 +37,7 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
+
 	public Boolean getRegistered() {
 		return registered;
 	}

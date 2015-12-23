@@ -23,7 +23,7 @@ public enum LiferayRoleEnum {
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.REGULAR),
 	AVIM("Avim", LiferayRoleTypeEnum.REGULAR),
 	PLANNER("Planner", LiferayRoleTypeEnum.REGULAR),
-	
+
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
 	SITE_MEMBER("Site Member", LiferayRoleTypeEnum.SITE),

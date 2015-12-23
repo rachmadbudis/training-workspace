@@ -1,9 +1,8 @@
 package com.rcs.ind.common.enums;
 
-
 public enum SexEnum {
 	Male("Male"),
-	Female("Female");/* TODO: sample*/
+	Female("Female");/* TODO: sample */
 
 	private final String key;
 
