@@ -332,7 +332,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	/**
 	 * @return the eurodac
 	 */
-	public boolean isEurodac() {
+	public boolean getEurodac() {
 		return eurodac;
 	}
 
@@ -348,7 +348,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	/**
 	 * @return the euvis
 	 */
-	public boolean isEuvis() {
+	public boolean getEuvis() {
 		return euvis;
 	}
 
