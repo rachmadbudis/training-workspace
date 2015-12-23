@@ -26,8 +26,10 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String countryBirth;
 	private MaritalStatusEnum martialStatus;
 	private SexEnum sex;
+	private boolean eurodac;
 	private String eurodacClaimedCountry;
 	private String eurodacReason;
+	private boolean euvis;
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
@@ -324,6 +326,38 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	 */
 	public void setInterpreterRegistered(String interpreterRegistered) {
 		InterpreterRegistered = interpreterRegistered;
+	}
+
+	
+	/**
+	 * @return the eurodac
+	 */
+	public boolean isEurodac() {
+		return eurodac;
+	}
+
+	
+	/**
+	 * @param eurodac the eurodac to set
+	 */
+	public void setEurodac(boolean eurodac) {
+		this.eurodac = eurodac;
+	}
+
+	
+	/**
+	 * @return the euvis
+	 */
+	public boolean isEuvis() {
+		return euvis;
+	}
+
+	
+	/**
+	 * @param euvis the euvis to set
+	 */
+	public void setEuvis(boolean euvis) {
+		this.euvis = euvis;
 	}
 
 }
