@@ -30,7 +30,10 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
 	private String expDateVisum;
-	private Long interpreter; /* user id from liferay with role translator */
+	private String interpreterName;
+	private SexEnum interpreterSex;
+	private String interpreterLanguage;
+	private String InterpreterRegistered;
 	private String location;
 	private String polLocation;
 	private String track;
@@ -204,14 +207,6 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.expDateVisum = expDateVisum;
 	}
 
-	public Long getInterpreter() {
-		return interpreter;
-	}
-
-	public void setInterpreter(Long interpreter) {
-		this.interpreter = interpreter;
-	}
-
 	public String getLocation() {
 		return location;
 	}
@@ -251,5 +246,71 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setApplication(ApplicationDTO application) {
 		this.application = application;
 	}
+
+	
+	/**
+	 * @return the interpreterName
+	 */
+	public String getInterpreterName() {
+		return interpreterName;
+	}
+
+	
+	/**
+	 * @param interpreterName the interpreterName to set
+	 */
+	public void setInterpreterName(String interpreterName) {
+		this.interpreterName = interpreterName;
+	}
+
+	
+	/**
+	 * @return the interpreterSex
+	 */
+	public SexEnum getInterpreterSex() {
+		return interpreterSex;
+	}
+
+	
+	/**
+	 * @param interpreterSex the interpreterSex to set
+	 */
+	public void setInterpreterSex(SexEnum interpreterSex) {
+		this.interpreterSex = interpreterSex;
+	}
+
+	
+	/**
+	 * @return the interpreterLanguage
+	 */
+	public String getInterpreterLanguage() {
+		return interpreterLanguage;
+	}
+
+	
+	/**
+	 * @param interpreterLanguage the interpreterLanguage to set
+	 */
+	public void setInterpreterLanguage(String interpreterLanguage) {
+		this.interpreterLanguage = interpreterLanguage;
+	}
+
+	
+	/**
+	 * @return the interpreterRegistered
+	 */
+	public String getInterpreterRegistered() {
+		return InterpreterRegistered;
+	}
+
+	
+	/**
+	 * @param interpreterRegistered the interpreterRegistered to set
+	 */
+	public void setInterpreterRegistered(String interpreterRegistered) {
+		InterpreterRegistered = interpreterRegistered;
+	}
+	
+	
 
 }
