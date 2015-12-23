@@ -3,6 +3,7 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.Date;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.GenQuestionStatusEnum;
 import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.NationalityEnum;
 import com.rcs.ind.common.enums.SexEnum;
@@ -38,6 +39,8 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String polLocation;
 	private String track;
 	private String customQuestion;
+	private GenQuestionStatusEnum status;
+
 	private ApplicationDTO application;
 
 	public InterviewPreparationDTO() {
@@ -247,7 +250,6 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.application = application;
 	}
 
-	
 	/**
 	 * @return the interpreterName
 	 */
@@ -255,15 +257,14 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return interpreterName;
 	}
 
-	
 	/**
-	 * @param interpreterName the interpreterName to set
+	 * @param interpreterName
+	 *            the interpreterName to set
 	 */
 	public void setInterpreterName(String interpreterName) {
 		this.interpreterName = interpreterName;
 	}
 
-	
 	/**
 	 * @return the interpreterSex
 	 */
@@ -271,15 +272,14 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return interpreterSex;
 	}
 
-	
 	/**
-	 * @param interpreterSex the interpreterSex to set
+	 * @param interpreterSex
+	 *            the interpreterSex to set
 	 */
 	public void setInterpreterSex(SexEnum interpreterSex) {
 		this.interpreterSex = interpreterSex;
 	}
 
-	
 	/**
 	 * @return the interpreterLanguage
 	 */
@@ -287,15 +287,29 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return interpreterLanguage;
 	}
 
-	
 	/**
-	 * @param interpreterLanguage the interpreterLanguage to set
+	 * @param interpreterLanguage
+	 *            the interpreterLanguage to set
 	 */
 	public void setInterpreterLanguage(String interpreterLanguage) {
 		this.interpreterLanguage = interpreterLanguage;
 	}
 
-	
+	/**
+	 * @return the status
+	 */
+	public GenQuestionStatusEnum getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status
+	 *            the status to set
+	 */
+	public void setStatus(GenQuestionStatusEnum status) {
+		this.status = status;
+	}
+
 	/**
 	 * @return the interpreterRegistered
 	 */
@@ -303,14 +317,12 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return InterpreterRegistered;
 	}
 
-	
 	/**
-	 * @param interpreterRegistered the interpreterRegistered to set
+	 * @param interpreterRegistered
+	 *            the interpreterRegistered to set
 	 */
 	public void setInterpreterRegistered(String interpreterRegistered) {
 		InterpreterRegistered = interpreterRegistered;
 	}
-	
-	
 
 }
