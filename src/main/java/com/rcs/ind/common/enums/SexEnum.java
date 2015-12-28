@@ -9,4 +9,7 @@ public enum SexEnum {
 	private SexEnum(String key) {
 		this.key = key;
 	}
+	public String getKey() {
+		return key;
+	}
 }

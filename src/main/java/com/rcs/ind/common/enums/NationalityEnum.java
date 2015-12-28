@@ -9,4 +9,8 @@ public enum NationalityEnum {
 	private NationalityEnum(String key) {
 		this.key = key;
 	}
+
+	public String getKey() {
+		return key;
+	}
 }
