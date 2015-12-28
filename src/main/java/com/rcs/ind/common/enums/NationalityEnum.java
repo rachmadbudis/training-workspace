@@ -1,8 +1,8 @@
 package com.rcs.ind.common.enums;
 
 public enum NationalityEnum {
-	Syrian("Syrian"),
-	Dutch("Dutch");/* TODO: sample */
+	Syrian("com.rcs.ind.nationality.syrian"),
+	Dutch("com.rcs.ind.nationality.dutch");/* TODO: sample */
 
 	private final String key;
 
