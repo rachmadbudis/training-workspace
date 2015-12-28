@@ -24,7 +24,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private NationalityEnum nationality;
 	private String placeBirth;
 	private String countryBirth;
-	private MaritalStatusEnum martialStatus;
+	private MaritalStatusEnum maritalStatus;
 	private SexEnum sex;
 	private boolean eurodac;
 	private String eurodacClaimedCountry;
@@ -148,13 +148,22 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setCountryBirth(String countryBirth) {
 		this.countryBirth = countryBirth;
 	}
+	
 
-	public MaritalStatusEnum getMartialStatus() {
-		return martialStatus;
+	
+	/**
+	 * @return the maritalStatus
+	 */
+	public MaritalStatusEnum getMaritalStatus() {
+		return maritalStatus;
 	}
 
-	public void setMartialStatus(MaritalStatusEnum martialStatus) {
-		this.martialStatus = martialStatus;
+	
+	/**
+	 * @param maritalStatus the maritalStatus to set
+	 */
+	public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+		this.maritalStatus = maritalStatus;
 	}
 
 	public SexEnum getSex() {
