@@ -148,13 +148,19 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setCountryBirth(String countryBirth) {
 		this.countryBirth = countryBirth;
 	}
-
-	public MaritalStatusEnum getMartialStatus() {
+	
+	/**
+	 * @return the maritalStatus
+	 */
+	public MaritalStatusEnum getMaritalStatus() {
 		return maritalStatus;
 	}
 
-	public void setMartialStatus(MaritalStatusEnum martialStatus) {
-		this.maritalStatus = martialStatus;
+	/**
+	 * @param maritalStatus the maritalStatus to set
+	 */
+	public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+		this.maritalStatus = maritalStatus;
 	}
 
 	public SexEnum getSex() {
