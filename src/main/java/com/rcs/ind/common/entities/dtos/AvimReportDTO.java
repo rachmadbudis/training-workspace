@@ -6,6 +6,9 @@ import com.rcs.ind.common.enums.EurodacMatchReasonEnum;
 public class AvimReportDTO extends GenericEntityDTO {
 
 	private Long avimReportId;
+	private boolean protectedCountry;
+	private String protectingCountry;
+	private boolean valid;
 	private boolean eurodacMatch;
 	private boolean euvisMatch;
 	private String vNumber;
@@ -94,6 +97,30 @@ public class AvimReportDTO extends GenericEntityDTO {
 
 	public void setvNumber(String vNumber) {
 		this.vNumber = vNumber;
+	}
+
+	public boolean isProtectedCountry() {
+		return protectedCountry;
+	}
+
+	public void setProtectedCountry(boolean protectedCountry) {
+		this.protectedCountry = protectedCountry;
+	}
+
+	public String getProtectingCountry() {
+		return protectingCountry;
+	}
+
+	public void setProtectingCountry(String protectingCountry) {
+		this.protectingCountry = protectingCountry;
+	}
+
+	public boolean isValid() {
+		return valid;
+	}
+
+	public void setValid(boolean valid) {
+		this.valid = valid;
 	}
 
 }
