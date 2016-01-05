@@ -42,6 +42,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String location;
 	private String polLocation;
 	private TrackEnum track;
+	private TrackEnum trackAdvice;
 	private String customQuestion;
 	private GenQuestionStatusEnum status;
 
@@ -244,6 +245,14 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setTrack(TrackEnum track) {
 		this.track = track;
 	}
+	
+	public TrackEnum getTrackAdvice() {
+		return trackAdvice;
+	}
+
+	public void setTrackAdvice(TrackEnum trackAdvice) {
+		this.trackAdvice = trackAdvice;
+	}
 
 	public String getCustomQuestion() {
 		return customQuestion;
@@ -366,7 +375,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.euvis = euvis;
 	}
 
-	public boolean isProtectedCountry() {
+	public boolean getProtectedCountry() {
 		return protectedCountry;
 	}
 
@@ -382,7 +391,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.protectingCountry = protectingCountry;
 	}
 
-	public boolean isValid() {
+	public boolean getValid() {
 		return valid;
 	}
 
@@ -390,7 +399,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.valid = valid;
 	}
 
-	public boolean isSafeCountry() {
+	public boolean getSafeCountry() {
 		return safeCountry;
 	}
 
