@@ -4,9 +4,6 @@ import java.util.Date;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.GenQuestionStatusEnum;
-import com.rcs.ind.common.enums.MaritalStatusEnum;
-import com.rcs.ind.common.enums.NationalityEnum;
-import com.rcs.ind.common.enums.SexEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
@@ -21,11 +18,11 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String surname;
 	private String name;
 	private Date dateBirth;
-	private NationalityEnum nationality;
+	private String nationality;
 	private String placeBirth;
 	private String countryBirth;
-	private MaritalStatusEnum maritalStatus;
-	private SexEnum sex;
+	private String maritalStatus;
+	private String sex;
 	private boolean protectedCountry;
 	private String protectingCountry;
 	private boolean valid;
@@ -39,7 +36,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private boolean safeCountry;
 	private String expDateVisum;
 	private String interpreterName;
-	private SexEnum interpreterSex;
+	private String interpreterSex;
 	private String interpreterLanguage;
 	private String InterpreterRegistered;
 	private String location;
@@ -129,11 +126,11 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.dateBirth = dateBirth;
 	}
 
-	public NationalityEnum getNationality() {
+	public String getNationality() {
 		return nationality;
 	}
 
-	public void setNationality(NationalityEnum nationality) {
+	public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
 
@@ -156,7 +153,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	/**
 	 * @return the maritalStatus
 	 */
-	public MaritalStatusEnum getMaritalStatus() {
+	public String getMaritalStatus() {
 		return maritalStatus;
 	}
 
@@ -164,15 +161,15 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	 * @param maritalStatus
 	 *            the maritalStatus to set
 	 */
-	public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+	public void setMaritalStatus(String maritalStatus) {
 		this.maritalStatus = maritalStatus;
 	}
 
-	public SexEnum getSex() {
+	public String getSex() {
 		return sex;
 	}
 
-	public void setSex(SexEnum sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
@@ -282,7 +279,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	/**
 	 * @return the interpreterSex
 	 */
-	public SexEnum getInterpreterSex() {
+	public String getInterpreterSex() {
 		return interpreterSex;
 	}
 
@@ -290,7 +287,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	 * @param interpreterSex
 	 *            the interpreterSex to set
 	 */
-	public void setInterpreterSex(SexEnum interpreterSex) {
+	public void setInterpreterSex(String interpreterSex) {
 		this.interpreterSex = interpreterSex;
 	}
 
