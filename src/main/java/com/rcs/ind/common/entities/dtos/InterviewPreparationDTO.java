@@ -26,6 +26,9 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private String countryBirth;
 	private MaritalStatusEnum maritalStatus;
 	private SexEnum sex;
+	private boolean protectedCountry;
+	private String protectingCountry;
+	private boolean valid;
 	private boolean eurodac;
 	private String eurodacClaimedCountry;
 	private String eurodacReason;
@@ -33,6 +36,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
+	private boolean safeCountry;
 	private String expDateVisum;
 	private String interpreterName;
 	private SexEnum interpreterSex;
@@ -148,7 +152,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setCountryBirth(String countryBirth) {
 		this.countryBirth = countryBirth;
 	}
-	
+
 	/**
 	 * @return the maritalStatus
 	 */
@@ -157,7 +161,8 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	}
 
 	/**
-	 * @param maritalStatus the maritalStatus to set
+	 * @param maritalStatus
+	 *            the maritalStatus to set
 	 */
 	public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
 		this.maritalStatus = maritalStatus;
@@ -334,7 +339,6 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		InterpreterRegistered = interpreterRegistered;
 	}
 
-	
 	/**
 	 * @return the eurodac
 	 */
@@ -342,15 +346,14 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return eurodac;
 	}
 
-	
 	/**
-	 * @param eurodac the eurodac to set
+	 * @param eurodac
+	 *            the eurodac to set
 	 */
 	public void setEurodac(boolean eurodac) {
 		this.eurodac = eurodac;
 	}
 
-	
 	/**
 	 * @return the euvis
 	 */
@@ -358,12 +361,44 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		return euvis;
 	}
 
-	
 	/**
-	 * @param euvis the euvis to set
+	 * @param euvis
+	 *            the euvis to set
 	 */
 	public void setEuvis(boolean euvis) {
 		this.euvis = euvis;
+	}
+
+	public boolean isProtectedCountry() {
+		return protectedCountry;
+	}
+
+	public void setProtectedCountry(boolean protectedCountry) {
+		this.protectedCountry = protectedCountry;
+	}
+
+	public String getProtectingCountry() {
+		return protectingCountry;
+	}
+
+	public void setProtectingCountry(String protectingCountry) {
+		this.protectingCountry = protectingCountry;
+	}
+
+	public boolean isValid() {
+		return valid;
+	}
+
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}
+
+	public boolean isSafeCountry() {
+		return safeCountry;
+	}
+
+	public void setSafeCountry(boolean safeCountry) {
+		this.safeCountry = safeCountry;
 	}
 
 }
