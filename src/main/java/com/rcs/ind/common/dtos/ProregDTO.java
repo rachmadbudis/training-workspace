@@ -10,6 +10,7 @@ public class ProregDTO {
 
 	private String smartflowNumber;
 	private TrackEnum chosenTrack;
+	private TrackEnum trackAdvice;
 	private List<FormAnswerDTO> formAnswers;
 	private Map<String, String> data;
 
@@ -43,6 +44,14 @@ public class ProregDTO {
 
 	public void setChosenTrack(TrackEnum chosenTrack) {
 		this.chosenTrack = chosenTrack;
+	}
+
+	public TrackEnum getTrackAdvice() {
+		return trackAdvice;
+	}
+
+	public void setTrackAdvice(TrackEnum trackAdvice) {
+		this.trackAdvice = trackAdvice;
 	}
 
 }
