@@ -43,7 +43,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.avimReportId = avimReportId;
 	}
 
-	public boolean isEurodacMatch() {
+	public boolean getEurodacMatch() {
 		return eurodacMatch;
 	}
 
@@ -51,7 +51,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.eurodacMatch = eurodacMatch;
 	}
 
-	public boolean isEuvisMatch() {
+	public boolean getEuvisMatch() {
 		return euvisMatch;
 	}
 
@@ -99,7 +99,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.vNumber = vNumber;
 	}
 
-	public boolean isProtectedCountry() {
+	public boolean getProtectedCountry() {
 		return protectedCountry;
 	}
 
@@ -115,7 +115,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.protectingCountry = protectingCountry;
 	}
 
-	public boolean isValid() {
+	public boolean getValid() {
 		return valid;
 	}
 
