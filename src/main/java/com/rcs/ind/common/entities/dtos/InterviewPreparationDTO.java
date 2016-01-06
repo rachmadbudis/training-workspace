@@ -1,6 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
+import java.util.List;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.GenQuestionStatusEnum;
@@ -47,6 +48,9 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private GenQuestionStatusEnum status;
 
 	private ApplicationDTO application;
+	private boolean providedDocuments;
+	private Date dateAVIMDelivery;
+	private List<PreparationDocumentDTO> documents;
 
 	public InterviewPreparationDTO() {
 	}
@@ -245,7 +249,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	public void setTrack(TrackEnum track) {
 		this.track = track;
 	}
-	
+
 	public TrackEnum getTrackAdvice() {
 		return trackAdvice;
 	}
@@ -405,6 +409,30 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 
 	public void setSafeCountry(boolean safeCountry) {
 		this.safeCountry = safeCountry;
+	}
+
+	public List<PreparationDocumentDTO> getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(List<PreparationDocumentDTO> documents) {
+		this.documents = documents;
+	}
+
+	public boolean getProvidedDocuments() {
+		return providedDocuments;
+	}
+
+	public void setProvidedDocuments(boolean providedDocuments) {
+		this.providedDocuments = providedDocuments;
+	}
+
+	public Date getDateAVIMDelivery() {
+		return dateAVIMDelivery;
+	}
+
+	public void setDateAVIMDelivery(Date dateAVIMDelivery) {
+		this.dateAVIMDelivery = dateAVIMDelivery;
 	}
 
 }
