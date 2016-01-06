@@ -1,7 +1,7 @@
 package com.rcs.ind.common.enums;
 
 public enum SafeCountryEnum {
-	Syrian("com.rcs.ind.nationality.syrian"),;
+	Dutch("com.rcs.ind.nationality.dutch");
 	
 	private final String key;
 
