@@ -15,6 +15,12 @@ public class IndConstants {
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
 	public static final String TRANSLATED_DOC_NAME = "_Translation_File.pdf";
+	public static final String CUSTOMER_DOC_NAME = "_Customer_File.pdf";
+	public static final String TRANSLATOR_NOTE_DOC_NAME = "_Translator_Note_File.pdf";
+	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
+	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
+	// TODO: change the value for below constant once the scenario for translator note is available
+	public static final String TRANSLATOR_NOTE_SCENARIO_ID = "translatorNoteScenario"; // --> Dummy value 
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
