@@ -9,7 +9,8 @@ import java.util.Map;
 
 public enum LanguageEnum {
 	ARABIC(new Locale("ar", "SY")),
-	DUTCH(new Locale("nl", "NL"));
+	DUTCH(new Locale("nl", "NL")),
+	ERITREA(new Locale("ti", "ER"));
 
 	private final Locale language;
 	private static final List<Map<String, String>> AUTOCOMPLETE_LIST;
