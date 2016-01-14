@@ -2,37 +2,28 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.EurodacMatchReasonEnum;
+import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
 public class AvimReportDTO extends GenericEntityDTO {
 
 	private Long avimReportId;
+	private String nationality;
 	private boolean protectedCountry;
 	private String protectingCountry;
 	private boolean valid;
 	private boolean eurodacMatch;
-	private boolean euvisMatch;
-	private String vNumber;
+	private String eurodacClaimedCountry;
 	private EurodacMatchReasonEnum reason;
-	private String country;
+	private boolean euvisMatch;
+	private YesNoNotAppEnum euvisDactyl;
+	private YesNoNotAppEnum euvisNameResearch;
+	private String euvisClaimedCountry;
+	private String expDateVisum;
+	private String vNumber;
 	private ApplicationDTO applicationDTO;
 	private String smartflowNumber;
 
 	public AvimReportDTO() {
-	}
-
-	public AvimReportDTO(Long avimReportId, boolean eurodacMatch, boolean euvisMatch, String vNumber, EurodacMatchReasonEnum reason, String country,
-			ApplicationDTO applicationDTO) {
-		this.avimReportId = avimReportId;
-		this.eurodacMatch = eurodacMatch;
-		this.euvisMatch = euvisMatch;
-		this.reason = reason;
-		this.country = country;
-		this.applicationDTO = applicationDTO;
-		this.vNumber = vNumber;
-	}
-
-	public AvimReportDTO(Long avimReportId) {
-		this.avimReportId = avimReportId;
 	}
 
 	public Long getAvimReportId() {
@@ -43,7 +34,31 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.avimReportId = avimReportId;
 	}
 
-	public boolean getEurodacMatch() {
+	public boolean isProtectedCountry() {
+		return protectedCountry;
+	}
+
+	public void setProtectedCountry(boolean protectedCountry) {
+		this.protectedCountry = protectedCountry;
+	}
+
+	public String getProtectingCountry() {
+		return protectingCountry;
+	}
+
+	public void setProtectingCountry(String protectingCountry) {
+		this.protectingCountry = protectingCountry;
+	}
+
+	public boolean isValid() {
+		return valid;
+	}
+
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}
+
+	public boolean isEurodacMatch() {
 		return eurodacMatch;
 	}
 
@@ -51,12 +66,12 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.eurodacMatch = eurodacMatch;
 	}
 
-	public boolean getEuvisMatch() {
-		return euvisMatch;
+	public String getEurodacClaimedCountry() {
+		return eurodacClaimedCountry;
 	}
 
-	public void setEuvisMatch(boolean euvisMatch) {
-		this.euvisMatch = euvisMatch;
+	public void setEurodacClaimedCountry(String eurodacClaimedCountry) {
+		this.eurodacClaimedCountry = eurodacClaimedCountry;
 	}
 
 	public EurodacMatchReasonEnum getReason() {
@@ -67,12 +82,52 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.reason = reason;
 	}
 
-	public String getCountry() {
-		return country;
+	public boolean isEuvisMatch() {
+		return euvisMatch;
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public void setEuvisMatch(boolean euvisMatch) {
+		this.euvisMatch = euvisMatch;
+	}
+
+	public YesNoNotAppEnum getEuvisDactyl() {
+		return euvisDactyl;
+	}
+
+	public void setEuvisDactyl(YesNoNotAppEnum euvisDactyl) {
+		this.euvisDactyl = euvisDactyl;
+	}
+
+	public YesNoNotAppEnum getEuvisNameResearch() {
+		return euvisNameResearch;
+	}
+
+	public void setEuvisNameResearch(YesNoNotAppEnum euvisNameResearch) {
+		this.euvisNameResearch = euvisNameResearch;
+	}
+
+	public String getEuvisClaimedCountry() {
+		return euvisClaimedCountry;
+	}
+
+	public void setEuvisClaimedCountry(String euvisClaimedCountry) {
+		this.euvisClaimedCountry = euvisClaimedCountry;
+	}
+
+	public String getExpDateVisum() {
+		return expDateVisum;
+	}
+
+	public void setExpDateVisum(String expDateVisum) {
+		this.expDateVisum = expDateVisum;
+	}
+
+	public String getvNumber() {
+		return vNumber;
+	}
+
+	public void setvNumber(String vNumber) {
+		this.vNumber = vNumber;
 	}
 
 	public ApplicationDTO getApplicationDTO() {
@@ -91,36 +146,12 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.smartflowNumber = smartflowNumber;
 	}
 
-	public String getvNumber() {
-		return vNumber;
+	public String getNationality() {
+		return nationality;
 	}
 
-	public void setvNumber(String vNumber) {
-		this.vNumber = vNumber;
-	}
-
-	public boolean getProtectedCountry() {
-		return protectedCountry;
-	}
-
-	public void setProtectedCountry(boolean protectedCountry) {
-		this.protectedCountry = protectedCountry;
-	}
-
-	public String getProtectingCountry() {
-		return protectingCountry;
-	}
-
-	public void setProtectingCountry(String protectingCountry) {
-		this.protectingCountry = protectingCountry;
-	}
-
-	public boolean getValid() {
-		return valid;
-	}
-
-	public void setValid(boolean valid) {
-		this.valid = valid;
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
 	}
 
 }
