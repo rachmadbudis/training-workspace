@@ -7,7 +7,7 @@ public class DocumentDTO extends GenericEntityDTO {
 	private Long documentId;
 	private String fileName;
 	private ApplicationDTO application;
-	private byte[] file;
+	private byte[] data;
 
 	public DocumentDTO() {
 	}
@@ -42,11 +42,13 @@ public class DocumentDTO extends GenericEntityDTO {
 		this.application = application;
 	}
 
-	public byte[] getFile() {
-		return file;
+	public byte[] getData() {
+		return data;
 	}
 
-	public void setFile(byte[] file) {
-		this.file = file;
+	public void setData(byte[] data) {
+		this.data = data;
 	}
+
+	
 }

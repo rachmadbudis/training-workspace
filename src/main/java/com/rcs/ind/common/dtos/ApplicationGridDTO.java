@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.TrackEnum;
 
 public class ApplicationGridDTO {
 
@@ -16,6 +17,8 @@ public class ApplicationGridDTO {
 	private Date creationDate;
 	private Date modificationDate;
 	private Boolean priority;
+	private TrackEnum track;
+	private String trackLabel;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -87,5 +90,21 @@ public class ApplicationGridDTO {
 
 	public void setPriority(Boolean priority) {
 		this.priority = priority;
+	}
+	
+	public TrackEnum getTrack() {
+		return track;
+	}
+	
+	public void setTrack(TrackEnum track) {
+		this.track = track;
+	}
+	
+	public String getTrackLabel() {
+		return trackLabel;
+	}
+	
+	public void setTrackLabel(String trackLabel) {
+		this.trackLabel = trackLabel;
 	}
 }

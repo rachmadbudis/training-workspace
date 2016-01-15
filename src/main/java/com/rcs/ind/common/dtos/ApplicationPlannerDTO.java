@@ -12,6 +12,7 @@ public class ApplicationPlannerDTO {
 	private String assignedUserName;
 	private Date creationDate;
 	private Boolean priority;
+	private String trackLabel;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -59,6 +60,14 @@ public class ApplicationPlannerDTO {
 
 	public void setPriority(Boolean priority) {
 		this.priority = priority;
+	}
+	
+	public String getTrackLabel() {
+		return trackLabel;
+	}
+	
+	public void setTrackLabel(String trackLabel) {
+		this.trackLabel = trackLabel;
 	}
 
 }
