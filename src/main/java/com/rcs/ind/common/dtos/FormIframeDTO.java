@@ -8,6 +8,7 @@ public class FormIframeDTO {
 	private String smartflowNumber;
 	private Locale language;
 	private String iframeUrl;
+	private String baseRedirectUrl;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -39,6 +40,14 @@ public class FormIframeDTO {
 
 	public void setLanguage(Locale language) {
 		this.language = language;
+	}
+
+	public String getBaseRedirectUrl() {
+		return baseRedirectUrl;
+	}
+
+	public void setBaseRedirectUrl(String baseRedirectUrl) {
+		this.baseRedirectUrl = baseRedirectUrl;
 	}
 
 }
