@@ -13,6 +13,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private Locale language;
 	private String location;
 	private Boolean registered;
+	private Boolean isPaperApplication;
 	/** use primitive type to make sure no null value */
 	private boolean priority;
 	private String xmlAnswer;
@@ -109,4 +110,13 @@ public class ApplicationDTO extends GenericEntityDTO {
 	public void setXmlAnswer(String xmlAnswer) {
 		this.xmlAnswer = xmlAnswer;
 	}
+
+	public Boolean getIsPaperApplication() {
+		return isPaperApplication;
+	}
+
+	public void setIsPaperApplication(Boolean isPaperApplication) {
+		this.isPaperApplication = isPaperApplication;
+	}
+
 }
