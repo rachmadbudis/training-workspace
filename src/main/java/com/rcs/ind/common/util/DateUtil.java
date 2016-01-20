@@ -46,9 +46,7 @@ public class DateUtil {
 	 * @return
 	 */
 	public static int getDaysDifference(Date date) {
-		Date now = new Date();
 		Calendar nowCalendar = Calendar.getInstance();
-		nowCalendar.setTime(now);
 		Calendar dateCalendar = Calendar.getInstance();
 		dateCalendar.setTime(date);
 
@@ -56,14 +54,7 @@ public class DateUtil {
 	}
 
 	private static int countDaysDifference(Calendar c1, Calendar c2) {
-		int diff = 0;
-
-		while (!c1.after(c2)) {
-			c1.add(Calendar.DAY_OF_MONTH, 1);
-			diff++;
-		}
-
-		return diff > 0 ? diff - 1 : diff;
+		return (int) Math.floor(c2.get(Calendar.DAY_OF_MONTH) - c1.get(Calendar.DAY_OF_MONTH));
 	}
 
 }
