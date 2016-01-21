@@ -1,5 +1,8 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.WebFormItemInputTypeEnum;
 import com.rcs.ind.common.enums.WebFormItemTypeEnum;
@@ -15,9 +18,13 @@ public class WebFormItemDTO extends GenericEntityDTO {
 	private String questionCssClass;
 	private String inputCssClass;
 	private WebFormDTO webForm;
+	private String value;
+	private List<WebFormItemOptionDTO> options;
 
 	public WebFormItemDTO() {
 	}
+	
+	
 
 	public WebFormItemDTO(Long webFormItemId, String question, WebFormItemTypeEnum itemType, WebFormItemInputTypeEnum inputType, Integer itemOrder,
 			String itemCssClass, String questionCssClass, String inputCssClass, WebFormDTO webForm) {
@@ -102,6 +109,46 @@ public class WebFormItemDTO extends GenericEntityDTO {
 
 	public void setWebForm(WebFormDTO webForm) {
 		this.webForm = webForm;
+	}
+
+	
+	
+	
+	/**
+	 * @return the value
+	 */
+	public String getValue() {
+		return value;
+	}
+
+
+
+	
+	/**
+	 * @param value the value to set
+	 */
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+
+
+	public List<WebFormItemOptionDTO> getOptions() {
+		return options;
+	}
+
+	
+	public void setOptions(List<WebFormItemOptionDTO> options) {
+		this.options = options;
+	}
+	
+	/**
+	 * helper method for adding option, with default <code>java.util.ArrayList</code> implementation
+	 * @param option
+	 */
+	public void addOption(WebFormItemOptionDTO option){
+		if(this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
+		this.options.add(option);
 	}
 
 }

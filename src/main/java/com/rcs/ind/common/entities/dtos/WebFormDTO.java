@@ -1,5 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.List;
+
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class WebFormDTO extends GenericEntityDTO {
@@ -8,6 +10,7 @@ public class WebFormDTO extends GenericEntityDTO {
 	private String title;
 	private String description;
 	private Long version;
+	private List<WebFormItemDTO> items;
 
 	public WebFormDTO() {
 	}
@@ -49,6 +52,22 @@ public class WebFormDTO extends GenericEntityDTO {
 
 	public void setVersion(Long version) {
 		this.version = version;
+	}
+
+	
+	/**
+	 * @return the items
+	 */
+	public List<WebFormItemDTO> getItems() {
+		return items;
+	}
+
+	
+	/**
+	 * @param items the items to set
+	 */
+	public void setItems(List<WebFormItemDTO> items) {
+		this.items = items;
 	}
 
 }

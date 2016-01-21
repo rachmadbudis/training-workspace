@@ -19,6 +19,7 @@ public class IndConstants {
 	public static final String TRANSLATOR_NOTE_DOC_NAME = "_Translator_Note_File.pdf";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
+	public static final String TRACK_HISTORY_PDF_NAME = "_Track_History.pdf";
 	// TODO: change the value for below constant once the scenario for translator note is available
 	public static final String TRANSLATOR_NOTE_SCENARIO_ID = "translatorNoteScenario"; // --> Dummy value 
 
