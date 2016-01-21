@@ -53,7 +53,6 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 		this.optionLabel = optionLabel;
 	}
 
-	
 	/**
 	 * @return the selectKey
 	 */
@@ -61,9 +60,9 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 		return selectKey;
 	}
 
-	
 	/**
-	 * @param selectKey the selectKey to set
+	 * @param selectKey
+	 *            the selectKey to set
 	 */
 	public void setSelectKey(String selectKey) {
 		this.selectKey = selectKey;
@@ -76,15 +75,15 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 	public void setWebFormItem(WebFormItemDTO webFormItem) {
 		this.webFormItem = webFormItem;
 	}
-	
+
 	public boolean isNull() throws IllegalAccessException {
-	    for (Field f : getClass().getDeclaredFields()){
-	    	if (f.get(this) != null){
-	    		return false;
-	    	}   
-	    }
-	        
-	    return true;            
+		for (Field f : getClass().getDeclaredFields()) {
+			if (f.get(this) != null) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 }

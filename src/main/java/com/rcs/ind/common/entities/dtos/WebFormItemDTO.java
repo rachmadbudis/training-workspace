@@ -24,8 +24,6 @@ public class WebFormItemDTO extends GenericEntityDTO {
 
 	public WebFormItemDTO() {
 	}
-	
-	
 
 	public WebFormItemDTO(Long webFormItemId, String question, WebFormItemTypeEnum itemType, WebFormItemInputTypeEnum inputType, Integer itemOrder,
 			String itemCssClass, String questionCssClass, String inputCssClass, WebFormDTO webForm) {
@@ -112,9 +110,6 @@ public class WebFormItemDTO extends GenericEntityDTO {
 		this.webForm = webForm;
 	}
 
-	
-	
-	
 	/**
 	 * @return the value
 	 */
@@ -122,44 +117,40 @@ public class WebFormItemDTO extends GenericEntityDTO {
 		return value;
 	}
 
-
-
-	
 	/**
-	 * @param value the value to set
+	 * @param value
+	 *            the value to set
 	 */
 	public void setValue(String value) {
 		this.value = value;
 	}
 
-
-
 	public List<WebFormItemOptionDTO> getOptions() {
 		return options;
 	}
 
-	
 	public void setOptions(List<WebFormItemOptionDTO> options) {
 		this.options = options;
 	}
-	
+
 	/**
 	 * helper method for adding option, with default <code>java.util.ArrayList</code> implementation
+	 * 
 	 * @param option
 	 */
-	public void addOption(WebFormItemOptionDTO option){
-		if(this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
+	public void addOption(WebFormItemOptionDTO option) {
+		if (this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
 		this.options.add(option);
 	}
-	
+
 	public boolean isNull() throws IllegalAccessException {
-	    for (Field f : getClass().getDeclaredFields()){
-	    	if (f.get(this) != null){
-	    		return false;
-	    	}   
-	    }
-	        
-	    return true;            
+		for (Field f : getClass().getDeclaredFields()) {
+			if (f.get(this) != null) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 }
