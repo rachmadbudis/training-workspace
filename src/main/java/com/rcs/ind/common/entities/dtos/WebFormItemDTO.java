@@ -1,5 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -149,6 +150,16 @@ public class WebFormItemDTO extends GenericEntityDTO {
 	public void addOption(WebFormItemOptionDTO option){
 		if(this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
 		this.options.add(option);
+	}
+	
+	public boolean isNull() throws IllegalAccessException {
+	    for (Field f : getClass().getDeclaredFields()){
+	    	if (f.get(this) != null){
+	    		return false;
+	    	}   
+	    }
+	        
+	    return true;            
 	}
 
 }
