@@ -24,5 +24,9 @@ public class IndConstants {
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
+	
+	// Url Key
+	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
+	public static final String RESUME_KEY = "resume";
 
 }
