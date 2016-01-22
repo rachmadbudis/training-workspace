@@ -1,7 +1,5 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.lang.reflect.Field;
-
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class WebFormItemOptionDTO extends GenericEntityDTO {
@@ -74,16 +72,6 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 
 	public void setWebFormItem(WebFormItemDTO webFormItem) {
 		this.webFormItem = webFormItem;
-	}
-
-	public boolean isNull() throws IllegalAccessException {
-		for (Field f : getClass().getDeclaredFields()) {
-			if (f.get(this) != null) {
-				return false;
-			}
-		}
-
-		return true;
 	}
 
 }

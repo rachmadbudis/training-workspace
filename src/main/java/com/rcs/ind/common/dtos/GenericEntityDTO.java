@@ -1,5 +1,6 @@
 package com.rcs.ind.common.dtos;
 
+import java.lang.reflect.Field;
 import java.util.Date;
 
 public abstract class GenericEntityDTO {
@@ -49,5 +50,16 @@ public abstract class GenericEntityDTO {
 
 	public void setModificationUser(String modificationUser) {
 		this.modificationUser = modificationUser;
+	}
+
+	public boolean isNull() throws IllegalAccessException {
+		for (Field f : getClass().getDeclaredFields()) {
+			f.setAccessible(true);
+			if (f.get(this) != null) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 }
