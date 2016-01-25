@@ -11,6 +11,8 @@ public class WebFormDTO extends GenericEntityDTO {
 	private String description;
 	private Long version;
 	private List<WebFormItemDTO> items;
+	private Long[] deletedFormItemIds;
+	private Long[] deletedFormItemOptionIds;
 
 	public WebFormDTO() {
 	}
@@ -54,7 +56,6 @@ public class WebFormDTO extends GenericEntityDTO {
 		this.version = version;
 	}
 
-	
 	/**
 	 * @return the items
 	 */
@@ -62,12 +63,27 @@ public class WebFormDTO extends GenericEntityDTO {
 		return items;
 	}
 
-	
 	/**
-	 * @param items the items to set
+	 * @param items
+	 *            the items to set
 	 */
 	public void setItems(List<WebFormItemDTO> items) {
 		this.items = items;
 	}
 
+	public Long[] getDeletedFormItemIds() {
+		return deletedFormItemIds;
+	}
+
+	public void setDeletedFormItemIds(Long[] deletedFormItemIds) {
+		this.deletedFormItemIds = deletedFormItemIds;
+	}
+
+	public Long[] getDeletedFormItemOptionIds() {
+		return deletedFormItemOptionIds;
+	}
+
+	public void setDeletedFormItemOptionIds(Long[] deletedFormItemOptionIds) {
+		this.deletedFormItemOptionIds = deletedFormItemOptionIds;
+	}
 }
