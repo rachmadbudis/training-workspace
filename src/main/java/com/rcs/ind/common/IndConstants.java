@@ -30,4 +30,7 @@ public class IndConstants {
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
 	public static final String RESUME_KEY = "resume";
 
+	// Nationality Syrian and Eritrean constants
+	public static final String ERITREAN = "Eritrese";
+	public static final String SYRIAN = "Syrische";
 }
