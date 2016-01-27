@@ -20,7 +20,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	private UserProfileDTO createUser;
 	private List<DocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
-	private byte[] tfaStream;
+	private String tfaStream;
 
 	public ApplicationDTO() {
 	}
@@ -120,11 +120,11 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.isPaperApplication = isPaperApplication;
 	}
 	
-	public byte[] getTfaStream() {
+	public String getTfaStream() {
 		return tfaStream;
 	}
 	
-	public void setTfaStream(byte[] tfaStream) {
+	public void setTfaStream(String tfaStream) {
 		this.tfaStream = tfaStream;
 	}
 
