@@ -3,6 +3,7 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.WebFormItemInputTypeEnum;
 import com.rcs.ind.common.enums.WebFormItemTypeEnum;
@@ -19,6 +20,7 @@ public class WebFormItemDTO extends GenericEntityDTO {
 	private String inputCssClass;
 	private WebFormDTO webForm;
 	private String value;
+	@JsonManagedReference
 	private List<WebFormItemOptionDTO> options;
 
 	public WebFormItemDTO() {

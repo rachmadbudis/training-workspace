@@ -1,5 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class WebFormItemOptionDTO extends GenericEntityDTO {
@@ -8,6 +9,7 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 	private String optionValue;
 	private String optionLabel;
 	private String selectKey;
+	@JsonBackReference
 	private WebFormItemDTO webFormItem;
 
 	public WebFormItemOptionDTO() {
