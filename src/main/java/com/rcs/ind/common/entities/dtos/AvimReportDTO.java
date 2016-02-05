@@ -1,5 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.Date;
+
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.EurodacMatchReasonEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
@@ -18,7 +20,7 @@ public class AvimReportDTO extends GenericEntityDTO {
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
-	private String expDateVisum;
+	private Date expDateVisum;
 	private String vNumber;
 	private ApplicationDTO applicationDTO;
 	private String smartflowNumber;
@@ -114,11 +116,11 @@ public class AvimReportDTO extends GenericEntityDTO {
 		this.euvisClaimedCountry = euvisClaimedCountry;
 	}
 
-	public String getExpDateVisum() {
+	public Date getExpDateVisum() {
 		return expDateVisum;
 	}
 
-	public void setExpDateVisum(String expDateVisum) {
+	public void setExpDateVisum(Date expDateVisum) {
 		this.expDateVisum = expDateVisum;
 	}
 

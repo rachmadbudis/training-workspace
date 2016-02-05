@@ -35,7 +35,7 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
 	private boolean safeCountry;
-	private String expDateVisum;
+	private Date expDateVisum;
 	private String interpreterName;
 	private String interpreterSex;
 	private String interpreterLanguage;
@@ -218,11 +218,11 @@ public class InterviewPreparationDTO extends GenericEntityDTO {
 		this.euvisClaimedCountry = euvisClaimedCountry;
 	}
 
-	public String getExpDateVisum() {
+	public Date getExpDateVisum() {
 		return expDateVisum;
 	}
 
-	public void setExpDateVisum(String expDateVisum) {
+	public void setExpDateVisum(Date expDateVisum) {
 		this.expDateVisum = expDateVisum;
 	}
 

@@ -1,5 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
+import java.util.Date;
+
 import com.rcs.ind.common.enums.EurodacMatchReasonEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
@@ -17,7 +19,7 @@ public class AvimReportFiltersDTO {
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
 	private String euvisClaimedCountry;
-	private String expDateVisum;
+	private Date expDateVisum;
 	private String vNumber;
 	private Long applicationId;
 	private String smartflowNumber;
@@ -110,11 +112,11 @@ public class AvimReportFiltersDTO {
 		this.euvisClaimedCountry = euvisClaimedCountry;
 	}
 
-	public String getExpDateVisum() {
+	public Date getExpDateVisum() {
 		return expDateVisum;
 	}
 
-	public void setExpDateVisum(String expDateVisum) {
+	public void setExpDateVisum(Date expDateVisum) {
 		this.expDateVisum = expDateVisum;
 	}
 
