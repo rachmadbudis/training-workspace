@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.InterviewStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 
 public class ApplicationGridDTO {
@@ -19,6 +20,7 @@ public class ApplicationGridDTO {
 	private Boolean priority;
 	private TrackEnum track;
 	private String trackLabel;
+	private InterviewStatusEnum interviewStatus;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -91,20 +93,28 @@ public class ApplicationGridDTO {
 	public void setPriority(Boolean priority) {
 		this.priority = priority;
 	}
-	
+
 	public TrackEnum getTrack() {
 		return track;
 	}
-	
+
 	public void setTrack(TrackEnum track) {
 		this.track = track;
 	}
-	
+
 	public String getTrackLabel() {
 		return trackLabel;
 	}
-	
+
 	public void setTrackLabel(String trackLabel) {
 		this.trackLabel = trackLabel;
+	}
+
+	public InterviewStatusEnum getInterviewStatus() {
+		return interviewStatus;
+	}
+
+	public void setInterviewStatus(InterviewStatusEnum interviewStatus) {
+		this.interviewStatus = interviewStatus;
 	}
 }
