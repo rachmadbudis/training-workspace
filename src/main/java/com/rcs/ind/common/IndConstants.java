@@ -33,4 +33,12 @@ public class IndConstants {
 	// Nationality Syrian and Eritrean constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
+	
+	// XML ANSWER KEY
+	public static final String QUESTION_NODE = "questions";
+	public static final String QUESTION_ID_NODE = "questionid";
+	public static final String ANSWER_NODE = "answer";
+	public static final String ANSWER_TRANSLATION_NODE = "answertranslation";
+	public static final String LANGUAGE_NODE = "answers";
+	public static final String LANGUAGE_ATTRIBUTE = "xml:lang";
 }
