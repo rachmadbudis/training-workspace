@@ -16,13 +16,13 @@ public enum LiferayRoleEnum {
 	USER("User", LiferayRoleTypeEnum.REGULAR),
 
 	// IND
-	HOST("Host", LiferayRoleTypeEnum.REGULAR),
-	EMPLOYEE("Employee", LiferayRoleTypeEnum.REGULAR),
-	TRANSLATOR("Translator", LiferayRoleTypeEnum.REGULAR),
-	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.REGULAR),
-	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.REGULAR),
-	AVIM("Avim", LiferayRoleTypeEnum.REGULAR),
-	PLANNER("Planner", LiferayRoleTypeEnum.REGULAR),
+	HOST("Host", LiferayRoleTypeEnum.SITE),
+	EMPLOYEE("Employee", LiferayRoleTypeEnum.SITE),
+	TRANSLATOR("Translator", LiferayRoleTypeEnum.SITE),
+	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.SITE),
+	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.SITE),
+	AVIM("Avim", LiferayRoleTypeEnum.SITE),
+	PLANNER("Planner", LiferayRoleTypeEnum.SITE),
 
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
