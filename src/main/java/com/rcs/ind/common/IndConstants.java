@@ -26,6 +26,7 @@ public class IndConstants {
 	
 	// Journal Article constants
 	public static final String INTERVIEW_DOC_PREFIX = "interview_doc_";
+	public static final String LOGO_FILENAME = "logo_ind";
 	
 	// Url Key
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
