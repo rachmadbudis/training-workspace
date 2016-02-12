@@ -11,6 +11,7 @@ public class IndConstants {
 	public static final String UNKNOWN_ERROR_KEY = "com.rcs.common.error.unknown";
 	public static final String TRIPLE_FORMS = "TripleForms";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
+	public static final String M117C_DOCUMENT_TITLE = "M117C";
 
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
