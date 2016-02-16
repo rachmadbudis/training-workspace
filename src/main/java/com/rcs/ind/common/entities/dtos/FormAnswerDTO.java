@@ -1,7 +1,5 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.util.Locale;
-
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class FormAnswerDTO extends GenericEntityDTO {
@@ -9,17 +7,15 @@ public class FormAnswerDTO extends GenericEntityDTO {
 	private Long formAnswerId;
 	private String questionId;
 	private String answer;
-	private Locale answerLanguage;
 	private ApplicationDTO application;
 
 	public FormAnswerDTO() {
 	}
 
-	public FormAnswerDTO(Long formAnswerId, String questionId, String answer, Locale answerLanguage, ApplicationDTO application) {
+	public FormAnswerDTO(Long formAnswerId, String questionId, String answer, ApplicationDTO application) {
 		this.formAnswerId = formAnswerId;
 		this.questionId = questionId;
 		this.answer = answer;
-		this.answerLanguage = answerLanguage;
 		this.application = application;
 	}
 
@@ -54,13 +50,4 @@ public class FormAnswerDTO extends GenericEntityDTO {
 	public void setApplication(ApplicationDTO application) {
 		this.application = application;
 	}
-
-	public Locale getAnswerLanguage() {
-		return answerLanguage;
-	}
-
-	public void setAnswerLanguage(Locale answerLanguage) {
-		this.answerLanguage = answerLanguage;
-	}
-
 }

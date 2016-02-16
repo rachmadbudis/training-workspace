@@ -3,8 +3,9 @@ package com.rcs.ind.common.enums;
 
 public enum RegisteredInterpreterEnum {
 	Yes("com.rcs.registered.interpreter.yes"),
+	AuthorizedTranslator("com.rcs.registered.interpreter.authorized.translator"),
 	NotAvailable("com.rcs.registered.interpreter.not.available"),
-	NotAvaiilableThisTime("com.rcs.registered.interpreter.not.available.this.time");
+	NotAvailableThisTime("com.rcs.registered.interpreter.not.available.this.time");
 	
 	private final String key;
 	
