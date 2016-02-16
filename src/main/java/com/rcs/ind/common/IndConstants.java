@@ -12,6 +12,10 @@ public class IndConstants {
 	public static final String TRIPLE_FORMS = "TripleForms";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String M117C_DOCUMENT_TITLE = "M117C";
+	public static final String DUTCH_YES = "Ja";
+	public static final String DUTCH_NO = "Nee";
+	public static final String DUTCH_MALE = "Man";
+	public static final String DUTCH_FEMALE = "Vrouw";
 
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
