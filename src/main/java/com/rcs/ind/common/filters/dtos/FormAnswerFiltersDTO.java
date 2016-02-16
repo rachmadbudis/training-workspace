@@ -1,5 +1,6 @@
 package com.rcs.ind.common.filters.dtos;
 
+import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
@@ -12,6 +13,7 @@ public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 	private String translation;
 	private Locale answerLanguage;
 	private Long applicationId;
+	private List<String> questionIds;
 
 	public Long getFormAnswerId() {
 		return formAnswerId;
@@ -59,6 +61,14 @@ public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 
 	public void setAnswerLanguage(Locale answerLanguage) {
 		this.answerLanguage = answerLanguage;
+	}
+
+	public List<String> getQuestionIds() {
+		return questionIds;
+	}
+
+	public void setQuestionIds(List<String> questionIds) {
+		this.questionIds = questionIds;
 	}
 
 }
