@@ -4,7 +4,7 @@ public enum MaritalStatusEnum {
 	Single("com.rcs.ind.marital.single"),
 	Married("com.rcs.ind.marital.merried"),
 	Divorced("com.rcs.ind.marital.divorced"),
-	Widowed("com.rcs.ind.marital.widowed");/* TODO: sample */
+	Widowed("com.rcs.ind.marital.widowed");
 
 	private final String key;
 
