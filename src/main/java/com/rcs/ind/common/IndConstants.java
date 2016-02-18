@@ -1,6 +1,6 @@
 package com.rcs.ind.common;
 
-public class IndConstants {
+public final class IndConstants {
 
 	private IndConstants() {
 	}
