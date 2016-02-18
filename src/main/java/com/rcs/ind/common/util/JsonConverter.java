@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 
 public class JsonConverter {
 
@@ -20,6 +21,10 @@ public class JsonConverter {
 		mapper = new ObjectMapper();
 		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		mapper.configure(MapperFeature.SORT_PROPERTIES_ALPHABETICALLY, true); // Important for Token validation.
+	}
+
+	public TypeFactory getMapperTypeFactory() {
+		return mapper.getTypeFactory();
 	}
 
 	public String toJson(List<?> object) {
@@ -96,6 +101,10 @@ public class JsonConverter {
 			logger.error("Failed to parse Json: " + e.getMessage(), e);
 		}
 		return null;
+	}
+
+	public JavaType constructJavaType(Class<?> clazz) {
+		return mapper.getTypeFactory().constructType(clazz);
 	}
 
 	public JavaType constructParametricType(Class<?> container, Class<?>... content) {

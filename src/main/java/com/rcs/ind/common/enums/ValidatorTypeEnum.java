@@ -1,7 +1,8 @@
 package com.rcs.ind.common.enums;
 
 public enum ValidatorTypeEnum {
-	DefaultValidator("defaultValidator");
+	DefaultValidator("defaultValidator"),
+	KodisionValidator("kodisionValidator");
 
 	private String beanName;
 

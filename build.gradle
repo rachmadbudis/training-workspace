@@ -12,18 +12,18 @@ targetCompatibility = 1.7
 
 ext {
 	// Manifest extra parameters.
-	projectName = 'Ind Util'
+	projectName = 'Asiel Util'
 	vendor = 'Rotterdam Community Solutions'
 	buildNumber = 10
-	jarName = 'ind-util.jar'
+	jarName = 'asiel-util.jar'
 	
 	// Dependencies versions.
 	jacksonVersion = '2.+'
 
 	// Deploy destinations.
 	deployTo = [
-		'../ind-services/lib', 
-		'../../lr-sdks/liferay-plugins-sdk-6.2/portlets/ind-portlet/docroot/WEB-INF/lib'
+		'../asiel-services/lib', 
+		'../../lr-sdks/liferay-plugins-sdk-6.2/portlets/asiel-portlet/docroot/WEB-INF/lib'
 	]
 }
 
@@ -84,3 +84,5 @@ task wrapper(type: Wrapper) {
 eclipse.classpath.file.withXml { xml ->
     xml.asNode().'**'.findAll { it.name() == 'classpathentry' && it.'@path'.startsWith("src/test/")}*.@output = "test-bin"
 }
+
+check.dependsOn.remove(test)
