@@ -26,19 +26,6 @@ public class WebFormItemDTO extends GenericEntityDTO {
 	public WebFormItemDTO() {
 	}
 
-	public WebFormItemDTO(Long webFormItemId, String question, WebFormItemTypeEnum itemType, WebFormItemInputTypeEnum inputType, Integer itemOrder,
-			String itemCssClass, String questionCssClass, String inputCssClass, WebFormDTO webForm) {
-		this.webFormItemId = webFormItemId;
-		this.question = question;
-		this.itemType = itemType;
-		this.inputType = inputType;
-		this.itemOrder = itemOrder;
-		this.itemCssClass = itemCssClass;
-		this.questionCssClass = questionCssClass;
-		this.inputCssClass = inputCssClass;
-		this.webForm = webForm;
-	}
-
 	public Long getWebFormItemId() {
 		return webFormItemId;
 	}

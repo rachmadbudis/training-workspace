@@ -19,19 +19,6 @@ public class WebFormItemFiltersDTO extends PaginationFiltersDTO {
 	public WebFormItemFiltersDTO() {
 	}
 
-	public WebFormItemFiltersDTO(Long webFormItemId, String question, WebFormItemTypeEnum itemType, WebFormItemInputTypeEnum inputType, Integer itemOrder,
-			String itemCssClass, String questionCssClass, String inputCssClass, Long webFormId) {
-		this.webFormItemId = webFormItemId;
-		this.question = question;
-		this.itemType = itemType;
-		this.inputType = inputType;
-		this.itemOrder = itemOrder;
-		this.itemCssClass = itemCssClass;
-		this.questionCssClass = questionCssClass;
-		this.inputCssClass = inputCssClass;
-		this.webFormId = webFormId;
-	}
-
 	public Long getWebFormItemId() {
 		return webFormItemId;
 	}
