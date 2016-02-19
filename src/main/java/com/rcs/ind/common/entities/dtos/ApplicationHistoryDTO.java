@@ -12,12 +12,12 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 	private Date startDate;
 	private Date endDate;
 	private ApplicationDTO application;
-	private UserProfileDTO assignedUser;
+	private Long assignedUser;
 
 	public ApplicationHistoryDTO() {
 	}
 
-	public ApplicationHistoryDTO(ApplicationDTO application, ApplicationStatusEnum status, UserProfileDTO assignedUser) {
+	public ApplicationHistoryDTO(ApplicationDTO application, ApplicationStatusEnum status, Long assignedUser) {
 		this.setApplication(application);
 		this.status = status;
 		this.setStartDate(new Date());
@@ -64,11 +64,11 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 		this.application = application;
 	}
 
-	public UserProfileDTO getAssignedUser() {
+	public Long getAssignedUser() {
 		return assignedUser;
 	}
 
-	public void setAssignedUser(UserProfileDTO assignedUser) {
+	public void setAssignedUser(Long assignedUser) {
 		this.assignedUser = assignedUser;
 	}
 }

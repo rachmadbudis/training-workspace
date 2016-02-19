@@ -17,7 +17,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	/** use primitive type to make sure no null value */
 	private boolean priority;
 	private String xmlAnswer;
-	private UserProfileDTO createUser;
+	private Long createUser;
 	private List<DocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
 	private String tfaStream;
@@ -25,7 +25,7 @@ public class ApplicationDTO extends GenericEntityDTO {
 	public ApplicationDTO() {
 	}
 
-	public ApplicationDTO(Long applicationId, String smartflowNumber, Locale language, UserProfileDTO createUser) {
+	public ApplicationDTO(Long applicationId, String smartflowNumber, Locale language, Long createUser) {
 		this.applicationId = applicationId;
 		this.smartflowNumber = smartflowNumber;
 		this.language = language;
@@ -72,11 +72,11 @@ public class ApplicationDTO extends GenericEntityDTO {
 		this.registered = registered;
 	}
 
-	public UserProfileDTO getCreateUser() {
+	public Long getCreateUser() {
 		return createUser;
 	}
 
-	public void setCreateUser(UserProfileDTO createUser) {
+	public void setCreateUser(Long createUser) {
 		this.createUser = createUser;
 	}
 
