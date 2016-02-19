@@ -28,18 +28,6 @@ public class UserFullDTO {
 		this.roles = new LinkedHashSet<LiferayRoleEnum>();
 	}
 
-	public UserFullDTO(Long userId, Set<Locale> languages, String firstName, String lastName, String emailAddress, Set<LiferayRoleEnum> roles, String location,
-			String origin) {
-		this.userId = userId;
-		this.languages = languages;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.emailAddress = emailAddress;
-		this.roles = roles;
-		this.location = location;
-		this.origin = origin;
-	}
-
 	public Long getUserId() {
 		return userId;
 	}

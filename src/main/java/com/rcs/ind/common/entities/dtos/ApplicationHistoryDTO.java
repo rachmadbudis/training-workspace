@@ -17,16 +17,6 @@ public class ApplicationHistoryDTO extends GenericEntityDTO {
 	public ApplicationHistoryDTO() {
 	}
 
-	public ApplicationHistoryDTO(Long applicationHistoryId, ApplicationStatusEnum status, Date startDate, Date endDate, ApplicationDTO application,
-			UserProfileDTO assignedUser) {
-		this.applicationHistoryId = applicationHistoryId;
-		this.status = status;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		this.application = application;
-		this.assignedUser = assignedUser;
-	}
-
 	public ApplicationHistoryDTO(ApplicationDTO application, ApplicationStatusEnum status, UserProfileDTO assignedUser) {
 		this.setApplication(application);
 		this.status = status;
