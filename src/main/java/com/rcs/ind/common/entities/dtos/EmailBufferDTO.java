@@ -1,8 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class EmailBufferDTO extends GenericEntityDTO {
+public class EmailBufferDTO {
 
 	private Long emailBufferId;
 	private String messageId;

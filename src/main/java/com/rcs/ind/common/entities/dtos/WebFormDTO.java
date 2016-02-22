@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.List;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class WebFormDTO extends GenericEntityDTO {
+public class WebFormDTO {
 
 	private Long webFormId;
 	private String title;
@@ -86,4 +84,5 @@ public class WebFormDTO extends GenericEntityDTO {
 	public void setDeletedFormItemOptionIds(Long[] deletedFormItemOptionIds) {
 		this.deletedFormItemOptionIds = deletedFormItemOptionIds;
 	}
+
 }

@@ -1,8 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class ReviewDTO extends GenericEntityDTO {
+public class ReviewDTO {
 
 	private Long reviewId;
 	private String workflow;
@@ -12,7 +10,7 @@ public class ReviewDTO extends GenericEntityDTO {
 
 	public ReviewDTO() {
 	}
-	
+
 	public Long getReviewId() {
 		return reviewId;
 	}

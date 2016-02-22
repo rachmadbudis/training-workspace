@@ -2,10 +2,9 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
-public class ApplicationHistoryDTO extends GenericEntityDTO {
+public class ApplicationHistoryDTO {
 
 	private Long applicationHistoryId;
 	private ApplicationStatusEnum status;

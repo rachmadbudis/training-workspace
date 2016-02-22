@@ -1,13 +1,13 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class DocumentDTO extends GenericEntityDTO {
+public class DocumentDTO {
 
 	private Long documentId;
 	private String fileName;
 	private ApplicationDTO application;
 	private byte[] data;
+	private boolean active;
+	private String modificationUser;
 
 	public DocumentDTO() {
 	}
@@ -50,5 +50,20 @@ public class DocumentDTO extends GenericEntityDTO {
 		this.data = data;
 	}
 
-	
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public String getModificationUser() {
+		return modificationUser;
+	}
+
+	public void setModificationUser(String modificationUser) {
+		this.modificationUser = modificationUser;
+	}
+
 }

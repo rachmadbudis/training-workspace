@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Locale;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class UserProfileDTO extends GenericEntityDTO {
+public class UserProfileDTO {
 
 	private Long userId;
 	private Locale language;

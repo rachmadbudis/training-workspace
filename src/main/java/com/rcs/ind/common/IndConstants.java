@@ -10,6 +10,7 @@ public final class IndConstants {
 	public static final String DATE_FORMAT = "dd-MM-yyyy";
 	public static final String UNKNOWN_ERROR_KEY = "com.rcs.common.error.unknown";
 	public static final String TRIPLE_FORMS = "TripleForms";
+	public static final String SYSTEM = "SYSTEM";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String M117C_DOCUMENT_TITLE = "M117C";
 	public static final String DUTCH_YES = "Ja";

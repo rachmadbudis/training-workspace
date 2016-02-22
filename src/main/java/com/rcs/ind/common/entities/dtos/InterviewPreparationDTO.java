@@ -3,12 +3,11 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.Date;
 import java.util.List;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.GenQuestionStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
-public class InterviewPreparationDTO extends GenericEntityDTO {
+public class InterviewPreparationDTO {
 
 	private Long interviewPreparationId;
 	private Date dateApplied;
