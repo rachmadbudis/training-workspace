@@ -1,8 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class FormAnswerDTO extends GenericEntityDTO {
+public class FormAnswerDTO {
 
 	private Long formAnswerId;
 	private String questionId;

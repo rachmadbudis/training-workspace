@@ -3,10 +3,9 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.List;
 import java.util.Locale;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApplicationReleaseReasonEnum;
 
-public class ApplicationDTO extends GenericEntityDTO {
+public class ApplicationDTO {
 
 	private Long applicationId;
 	private String smartflowNumber;
@@ -119,11 +118,11 @@ public class ApplicationDTO extends GenericEntityDTO {
 	public void setIsPaperApplication(Boolean isPaperApplication) {
 		this.isPaperApplication = isPaperApplication;
 	}
-	
+
 	public String getTfaStream() {
 		return tfaStream;
 	}
-	
+
 	public void setTfaStream(String tfaStream) {
 		this.tfaStream = tfaStream;
 	}

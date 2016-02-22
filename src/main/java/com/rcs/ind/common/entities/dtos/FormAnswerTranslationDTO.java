@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Locale;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class FormAnswerTranslationDTO extends GenericEntityDTO {
+public class FormAnswerTranslationDTO {
 
 	private Long formAnswerTranslationId;
 	private String answerTranslation;

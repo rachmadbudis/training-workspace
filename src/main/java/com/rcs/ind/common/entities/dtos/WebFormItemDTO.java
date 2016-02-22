@@ -1,14 +1,14 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.WebFormItemInputTypeEnum;
 import com.rcs.ind.common.enums.WebFormItemTypeEnum;
 
-public class WebFormItemDTO extends GenericEntityDTO {
+public class WebFormItemDTO {
 
 	private Long webFormItemId;
 	private String question;
@@ -130,5 +130,17 @@ public class WebFormItemDTO extends GenericEntityDTO {
 		if (this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
 		this.options.add(option);
 	}
+	
+	public boolean isNull() throws IllegalAccessException {
+		for (Field f : getClass().getDeclaredFields()) {
+			f.setAccessible(true);
+			if (f.get(this) != null) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+	
 
 }

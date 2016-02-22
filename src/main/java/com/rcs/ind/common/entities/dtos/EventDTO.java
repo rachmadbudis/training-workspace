@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class EventDTO extends GenericEntityDTO {
+public class EventDTO {
 
 	private Long eventId;
 

@@ -82,7 +82,8 @@ public enum LiferayRoleEnum {
 		Set<Locale> langRoles = new HashSet<>();
 		for (LiferayRoleEnum langRoleEnum : LiferayRoleEnum.getLanguageRoles()) {
 			if (userRoles.contains(langRoleEnum.getName())) {
-				langRoles.add(new Locale(langRoleEnum.name().toLowerCase()));
+				String[] localeString = langRoleEnum.name().split("_");
+				langRoles.add(new Locale(localeString[0],localeString[1]));
 			}
 		}
 		return langRoles;
