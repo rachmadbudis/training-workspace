@@ -1,13 +1,14 @@
 package com.rcs.ind.common.enums;
 
 public enum WebFormItemTypeEnum {
-	SECTION("com.rcs.ind.web.form.item.type.section"),
+	PARAGRAPH("com.rcs.ind.web.form.item.type.paragraph"),
 	TEXT("com.rcs.ind.web.form.item.type.text"),
 	TEXTBOX("com.rcs.ind.web.form.item.type.textbox"),
 	OPTIONS("com.rcs.ind.web.form.item.type.options"),
 	RADIO_BUTTON("com.rcs.ind.web.form.item.type.radio.button"),
 	CHECKBOX("com.rcs.ind.web.form.item.type.checkbox"),
-	DATE("com.rcs.ind.web.form.item.type.date");	
+	DATE("com.rcs.ind.web.form.item.type.date"),
+	TITLE("com.rcs.ind.web.form.item.type.title");	
 
 	private final String key;
 
