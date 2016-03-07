@@ -8,7 +8,8 @@ public enum WebFormItemTypeEnum {
 	RADIO_BUTTON("com.rcs.ind.web.form.item.type.radio.button"),
 	CHECKBOX("com.rcs.ind.web.form.item.type.checkbox"),
 	DATE("com.rcs.ind.web.form.item.type.date"),
-	TITLE("com.rcs.ind.web.form.item.type.title");	
+	TITLE("com.rcs.ind.web.form.item.type.title"),
+	SIDE_CONTENT("com.rcs.ind.web.form.item.type.side.content");	
 
 	private final String key;
 
