@@ -116,5 +116,4 @@ public class WebFormAnswerDTO extends GenericEntityDTO {
 	public void setItemOptions(Map<String, String> itemOptions) {
 		this.itemOptions = itemOptions;
 	}
-
 }

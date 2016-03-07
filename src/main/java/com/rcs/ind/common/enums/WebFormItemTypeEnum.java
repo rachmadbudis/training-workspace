@@ -9,6 +9,7 @@ public enum WebFormItemTypeEnum {
 	CHECKBOX("com.rcs.ind.web.form.item.type.checkbox"),
 	DATE("com.rcs.ind.web.form.item.type.date"),
 	TITLE("com.rcs.ind.web.form.item.type.title"),
+	LIST("com.rcs.ind.web.form.item.type.list"),
 	SIDE_CONTENT("com.rcs.ind.web.form.item.type.side.content");	
 
 	private final String key;
