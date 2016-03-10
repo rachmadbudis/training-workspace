@@ -10,7 +10,8 @@ public enum WebFormItemTypeEnum {
 	DATE("com.rcs.ind.web.form.item.type.date"),
 	TITLE("com.rcs.ind.web.form.item.type.title"),
 	LIST("com.rcs.ind.web.form.item.type.list"),
-	SIDE_CONTENT("com.rcs.ind.web.form.item.type.side.content");	
+	PAGE_BREAK("com.rcs.ind.web.form.item.type.parameter"),
+	SPACER("com.rcs.ind.web.form.item.type.spacer");	
 
 	private final String key;
 
