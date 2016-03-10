@@ -24,6 +24,14 @@
             <goals><goal>jar</goal></goals>
             <phase>package</phase>
             <configuration>
+	           <archive>
+	            <manifestEntries>
+                	<Built-Date>${maven.build.timestamp}</Built-Date>
+                    <Implementation-Title>Asiel Util</Implementation-Title>
+                    <Implementation-Version>${project.version} - ${maven.build.timestamp} - build : ${build.number}</Implementation-Version>
+                    <Implementation-Vendor>Rotterdam Community Solutions</Implementation-Vendor>
+                </manifestEntries>
+	          </archive>
               <outputDirectory>${project.basedir}/../asiel-services/lib</outputDirectory>
             </configuration>
           </execution>
@@ -38,6 +46,7 @@
         </executions>
       </plugin>
     </plugins>
+    <finalName>asiel-util</finalName>
   </build>
   
   <dependencies>
@@ -105,34 +114,8 @@
   
   <properties>
   	<jackson.version>2.7.2</jackson.version>
+  	<build.number>1</build.number>
+  	<maven.build.timestamp.format>MMMMM dd yyyy</maven.build.timestamp.format>
   </properties>
-  
-  <repositories>
-  	<repository>
-  		<id>jboss-public-repository-group</id>
-		<name>JBoss Public Maven Repository Group</name>
-		<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-		<layout>default</layout>
-		<releases>
-			<updatePolicy>never</updatePolicy>
-		</releases>
-		<snapshots>
-			<updatePolicy>never</updatePolicy>
-		</snapshots>
-  	</repository>
-  	<repository>
-		<id>maven2-repository.dev.java.net</id>
-		<name>Java.net Repository for maven</name>
-		<url>http://download.java.net/maven/2/</url>
-	</repository>
-  </repositories>
-  
-  <distributionManagement>
-  	<repository>
-	<id>Rotterdam-CS</id>
-	<name>Rotterdam CS Internal</name>
-	<url>scp://jupiter2.rotterdam-cs.com/home/maven</url>
-	</repository>
-  </distributionManagement>
 
 </project>
