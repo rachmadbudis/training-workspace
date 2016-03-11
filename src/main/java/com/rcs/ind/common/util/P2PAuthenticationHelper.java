@@ -37,7 +37,7 @@ public class P2PAuthenticationHelper {
 	 *            string to hash
 	 * @return
 	 */
-	private static String generateSHA(String word) {
+	protected static String generateSHA(String word) {
 		try {
 			MessageDigest md = MessageDigest.getInstance(SHA256);
 			md.update(word.getBytes());
