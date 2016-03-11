@@ -40,7 +40,7 @@
             <goals><goal>jar</goal></goals>
             <phase>package</phase>
             <configuration>
-              <outputDirectory>${project.basedir}/../../lr-sdks/liferay-plugins-sdk-6.2/portlets/asiel-portlet/docroot/WEB-INF/lib</outputDirectory>
+              <outputDirectory>${project.basedir}/../../lr-sdks/liferay-plugins-sdk-6.2/portlets/asiel-portlet/lib</outputDirectory>
             </configuration>
           </execution>
         </executions>
