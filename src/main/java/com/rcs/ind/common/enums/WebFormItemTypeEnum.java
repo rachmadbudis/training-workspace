@@ -1,7 +1,7 @@
 package com.rcs.ind.common.enums;
 
 public enum WebFormItemTypeEnum {
-	PARAGRAPH("com.rcs.ind.web.form.item.type.paragraph"),
+	PARAGRAPH_ITALIC("com.rcs.ind.web.form.item.type.paragraph.italic"),
 	TEXT("com.rcs.ind.web.form.item.type.text"),
 	TEXTBOX("com.rcs.ind.web.form.item.type.textbox"),
 	OPTIONS("com.rcs.ind.web.form.item.type.options"),
@@ -11,7 +11,9 @@ public enum WebFormItemTypeEnum {
 	TITLE("com.rcs.ind.web.form.item.type.title"),
 	LIST("com.rcs.ind.web.form.item.type.list"),
 	PAGE_BREAK("com.rcs.ind.web.form.item.type.parameter"),
-	SPACER("com.rcs.ind.web.form.item.type.spacer");	
+	SPACER("com.rcs.ind.web.form.item.type.spacer"),
+	PARAGRAPH_NORMAL("com.rcs.ind.web.form.item.type.paragraph.normal"),
+	;	
 
 	private final String key;
 
