@@ -31,6 +31,7 @@ public final class IndConstants {
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
+	public static final String INTERVIEWER_FUNCTION = "Hoormedewerker";
 	
 	// Journal Article constants
 	public static final String INTERVIEW_DOC_PREFIX = "interview_doc_";
