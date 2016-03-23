@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class PreparationDocumentDTO extends GenericEntityDTO {
+public class PreparationDocumentDTO {
 
 	private Long preparationDocumentId;
 	private String type;

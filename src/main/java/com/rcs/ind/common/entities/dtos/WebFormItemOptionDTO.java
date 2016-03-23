@@ -1,9 +1,10 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.rcs.ind.common.dtos.GenericEntityDTO;
+import java.lang.reflect.Field;
 
-public class WebFormItemOptionDTO extends GenericEntityDTO {
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+public class WebFormItemOptionDTO {
 
 	private Long webFormItemOptionId;
 	private String optionValue;
@@ -74,6 +75,17 @@ public class WebFormItemOptionDTO extends GenericEntityDTO {
 
 	public void setWebFormItem(WebFormItemDTO webFormItem) {
 		this.webFormItem = webFormItem;
+	}
+	
+	public boolean isNull() throws IllegalAccessException {
+		for (Field f : getClass().getDeclaredFields()) {
+			f.setAccessible(true);
+			if (f.get(this) != null) {
+				return false;
+			}
+		}
+
+		return true;
 	}
 
 }

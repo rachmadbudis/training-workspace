@@ -1,17 +1,15 @@
-package com.rcs.ind.common.entities.dtos;
+package com.rcs.ind.common.filters.dtos;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.WebFormItemInputTypeEnum;
 import com.rcs.ind.common.enums.WebFormItemTypeEnum;
 
-public class WebFormItemDTO {
+public class WebFormAnswerFiltersDTO extends PaginationFiltersDTO {
 
-	private Long webFormItemId;
+	private Long webFormAnswerId;
+	private Long applicationId;
 	private String question;
+	private String value;
 	private Boolean isMultiline;
 	private WebFormItemTypeEnum itemType;
 	private WebFormItemInputTypeEnum inputType;
@@ -19,20 +17,24 @@ public class WebFormItemDTO {
 	private String itemCssClass;
 	private String questionCssClass;
 	private String inputCssClass;
-	private WebFormDTO webForm;
-	private String value;
-	@JsonManagedReference
-	private List<WebFormItemOptionDTO> options;
 
-	public WebFormItemDTO() {
+	public WebFormAnswerFiltersDTO() {
 	}
 
-	public Long getWebFormItemId() {
-		return webFormItemId;
+	public Long getWebFormAnswerId() {
+		return webFormAnswerId;
 	}
 
-	public void setWebFormItemId(Long webFormItemId) {
-		this.webFormItemId = webFormItemId;
+	public void setWebFormAnswerId(Long webFormAnswerId) {
+		this.webFormAnswerId = webFormAnswerId;
+	}
+
+	public Long getApplicationId() {
+		return applicationId;
+	}
+
+	public void setApplicationId(Long applicationId) {
+		this.applicationId = applicationId;
 	}
 
 	public String getQuestion() {
@@ -41,6 +43,14 @@ public class WebFormItemDTO {
 
 	public void setQuestion(String question) {
 		this.question = question;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
 	}
 
 	public Boolean getIsMultiline() {
@@ -97,58 +107,6 @@ public class WebFormItemDTO {
 
 	public void setInputCssClass(String inputCssClass) {
 		this.inputCssClass = inputCssClass;
-	}
-
-	public WebFormDTO getWebForm() {
-		return webForm;
-	}
-
-	public void setWebForm(WebFormDTO webForm) {
-		this.webForm = webForm;
-	}
-
-	/**
-	 * @return the value
-	 */
-	public String getValue() {
-		return value;
-	}
-
-	/**
-	 * @param value
-	 *            the value to set
-	 */
-	public void setValue(String value) {
-		this.value = value;
-	}
-
-	public List<WebFormItemOptionDTO> getOptions() {
-		return options;
-	}
-
-	public void setOptions(List<WebFormItemOptionDTO> options) {
-		this.options = options;
-	}
-
-	/**
-	 * helper method for adding option, with default <code>java.util.ArrayList</code> implementation
-	 * 
-	 * @param option
-	 */
-	public void addOption(WebFormItemOptionDTO option) {
-		if (this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
-		this.options.add(option);
-	}
-
-	public boolean isNull() throws IllegalAccessException {
-		for (Field f : getClass().getDeclaredFields()) {
-			f.setAccessible(true);
-			if (f.get(this) != null) {
-				return false;
-			}
-		}
-
-		return true;
 	}
 
 }

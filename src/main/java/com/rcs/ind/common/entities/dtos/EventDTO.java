@@ -2,9 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-
-public class EventDTO extends GenericEntityDTO {
+public class EventDTO {
 
 	private Long eventId;
 
@@ -23,20 +21,6 @@ public class EventDTO extends GenericEntityDTO {
 	public EventDTO(Long eventId) {
 		super();
 		this.eventId = eventId;
-	}
-
-	public EventDTO(long eventId, Date eventTime, String userEmail, long userId, String ip, String expertName, String methodName, String reqPayload,
-			String resPayload) {
-		super();
-		this.eventId = eventId;
-		this.eventTime = eventTime;
-		this.userEmail = userEmail;
-		this.userId = userId;
-		this.ip = ip;
-		this.expertName = expertName;
-		this.setMethodName(methodName);
-		this.reqPayload = reqPayload;
-		this.resPayload = resPayload;
 	}
 
 	public void setEventId(Long eventId) {

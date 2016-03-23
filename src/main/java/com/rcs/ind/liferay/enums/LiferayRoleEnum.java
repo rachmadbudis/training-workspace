@@ -2,7 +2,10 @@ package com.rcs.ind.liferay.enums;
 
 import java.util.EnumSet;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Liferay Roles.
@@ -23,6 +26,8 @@ public enum LiferayRoleEnum {
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.SITE),
 	AVIM("Avim", LiferayRoleTypeEnum.SITE),
 	PLANNER("Planner", LiferayRoleTypeEnum.SITE),
+	AR_SY("Language Arabic Syria", LiferayRoleTypeEnum.SITE),
+	TI_ER("Language Tigrinya Eritrea", LiferayRoleTypeEnum.SITE),
 
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
@@ -62,6 +67,26 @@ public enum LiferayRoleEnum {
 	 */
 	public static EnumSet<LiferayRoleEnum> getIndRoles() {
 		return EnumSet.of(HOST, EMPLOYEE, TRANSLATOR, INTERVIEWER, SUPERVISOR, AVIM, PLANNER);
+	}
+
+	/**
+	 * Get Language roles
+	 * 
+	 * @return
+	 */
+	public static EnumSet<LiferayRoleEnum> getLanguageRoles() {
+		return EnumSet.of(AR_SY, TI_ER);
+	}
+
+	public static Set<Locale> getLanguageLocaleByRole(Set<String> userRoles) {
+		Set<Locale> langRoles = new HashSet<>();
+		for (LiferayRoleEnum langRoleEnum : LiferayRoleEnum.getLanguageRoles()) {
+			if (userRoles.contains(langRoleEnum.getName())) {
+				String[] localeString = langRoleEnum.name().split("_");
+				langRoles.add(new Locale(localeString[0],localeString[1]));
+			}
+		}
+		return langRoles;
 	}
 
 	private static final Map<String, LiferayRoleEnum> LOOKUP = new HashMap<>();

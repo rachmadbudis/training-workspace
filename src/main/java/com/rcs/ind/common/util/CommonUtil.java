@@ -3,6 +3,7 @@ package com.rcs.ind.common.util;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Enumeration;
@@ -235,6 +236,14 @@ public class CommonUtil {
 		}
 		String output = sb.toString();
 		return output;
+	}
+
+	public static boolean equalsIgnoreNull(Object val1, Object val2) {
+		return (val1 != null && val2 != null && val1.equals(val2));
+	}
+
+	public static boolean isNotEmptyIgnoreNull(Collection<?> val) {
+		return (val != null && !val.isEmpty());
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.rcs.ind.common;
 
-public class IndConstants {
+public final class IndConstants {
 
 	private IndConstants() {
 	}
@@ -10,6 +10,7 @@ public class IndConstants {
 	public static final String DATE_FORMAT = "dd-MM-yyyy";
 	public static final String UNKNOWN_ERROR_KEY = "com.rcs.common.error.unknown";
 	public static final String TRIPLE_FORMS = "TripleForms";
+	public static final String SYSTEM = "SYSTEM";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String M117C_DOCUMENT_TITLE = "M117C";
 	public static final String DUTCH_YES = "Ja";
@@ -19,11 +20,14 @@ public class IndConstants {
 
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
-	public static final String TRANSLATED_DOC_NAME = "_Translation_File.pdf";
-	public static final String CUSTOMER_DOC_NAME = "_Customer_File.pdf";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
+	public static final String TRANSLATED_DOC_NAME = "_Translation_File.pdf";
+	public static final String CUSTOMER_DOC_NAME = "_Customer_File.pdf";
+
+	// Generated Document filename
 	public static final String TRACK_HISTORY_PDF_NAME = "_Track_History.pdf";
+	public static final String INTERVIEW_DOC_PDF_NAME = "_Interview_Document.pdf";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";

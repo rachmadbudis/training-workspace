@@ -2,11 +2,10 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.EurodacMatchReasonEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
-public class AvimReportDTO extends GenericEntityDTO {
+public class AvimReportDTO {
 
 	private Long avimReportId;
 	private String nationality;

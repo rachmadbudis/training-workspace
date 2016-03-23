@@ -1,38 +1,32 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.WebFormItemInputTypeEnum;
 import com.rcs.ind.common.enums.WebFormItemTypeEnum;
 
-public class WebFormItemDTO {
+public class WebFormAnswerDTO extends GenericEntityDTO {
 
-	private Long webFormItemId;
+	private Long webFormAnswerId;
 	private String question;
 	private Boolean isMultiline;
 	private WebFormItemTypeEnum itemType;
 	private WebFormItemInputTypeEnum inputType;
-	private Integer itemOrder;
+	private String itemOrder;
 	private String itemCssClass;
 	private String questionCssClass;
 	private String inputCssClass;
-	private WebFormDTO webForm;
 	private String value;
-	@JsonManagedReference
-	private List<WebFormItemOptionDTO> options;
+	private ApplicationDTO application;
+	private Map<String, String> itemOptions;
 
-	public WebFormItemDTO() {
+	public Long getWebFormAnswerId() {
+		return webFormAnswerId;
 	}
 
-	public Long getWebFormItemId() {
-		return webFormItemId;
-	}
-
-	public void setWebFormItemId(Long webFormItemId) {
-		this.webFormItemId = webFormItemId;
+	public void setWebFormAnswerId(Long webFormAnswerId) {
+		this.webFormAnswerId = webFormAnswerId;
 	}
 
 	public String getQuestion() {
@@ -67,11 +61,11 @@ public class WebFormItemDTO {
 		this.inputType = inputType;
 	}
 
-	public Integer getItemOrder() {
+	public String getItemOrder() {
 		return itemOrder;
 	}
 
-	public void setItemOrder(Integer itemOrder) {
+	public void setItemOrder(String itemOrder) {
 		this.itemOrder = itemOrder;
 	}
 
@@ -99,56 +93,27 @@ public class WebFormItemDTO {
 		this.inputCssClass = inputCssClass;
 	}
 
-	public WebFormDTO getWebForm() {
-		return webForm;
-	}
-
-	public void setWebForm(WebFormDTO webForm) {
-		this.webForm = webForm;
-	}
-
-	/**
-	 * @return the value
-	 */
 	public String getValue() {
 		return value;
 	}
 
-	/**
-	 * @param value
-	 *            the value to set
-	 */
 	public void setValue(String value) {
 		this.value = value;
 	}
 
-	public List<WebFormItemOptionDTO> getOptions() {
-		return options;
+	public ApplicationDTO getApplication() {
+		return application;
 	}
 
-	public void setOptions(List<WebFormItemOptionDTO> options) {
-		this.options = options;
+	public void setApplication(ApplicationDTO application) {
+		this.application = application;
 	}
 
-	/**
-	 * helper method for adding option, with default <code>java.util.ArrayList</code> implementation
-	 * 
-	 * @param option
-	 */
-	public void addOption(WebFormItemOptionDTO option) {
-		if (this.options == null) this.options = new ArrayList<WebFormItemOptionDTO>();
-		this.options.add(option);
+	public Map<String, String> getItemOptions() {
+		return itemOptions;
 	}
 
-	public boolean isNull() throws IllegalAccessException {
-		for (Field f : getClass().getDeclaredFields()) {
-			f.setAccessible(true);
-			if (f.get(this) != null) {
-				return false;
-			}
-		}
-
-		return true;
+	public void setItemOptions(Map<String, String> itemOptions) {
+		this.itemOptions = itemOptions;
 	}
-
 }

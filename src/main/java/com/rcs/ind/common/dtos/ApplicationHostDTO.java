@@ -1,19 +1,13 @@
 package com.rcs.ind.common.dtos;
 
-import java.util.Date;
-
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
-import com.rcs.ind.common.enums.InterviewStatusEnum;
 
-public class ApplicationGridDTO {
+public class ApplicationHostDTO {
 
 	private Long applicationId;
 	private String smartflowNumber;
 	private ApplicationStatusEnum status;
-	private Date creationDate;
 	private Boolean priority;
-	private String trackLabel;
-	private InterviewStatusEnum interviewStatus;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -29,14 +23,6 @@ public class ApplicationGridDTO {
 
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
-	}
-
-	public Date getCreationDate() {
-		return creationDate;
-	}
-
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
 	}
 
 	public ApplicationStatusEnum getStatus() {
@@ -55,19 +41,4 @@ public class ApplicationGridDTO {
 		this.priority = priority;
 	}
 
-	public String getTrackLabel() {
-		return trackLabel;
-	}
-
-	public void setTrackLabel(String trackLabel) {
-		this.trackLabel = trackLabel;
-	}
-
-	public InterviewStatusEnum getInterviewStatus() {
-		return interviewStatus;
-	}
-
-	public void setInterviewStatus(InterviewStatusEnum interviewStatus) {
-		this.interviewStatus = interviewStatus;
-	}
 }
