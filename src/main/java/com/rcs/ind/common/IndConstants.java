@@ -55,7 +55,7 @@ public final class IndConstants {
 	public static final String LANGUAGE_ATTRIBUTE = "xml:lang";
 
 	// TEMPLATE TITLE
-	public static final String MASTER_TEMPLATE_URL_TITLE = "gehoor-aanmeldfase";
+	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
 	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
 	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
 	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
