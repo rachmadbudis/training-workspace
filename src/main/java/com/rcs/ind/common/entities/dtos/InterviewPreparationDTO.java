@@ -2,6 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import com.rcs.ind.common.enums.GenQuestionStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
@@ -50,6 +51,8 @@ public class InterviewPreparationDTO {
 	private boolean providedDocuments;
 	private Date dateAVIMDelivery;
 	private List<PreparationDocumentDTO> documents;
+	private Map<String, String> data;
+	private String interviewDocument;
 
 	public InterviewPreparationDTO() {
 	}
@@ -432,6 +435,22 @@ public class InterviewPreparationDTO {
 
 	public void setDateAVIMDelivery(Date dateAVIMDelivery) {
 		this.dateAVIMDelivery = dateAVIMDelivery;
+	}
+
+	public Map<String, String> getData() {
+		return data;
+	}
+
+	public void setData(Map<String, String> data) {
+		this.data = data;
+	}
+
+	public String getInterviewDocument() {
+		return interviewDocument;
+	}
+
+	public void setInterviewDocument(String interviewDocument) {
+		this.interviewDocument = interviewDocument;
 	}
 
 }

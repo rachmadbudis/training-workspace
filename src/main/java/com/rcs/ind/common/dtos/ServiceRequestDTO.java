@@ -23,6 +23,12 @@ public class ServiceRequestDTO<T> {
 	// Used to authenticate the user that comes from the portlet/client to the service.
 	private String userEmail;
 
+	// User First Name (Optional)
+	private String userFirstName;
+
+	// User Last Name (Optional)
+	private String userLastName;
+
 	// Used to authenticate the user that comes from the portlet (Optional).
 	private long userId;
 
@@ -155,4 +161,21 @@ public class ServiceRequestDTO<T> {
 		}
 		return false;
 	}
+
+	public String getUserFirstName() {
+		return userFirstName;
+	}
+
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
+	}
+
+	public String getUserLastName() {
+		return userLastName;
+	}
+
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
+	}
+
 }

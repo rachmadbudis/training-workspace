@@ -9,10 +9,12 @@ import com.rcs.ind.common.enums.TrackEnum;
 public class ProregDTO {
 
 	private String smartflowNumber;
+	private Long applicationId;
 	private TrackEnum chosenTrack;
 	private TrackEnum trackAdvice;
 	private List<FormAnswerDTO> formAnswers;
 	private Map<String, String> data;
+	private String content;
 
 	public String getSmartflowNumber() {
 		return smartflowNumber;
@@ -54,4 +56,19 @@ public class ProregDTO {
 		this.trackAdvice = trackAdvice;
 	}
 
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public Long getApplicationId() {
+		return applicationId;
+	}
+
+	public void setApplicationId(Long applicationId) {
+		this.applicationId = applicationId;
+	}
 }
