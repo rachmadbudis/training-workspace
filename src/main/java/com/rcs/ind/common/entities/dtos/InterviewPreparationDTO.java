@@ -53,6 +53,7 @@ public class InterviewPreparationDTO {
 	private List<PreparationDocumentDTO> documents;
 	private Map<String, String> data;
 	private String interviewDocument;
+	private String contactPerson;
 
 	public InterviewPreparationDTO() {
 	}
@@ -451,6 +452,14 @@ public class InterviewPreparationDTO {
 
 	public void setInterviewDocument(String interviewDocument) {
 		this.interviewDocument = interviewDocument;
+	}
+
+	public String getContactPerson() {
+		return contactPerson;
+	}
+
+	public void setContactPerson(String contactPerson) {
+		this.contactPerson = contactPerson;
 	}
 
 }
