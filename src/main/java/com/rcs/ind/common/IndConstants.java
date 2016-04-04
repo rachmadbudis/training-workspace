@@ -32,11 +32,11 @@ public final class IndConstants {
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
 	public static final String INTERVIEWER_FUNCTION = "Hoormedewerker";
-	
+
 	// Journal Article constants
 	public static final String INTERVIEW_DOC_PREFIX = "interview_doc_";
 	public static final String LOGO_FILENAME = "logo_ind";
-	
+
 	// Url Key
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
 	public static final String RESUME_KEY = "resume";
@@ -45,7 +45,7 @@ public final class IndConstants {
 	// Nationality Syrian and Eritrean constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
-	
+
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
@@ -53,4 +53,17 @@ public final class IndConstants {
 	public static final String ANSWER_TRANSLATION_NODE = "answertranslation";
 	public static final String LANGUAGE_NODE = "answers";
 	public static final String LANGUAGE_ATTRIBUTE = "xml:lang";
+
+	// TEMPLATE TITLE
+	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
+	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
+	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
+	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
+	public static final String TRACK_3_DOCUMENT_URL_TITLE = "bwst_amg_sp3";
+	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
+	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
+	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
+	public static final String MILITARY_ERITREA_JA_TITLE = "bwst_amg_military_eritrea_ja";
+	public static final String MILITARY_SYRIA_JA_TITLE = "bwst_amg_military_syria_ja";
+	public static final String M117C_URL_TITLE = "m117c";
 }
