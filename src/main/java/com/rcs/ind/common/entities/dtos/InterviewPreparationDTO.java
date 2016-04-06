@@ -55,6 +55,8 @@ public class InterviewPreparationDTO {
 	private String interviewDocument;
 	private String locationAdded;
 	private String contactPerson;
+	private Date dateAdded;
+	private String locationApplied;
 
 	public InterviewPreparationDTO() {
 	}
@@ -469,6 +471,22 @@ public class InterviewPreparationDTO {
 
 	public void setContactPerson(String contactPerson) {
 		this.contactPerson = contactPerson;
+	}
+
+	public Date getDateAdded() {
+		return dateAdded;
+	}
+
+	public void setDateAdded(Date dateAdded) {
+		this.dateAdded = dateAdded;
+	}
+
+	public String getLocationApplied() {
+		return locationApplied;
+	}
+
+	public void setLocationApplied(String locationApplied) {
+		this.locationApplied = locationApplied;
 	}
 
 }
