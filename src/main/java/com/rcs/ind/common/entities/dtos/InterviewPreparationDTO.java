@@ -2,6 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import com.rcs.ind.common.enums.GenQuestionStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
@@ -17,7 +18,7 @@ public class InterviewPreparationDTO {
 	private String vNumber;
 	private String surname;
 	private String name;
-	private Date dateBirth;
+	private String dateBirth;
 	private String nationality;
 	private String placeBirth;
 	private String countryBirth;
@@ -50,6 +51,12 @@ public class InterviewPreparationDTO {
 	private boolean providedDocuments;
 	private Date dateAVIMDelivery;
 	private List<PreparationDocumentDTO> documents;
+	private Map<String, String> data;
+	private String interviewDocument;
+	private String locationAdded;
+	private String contactPerson;
+	private Date dateAdded;
+	private String locationApplied;
 
 	public InterviewPreparationDTO() {
 	}
@@ -122,11 +129,11 @@ public class InterviewPreparationDTO {
 		this.name = name;
 	}
 
-	public Date getDateBirth() {
+	public String getDateBirth() {
 		return dateBirth;
 	}
 
-	public void setDateBirth(Date dateBirth) {
+	public void setDateBirth(String dateBirth) {
 		this.dateBirth = dateBirth;
 	}
 
@@ -432,6 +439,54 @@ public class InterviewPreparationDTO {
 
 	public void setDateAVIMDelivery(Date dateAVIMDelivery) {
 		this.dateAVIMDelivery = dateAVIMDelivery;
+	}
+
+	public Map<String, String> getData() {
+		return data;
+	}
+
+	public void setData(Map<String, String> data) {
+		this.data = data;
+	}
+
+	public String getInterviewDocument() {
+		return interviewDocument;
+	}
+
+	public void setInterviewDocument(String interviewDocument) {
+		this.interviewDocument = interviewDocument;
+	}
+
+	public String getLocationAdded() {
+		return locationAdded;
+	}
+
+	public void setLocationAdded(String locationAdded) {
+		this.locationAdded = locationAdded;
+	}
+
+	public String getContactPerson() {
+		return contactPerson;
+	}
+
+	public void setContactPerson(String contactPerson) {
+		this.contactPerson = contactPerson;
+	}
+
+	public Date getDateAdded() {
+		return dateAdded;
+	}
+
+	public void setDateAdded(Date dateAdded) {
+		this.dateAdded = dateAdded;
+	}
+
+	public String getLocationApplied() {
+		return locationApplied;
+	}
+
+	public void setLocationApplied(String locationApplied) {
+		this.locationApplied = locationApplied;
 	}
 
 }
