@@ -116,6 +116,7 @@
   	<jackson.version>2.7.2</jackson.version>
   	<build.number>1</build.number>
   	<maven.build.timestamp.format>MMMMM dd yyyy</maven.build.timestamp.format>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 </project>
