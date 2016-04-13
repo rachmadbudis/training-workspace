@@ -20,6 +20,7 @@ public class ApplicationDTO {
 	private List<DocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
 	private String tfaStream;
+	private String nationality;
 
 	public ApplicationDTO() {
 	}
@@ -125,6 +126,14 @@ public class ApplicationDTO {
 
 	public void setTfaStream(String tfaStream) {
 		this.tfaStream = tfaStream;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
 	}
 
 }
