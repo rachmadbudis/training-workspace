@@ -66,4 +66,6 @@ public final class IndConstants {
 	public static final String MILITARY_ERITREA_JA_TITLE = "bwst_amg_military_eritrea_ja";
 	public static final String MILITARY_SYRIA_JA_TITLE = "bwst_amg_military_syria_ja";
 	public static final String M117C_URL_TITLE = "m117c";
+	public static final String FAMILY_IN_NEDERLAND = "wonen_er_familieleden_in_nl";
+	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 }
