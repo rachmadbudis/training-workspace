@@ -45,6 +45,9 @@ public final class IndConstants {
 	// Nationality Syrian and Eritrean constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
+	public static final String IRAK = "Iraakse";
+	public static final String IRAN = "Iraanse";
+	public static final String AFGHANISTAN = "Afghaanse";
 
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
@@ -63,10 +66,10 @@ public final class IndConstants {
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
-	public static final String MILITARY_ERITREA_JA_TITLE = "bwst_amg_military_eritrea_ja";
-	public static final String MILITARY_SYRIA_JA_TITLE = "bwst_amg_military_syria_ja";
+	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
+	public static final String MILITARY_IRAN_TITLE = "bwst_amg_military_iran";
+	public static final String MILITARY_AFGHANISTAN_TITLE = "bwst_amg_military_afghanistan";
 	public static final String M117C_URL_TITLE = "m117c";
-	public static final String FAMILY_IN_NEDERLAND = "wonen_er_familieleden_in_nl";
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 }
