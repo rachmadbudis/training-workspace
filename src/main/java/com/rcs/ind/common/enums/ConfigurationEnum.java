@@ -6,7 +6,9 @@ public enum ConfigurationEnum {
 	NationalitiesDDL(3, "nationalitiesDDL", "0"),
 	LanguageDDL(4, "languageDDL", "0"),
 	ClaimlandDDL(5, "claimlandDDL", "0"),
-	LocationDDL(6, "locationDDL", "0");
+	LocationDDL(6, "locationDDL", "0"),
+	SessionExtend(7, "sessionAutoExtend", "false"),
+	;
 
 	private final int id;
 	private final String key;
