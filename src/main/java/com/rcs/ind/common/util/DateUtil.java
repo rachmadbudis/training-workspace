@@ -45,7 +45,10 @@ public class DateUtil {
 	 * @param date
 	 * @return
 	 */
-	public static int getDaysDifference(Date date) {
+	public static Integer getDaysDifference(Date date) {
+		if (date == null) {
+			return null;
+		}
 		Calendar nowCalendar = Calendar.getInstance();
 		Calendar dateCalendar = Calendar.getInstance();
 		dateCalendar.setTime(date);
