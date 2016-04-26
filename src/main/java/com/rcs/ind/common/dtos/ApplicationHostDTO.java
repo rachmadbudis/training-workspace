@@ -8,6 +8,8 @@ public class ApplicationHostDTO {
 	private String smartflowNumber;
 	private ApplicationStatusEnum status;
 	private Boolean priority;
+	private String displayLanguage;
+	private String nationality;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -39,6 +41,22 @@ public class ApplicationHostDTO {
 
 	public void setPriority(Boolean priority) {
 		this.priority = priority;
+	}
+
+	public String getDisplayLanguage() {
+		return displayLanguage;
+	}
+
+	public void setDisplayLanguage(String displayLanguage) {
+		this.displayLanguage = displayLanguage;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
 	}
 
 }

@@ -12,7 +12,7 @@ public enum LanguageEnum {
 	ARABIC(new Locale("ar", "SY"), "language.ar"),
 	DUTCH(new Locale("nl", "NL"), "language.nl"),
 	ERITREA(new Locale("ti", "ER"), "language.ti"),
-	ENGLISH(new Locale("en", "UK"),"language.en"),
+	ENGLISH(new Locale("en", "GB"),"language.en"),
 	FRENCH(new Locale("fr", "FR"),"language.fr"),
 	SPANISH(new Locale("es", "ES"),"language.es"),
 	SORANI(new Locale("ckb","IQ"),"language.ckb"),
