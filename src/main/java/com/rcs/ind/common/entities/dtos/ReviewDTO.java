@@ -11,6 +11,14 @@ public class ReviewDTO {
 	public ReviewDTO() {
 	}
 
+	public ReviewDTO(Long reviewId, String workflow, String questionId, String value, ApplicationDTO application) {
+		this.reviewId = reviewId;
+		this.workflow = workflow;
+		this.questionId = questionId;
+		this.value = value;
+		this.application = application;
+	}
+
 	public Long getReviewId() {
 		return reviewId;
 	}
