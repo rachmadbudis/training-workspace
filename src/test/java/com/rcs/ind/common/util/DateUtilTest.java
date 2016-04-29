@@ -3,7 +3,6 @@ package com.rcs.ind.common.util;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
-import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.lang3.time.DateUtils;
@@ -26,16 +25,5 @@ public class DateUtilTest {
 		assertThat(DateUtil.toDateEndOfDay(null), is(nullValue()));
 		assertThat(DateUtil.toDateEndOfDay(0L), is(new Date(MILLIS_PER_DAY_MINUS_ONE)));
 		assertThat(DateUtil.toDateEndOfDay(TIMESTAMP), is(new Date(TIMESTAMP + MILLIS_PER_DAY_MINUS_ONE)));
-	}
-	
-	@Test
-	public void testGetDaysDifference() {
-		Calendar yesterday = Calendar.getInstance();
-		yesterday.add(Calendar.DAY_OF_MONTH, -1);
-		Calendar dayAfterTomorrow = Calendar.getInstance();
-		dayAfterTomorrow.add(Calendar.DAY_OF_MONTH, 2);
-		assertThat(DateUtil.getDaysDifference(null), is(nullValue()));
-		assertThat(DateUtil.getDaysDifference(yesterday.getTime()), is(1));
-		assertThat(DateUtil.getDaysDifference(dayAfterTomorrow.getTime()), is(2));
 	}
 }
