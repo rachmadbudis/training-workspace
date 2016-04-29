@@ -11,6 +11,7 @@ public class ApplicationAuditDTO {
 	private ApplicationStatusEnum status;
 	private Date modificationDate;
 	private String location;
+	private String modificationUser;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -52,4 +53,12 @@ public class ApplicationAuditDTO {
 		this.location = location;
 	}
 
+	public String getModificationUser() {
+		return modificationUser;
+	}
+
+	public void setModificationUser(String modificationUser) {
+		this.modificationUser = modificationUser;
+	}
+	
 }
