@@ -1,5 +1,7 @@
 package com.rcs.ind.common.dtos;
 
+import java.util.Locale;
+
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
 public class ApplicationHostDTO {
@@ -8,7 +10,7 @@ public class ApplicationHostDTO {
 	private String smartflowNumber;
 	private ApplicationStatusEnum status;
 	private Boolean priority;
-	private String displayLanguage;
+	private Locale language;
 	private String nationality;
 
 	public Long getApplicationId() {
@@ -43,12 +45,12 @@ public class ApplicationHostDTO {
 		this.priority = priority;
 	}
 
-	public String getDisplayLanguage() {
-		return displayLanguage;
+	public Locale getLanguage() {
+		return language;
 	}
 
-	public void setDisplayLanguage(String displayLanguage) {
-		this.displayLanguage = displayLanguage;
+	public void setLanguage(Locale language) {
+		this.language = language;
 	}
 
 	public String getNationality() {
