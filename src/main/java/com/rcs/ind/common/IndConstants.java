@@ -72,4 +72,7 @@ public final class IndConstants {
 	public static final String M117C_URL_TITLE = "m117c";
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
+	
+	//Drools Rule Filename
+	public static final String TRACK_RULE = "Track.drl";
 }
