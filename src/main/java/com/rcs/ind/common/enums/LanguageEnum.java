@@ -70,7 +70,6 @@ public enum LanguageEnum {
 	static {
 		for (LanguageEnum s : LanguageEnum.values()) {
 			lookup.put(s.getLanguage().toString(), s);
-			System.out.println("lang : " + s.getLanguage().toString());
 		}
 	}
 
