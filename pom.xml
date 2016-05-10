@@ -43,6 +43,14 @@
               <outputDirectory>${project.basedir}/../../lr-sdks/liferay-plugins-sdk-6.2/portlets/asiel-portlet/lib</outputDirectory>
             </configuration>
           </execution>
+          <execution>
+            <id>lib3</id>
+            <goals><goal>jar</goal></goals>
+            <phase>package</phase>
+            <configuration>
+              <outputDirectory>${project.basedir}/../../lr-sdks/liferay-plugins-sdk-6.2/hooks/asiel-hook/lib</outputDirectory>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
