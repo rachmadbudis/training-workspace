@@ -7,7 +7,9 @@ public enum ConfigurationEnum {
 	LanguageDDL("languageDDL", "0"),
 	ClaimlandDDL("claimlandDDL", "0"),
 	LocationDDL("locationDDL", "0"),
+	TrackDDL("trackDDL", "0"),
 	SessionExtend("sessionAutoExtend", "false"),
+	
 	LDAP_BASE_PROVIDER_URL("LdapBaseProviderUrl"),
 	LDAP_BASE_DN("LdapBaseDn"),
 	
