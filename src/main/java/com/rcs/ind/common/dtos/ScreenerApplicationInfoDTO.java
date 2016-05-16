@@ -2,6 +2,7 @@ package com.rcs.ind.common.dtos;
 
 import java.util.Locale;
 
+import com.rcs.ind.common.entities.dtos.DocumentDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 
@@ -18,7 +19,8 @@ public class ScreenerApplicationInfoDTO {
 	private Long interviewerUserId;
 	private String interviewerName;
 	private String interpreterName;
-
+	private Long customerFormId;
+	
 	public String getSmartflowNumber() {
 		return smartflowNumber;
 	}
@@ -107,4 +109,11 @@ public class ScreenerApplicationInfoDTO {
 		this.interviewerUserId = interviewerUserId;
 	}
 	
+	public Long getCustomerFormId() {
+		return customerFormId;
+	}
+	
+	public void setCustomerFormId(Long customerFormId) {
+		this.customerFormId = customerFormId;
+	}	
 }
