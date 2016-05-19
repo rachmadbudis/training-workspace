@@ -3,6 +3,7 @@ package com.rcs.ind.common.enums;
 public enum ConfigurationEnum {
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
+	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
 	NationalitiesDDL("nationalitiesDDL", "0"),
 	LanguageDDL("languageDDL", "0"),
 	ClaimlandDDL("claimlandDDL", "0"),
