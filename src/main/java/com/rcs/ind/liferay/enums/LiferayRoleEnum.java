@@ -27,6 +27,7 @@ public enum LiferayRoleEnum {
 	AVIM("Avim", LiferayRoleTypeEnum.SITE),
 	PLANNER("Planner", LiferayRoleTypeEnum.SITE),
 	SCREENER("Screener", LiferayRoleTypeEnum.SITE),
+	RIC("RIC", LiferayRoleTypeEnum.SITE),
 	AR_SY("Language Arabic Syria", LiferayRoleTypeEnum.SITE),
 	TI_ER("Language Tigrinya Eritrea", LiferayRoleTypeEnum.SITE),
 
