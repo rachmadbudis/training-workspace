@@ -17,7 +17,7 @@ public final class IndConstants {
 	public static final String DUTCH_NO = "Nee";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
-
+	
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
@@ -49,6 +49,10 @@ public final class IndConstants {
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
 
+	// Language Constant
+	public static final String ARABISCH = "Arabisch";
+	public static final String AMHARISCH = "Amharisch";
+	
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
