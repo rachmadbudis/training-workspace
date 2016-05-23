@@ -8,6 +8,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private String content;
 	private ApplicationDTO application;
 	private int version;
+	private Boolean done;
 
 	public RicProfileDTO() {
 	}
@@ -23,7 +24,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	public void setRicProfileId(Long ricProfileId) {
 		this.ricProfileId = ricProfileId;
 	}
-	
+
 	public String getContent() {
 		return content;
 	}
@@ -47,4 +48,13 @@ public class RicProfileDTO extends GenericEntityDTO {
 	public void setVersion(int version) {
 		this.version = version;
 	}
+
+	public Boolean getDone() {
+		return done;
+	}
+
+	public void setDone(Boolean done) {
+		this.done = done;
+	}
+
 }
