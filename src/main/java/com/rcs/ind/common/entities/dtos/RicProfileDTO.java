@@ -3,6 +3,7 @@ package com.rcs.ind.common.entities.dtos;
 import java.util.List;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.RicStatusEnum;
 
 public class RicProfileDTO extends GenericEntityDTO {
 
@@ -12,7 +13,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private int version;
 	private Long applicationId;
 	private List<RicDocumentDTO> documents;
-	private Boolean done;
+	private RicStatusEnum status;
 
 	public RicProfileDTO() {
 	}
@@ -61,12 +62,12 @@ public class RicProfileDTO extends GenericEntityDTO {
 		this.applicationId = applicationId;
 	}
 
-	public Boolean getDone() {
-		return done;
+	public RicStatusEnum getStatus() {
+		return status;
 	}
 
-	public void setDone(Boolean done) {
-		this.done = done;
+	public void setStatus(RicStatusEnum status) {
+		this.status = status;
 	}
 
 	public List<RicDocumentDTO> getDocuments() {
