@@ -12,6 +12,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private int version;
 	private Long applicationId;
 	private List<RicDocumentDTO> documents;
+	private Boolean done;
 
 	public RicProfileDTO() {
 	}
@@ -58,6 +59,14 @@ public class RicProfileDTO extends GenericEntityDTO {
 
 	public void setApplicationId(Long applicationId) {
 		this.applicationId = applicationId;
+	}
+
+	public Boolean getDone() {
+		return done;
+	}
+
+	public void setDone(Boolean done) {
+		this.done = done;
 	}
 
 	public List<RicDocumentDTO> getDocuments() {
