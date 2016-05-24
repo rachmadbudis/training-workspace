@@ -1,5 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.List;
+
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class RicProfileDTO extends GenericEntityDTO {
@@ -8,6 +10,8 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private String content;
 	private ApplicationDTO application;
 	private int version;
+	private Long applicationId;
+	private List<RicDocumentDTO> documents;
 
 	public RicProfileDTO() {
 	}
@@ -23,7 +27,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	public void setRicProfileId(Long ricProfileId) {
 		this.ricProfileId = ricProfileId;
 	}
-	
+
 	public String getContent() {
 		return content;
 	}
@@ -46,5 +50,21 @@ public class RicProfileDTO extends GenericEntityDTO {
 
 	public void setVersion(int version) {
 		this.version = version;
+	}
+
+	public Long getApplicationId() {
+		return applicationId;
+	}
+
+	public void setApplicationId(Long applicationId) {
+		this.applicationId = applicationId;
+	}
+
+	public List<RicDocumentDTO> getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(List<RicDocumentDTO> documents) {
+		this.documents = documents;
 	}
 }
