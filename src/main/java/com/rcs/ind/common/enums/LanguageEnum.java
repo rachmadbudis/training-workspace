@@ -62,7 +62,7 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABIC, ERITREA, ENGLISH, FRENCH, SPANISH, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABIC, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
 	}
 
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
