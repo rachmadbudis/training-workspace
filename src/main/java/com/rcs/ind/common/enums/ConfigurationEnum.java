@@ -1,16 +1,22 @@
 package com.rcs.ind.common.enums;
 
 public enum ConfigurationEnum {
+	// Configuration key for email
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
 	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
+	
+	// Configuration key for DDL ID
 	NationalitiesDDL("nationalitiesDDL", "0"),
 	LanguageDDL("languageDDL", "0"),
 	ClaimlandDDL("claimlandDDL", "0"),
 	LocationDDL("locationDDL", "0"),
 	TrackDDL("trackDDL", "0"),
+	
+	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
 	
+	// COnfiguration key for LDAP settings
 	LDAP_BASE_PROVIDER_URL("LdapBaseProviderUrl"),
 	LDAP_BASE_DN("LdapBaseDn"),
 	
@@ -38,6 +44,19 @@ public enum ConfigurationEnum {
 	LDAP_GROUP_MEMBER_ATTRIBUTE("LdapGroupMemberAttribute"),
 
 	LDAP_SERVER_NAME("LdapServerName"),
+	
+	// Configuration key for tripleform parameter
+	TF_PROJECT("3fProject"),
+	TF_PASSWORD("3fPassword"),
+	TF_ENVIRONMENT("3fEnvironment"),
+	TF_AUTH_URL("3fAuthUrl"),
+	TF_FORM_URL("3fFormUrl"),
+	TF_SCENARIO_CUSTOMER("3fScenarioCustomer"),
+	TF_SCENARIO_TRANSLATOR("3fScenarioTranslator"),
+	TF_SCENARIO_DIGITAL("3fScenarioDigital"),
+	TF_REDIRECT_GUEST("3fRedirectGuest"),
+	TF_REDIRECT_TRANSLATOR("3fRedirectTranslator"),
+	
 	;
 
 	private final String key;
