@@ -14,7 +14,8 @@ public enum FormAnswerKeyEnum {
 	BIRTH_PLACE("faanmeldformulierpersonalia.geboorteplaats"),
 	COUNTRY_OF_BIRTH("faanmeldformulierpersonalia.geboorteland"),
 	MARITAL_STATUS("faanmeldformuliergezinssituatie.bentugehuwd"),
-	SEX("faanmeldformulierpersonalia.geslacht");
+	SEX("faanmeldformulierpersonalia.geslacht"),
+	RELIGION("faanmeldformulierpersonalia.religie");
 
 	private final String key;
 

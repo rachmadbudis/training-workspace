@@ -60,6 +60,7 @@ public class InterviewPreparationDTO {
 	private String locationApplied;
 	private boolean hasDocument;
 	private String ricStatusKey;
+	private String religion;
 
 	public InterviewPreparationDTO() {
 	}
@@ -515,4 +516,13 @@ public class InterviewPreparationDTO {
 	public void setRicStatusKey(String ricStatusKey) {
 		this.ricStatusKey = ricStatusKey;
 	}
+
+	public String getReligion() {
+		return religion;
+	}
+
+	public void setReligion(String religion) {
+		this.religion = religion;
+	}
+
 }
