@@ -9,7 +9,7 @@ import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
 public class InterviewPreparationDTO {
-	
+
 	private Long interviewPreparationId;
 	private Date dateApplied;
 	private Date dateInterview;
@@ -30,6 +30,7 @@ public class InterviewPreparationDTO {
 	private boolean eurodac;
 	private String eurodacClaimedCountry;
 	private String eurodacReason;
+	private String eurodacNumber;
 	private boolean euvis;
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
@@ -200,6 +201,14 @@ public class InterviewPreparationDTO {
 
 	public void setEurodacReason(String eurodacReason) {
 		this.eurodacReason = eurodacReason;
+	}
+
+	public String getEurodacNumber() {
+		return eurodacNumber;
+	}
+
+	public void setEurodacNumber(String eurodacNumber) {
+		this.eurodacNumber = eurodacNumber;
 	}
 
 	public YesNoNotAppEnum getEuvisDactyl() {
@@ -498,11 +507,11 @@ public class InterviewPreparationDTO {
 	public void setHasDocument(boolean hasDocument) {
 		this.hasDocument = hasDocument;
 	}
-	
+
 	public String getRicStatusKey() {
 		return ricStatusKey;
 	}
-	
+
 	public void setRicStatusKey(String ricStatusKey) {
 		this.ricStatusKey = ricStatusKey;
 	}

@@ -15,6 +15,7 @@ public class AvimReportDTO {
 	private boolean eurodacMatch;
 	private String eurodacClaimedCountry;
 	private EurodacMatchReasonEnum reason;
+	private String eurodacNumber;
 	private boolean euvisMatch;
 	private YesNoNotAppEnum euvisDactyl;
 	private YesNoNotAppEnum euvisNameResearch;
@@ -28,8 +29,9 @@ public class AvimReportDTO {
 	}
 
 	public AvimReportDTO(Long avimReportId, String nationality, boolean protectedCountry, String protectingCountry, boolean valid, boolean eurodacMatch,
-			String eurodacClaimedCountry, EurodacMatchReasonEnum reason, boolean euvisMatch, YesNoNotAppEnum euvisDactyl, YesNoNotAppEnum euvisNameResearch,
-			String euvisClaimedCountry, Date expDateVisum, String vNumber, ApplicationDTO applicationDTO, String smartflowNumber) {
+			String eurodacClaimedCountry, String eurodacNumber, EurodacMatchReasonEnum reason, boolean euvisMatch, YesNoNotAppEnum euvisDactyl,
+			YesNoNotAppEnum euvisNameResearch, String euvisClaimedCountry, Date expDateVisum, String vNumber, ApplicationDTO applicationDTO,
+			String smartflowNumber) {
 		this.avimReportId = avimReportId;
 		this.nationality = nationality;
 		this.protectedCountry = protectedCountry;
@@ -38,6 +40,7 @@ public class AvimReportDTO {
 		this.eurodacMatch = eurodacMatch;
 		this.eurodacClaimedCountry = eurodacClaimedCountry;
 		this.reason = reason;
+		this.eurodacNumber = eurodacNumber;
 		this.euvisMatch = euvisMatch;
 		this.euvisDactyl = euvisDactyl;
 		this.euvisNameResearch = euvisNameResearch;
@@ -102,6 +105,14 @@ public class AvimReportDTO {
 
 	public void setReason(EurodacMatchReasonEnum reason) {
 		this.reason = reason;
+	}
+
+	public String getEurodacNumber() {
+		return eurodacNumber;
+	}
+
+	public void setEurodacNumber(String eurodacNumber) {
+		this.eurodacNumber = eurodacNumber;
 	}
 
 	public boolean isEuvisMatch() {
