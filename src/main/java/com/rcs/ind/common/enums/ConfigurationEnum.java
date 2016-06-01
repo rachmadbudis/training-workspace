@@ -56,7 +56,17 @@ public enum ConfigurationEnum {
 	TF_SCENARIO_DIGITAL("3fScenarioDigital"),
 	TF_REDIRECT_GUEST("3fRedirectGuest"),
 	TF_REDIRECT_TRANSLATOR("3fRedirectTranslator"),
-	
+
+	// Configuration key for redirect pages
+	RD_OPEN_APPLICATION("rdOpenApplication"),
+	RD_TRANSLATE_APPLICATION("rdTranslateApplication"),
+	RD_INTERVIEWER_PREPARATION("rdInterviewerPreparation"),
+	RD_INTERVIEWER_INTERVIEW("rdInterviewerProreg"),
+	RD_INTERVIEWER_MARKETPLACE("rdInterviewerMarketplace"),
+	RD_SCREENER_INTERVIEW("rdScreenerActiveInterview"),
+	RD_SCREENER_MARKETPLACE("rdScreenerMarketplace"),
+	RD_RIC_PROFILE("rdRicProfile"),
+	RD_RIC_MARKETPLACE("rdRicMarketplace"),
 	;
 
 	private final String key;
