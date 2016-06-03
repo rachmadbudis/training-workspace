@@ -1,6 +1,10 @@
 package com.rcs.ind.common.enums;
 
 public enum ConfigurationEnum {
+	// General Configuration that don't belong to other category
+	DEFAULT_GROUP("defaultGroup"),
+	PREPARED_QUESTION_FOLDER("preparedQuestionFolder"),
+	
 	// Configuration key for email
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
