@@ -28,6 +28,7 @@ public final class IndConstants {
 	// Generated Document filename
 	public static final String TRACK_HISTORY_PDF_NAME = "_Track_History.pdf";
 	public static final String INTERVIEW_DOC_PDF_NAME = "_Interview_Document.pdf";
+	public static final String RIC_ZIP_NAME = "INTERN_%s_RIC_Bevindingen.zip";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
