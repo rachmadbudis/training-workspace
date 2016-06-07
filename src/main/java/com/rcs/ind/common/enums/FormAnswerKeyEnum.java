@@ -8,7 +8,7 @@ public enum FormAnswerKeyEnum {
 	SURNAME("faanmeldformulierpersonalia.achternaam"),
 	BIRTH_DATE("faanmeldformulierpersonalia.geboortedatum"),
 	NATIONALITY("faanmeldformulierpersonalia.nationaliteit"),
-	MULTIPLE_NATIONALITY("faanmeldformulierdocumenten.meerdaneennationaliteit"),
+	MULTIPLE_NATIONALITY("faanmeldformulierpersonalia.meerdaneennationaliteit"),
 	LANGUAGE("faanmeldformulierleefomgeving.watisuwspreektaal"),
 	PROVIDED_DOCUMENTS("faanmeldformulierdocumenten.documentenbij"),
 	BIRTH_PLACE("faanmeldformulierpersonalia.geboorteplaats"),
