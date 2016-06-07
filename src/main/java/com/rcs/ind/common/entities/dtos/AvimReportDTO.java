@@ -27,6 +27,27 @@ public class AvimReportDTO {
 	public AvimReportDTO() {
 	}
 
+	public AvimReportDTO(Long avimReportId, String nationality, boolean protectedCountry, String protectingCountry, boolean valid, boolean eurodacMatch,
+			String eurodacClaimedCountry, EurodacMatchReasonEnum reason, boolean euvisMatch, YesNoNotAppEnum euvisDactyl, YesNoNotAppEnum euvisNameResearch,
+			String euvisClaimedCountry, Date expDateVisum, String vNumber, ApplicationDTO applicationDTO, String smartflowNumber) {
+		this.avimReportId = avimReportId;
+		this.nationality = nationality;
+		this.protectedCountry = protectedCountry;
+		this.protectingCountry = protectingCountry;
+		this.valid = valid;
+		this.eurodacMatch = eurodacMatch;
+		this.eurodacClaimedCountry = eurodacClaimedCountry;
+		this.reason = reason;
+		this.euvisMatch = euvisMatch;
+		this.euvisDactyl = euvisDactyl;
+		this.euvisNameResearch = euvisNameResearch;
+		this.euvisClaimedCountry = euvisClaimedCountry;
+		this.expDateVisum = expDateVisum;
+		this.vNumber = vNumber;
+		this.applicationDTO = applicationDTO;
+		this.smartflowNumber = smartflowNumber;
+	}
+
 	public Long getAvimReportId() {
 		return avimReportId;
 	}

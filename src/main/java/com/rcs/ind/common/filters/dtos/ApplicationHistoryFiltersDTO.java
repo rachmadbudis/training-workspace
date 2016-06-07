@@ -7,6 +7,7 @@ import java.util.Set;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
@@ -27,6 +28,10 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private Boolean registered;
 	private Set<Locale> languages;
 	private LiferayRoleEnum userRole;
+	private String vNumber;
+	private TrackEnum track;
+	private String nationality;
+	private String startDateTimestamp;
 
 	public String getLocation() {
 		return location;
@@ -155,4 +160,37 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	public void setUserRole(LiferayRoleEnum userRole) {
 		this.userRole = userRole;
 	}
+
+	public String getvNumber() {
+		return vNumber;
+	}
+
+	public void setvNumber(String vNumber) {
+		this.vNumber = vNumber;
+	}
+
+	public TrackEnum getTrack() {
+		return track;
+	}
+
+	public void setTrack(TrackEnum track) {
+		this.track = track;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public String getStartDateTimestamp() {
+		return startDateTimestamp;
+	}
+
+	public void setStartDateTimestamp(String startDateTimestamp) {
+		this.startDateTimestamp = startDateTimestamp;
+	}
+
 }

@@ -12,14 +12,14 @@ public enum LanguageEnum {
 	ARABIC(new Locale("ar", "SY"), "language.ar"),
 	DUTCH(new Locale("nl", "NL"), "language.nl"),
 	ERITREA(new Locale("ti", "ER"), "language.ti"),
-	ENGLISH(new Locale("en", "UK"),"language.en"),
-	FRENCH(new Locale("fr", "FR"),"language.fr"),
-	SPANISH(new Locale("es", "ES"),"language.es"),
-	SORANI(new Locale("ckb","IQ"),"language.ckb"),
-	KURMANJI(new Locale("kmr","IQ"),"language.kmr"),
-	FARSI(new Locale("fa","IR"),"language.fa"),
-	DARI(new Locale("prs","AF"),"language.prs"),
-	PASHTO(new Locale("ps","AF"),"language.ps");
+	ENGLISH(new Locale("en", "GB"), "language.en"),
+	FRENCH(new Locale("fr", "FR"), "language.fr"),
+	SPANISH(new Locale("es", "ES"), "language.es"),
+	SORANI(new Locale("ckb", "IQ"), "language.ckb"),
+	KURMANJI(new Locale("kmr", "IQ"), "language.kmr"),
+	FARSI(new Locale("fa", "IR"), "language.fa"),
+	DARI(new Locale("prs", "AF"), "language.prs"),
+	PASHTO(new Locale("ps", "AF"), "language.ps");
 
 	private final Locale language;
 	private final String label;
@@ -60,9 +60,27 @@ public enum LanguageEnum {
 	public static List<Map<String, String>> getAutoCompleteLanguages() {
 		return AUTOCOMPLETE_LIST;
 	}
-	
+
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABIC, ERITREA, ENGLISH, FRENCH, SPANISH, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABIC, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+	}
+
+	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
+
+	static {
+		for (LanguageEnum s : LanguageEnum.values()) {
+			lookup.put(s.getLanguage().toString(), s);
+		}
+	}
+
+	/**
+	 * Get Language Enum by language code
+	 * 
+	 * @param langCode
+	 * @return
+	 */
+	public static LanguageEnum get(String langCode) {
+		return lookup.get(langCode);
 	}
 
 }

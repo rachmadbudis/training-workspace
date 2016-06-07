@@ -23,6 +23,16 @@ public class ApplicationHistoryDTO {
 		this.setAssignedUser(assignedUser);
 	}
 
+	public ApplicationHistoryDTO(Long applicationHistoryId, ApplicationStatusEnum status, Date startDate, Date endDate, ApplicationDTO application,
+			Long assignedUser) {
+		this.applicationHistoryId = applicationHistoryId;
+		this.status = status;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.application = application;
+		this.assignedUser = assignedUser;
+	}
+
 	public Long getApplicationHistoryId() {
 		return applicationHistoryId;
 	}

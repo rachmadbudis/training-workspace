@@ -9,7 +9,7 @@ import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.common.enums.YesNoNotAppEnum;
 
 public class InterviewPreparationDTO {
-
+	
 	private Long interviewPreparationId;
 	private Date dateApplied;
 	private Date dateInterview;
@@ -57,6 +57,8 @@ public class InterviewPreparationDTO {
 	private String contactPerson;
 	private Date dateAdded;
 	private String locationApplied;
+	private boolean hasDocument;
+	private String ricStatusKey;
 
 	public InterviewPreparationDTO() {
 	}
@@ -489,4 +491,19 @@ public class InterviewPreparationDTO {
 		this.locationApplied = locationApplied;
 	}
 
+	public boolean getHasDocument() {
+		return hasDocument;
+	}
+
+	public void setHasDocument(boolean hasDocument) {
+		this.hasDocument = hasDocument;
+	}
+	
+	public String getRicStatusKey() {
+		return ricStatusKey;
+	}
+	
+	public void setRicStatusKey(String ricStatusKey) {
+		this.ricStatusKey = ricStatusKey;
+	}
 }

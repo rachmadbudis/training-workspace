@@ -26,8 +26,17 @@ public enum LiferayRoleEnum {
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.SITE),
 	AVIM("Avim", LiferayRoleTypeEnum.SITE),
 	PLANNER("Planner", LiferayRoleTypeEnum.SITE),
+	SCREENER("Screener", LiferayRoleTypeEnum.SITE),
+	RIC("RIC", LiferayRoleTypeEnum.SITE),
+	
+	// Translator's Language Role
 	AR_SY("Language Arabic Syria", LiferayRoleTypeEnum.SITE),
 	TI_ER("Language Tigrinya Eritrea", LiferayRoleTypeEnum.SITE),
+	PS_AF("Language Pashto", LiferayRoleTypeEnum.SITE),
+	PRS_AF("Language Dari", LiferayRoleTypeEnum.SITE),
+	FA_IR("Language Farsi", LiferayRoleTypeEnum.SITE),
+	KMR_IQ("Language Kurmanji", LiferayRoleTypeEnum.SITE),
+	CKB_IQ("Language Sorani", LiferayRoleTypeEnum.SITE),
 
 	// Site Roles.
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
@@ -75,7 +84,7 @@ public enum LiferayRoleEnum {
 	 * @return
 	 */
 	public static EnumSet<LiferayRoleEnum> getLanguageRoles() {
-		return EnumSet.of(AR_SY, TI_ER);
+		return EnumSet.of(AR_SY, TI_ER, PS_AF, PRS_AF, FA_IR, KMR_IQ, CKB_IQ);
 	}
 
 	public static Set<Locale> getLanguageLocaleByRole(Set<String> userRoles) {
