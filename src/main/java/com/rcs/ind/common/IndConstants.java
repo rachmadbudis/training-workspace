@@ -74,4 +74,7 @@ public final class IndConstants {
 	//Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
+	
+	//Tester parameters
+	public static final String TESTER_TOKEN = "aNATiCT";
 }
