@@ -32,7 +32,7 @@ public enum LiferayRoleEnum {
 	// Translator's Language Role
 	AR_SY("Language Arabic Syria", LiferayRoleTypeEnum.SITE),
 	TI_ER("Language Tigrinya Eritrea", LiferayRoleTypeEnum.SITE),
-	PS_AF("Language Pashto", LiferayRoleTypeEnum.SITE),
+	PS_AF("Language Pashtun", LiferayRoleTypeEnum.SITE),
 	PRS_AF("Language Dari", LiferayRoleTypeEnum.SITE),
 	FA_IR("Language Farsi", LiferayRoleTypeEnum.SITE),
 	KMR_IQ("Language Kurmanji", LiferayRoleTypeEnum.SITE),

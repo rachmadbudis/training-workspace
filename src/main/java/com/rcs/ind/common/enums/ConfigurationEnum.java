@@ -1,16 +1,26 @@
 package com.rcs.ind.common.enums;
 
 public enum ConfigurationEnum {
+	// General Configuration that don't belong to other category
+	DEFAULT_GROUP("defaultGroup"),
+	PREPARED_QUESTION_FOLDER("preparedQuestionFolder"),
+	
+	// Configuration key for email
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
 	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
+	
+	// Configuration key for DDL ID
 	NationalitiesDDL("nationalitiesDDL", "0"),
 	LanguageDDL("languageDDL", "0"),
 	ClaimlandDDL("claimlandDDL", "0"),
 	LocationDDL("locationDDL", "0"),
 	TrackDDL("trackDDL", "0"),
+	
+	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
 	
+	// COnfiguration key for LDAP settings
 	LDAP_BASE_PROVIDER_URL("LdapBaseProviderUrl"),
 	LDAP_BASE_DN("LdapBaseDn"),
 	
@@ -38,6 +48,29 @@ public enum ConfigurationEnum {
 	LDAP_GROUP_MEMBER_ATTRIBUTE("LdapGroupMemberAttribute"),
 
 	LDAP_SERVER_NAME("LdapServerName"),
+	
+	// Configuration key for tripleform parameter
+	TF_PROJECT("3fProject"),
+	TF_PASSWORD("3fPassword"),
+	TF_ENVIRONMENT("3fEnvironment"),
+	TF_AUTH_URL("3fAuthUrl"),
+	TF_FORM_URL("3fFormUrl"),
+	TF_SCENARIO_CUSTOMER("3fScenarioCustomer"),
+	TF_SCENARIO_TRANSLATOR("3fScenarioTranslator"),
+	TF_SCENARIO_DIGITAL("3fScenarioDigital"),
+	TF_REDIRECT_GUEST("3fRedirectGuest"),
+	TF_REDIRECT_TRANSLATOR("3fRedirectTranslator"),
+
+	// Configuration key for redirect pages
+	RD_OPEN_APPLICATION("rdOpenApplication"),
+	RD_TRANSLATE_APPLICATION("rdTranslateApplication"),
+	RD_INTERVIEWER_PREPARATION("rdInterviewerPreparation"),
+	RD_INTERVIEWER_INTERVIEW("rdInterviewerProreg"),
+	RD_INTERVIEWER_MARKETPLACE("rdInterviewerMarketplace"),
+	RD_SCREENER_INTERVIEW("rdScreenerActiveInterview"),
+	RD_SCREENER_MARKETPLACE("rdScreenerMarketplace"),
+	RD_RIC_PROFILE("rdRicProfile"),
+	RD_RIC_MARKETPLACE("rdRicMarketplace"),
 	;
 
 	private final String key;
