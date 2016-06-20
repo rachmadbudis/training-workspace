@@ -20,7 +20,7 @@ public enum ConfigurationEnum {
 	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
 	
-	// COnfiguration key for LDAP settings
+	// Configuration key for LDAP settings
 	LDAP_BASE_PROVIDER_URL("LdapBaseProviderUrl"),
 	LDAP_BASE_DN("LdapBaseDn"),
 	
@@ -71,6 +71,10 @@ public enum ConfigurationEnum {
 	RD_SCREENER_MARKETPLACE("rdScreenerMarketplace"),
 	RD_RIC_PROFILE("rdRicProfile"),
 	RD_RIC_MARKETPLACE("rdRicMarketplace"),
+	
+	// Configuration key for automated deletion and release of old application
+	AT_APPLICATION_DELETION_PASSED_DAYS("atApplicationDeletionPassedDays"),
+	AT_INCOMPLETE_EMAIL_TEMPLATE_TITLE("atIncompleteEmailTemplateTitle"),
 	;
 
 	private final String key;
