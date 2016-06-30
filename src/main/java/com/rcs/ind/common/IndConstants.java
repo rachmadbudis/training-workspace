@@ -71,10 +71,14 @@ public final class IndConstants {
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
 	
-	//Drools Rule Filename
+	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
 	
-	//Tester parameters
+	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
+	
+	// Customer form parameters
+	public static final String CUSTOMERFORM_FOLDER = "Aanmeldformulier";
+	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
 }

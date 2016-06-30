@@ -9,12 +9,11 @@ import java.util.Locale;
 import java.util.Map;
 
 public enum LanguageEnum {
-	ARABIC(new Locale("ar", "SY"), "language.ar"),
 	DUTCH(new Locale("nl", "NL"), "language.nl"),
-	ERITREA(new Locale("ti", "ER"), "language.ti"),
 	ENGLISH(new Locale("en", "GB"), "language.en"),
-	FRENCH(new Locale("fr", "FR"), "language.fr"),
-	SPANISH(new Locale("es", "ES"), "language.es"),
+	ARABICSYRIA(new Locale("ar", "SY"), "language.ar"),
+	ARABICIRAQ(new Locale("ar", "IQ"), "language.iq"),
+	ERITREA(new Locale("ti", "ER"), "language.ti"),
 	SORANI(new Locale("ckb", "IQ"), "language.ckb"),
 	KURMANJI(new Locale("kmr", "IQ"), "language.kmr"),
 	FARSI(new Locale("fa", "IR"), "language.fa"),
@@ -62,7 +61,7 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABIC, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
 	}
 
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
