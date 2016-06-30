@@ -1,22 +1,12 @@
 package com.rcs.ind.common.dtos;
 
 import java.util.Date;
-import java.util.Locale;
 
 public class RICApplicationGridDTO extends ApplicationGridDTO {
 
 	private Date startDate;
 	private Date updateDate;
 	private String nationality;
-	private Locale language;
-
-	public Locale getLanguage() {
-		return language;
-	}
-
-	public void setLanguage(Locale language) {
-		this.language = language;
-	}
 
 	public String getNationality() {
 		return nationality;

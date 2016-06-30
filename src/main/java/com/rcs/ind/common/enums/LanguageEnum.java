@@ -18,7 +18,8 @@ public enum LanguageEnum {
 	KURMANJI(new Locale("kmr", "IQ"), "language.kmr"),
 	FARSI(new Locale("fa", "IR"), "language.fa"),
 	DARI(new Locale("prs", "AF"), "language.prs"),
-	PASHTO(new Locale("ps", "AF"), "language.ps");
+	PASHTO(new Locale("ps", "AF"), "language.ps"),
+	BADINI(new Locale("ba", "IQ"), "language.ba");
 
 	private final Locale language;
 	private final String label;
