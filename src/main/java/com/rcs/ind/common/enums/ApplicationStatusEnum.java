@@ -10,6 +10,9 @@ public enum ApplicationStatusEnum {
 	ReadyForInterview(6, "com.rcs.ind.application.status.ready.for.interview", "com.rcs.ind.screener.status.prepared"),
 	ReviewInProgress(7, "com.rcs.ind.application.status.review.in.progress", "com.rcs.ind.screener.status.in.progress"),
 	Reviewed(8, "com.rcs.ind.application.status.reviewed", "com.rcs.ind.screener.status.finished"),
+	Printed(9, "com.rcs.ind.application.status.printed", ""),
+	Finished(10, "com.rcs.ind.application.status.finished", ""),
+	Closed(11, "com.rcs.ind.application.status.closed", ""),
 	Illiterate(4, "com.rcs.ind.application.status.illiterate", "");
 
 	private final int order;
