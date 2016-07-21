@@ -1,6 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
 import java.util.Locale;
+import java.util.Set;
 
 public class FormAnswerTranslationFiltersDTO {
 
@@ -8,6 +9,7 @@ public class FormAnswerTranslationFiltersDTO {
 	private String answerTranslation;
 	private Locale language;
 	private Long formAnswerId;
+	private Set<Long> formAnswerIds;
 
 	public Long getFormAnswerTranslationId() {
 		return formAnswerTranslationId;
@@ -40,5 +42,12 @@ public class FormAnswerTranslationFiltersDTO {
 	public void setFormAnswerId(Long formAnswerId) {
 		this.formAnswerId = formAnswerId;
 	}
-
+	
+	public Set<Long> getFormAnswerIds() {
+		return formAnswerIds;
+	}
+	
+	public void setFormAnswerIds(Set<Long> formAnswerIds) {
+		this.formAnswerIds = formAnswerIds;
+	}
 }
