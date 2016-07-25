@@ -6,6 +6,7 @@ public enum FileAttachmentEnum {
 	RIC_ZIP_NAME("INTERN_%s_RIC_Bevindingen.zip", "com.rcs.ind.filename.ric.zip"),
 	CUSTOMER_DOC_NAME("%s_Customer_File.pdf", "com.rcs.ind.filename.customer.form"),
 	TRANSLATED_DOC_NAME("%s_Translation_File.pdf", "com.rcs.ind.filename.translated.form"),
+	PAPER_FORM_DOC_NAME("%s_Paper_Form_File.pdf", "com.rcs.ind.filename.paper.form"),
 	M117C_DOCUMENT_TITLE("M117C_%s.doc", "com.rcs.ind.filename.m117c"),
 	;
 

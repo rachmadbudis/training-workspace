@@ -20,6 +20,7 @@ public final class IndConstants {
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
+	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
 
 	// User constants
