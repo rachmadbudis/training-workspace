@@ -85,7 +85,7 @@ public enum LiferayRoleEnum {
 	 * @return
 	 */
 	public static EnumSet<LiferayRoleEnum> getLanguageRoles() {
-		return EnumSet.of(AR_SY, TI_ER, PS_AF, PRS_AF, FA_IR, KMR_IQ, CKB_IQ);
+		return EnumSet.of(AR_SY, AR_IQ, TI_ER, PS_AF, PRS_AF, FA_IR, KMR_IQ, CKB_IQ);
 	}
 
 	public static Set<Locale> getLanguageLocaleByRole(Set<String> userRoles) {
