@@ -16,7 +16,7 @@ public final class IndConstants {
 	public static final String DUTCH_NO = "Nee";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
-	
+
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
@@ -46,7 +46,7 @@ public final class IndConstants {
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-	
+
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
@@ -71,14 +71,15 @@ public final class IndConstants {
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
-	
+
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
-	
+	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
+
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
-	
+
 	// Customer form parameters
 	public static final String CUSTOMERFORM_FOLDER = "Aanmeldformulier";
 	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
