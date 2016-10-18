@@ -73,7 +73,9 @@ public final class IndConstants {
 	public static final String RIC_PROFILE = "ric_profile";
 	public static final String LAST_PLACE_LIVED_OTHER = "last_place_lived_other";
 	public static final String LAST_PLACE_LIVED_BIRTHPLACE = "last_place_lived_birthplace";
-	
+	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
+	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
+	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
 
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
