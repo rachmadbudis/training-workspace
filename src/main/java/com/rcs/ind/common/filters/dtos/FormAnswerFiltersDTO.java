@@ -13,6 +13,7 @@ public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 	private String translation;
 	private Locale answerLanguage;
 	private Long applicationId;
+	private List<Long> applicationIds;
 	private List<String> questionIds;
 
 	public Long getFormAnswerId() {
@@ -69,6 +70,14 @@ public class FormAnswerFiltersDTO extends PaginationFiltersDTO {
 
 	public void setQuestionIds(List<String> questionIds) {
 		this.questionIds = questionIds;
+	}
+
+	public List<Long> getApplicationIds() {
+		return applicationIds;
+	}
+
+	public void setApplicationIds(List<Long> applicationIds) {
+		this.applicationIds = applicationIds;
 	}
 
 }
