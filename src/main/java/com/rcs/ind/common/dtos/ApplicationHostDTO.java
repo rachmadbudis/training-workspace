@@ -12,6 +12,7 @@ public class ApplicationHostDTO {
 	private Boolean priority;
 	private Locale language;
 	private String nationality;
+	private Boolean isPaperApplication;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -59,6 +60,14 @@ public class ApplicationHostDTO {
 
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
+	}
+	
+	public Boolean getIsPaperApplication() {
+		return isPaperApplication;
+	}
+
+	public void setIsPaperApplication(Boolean isPaperApplication) {
+		this.isPaperApplication = isPaperApplication;
 	}
 
 }

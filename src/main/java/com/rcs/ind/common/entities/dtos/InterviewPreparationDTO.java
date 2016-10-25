@@ -61,6 +61,7 @@ public class InterviewPreparationDTO {
 	private boolean hasDocument;
 	private String ricStatusKey;
 	private String religion;
+	private boolean signature;
 
 	public InterviewPreparationDTO() {
 	}
@@ -523,6 +524,14 @@ public class InterviewPreparationDTO {
 
 	public void setReligion(String religion) {
 		this.religion = religion;
+	}
+
+	public boolean getSignature() {
+		return signature;
+	}
+
+	public void setSignature(boolean signature) {
+		this.signature = signature;
 	}
 
 }
