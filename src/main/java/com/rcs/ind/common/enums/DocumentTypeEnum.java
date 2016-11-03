@@ -5,7 +5,8 @@ import java.util.Map;
 
 public enum DocumentTypeEnum {
 	Passport("com.rcs.ind.preparation.doc.type.passport", "Paspoort"),
-	Identity("com.rcs.ind.preparation.doc.type.identity", "Identiteitskaart");
+	Identity("com.rcs.ind.preparation.doc.type.identity", "Identiteitskaart"),
+	IdentityBook("com.rcs.ind.preparation.doc.type.identitybook", "Identiteitsboekje");
 
 	private final String key;
 	private final String label;
