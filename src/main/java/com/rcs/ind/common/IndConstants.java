@@ -46,7 +46,7 @@ public final class IndConstants {
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-	public static final String TYGRINJA = "Tygrinja";
+	public static final String TYGRINYA = "Tygrinya";
 	public static final String TIGRE = "Tigré";
 	public static final String SAHO = "Saho";
 	public static final String AFAR = "Afar";
