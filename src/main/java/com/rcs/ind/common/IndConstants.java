@@ -46,7 +46,16 @@ public final class IndConstants {
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-
+	public static final String TYGRINJA = "Tygrinja";
+	public static final String TIGRE = "Tigré";
+	public static final String SAHO = "Saho";
+	public static final String AFAR = "Afar";
+	public static final String KUNAMA = "Kunama";
+	public static final String BEDJA_BEDAWI = "Bedja (Bedawi)";
+	public static final String BILEN = "Bilen";
+	public static final String NARA = "Nara";
+	public static final String DAHLIK = "Dahlik";
+	
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
