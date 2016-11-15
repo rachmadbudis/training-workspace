@@ -80,6 +80,7 @@ public final class IndConstants {
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
+	public static final String RIC_WORK_YES = "ric_werkyes";
 	public static final String LAST_PLACE_LIVED_OTHER = "last_place_lived_other";
 	public static final String LAST_PLACE_LIVED_BIRTHPLACE = "last_place_lived_birthplace";
 	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
