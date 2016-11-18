@@ -90,6 +90,8 @@ public final class IndConstants {
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
+	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
+	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
