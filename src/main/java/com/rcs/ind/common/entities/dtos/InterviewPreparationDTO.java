@@ -61,10 +61,6 @@ public class InterviewPreparationDTO {
 	private boolean hasDocument;
 	private String ricStatusKey;
 	private String religion;
-	private String land;
-	private String province;
-	private String district;
-	private String town;
 	
 	private boolean signature;
 
@@ -529,62 +525,6 @@ public class InterviewPreparationDTO {
 
 	public void setReligion(String religion) {
 		this.religion = religion;
-	}
-
-	/**
-	 * @return the land
-	 */
-	public String getLand() {
-		return land;
-	}
-
-	/**
-	 * @param land the land to set
-	 */
-	public void setLand(String land) {
-		this.land = land;
-	}
-
-	/**
-	 * @return the province
-	 */
-	public String getProvince() {
-		return province;
-	}
-
-	/**
-	 * @param province the province to set
-	 */
-	public void setProvince(String province) {
-		this.province = province;
-	}
-
-	/**
-	 * @return the district
-	 */
-	public String getDistrict() {
-		return district;
-	}
-
-	/**
-	 * @param district the district to set
-	 */
-	public void setDistrict(String district) {
-		this.district = district;
-	}
-
-	/**
-	 * @return the town
-	 */
-	public String getTown() {
-		return town;
-	}
-
-	/**
-	 * @param town the town to set
-	 */
-	public void setTown(String town) {
-		this.town = town;
 	}
 
 	public boolean getSignature() {
