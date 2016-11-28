@@ -86,6 +86,8 @@ public final class IndConstants {
 	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
 	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
 	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
+	public static final String RIC_WORK_YES = "RIC_werkyes";
+	public static final String RIC_IDENTITEITSKAARTAANGEVRAAGD = "RIC_identiteitskaartaangevraagd";
 
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
