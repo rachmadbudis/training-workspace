@@ -1,6 +1,7 @@
 package com.rcs.ind.common.dtos;
 
 import java.util.Date;
+import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
@@ -13,6 +14,9 @@ public class ApplicationPlannerDTO {
 	private Date creationDate;
 	private Boolean priority;
 	private String trackLabel;
+	private Locale language;
+	private String nationality;
+	private Date startDate;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -68,6 +72,30 @@ public class ApplicationPlannerDTO {
 	
 	public void setTrackLabel(String trackLabel) {
 		this.trackLabel = trackLabel;
+	}
+	
+	public Locale getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Locale language) {
+		this.language = language;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
 	}
 
 }

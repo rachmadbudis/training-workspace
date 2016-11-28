@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationReleaseReasonEnum;
+import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
 public class ApplicationDTO {
 
@@ -21,6 +22,7 @@ public class ApplicationDTO {
 	private ApplicationReleaseReasonEnum releaseReason;
 	private String tfaStream;
 	private String nationality;
+	private ApplicationStatusEnum status;
 
 	public ApplicationDTO() {
 	}
@@ -134,6 +136,14 @@ public class ApplicationDTO {
 
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
+	}
+
+	public ApplicationStatusEnum getStatus() {
+		return status;
+	}
+
+	public void setStatus(ApplicationStatusEnum status) {
+		this.status = status;
 	}
 
 }

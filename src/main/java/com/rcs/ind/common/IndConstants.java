@@ -16,10 +16,11 @@ public final class IndConstants {
 	public static final String DUTCH_NO = "Nee";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
-	
+
 	// TripleForms constants.
 	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
+	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
 
 	// User constants
@@ -45,7 +46,7 @@ public final class IndConstants {
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-	
+
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
@@ -70,8 +71,23 @@ public final class IndConstants {
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
-	
-	//Drools Rule Filename
+	public static final String LAST_PLACE_LIVED_OTHER = "last_place_lived_other";
+	public static final String LAST_PLACE_LIVED_BIRTHPLACE = "last_place_lived_birthplace";
+	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
+	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
+	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
+	public static final String RIC_WORK_YES = "RIC_werkyes";
+	public static final String RIC_IDENTITEITSKAARTAANGEVRAAGD = "RIC_identiteitskaartaangevraagd";
+
+	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
+	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
+
+	// Tester parameters
+	public static final String TESTER_TOKEN = "aNATiCT";
+
+	// Customer form parameters
+	public static final String CUSTOMERFORM_FOLDER = "Aanmeldformulier";
+	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
 }

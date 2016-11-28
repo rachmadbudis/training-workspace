@@ -1,6 +1,7 @@
 package com.rcs.ind.common.dtos;
 
 import java.util.Date;
+import java.util.List;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 
@@ -12,6 +13,7 @@ public class ApplicationAuditDTO {
 	private Date modificationDate;
 	private String location;
 	private String modificationUser;
+	private List<ApplicationAuditDTO> childrenHistories;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -60,5 +62,13 @@ public class ApplicationAuditDTO {
 	public void setModificationUser(String modificationUser) {
 		this.modificationUser = modificationUser;
 	}
-	
+
+	public List<ApplicationAuditDTO> getChildrenHistories() {
+		return childrenHistories;
+	}
+
+	public void setChildrenHistories(List<ApplicationAuditDTO> childrenHistories) {
+		this.childrenHistories = childrenHistories;
+	}
+
 }
