@@ -42,7 +42,15 @@ public final class IndConstants {
 	public static final String IRAK = "Iraakse";
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
-
+	public static final String PALESTIJNS = "Palestijns";
+	public static final String PALESTIJNS_STAATSLOOS = "Palestijns Staatsloos";
+	public static final String PALESTIJNSE_SYRISCHE = "Palestijns Syrische";
+	public static final String PALESTIJNSE = "Palestijnse";
+	public static final String STAATLOOS = "Staatloos";
+	
+	//Country Constant
+	public static final String SYRIE = "Syrië";
+	
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
