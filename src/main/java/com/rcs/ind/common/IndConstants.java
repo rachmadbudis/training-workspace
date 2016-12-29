@@ -73,6 +73,7 @@ public final class IndConstants {
 	public static final String LANGUAGE_ATTRIBUTE = "xml:lang";
 
 	// TEMPLATE TITLE
+	public static final String DUBLIN_URL_TITLE = "Dublin";
 	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
 	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
 	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
