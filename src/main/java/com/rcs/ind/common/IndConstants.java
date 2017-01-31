@@ -74,14 +74,11 @@ public final class IndConstants {
 
 	// TEMPLATE TITLE
 	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
-	public static final String SIMPLE_TEMPLATE_URL_TITLE = "simple-template";
 	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
 	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
 	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
 	public static final String TRACK_3_DOCUMENT_URL_TITLE = "bwst_amg_sp3";
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
-	public static final String TRACK_NORMAL_DOCUMENT_URL_TITLE = "bwst_amg_normal";
-	public static final String TRACK_VLG_DOCUMENT_URL_TITLE = "bwst_amg_vlg";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
 	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
