@@ -73,9 +73,7 @@ public final class IndConstants {
 	public static final String LANGUAGE_ATTRIBUTE = "xml:lang";
 
 	// TEMPLATE TITLE
-	public static final String DUBLIN_AMG_URL_TITLE = "SimplifiedDublin";
 	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
-	public static final String SIMPLE_TEMPLATE_URL_TITLE = "simple-template";
 	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
 	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
 	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
@@ -106,7 +104,7 @@ public final class IndConstants {
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
 	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
 	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
-	public static final String DUBLIN_AMG_RULES_DIR = "Dublin";
+	
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
