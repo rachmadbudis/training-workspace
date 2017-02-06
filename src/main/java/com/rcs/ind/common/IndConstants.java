@@ -42,11 +42,28 @@ public final class IndConstants {
 	public static final String IRAK = "Iraakse";
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
-
+	public static final String PALESTIJNS = "Palestijns";
+	public static final String PALESTIJNS_STAATSLOOS = "Palestijns Staatsloos";
+	public static final String PALESTIJNSE_SYRISCHE = "Palestijns Syrische";
+	public static final String PALESTIJNSE = "Palestijnse";
+	public static final String STAATLOOS = "Staatloos";
+	
+	//Country Constant
+	public static final String SYRIE = "Syrië";
+	
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-
+	public static final String TIGRINYA = "Tigrinya";
+	public static final String TIGRE = "Tigré";
+	public static final String SAHO = "Saho";
+	public static final String AFAR = "Afar";
+	public static final String KUNAMA = "Kunama";
+	public static final String BEDJA_BEDAWI = "Bedja (Bedawi)";
+	public static final String BILEN = "Bilen";
+	public static final String NARA = "Nara";
+	public static final String DAHLIK = "Dahlik";
+	
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
@@ -71,18 +88,20 @@ public final class IndConstants {
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
+	public static final String RIC_WORK_YES = "RIC_werkyes";
 	public static final String LAST_PLACE_LIVED_OTHER = "last_place_lived_other";
 	public static final String LAST_PLACE_LIVED_BIRTHPLACE = "last_place_lived_birthplace";
 	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
 	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
 	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
-	public static final String RIC_WORK_YES = "RIC_werkyes";
 	public static final String RIC_IDENTITEITSKAARTAANGEVRAAGD = "RIC_identiteitskaartaangevraagd";
 
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
+	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
+	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";

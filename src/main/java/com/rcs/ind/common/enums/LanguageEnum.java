@@ -8,9 +8,15 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+
 public enum LanguageEnum {
 	DUTCH(new Locale("nl", "NL"), "language.nl", false),
 	ENGLISH(new Locale("en", "GB"), "language.en", false),
+	ARABICSGENERAL(new Locale("ar"), "language.ar.g",true),
 	ARABICSYRIA(new Locale("ar", "SY"), "language.ar", true),
 	ARABICIRAQ(new Locale("ar", "IQ"), "language.iq", true),
 	ERITREA(new Locale("ti", "ER"), "language.ti", false),
@@ -26,7 +32,7 @@ public enum LanguageEnum {
 	//right to left writting
 	private final boolean rtl; 
 	private static final List<Map<String, String>> AUTOCOMPLETE_LIST;
-
+	private static final Logger logger = LoggerFactory.getLogger(LanguageEnum.class);
 	static {
 		List<Map<String, String>> list = new ArrayList<>();
 		for (LanguageEnum language : values()) {
@@ -71,7 +77,7 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABICSGENERAL,ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
 	}
 
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
