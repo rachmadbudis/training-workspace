@@ -21,11 +21,12 @@ public enum LanguageEnum {
 	ARABICIRAQ(new Locale("ar", "IQ"), "language.iq", true),
 	ERITREA(new Locale("ti", "ER"), "language.ti", false),
 	SORANI(new Locale("ckb", "IQ"), "language.ckb",true),
-	KURMANJI(new Locale("kmr", "IQ"), "language.kmr",true),
 	FARSI(new Locale("fa", "IR"), "language.fa",true),
 	DARI(new Locale("prs", "AF"), "language.prs",true),
 	PASHTO(new Locale("ps", "AF"), "language.ps",true),
-	BADINI(new Locale("ba", "IQ"), "language.ba",true);
+	BADINI(new Locale("ba", "IQ"), "language.ba",true),
+	ALBANIAN(new Locale("sq","AL"),"language.sq",false),
+	SERBIAN(new Locale("sr","RS"),"language.sr",false);
 
 	private final Locale language;
 	private final String label;
@@ -77,9 +78,10 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABICSGENERAL,ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABICSGENERAL,ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, BADINI, FARSI, DARI, PASHTO,ALBANIAN,SERBIAN);
 	}
 
+	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
 
 	static {
