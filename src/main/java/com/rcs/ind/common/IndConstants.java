@@ -22,6 +22,7 @@ public final class IndConstants {
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
 	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
+	public static final String SIMPLIFIED_FORM_SCENARIO_ID = "scAsielBlokjesformulier";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
