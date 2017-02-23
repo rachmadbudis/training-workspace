@@ -114,4 +114,7 @@ public final class IndConstants {
 	// Customer form parameters
 	public static final String CUSTOMERFORM_FOLDER = "Aanmeldformulier";
 	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
+	
+	//This constant is to work around a problem with keys in the xml we recieve 
+	public static final String SIMPLIFIED_MANVROUW_KEY ="faanmeldformulierpersonalia.manvrouw"; 
 }
