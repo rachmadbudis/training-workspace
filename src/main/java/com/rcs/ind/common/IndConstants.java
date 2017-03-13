@@ -117,4 +117,26 @@ public final class IndConstants {
 	
 	//This constant is to work around a problem with keys in the xml we recieve 
 	public static final String SIMPLIFIED_MANVROUW_KEY ="faanmeldformulierpersonalia.manvrouw"; 
+	
+	public static final String SIMPLIFIED_ETNICITEIT_KEY = "faanmeldformulierpersonalia.uwetniciteit";
+	public static final String SIMPLIFIED_ETNICITEIT_ARABISCH_KEY = "faanmeldformulierpersonalia.uwetniciteitarabisch";
+	
+	public static final String SIMPLIFIED_RELIGIE_KEY = "faanmeldformulierpersonalia.religie";
+	public static final String SIMPLIFIED_RELIGIE_ARABISCH_KEY = "faanmeldformulierpersonalia.religiearabisch";
+	
+	public static final String SIMPLIFIED_WELKERELIGIEGEBORTE_KEY = "faanmeldformulierpersonalia.welkereligiegeboorte";
+	public static final String SIMPLIFIED_WELKERELIGIEGEBORTE_ARABISCH_KEY = "faanmeldformulierpersonalia.welkereligiegeboortearabisch";
+	
+	public static final String SIMPLIFIED_WATISUWSPREEKTAAL_KEY = "faanmeldformulierleefomgeving.watisuwspreektaal";
+	public static final String SIMPLIFIED_WATISUWSPREEKTAAL_ARABISCH_KEY = "faanmeldformulierleefomgeving.watisuwspreektaalarabisch";
+	
+	public static final String SIMPLIFIED_WELKEANDERETALENSPREEKTU_KEY = "faanmeldformulierleefomgeving.welkeanderetalenspreektu.welkeanderetalenspreektu";
+	public static final String SIMPLIFIED_WELKEANDERETALENSPREEKTU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welkeanderetalenspreektuarabisch.welkeanderetalenspreektu";
+	
+	public static final String SIMPLIFIED_WELKETALENSPREEKTUEENBEETJE_KEY = "faanmeldformulierleefomgeving.welketalenspreektueenbeetje.welketalenspreektueenbeetje";
+	public static final String SIMPLIFIED_WELKETALENSPREEKTUEENBEETJE_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenspreektueenbeetjearabisch.welketalenspreektueenbeetje";
+	
+	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
+	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
+	
 }
