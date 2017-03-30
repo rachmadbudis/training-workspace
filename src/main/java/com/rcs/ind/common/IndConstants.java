@@ -116,7 +116,10 @@ public final class IndConstants {
 	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
 	
 	//This constant is to work around a problem with keys in the xml we recieve 
-	public static final String SIMPLIFIED_MANVROUW_KEY ="faanmeldformulierpersonalia.manvrouw"; 
+	public static final String SIMPLIFIED_MANVROUW_KEY ="faanmeldformulierpersonalia.manvrouw";
+	
+	//This constant is to work around a problem with keys in the xml we recieve (lastname / achternaam) 
+	public static final String SIMPLIFIED_ACHTERNAAM_KEY ="faanmeldformulierpersonalia.naamachternaamfamilienaam";
 	
 	public static final String SIMPLIFIED_ETNICITEIT_KEY = "faanmeldformulierpersonalia.uwetniciteit";
 	public static final String SIMPLIFIED_ETNICITEIT_ARABISCH_KEY = "faanmeldformulierpersonalia.uwetniciteitarabisch";
