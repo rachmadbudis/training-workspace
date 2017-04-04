@@ -13,7 +13,8 @@ public enum FormAnswerKeyEnum {
 	PROVIDED_DOCUMENTS("faanmeldformulierdocumenten.documentenbij"),
 	BIRTH_PLACE("faanmeldformulierpersonalia.geboorteplaats"),
 	COUNTRY_OF_BIRTH("faanmeldformulierpersonalia.geboorteland"),
-	MARITAL_STATUS("faanmeldformuliergezinssituatie.bentugehuwd"),
+	MARITAL_STATUS_MARRIED_YESNO("faanmeldformuliergezinssituatie.bentugehuwd"),
+	MARITAL_STATUS("faanmeldformuliergezinssituatie.watisuwburgelijkestaat"),
 	SEX("faanmeldformulierpersonalia.geslacht"),
 	RELIGION("faanmeldformulierpersonalia.religie"),
 	COUNTRY("faanmeldformulierpersonalia.land");
