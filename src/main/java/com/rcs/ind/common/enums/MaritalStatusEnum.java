@@ -5,7 +5,7 @@ public enum MaritalStatusEnum {
 	Married("com.rcs.ind.marital.merried", "Gehuwd"),
 	Divorced("com.rcs.ind.marital.divorced", "Gescheiden"),
 	Widowed("com.rcs.ind.marital.widowed", "Weduwe of Weduwnaar"),
-	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd samenwonend");
+	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd en samenwonend");
 
 	private final String key;
 	private final String label;
