@@ -22,6 +22,7 @@ public final class IndConstants {
 	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
 	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
 	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
+	public static final String SIMPLIFIED_FORM_SCENARIO_ID = "scAsielBlokjesformulier";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
@@ -42,11 +43,28 @@ public final class IndConstants {
 	public static final String IRAK = "Iraakse";
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
-
+	public static final String PALESTIJNS = "Palestijns";
+	public static final String PALESTIJNS_STAATSLOOS = "Palestijns Staatsloos";
+	public static final String PALESTIJNSE_SYRISCHE = "Palestijns Syrische";
+	public static final String PALESTIJNSE = "Palestijnse";
+	public static final String STAATLOOS = "Staatloos";
+	
+	//Country Constant
+	public static final String SYRIE = "Syrië";
+	
 	// Language Constant
 	public static final String ARABISCH = "Arabisch";
 	public static final String AMHARISCH = "Amharisch";
-
+	public static final String TIGRINYA = "Tigrinya";
+	public static final String TIGRE = "Tigré";
+	public static final String SAHO = "Saho";
+	public static final String AFAR = "Afar";
+	public static final String KUNAMA = "Kunama";
+	public static final String BEDJA_BEDAWI = "Bedja (Bedawi)";
+	public static final String BILEN = "Bilen";
+	public static final String NARA = "Nara";
+	public static final String DAHLIK = "Dahlik";
+	
 	// XML ANSWER KEY
 	public static final String QUESTION_NODE = "questions";
 	public static final String QUESTION_ID_NODE = "questionid";
@@ -57,11 +75,14 @@ public final class IndConstants {
 
 	// TEMPLATE TITLE
 	public static final String MASTER_TEMPLATE_URL_TITLE = "master-template";
+	public static final String SIMPLE_TEMPLATE_URL_TITLE = "simple-template";
 	public static final String TRACK_1_DOCUMENT_URL_TITLE = "bwst_amg_sp1";
 	public static final String TRACK_2A_DOCUMENT_URL_TITLE = "bwst_amg_sp2a";
 	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
 	public static final String TRACK_3_DOCUMENT_URL_TITLE = "bwst_amg_sp3";
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
+	public static final String TRACK_NORMAL_DOCUMENT_URL_TITLE = "bwst_amg_normal";
+	public static final String TRACK_VLG_DOCUMENT_URL_TITLE = "bwst_amg_vlg";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
 	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
@@ -71,18 +92,21 @@ public final class IndConstants {
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
+	public static final String RIC_WORK_YES = "RIC_werkyes";
 	public static final String LAST_PLACE_LIVED_OTHER = "last_place_lived_other";
 	public static final String LAST_PLACE_LIVED_BIRTHPLACE = "last_place_lived_birthplace";
 	public static final String BWST_AMG_MILITARY_VERVANGENDE = "bwst_amg_military_vervangende";
 	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
 	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
-	public static final String RIC_WORK_YES = "RIC_werkyes";
 	public static final String RIC_IDENTITEITSKAARTAANGEVRAAGD = "RIC_identiteitskaartaangevraagd";
 
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
+	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
+	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
+	public static final String SIMPLE_DOCUMENT_RULES_DIR = "SimpleDocument";
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
@@ -90,4 +114,32 @@ public final class IndConstants {
 	// Customer form parameters
 	public static final String CUSTOMERFORM_FOLDER = "Aanmeldformulier";
 	public static final String CUSTOMERFORM_NAME = "Aanmeldformulier_%s.dot";
+	
+	//This constant is to work around a problem with keys in the xml we recieve 
+	public static final String SIMPLIFIED_MANVROUW_KEY ="faanmeldformulierpersonalia.manvrouw";
+	
+	//This constant is to work around a problem with keys in the xml we recieve (lastname / achternaam) 
+	public static final String SIMPLIFIED_ACHTERNAAM_KEY ="faanmeldformulierpersonalia.naamachternaamfamilienaam";
+	
+	public static final String SIMPLIFIED_ETNICITEIT_KEY = "faanmeldformulierpersonalia.uwetniciteit";
+	public static final String SIMPLIFIED_ETNICITEIT_ARABISCH_KEY = "faanmeldformulierpersonalia.uwetniciteitarabisch";
+	
+	public static final String SIMPLIFIED_RELIGIE_KEY = "faanmeldformulierpersonalia.religie";
+	public static final String SIMPLIFIED_RELIGIE_ARABISCH_KEY = "faanmeldformulierpersonalia.religiearabisch";
+	
+	public static final String SIMPLIFIED_WELKERELIGIEGEBORTE_KEY = "faanmeldformulierpersonalia.welkereligiegeboorte";
+	public static final String SIMPLIFIED_WELKERELIGIEGEBORTE_ARABISCH_KEY = "faanmeldformulierpersonalia.welkereligiegeboortearabisch";
+	
+	public static final String SIMPLIFIED_WATISUWSPREEKTAAL_KEY = "faanmeldformulierleefomgeving.watisuwspreektaal";
+	public static final String SIMPLIFIED_WATISUWSPREEKTAAL_ARABISCH_KEY = "faanmeldformulierleefomgeving.watisuwspreektaalarabisch";
+	
+	public static final String SIMPLIFIED_WELKEANDERETALENSPREEKTU_KEY = "faanmeldformulierleefomgeving.welkeanderetalenspreektu.welkeanderetalenspreektu";
+	public static final String SIMPLIFIED_WELKEANDERETALENSPREEKTU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welkeanderetalenspreektuarabisch.welkeanderetalenspreektu";
+	
+	public static final String SIMPLIFIED_WELKETALENSPREEKTUEENBEETJE_KEY = "faanmeldformulierleefomgeving.welketalenspreektueenbeetje.welketalenspreektueenbeetje";
+	public static final String SIMPLIFIED_WELKETALENSPREEKTUEENBEETJE_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenspreektueenbeetjearabisch.welketalenspreektueenbeetje";
+	
+	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
+	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
+	
 }

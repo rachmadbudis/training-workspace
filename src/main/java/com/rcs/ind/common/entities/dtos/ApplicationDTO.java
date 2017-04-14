@@ -146,4 +146,41 @@ public class ApplicationDTO {
 		this.status = status;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("ApplicationDTO [applicationId=");
+		builder.append(applicationId);
+		builder.append(", smartflowNumber=");
+		builder.append(smartflowNumber);
+		builder.append(", language=");
+		builder.append(language);
+		builder.append(", location=");
+		builder.append(location);
+		builder.append(", registered=");
+		builder.append(registered);
+		builder.append(", isPaperApplication=");
+		builder.append(isPaperApplication);
+		builder.append(", priority=");
+		builder.append(priority);
+		builder.append(", xmlAnswer=");
+		builder.append(xmlAnswer);
+		builder.append(", createUser=");
+		builder.append(createUser);
+		builder.append(", documents=");
+		builder.append(documents);
+		builder.append(", releaseReason=");
+		builder.append(releaseReason);
+		builder.append(", tfaStream=");
+		builder.append(tfaStream);
+		builder.append(", nationality=");
+		builder.append(nationality);
+		builder.append(", status=");
+		builder.append(status);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+
 }

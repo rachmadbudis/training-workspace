@@ -1,8 +1,9 @@
 package com.rcs.ind.common.enums;
 
 public enum ConfigurationEnum {
-	// General Configuration that don't belong to other category
+	// General Configuration that doesn't belong to other category
 	DEFAULT_GROUP("defaultGroup"),
+	DEFAULT_COMPANYID("defaultCompanyId"),
 	PREPARED_QUESTION_FOLDER("preparedQuestionFolder"),
 	
 	// Configuration key for email
@@ -58,6 +59,7 @@ public enum ConfigurationEnum {
 	TF_SCENARIO_CUSTOMER("3fScenarioCustomer"),
 	TF_SCENARIO_TRANSLATOR("3fScenarioTranslator"),
 	TF_SCENARIO_DIGITAL("3fScenarioDigital"),
+	TF_SCENARIO_SIMPLIFIED("3fScenarioSimplified"),
 	TF_REDIRECT_GUEST("3fRedirectGuest"),
 	TF_REDIRECT_TRANSLATOR("3fRedirectTranslator"),
 

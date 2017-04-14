@@ -8,25 +8,34 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+
 public enum LanguageEnum {
 	DUTCH(new Locale("nl", "NL"), "language.nl", false),
 	ENGLISH(new Locale("en", "GB"), "language.en", false),
+	ARABICSGENERAL(new Locale("ar", "MA"), "language.ar.g",true),
 	ARABICSYRIA(new Locale("ar", "SY"), "language.ar", true),
 	ARABICIRAQ(new Locale("ar", "IQ"), "language.iq", true),
 	ERITREA(new Locale("ti", "ER"), "language.ti", false),
 	SORANI(new Locale("ckb", "IQ"), "language.ckb",true),
-	KURMANJI(new Locale("kmr", "IQ"), "language.kmr",true),
 	FARSI(new Locale("fa", "IR"), "language.fa",true),
 	DARI(new Locale("prs", "AF"), "language.prs",true),
 	PASHTO(new Locale("ps", "AF"), "language.ps",true),
-	BADINI(new Locale("ba", "IQ"), "language.ba",true);
+	BADINI(new Locale("ba", "IQ"), "language.ba",true),
+	ALBANIAN(new Locale("sq","AL"),"language.sq",false),
+	SERBIAN(new Locale("mk","MK"),"language.sr",false),
+	KROATISCH(new Locale("hr","HR"),"language.kr",false),
+	BOSNISCH(new Locale("sr","BA"),"language.bs",false);
 
 	private final Locale language;
 	private final String label;
 	//right to left writting
 	private final boolean rtl; 
 	private static final List<Map<String, String>> AUTOCOMPLETE_LIST;
-
+	private static final Logger logger = LoggerFactory.getLogger(LanguageEnum.class);
 	static {
 		List<Map<String, String>> list = new ArrayList<>();
 		for (LanguageEnum language : values()) {
@@ -71,9 +80,10 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, KURMANJI, FARSI, DARI, PASHTO);
+		return EnumSet.of(ARABICSGENERAL,ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, BADINI, FARSI, DARI, PASHTO,ALBANIAN,SERBIAN,KROATISCH,BOSNISCH);
 	}
 
+	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
 
 	static {

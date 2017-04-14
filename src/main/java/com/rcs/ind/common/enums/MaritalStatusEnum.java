@@ -1,11 +1,11 @@
 package com.rcs.ind.common.enums;
 
 public enum MaritalStatusEnum {
-	Single("com.rcs.ind.marital.single", "Alleenstaand"),
+	Single("com.rcs.ind.marital.single", "Ongehuwd en alleenstaand"),
 	Married("com.rcs.ind.marital.merried", "Gehuwd"),
 	Divorced("com.rcs.ind.marital.divorced", "Gescheiden"),
-	Widowed("com.rcs.ind.marital.widowed", "Weduwe/Weduwnaar"),
-	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd samenwonend");
+	Widowed("com.rcs.ind.marital.widowed", "Weduwe of Weduwnaar"),
+	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd en samenwonend");
 
 	private final String key;
 	private final String label;

@@ -61,6 +61,7 @@ public class InterviewPreparationDTO {
 	private boolean hasDocument;
 	private String ricStatusKey;
 	private String religion;
+	
 	private boolean signature;
 
 	public InterviewPreparationDTO() {
