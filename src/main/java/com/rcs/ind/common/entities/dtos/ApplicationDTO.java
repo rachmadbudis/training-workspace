@@ -22,6 +22,7 @@ public class ApplicationDTO {
 	private ApplicationReleaseReasonEnum releaseReason;
 	private String tfaStream;
 	private String nationality;
+	private String applicationType;
 	private ApplicationStatusEnum status;
 
 	public ApplicationDTO() {
@@ -146,6 +147,15 @@ public class ApplicationDTO {
 		this.status = status;
 	}
 
+	
+	public String getApplicationType() {
+		return applicationType;
+	}
+
+	public void setApplicationType(String applicationType) {
+		this.applicationType = applicationType;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -177,6 +187,8 @@ public class ApplicationDTO {
 		builder.append(nationality);
 		builder.append(", status=");
 		builder.append(status);
+		builder.append(", applicationType=");
+		builder.append(applicationType);
 		builder.append("]");
 		return builder.toString();
 	}

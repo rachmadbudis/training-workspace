@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.ApplicationTypeEnum;
 import com.rcs.ind.common.enums.InterviewStatusEnum;
 
 public class ApplicationGridDTO {
@@ -18,6 +19,8 @@ public class ApplicationGridDTO {
 	private Locale language;
 	private String nationality;
 	private Date startDate;
+	private String applicationType;
+
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -97,5 +100,13 @@ public class ApplicationGridDTO {
 
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
+	}
+
+	public String getApplicationType() {
+		return applicationType;
+	}
+
+	public void setApplicationType(String applicationType) {
+		this.applicationType = applicationType;
 	}
 }
