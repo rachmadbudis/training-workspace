@@ -23,6 +23,7 @@ public class ApplicationDTO {
 	private String tfaStream;
 	private String nationality;
 	private ApplicationStatusEnum status;
+	private boolean simplified;
 
 	public ApplicationDTO() {
 	}
@@ -179,6 +180,14 @@ public class ApplicationDTO {
 		builder.append(status);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	public boolean getSimplified() {
+		return simplified;
+	}
+
+	public void setSimplified(boolean simplified) {
+		this.simplified = simplified;
 	}
 	
 	
