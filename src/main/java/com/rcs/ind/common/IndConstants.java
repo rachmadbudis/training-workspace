@@ -142,4 +142,31 @@ public final class IndConstants {
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
 	
+	
+	// Constants for DDLs	
+	// Location DDL
+	public static final String LOCATION_DDL_NAME = "Location";
+	public static final String LOCATION = "location";
+	public static final String INTERVIEW_LOCATION = "interviewLocation";
+
+	// Claimland DDL
+	public static final String CLAIMLAND_DDL_NAME = "Claimland";
+	public static final String CLAIMLAND_VALUE = "claimland";
+	public static final String CLAIMLAND_LABEL = "claimlandlabel";
+	public static final String CLAIMLAND_EU_COUNTRY = "isEUCountry";
+
+	// Language DDL
+	public static final String LANGUAGE_DDL_NAME = "Language";
+	public static final String LANGUAGE_VALUE = "language_value";
+	public static final String LANGUAGE_LABEL = "language_label";
+
+	// Nationality DDL
+	public static final String NATIONALITY_DDL_NAME = "Nationalities";
+	public static final String NATIONALITY = "nationalities";
+	public static final String NATIONALITY_SAFE_COUNTRY = "safeCountry";
+
+	// Tracks DDL
+	public static final String TRACK_DDL_NAME = "Tracks";
+	public static final String TRACK_KEY = "Key";
+	public static final String TRACK_LABEL = "Label";
 }
