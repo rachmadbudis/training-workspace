@@ -13,6 +13,7 @@ public class ApplicationHostDTO {
 	private Locale language;
 	private String nationality;
 	private Boolean isPaperApplication;
+	private Boolean isSafeCountry;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -69,5 +70,11 @@ public class ApplicationHostDTO {
 	public void setIsPaperApplication(Boolean isPaperApplication) {
 		this.isPaperApplication = isPaperApplication;
 	}
+	public Boolean getIsSafeCountry() {
+		return isSafeCountry;
+	}
 
+	public void setIsSafeCountry(Boolean isSafeCountry) {
+		this.isSafeCountry = isSafeCountry;
+	}
 }
