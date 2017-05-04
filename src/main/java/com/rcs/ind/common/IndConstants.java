@@ -143,6 +143,12 @@ public final class IndConstants {
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
 	
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_GENERIC = "faanmeldformulierdocumenten.documenteninbezit.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_ERITREA = "faanmeldformulierdocumenten.documenteneritera.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_AFGHANISTAN = "faanmeldformulierdocumenten.documentenafghanistan.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAK = "faanmeldformulierdocumenten.documentenirak.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAN = "faanmeldformulierdocumenten.documenteniran.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_SYRIA = "faanmeldformulierdocumenten.documentensyria.welkedocumenten";
 	
 	// Constants for DDLs	
 	// Location DDL
