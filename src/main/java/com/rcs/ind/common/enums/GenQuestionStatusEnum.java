@@ -5,7 +5,7 @@ public enum GenQuestionStatusEnum {
 	General("General"),
 	Additional("Additional"),
 	StartGehoor("StartGehoor"),
-	InProgress("InProgress");
+	InProgress("ReviewInProgress");
 
 	private final String key;
 	private static GenQuestionStatusEnum[] vals = values();
