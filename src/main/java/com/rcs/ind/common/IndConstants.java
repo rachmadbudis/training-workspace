@@ -150,6 +150,9 @@ public final class IndConstants {
 	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAN = "faanmeldformulierdocumenten.documenteniran.welkedocumenten";
 	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_SYRIA = "faanmeldformulierdocumenten.documentensyria.welkedocumenten";
 	
+	public static final String MULTIPLE_NATIONALITIES_PREFIX = "faanmeldformulierpersonalia.nationaliteiten.";
+	public static final String MULTIPLE_NATIONALITIES_SUFIX = ".welkenationaliteiten";
+	
 	// Constants for DDLs	
 	// Location DDL
 	public static final String LOCATION_DDL_NAME = "Location";
