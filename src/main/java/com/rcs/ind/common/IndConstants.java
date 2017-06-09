@@ -157,6 +157,15 @@ public final class IndConstants {
 	// Location DDL
 	public static final String LOCATION_DDL_NAME = "Location";
 	public static final String LOCATION = "location";
+	public static final String VISIT_ADDRESS_1  = "Visit_Address_L1";
+	public static final String VISIT_ADDRESS_2  = "Visit_Address_L2";
+	public static final String POST_ADDRESS_L1  = "Post_Address_L1";
+	public static final String POST_ADDRESS_L2  = "Post_Address_L2";
+	public static final String POST_ADDRESS_L3  = "Post_Address_L3";
+	public static final String OPENING_TIMES  = "Opening_times";
+	public static final String CONTACT_PERSON_L1  = "Contact_Person_L1";
+	public static final String CONTACT_PERSON_L2  = "Contact_Person_L2";
+	public static final String CONTACT_PERSON_L3  = "Contact_Person_L3";
 	public static final String INTERVIEW_LOCATION = "interviewLocation";
 
 	// Claimland DDL
