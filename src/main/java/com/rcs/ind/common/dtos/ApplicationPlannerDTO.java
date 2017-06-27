@@ -17,6 +17,7 @@ public class ApplicationPlannerDTO {
 	private Locale language;
 	private String nationality;
 	private Date startDate;
+	private String applicationType;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -96,6 +97,14 @@ public class ApplicationPlannerDTO {
 
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
+	}
+
+	public String getApplicationType() {
+		return applicationType;
+	}
+
+	public void setApplicationType(String applicationType) {
+		this.applicationType = applicationType;
 	}
 
 }

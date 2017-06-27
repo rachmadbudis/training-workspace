@@ -4,7 +4,8 @@ package com.rcs.ind.common.enums;
 public enum GenQuestionStatusEnum {
 	General("General"),
 	Additional("Additional"),
-	StartGehoor("StartGehoor");
+	StartGehoor("StartGehoor"),
+	InProgress("ReviewInProgress");
 
 	private final String key;
 	private static GenQuestionStatusEnum[] vals = values();

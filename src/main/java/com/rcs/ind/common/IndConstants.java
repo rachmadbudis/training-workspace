@@ -31,6 +31,7 @@ public final class IndConstants {
 	// Journal Article constants
 	public static final String INTERVIEW_DOC_PREFIX = "interview_doc_";
 	public static final String LOGO_FILENAME = "logo_ind";
+	public static final String CUSTOM_QUESTION_FOLDER = "Custom Question";
 
 	// Url Key
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
@@ -142,4 +143,49 @@ public final class IndConstants {
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
 	
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_GENERIC = "faanmeldformulierdocumenten.documenteninbezit.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_ERITREA = "faanmeldformulierdocumenten.documenteneritera.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_AFGHANISTAN = "faanmeldformulierdocumenten.documentenafghanistan.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAK = "faanmeldformulierdocumenten.documentenirak.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAN = "faanmeldformulierdocumenten.documenteniran.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_SYRIA = "faanmeldformulierdocumenten.documentensyria.welkedocumenten";
+	
+	public static final String MULTIPLE_NATIONALITIES_PREFIX = "faanmeldformulierpersonalia.nationaliteiten.";
+	public static final String MULTIPLE_NATIONALITIES_SUFIX = ".welkenationaliteiten";
+	
+	// Constants for DDLs	
+	// Location DDL
+	public static final String LOCATION_DDL_NAME = "Location";
+	public static final String LOCATION = "location";
+	public static final String VISIT_ADDRESS_L1  = "Visit_Address_L1";
+	public static final String VISIT_ADDRESS_L2  = "Visit_Address_L2";
+	public static final String POST_ADDRESS_L1  = "Post_Address_L1";
+	public static final String POST_ADDRESS_L2  = "Post_Address_L2";
+	public static final String POST_ADDRESS_L3  = "Post_Address_L3";
+	public static final String OPENING_TIMES  = "Opening_times";
+	public static final String CONTACT_PERSON_L1  = "Contact_Person_L1";
+	public static final String CONTACT_PERSON_L2  = "Contact_Person_L2";
+	public static final String CONTACT_PERSON_L3  = "Contact_Person_L3";
+	public static final String INTERVIEW_LOCATION = "interviewLocation";
+
+	// Claimland DDL
+	public static final String CLAIMLAND_DDL_NAME = "Claimland";
+	public static final String CLAIMLAND_VALUE = "claimland";
+	public static final String CLAIMLAND_LABEL = "claimlandlabel";
+	public static final String CLAIMLAND_EU_COUNTRY = "isEUCountry";
+
+	// Language DDL
+	public static final String LANGUAGE_DDL_NAME = "Language";
+	public static final String LANGUAGE_VALUE = "language_value";
+	public static final String LANGUAGE_LABEL = "language_label";
+
+	// Nationality DDL
+	public static final String NATIONALITY_DDL_NAME = "Nationalities";
+	public static final String NATIONALITY = "nationalities";
+	public static final String NATIONALITY_SAFE_COUNTRY = "safeCountry";
+
+	// Tracks DDL
+	public static final String TRACK_DDL_NAME = "Tracks";
+	public static final String TRACK_KEY = "Key";
+	public static final String TRACK_LABEL = "Label";
 }

@@ -4,19 +4,11 @@ public enum ConfigurationEnum {
 	// General Configuration that doesn't belong to other category
 	DEFAULT_GROUP("defaultGroup"),
 	DEFAULT_COMPANYID("defaultCompanyId"),
-	PREPARED_QUESTION_FOLDER("preparedQuestionFolder"),
 	
 	// Configuration key for email
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
 	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
-	
-	// Configuration key for DDL ID
-	NationalitiesDDL("nationalitiesDDL", "0"),
-	LanguageDDL("languageDDL", "0"),
-	ClaimlandDDL("claimlandDDL", "0"),
-	LocationDDL("locationDDL", "0"),
-	TrackDDL("trackDDL", "0"),
 	
 	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
