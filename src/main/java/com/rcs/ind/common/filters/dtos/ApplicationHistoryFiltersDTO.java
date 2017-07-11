@@ -35,7 +35,10 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private String nationality;
 	private String startDateTimestamp;
 	private ApplicationTypeEnum appType;
-	
+
+	public ApplicationHistoryFiltersDTO() {
+	}
+
 	public String getLocation() {
 		return location;
 	}
@@ -200,9 +203,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 		return appType;
 	}
 
-	public void setAppType(String appTypeStr) {
-		if (!StringUtils.isEmpty(appTypeStr)) {
-			this.appType = ApplicationTypeEnum.valueOf(appTypeStr);
-		}
+	public void setAppType(ApplicationTypeEnum appType) {
+		this.appType = appType;
 	}
 }
