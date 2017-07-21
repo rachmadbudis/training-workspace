@@ -9,6 +9,7 @@ public enum ConfigurationEnum {
 	EmailSender("emailSender", "changethis@ind.com"),
 	EmailReceiver("emailReceiver", "changethis@ind.com"),
 	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
+	EmailErrorMessages("emailErrorMessages", "changethis@ind.com"),
 	
 	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
