@@ -6,14 +6,11 @@ public enum ApplicationStatusEnum {
 	New(2, "com.rcs.ind.application.status.new", ""),
 	TranslateInProgress(3, "com.rcs.ind.application.status.translate.in.progress", ""),
 	Translated(4, "com.rcs.ind.application.status.translated", ""),
+	Illiterate(4, "com.rcs.ind.application.status.illiterate", ""),
 	PreparationInProgress(5, "com.rcs.ind.application.status.preparation.in.progress", "com.rcs.ind.screener.status.being.prepared"),
 	ReadyForInterview(6, "com.rcs.ind.application.status.ready.for.interview", "com.rcs.ind.screener.status.prepared"),
 	ReviewInProgress(7, "com.rcs.ind.application.status.review.in.progress", "com.rcs.ind.screener.status.in.progress"),
-	Reviewed(8, "com.rcs.ind.application.status.reviewed", "com.rcs.ind.screener.status.finished"),
-	Printed(9, "com.rcs.ind.application.status.printed", ""),
-	Finished(10, "com.rcs.ind.application.status.finished", ""),
-	Closed(11, "com.rcs.ind.application.status.closed", ""),
-	Illiterate(4, "com.rcs.ind.application.status.illiterate", "");
+	Reviewed(8, "com.rcs.ind.application.status.reviewed", "com.rcs.ind.screener.status.finished");
 
 	private final int order;
 	private final String key;
