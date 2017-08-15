@@ -84,6 +84,10 @@ public final class IndConstants {
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
 	public static final String TRACK_NORMAL_DOCUMENT_URL_TITLE = "bwst_amg_normal";
 	public static final String TRACK_VLG_DOCUMENT_URL_TITLE = "bwst_amg_vlg";
+	public static final String TRACK_DUBLIN_DOCUMENT_URL_TITLE = "simplifiedDublin";
+	public static final String TRACK_NORMAL_DOCUMENT_NAME = "Aanmeldgehoor";
+	public static final String TRACK_VLG_DOCUMENT_NAME = "VLG";
+	public static final String TRACK_DUBLIN_DOCUMENT_NAME = "Aanmeldgehoor Dublin AMG";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
 	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
