@@ -11,8 +11,6 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
 public enum LanguageEnum {
 	DUTCH(new Locale("nl", "NL"), "language.nl", false),
 	ENGLISH(new Locale("en", "GB"), "language.en", false),
@@ -23,7 +21,7 @@ public enum LanguageEnum {
 	ERITREA(new Locale("ti", "ER"), "language.ti", false),
 	PASHTO(new Locale("ps", "AF"), "language.ps",true),
 	BADINI(new Locale("ba", "IQ"), "language.ba",true),
-	SORANI(new Locale("ckb", "IQ"), "language.ckb",true),
+	SORANI(new Locale("ku_arab", "IQ"), "language.ckb",true),
 	ARABICSGENERAL(new Locale("ar", "MA"), "language.ar.g",true),
 	ALBANIAN(new Locale("sq","AL"),"language.sq",false),
 	SERBIAN(new Locale("mk","MK"),"language.sr",false),
