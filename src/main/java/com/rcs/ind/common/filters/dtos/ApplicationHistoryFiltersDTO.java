@@ -7,8 +7,10 @@ import java.util.Set;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.ApplicationTypeEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
+import org.apache.commons.lang3.StringUtils;
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 
@@ -32,6 +34,10 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private TrackEnum track;
 	private String nationality;
 	private String startDateTimestamp;
+	private ApplicationTypeEnum appType;
+
+	public ApplicationHistoryFiltersDTO() {
+	}
 
 	public String getLocation() {
 		return location;
@@ -193,4 +199,11 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 		this.startDateTimestamp = startDateTimestamp;
 	}
 
+	public ApplicationTypeEnum getAppType() {
+		return appType;
+	}
+
+	public void setAppType(ApplicationTypeEnum appType) {
+		this.appType = appType;
+	}
 }

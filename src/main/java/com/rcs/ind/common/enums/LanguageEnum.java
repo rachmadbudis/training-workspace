@@ -11,20 +11,18 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
 public enum LanguageEnum {
 	DUTCH(new Locale("nl", "NL"), "language.nl", false),
 	ENGLISH(new Locale("en", "GB"), "language.en", false),
-	ARABICSGENERAL(new Locale("ar", "MA"), "language.ar.g",true),
+	FARSI(new Locale("fa", "IR"), "language.fa",true),
 	ARABICSYRIA(new Locale("ar", "SY"), "language.ar", true),
+	DARI(new Locale("prs", "AF"), "language.prs",true),
 	ARABICIRAQ(new Locale("ar", "IQ"), "language.iq", true),
 	ERITREA(new Locale("ti", "ER"), "language.ti", false),
-	SORANI(new Locale("ckb", "IQ"), "language.ckb",true),
-	FARSI(new Locale("fa", "IR"), "language.fa",true),
-	DARI(new Locale("prs", "AF"), "language.prs",true),
 	PASHTO(new Locale("ps", "AF"), "language.ps",true),
 	BADINI(new Locale("ba", "IQ"), "language.ba",true),
+	SORANI(new Locale("ku_arab", "IQ"), "language.ckb",true),
+	ARABICSGENERAL(new Locale("ar", "MA"), "language.ar.g",true),
 	ALBANIAN(new Locale("sq","AL"),"language.sq",false),
 	SERBIAN(new Locale("mk","MK"),"language.sr",false),
 	KROATISCH(new Locale("hr","HR"),"language.kr",false),
@@ -80,9 +78,8 @@ public enum LanguageEnum {
 	}
 
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(ARABICSGENERAL,ARABICSYRIA, ARABICIRAQ, ERITREA, SORANI, BADINI, FARSI, DARI, PASHTO,ALBANIAN,SERBIAN,KROATISCH,BOSNISCH);
+		return EnumSet.of(FARSI, ARABICSYRIA, DARI, ARABICIRAQ, ERITREA, PASHTO, SORANI, ARABICSGENERAL, ALBANIAN, SERBIAN, KROATISCH, BOSNISCH);
 	}
-
 	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
 

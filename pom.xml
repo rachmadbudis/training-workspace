@@ -3,19 +3,19 @@
   <parent>
   	<groupId>com.rcs.ind</groupId>
   	<artifactId>asiel-parent</artifactId>
-  	<version>3.5</version>
+  	<version>3.6</version>
 	<relativePath>../asiel-parent/pom.xml</relativePath>
  </parent>
   
   <groupId>com.rcs.ind</groupId>
   <artifactId>asiel-util</artifactId>
-  <version>3.5</version>
+  <version>${project.parent.version}</version>
   <name>Asiel Util</name>
   <scm>
   	<connection>scm:svn:${project.svn.base.url}/liferay/asiel-util/trunk/</connection>
   	<developerConnection>scm:svn:${project.svn.base.url}/liferay/asiel-util/trunk/</developerConnection>
   	<url>${project.svn.base.url}/liferay/asiel-util/trunk/</url>
- </scm>
+ 	</scm>
   
   <dependencies>
   	<dependency>

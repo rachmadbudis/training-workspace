@@ -84,6 +84,10 @@ public final class IndConstants {
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
 	public static final String TRACK_NORMAL_DOCUMENT_URL_TITLE = "bwst_amg_normal";
 	public static final String TRACK_VLG_DOCUMENT_URL_TITLE = "bwst_amg_vlg";
+	public static final String TRACK_DUBLIN_DOCUMENT_URL_TITLE = "simplifiedDublin";
+	public static final String TRACK_NORMAL_DOCUMENT_NAME = "Aanmeldgehoor";
+	public static final String TRACK_VLG_DOCUMENT_NAME = "VLG";
+	public static final String TRACK_DUBLIN_DOCUMENT_NAME = "Aanmeldgehoor Dublin AMG";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
 	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
@@ -108,6 +112,7 @@ public final class IndConstants {
 	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
 	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
 	public static final String SIMPLE_DOCUMENT_RULES_DIR = "SimpleDocument";
+	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
