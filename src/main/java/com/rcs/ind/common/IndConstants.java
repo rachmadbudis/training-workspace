@@ -162,6 +162,7 @@ public final class IndConstants {
 	// Location DDL
 	public static final String LOCATION_DDL_NAME = "Location";
 	public static final String LOCATION = "location";
+	public static final String DIRECTORATE = "Directie_Asiel";
 	public static final String VISIT_ADDRESS_L1  = "Visit_Address_L1";
 	public static final String VISIT_ADDRESS_L2  = "Visit_Address_L2";
 	public static final String POST_ADDRESS_L1  = "Post_Address_L1";
