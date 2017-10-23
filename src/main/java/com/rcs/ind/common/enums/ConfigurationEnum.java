@@ -73,6 +73,9 @@ public enum ConfigurationEnum {
 	
 	//Configuration key for websocket
 	WebSocket("websocket", "false"),
+	
+	//Configuration key for event log
+	EventLog("eventlog", "false"),
 	;
 
 	private final String key;
