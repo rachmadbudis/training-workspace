@@ -72,6 +72,7 @@ public enum ConfigurationEnum {
 	AT_INCOMPLETE_EMAIL_TEMPLATE_TITLE("atIncompleteEmailTemplateTitle", "incomplete-email-template"),
 	
 	//Configuration key for websocket
+	WebSocketFE("websocket_fe", "false"),
 	WebSocket("websocket", "false"),
 	
 	//Configuration key for event log
