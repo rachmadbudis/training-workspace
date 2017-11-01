@@ -72,9 +72,14 @@ public enum ConfigurationEnum {
 	AT_INCOMPLETE_EMAIL_TEMPLATE_TITLE("atIncompleteEmailTemplateTitle", "incomplete-email-template"),
 	
 	//Configuration key for websocket
+	WebSocketFE("websocket_fe", "false"),
 	WebSocket("websocket", "false"),
-	
+
+	//Indigo web service client
 	INDIGO_SERVICE_ENDPOINT("indigoEndpoint","http://o8ketenosb.ont.ota.ind.minbzk.nl:7777/asiel/EAanvraagService"),
+
+	//Configuration key for event log
+	EventLog("eventlog", "false"),
 	;
 
 	private final String key;
