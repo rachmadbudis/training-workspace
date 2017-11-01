@@ -73,6 +73,8 @@ public enum ConfigurationEnum {
 	
 	//Configuration key for websocket
 	WebSocket("websocket", "false"),
+	
+	INDIGO_SERVICE_ENDPOINT("indigoEndpoint","http://o8ketenosb.ont.ota.ind.minbzk.nl:7777/asiel/EAanvraagService"),
 	;
 
 	private final String key;
