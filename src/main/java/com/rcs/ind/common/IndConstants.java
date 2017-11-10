@@ -94,6 +94,7 @@ public final class IndConstants {
 	public static final String MILITARY_IRAN_TITLE = "bwst_amg_military_iran";
 	public static final String MILITARY_AFGHANISTAN_TITLE = "bwst_amg_military_afghanistan";
 	public static final String M117C_URL_TITLE = "m117c";
+	public static final String ANTECEDENTEN_VERKLARING_URL_TITLE = "antecedenten_verklaring";
 	public static final String TRACK_1_EURODAC = "sp1_eurodac";
 	public static final String TRACK_1_EUVIS = "sp1_euvis";
 	public static final String RIC_PROFILE = "ric_profile";
