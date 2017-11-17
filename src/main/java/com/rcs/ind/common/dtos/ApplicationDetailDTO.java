@@ -5,8 +5,8 @@ import java.util.Date;
 public class ApplicationDetailDTO {
     
     private String step;
-    private String status;
     private String result;
+    private String location;
     private Date date;
     
     public String getStep() {
@@ -17,20 +17,20 @@ public class ApplicationDetailDTO {
         this.step = step;
     }
     
-    public String getStatus() {
-        return status;
-    }
-    
-    public void setStatus(String status) {
-        this.status = status;
-    }
-    
     public String getResult() {
         return result;
     }
     
     public void setResult(String result) {
         this.result = result;
+    }
+    
+    public String getLocation() {
+        return location;
+    }
+    
+    public void setLocation(String location) {
+        this.location = location;
     }
     
     public Date getDate() {
