@@ -1,19 +1,21 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.ApplicationStepEnum;
+
 import java.util.Date;
 
 public class ApplicationDetailDTO {
     
-    private String step;
+    private ApplicationStepEnum step;
     private String result;
     private String location;
     private Date date;
     
-    public String getStep() {
+    public ApplicationStepEnum getStep() {
         return step;
     }
     
-    public void setStep(String step) {
+    public void setStep(ApplicationStepEnum step) {
         this.step = step;
     }
     
