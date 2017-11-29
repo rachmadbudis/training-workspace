@@ -80,10 +80,7 @@
             <configuration>
 	           <archive>
 	            <manifestEntries>
-                	<Built-Date>${maven.build.timestamp}</Built-Date>
                     <Implementation-Title>Asiel Util</Implementation-Title>
-                    <Implementation-Version>${project.version} - ${maven.build.timestamp} - build : ${build.number}</Implementation-Version>
-                    <Implementation-Vendor>RITHM</Implementation-Vendor>
                 </manifestEntries>
 	          </archive>
             </configuration>
