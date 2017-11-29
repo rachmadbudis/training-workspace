@@ -8,6 +8,7 @@ public enum FileAttachmentEnum {
 	TRANSLATED_DOC_NAME("%s_Translation_File.pdf", "com.rcs.ind.filename.translated.form"),
 	PAPER_FORM_DOC_NAME("%s_Paper_Form_File.pdf", "com.rcs.ind.filename.paper.form"),
 	M117C_DOCUMENT_TITLE("M117C_%s.doc", "com.rcs.ind.filename.m117c"),
+	ANTECEDENTEN_VERKLARING_DOCUMENT_TITLE("Antecedentenverklaring_%s.docx", "com.rcs.ind.filename.antecedentenverklaring"),
 	BRP_PROFILE_DOC_PDF_NAME("%s_BRP_Profile_Document.pdf","com.rcs.ind.filename.brp.profile"),
 	NAREIS_PROFILE_DOC_PDF_NAME("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile"),
 	EMM("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml")
