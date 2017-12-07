@@ -1,5 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
+import com.rcs.ind.common.enums.FileAttachmentEnum;
+
 public class DocumentDTO {
 
 	private Long documentId;
