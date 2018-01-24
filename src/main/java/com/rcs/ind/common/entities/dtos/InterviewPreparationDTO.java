@@ -18,7 +18,7 @@ public class InterviewPreparationDTO {
 	private String vNumber;
 	private String surname;
 	private String name;
-	private String dateBirth;
+	private Date dateBirth;
 	private String nationality;
 	private String placeBirth;
 	private String countryBirth;
@@ -136,11 +136,11 @@ public class InterviewPreparationDTO {
 		this.name = name;
 	}
 
-	public String getDateBirth() {
+	public Date getDateBirth() {
 		return dateBirth;
 	}
 
-	public void setDateBirth(String dateBirth) {
+	public void setDateBirth(Date dateBirth) {
 		this.dateBirth = dateBirth;
 	}
 

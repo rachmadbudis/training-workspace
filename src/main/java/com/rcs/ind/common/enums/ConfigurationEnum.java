@@ -79,6 +79,9 @@ public enum ConfigurationEnum {
 
 	//Configuration key for event log
 	EventLog("eventlog", "false"),
+
+	//Configuration key for logging level
+	LoggingLevel("loggingLevel", "error"),
 	;
 
 	private final String key;
