@@ -8,9 +8,9 @@
 		<relativePath>../asiel-parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.rcs.ind</groupId>
 	<artifactId>asiel-util</artifactId>
 	<name>Asiel Util</name>
+	<version>${project.parent.version}</version>
 	<scm>
 		<connection>scm:svn:${project.svn.base.url}/liferay/asiel-util/trunk/</connection>
 		<developerConnection>scm:svn:${project.svn.base.url}/liferay/asiel-util/trunk/</developerConnection>
