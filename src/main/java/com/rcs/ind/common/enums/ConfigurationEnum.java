@@ -6,10 +6,10 @@ public enum ConfigurationEnum {
 	DEFAULT_COMPANYID("defaultCompanyId"),
 	
 	// Configuration key for email
-	EmailSender("emailSender", "changethis@ind.com"),
-	EmailReceiver("emailReceiver", "changethis@ind.com"),
-	EmailReceiverEMM("emailReceiverEMM", "changethis@ind.com"),
-	EmailErrorMessages("emailErrorMessages", "changethis@ind.com"),
+	EmailSender("emailSender", ""),
+	EmailReceiver("emailReceiver", ""),
+	EmailReceiverEMM("emailReceiverEMM", ""),
+	EmailErrorMessages("emailErrorMessages", ""),
 	
 	// Configuration key for Session
 	SessionExtend("sessionAutoExtend", "false"),
@@ -79,6 +79,9 @@ public enum ConfigurationEnum {
 
 	//Configuration key for event log
 	EventLog("eventlog", "false"),
+
+	//Configuration key for logging level
+	LoggingLevel("loggingLevel", "error"),
 	;
 
 	private final String key;
