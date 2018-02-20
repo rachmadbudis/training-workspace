@@ -3,14 +3,14 @@ package com.rcs.ind.common.enums;
 public enum FileAttachmentEnum {
 	INTERVIEW_DOC_PDF("%s_Interview_Document.pdf", "com.rcs.ind.filename.interview","Verslag gehoor aanmeldfase"),
 	TRACK_HISTORY_PDF("%s_Track_History.pdf", "com.rcs.ind.filename.track.history",""),
-	RIC_ZIP("INTERN_%s_RIC_Bevindingen.zip", "com.rcs.ind.filename.ric.zip","Informatie GO"),
+	RIC_ZIP("INTERN_%s_RIC_Bevindingen.zip", "com.rcs.ind.filename.ric.zip","Herkomst indicatie"),
 	CUSTOMER_DOC("%s_Customer_File.pdf", "com.rcs.ind.filename.customer.form", "Formulier persoonsgegevens"),
 	TRANSLATED_DOC("%s_Translation_File.pdf", "com.rcs.ind.filename.translated.form","Formulier persoonsgegevens"),
 	PAPER_FORM_DOC("%s_Paper_Form_File.pdf", "com.rcs.ind.filename.paper.form","Formulier persoonsgegevens"),
 	M117C_DOCUMENT("M117C_%s.doc", "com.rcs.ind.filename.m117c",""),
 	ANTECEDENTEN_VERKLARING_DOCUMENT("Antecedentenverklaring_%s.docx", "com.rcs.ind.filename.antecedentenverklaring",""),
-	BRP_PROFILE_DOC_PDF("%s_BRP_Profile_Document.pdf","com.rcs.ind.filename.brp.profile","Klantinformatie overig"),
-	NAREIS_PROFILE_DOC_PDF("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Klantinformatie overig"),
+	BRP_PROFILE_DOC_PDF("%s_BRP_Profile_Document.pdf","com.rcs.ind.filename.brp.profile","Overzicht voor inschrijving BRP"),
+	NAREIS_PROFILE_DOC_PDF("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Formulier persoonsgegevens tbv Nareis"),
 	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml","")
 	;
 
