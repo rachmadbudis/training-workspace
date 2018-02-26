@@ -17,13 +17,6 @@ public final class IndConstants {
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
 
-	// TripleForms constants.
-	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
-	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
-	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
-	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
-	public static final String SIMPLIFIED_FORM_SCENARIO_ID = "scAsielBlokjesformulier";
-
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
 	public static final String INTERVIEWER_FUNCTION = "Hoormedewerker";
