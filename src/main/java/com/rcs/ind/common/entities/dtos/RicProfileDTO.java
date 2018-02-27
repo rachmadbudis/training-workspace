@@ -12,7 +12,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private ApplicationDTO application;
 	private int version;
 	private Long applicationId;
-	private List<RicDocumentDTO> documents;
+	private RicDocumentDTO document;
 	private RicStatusEnum status;
 
 	public RicProfileDTO() {
@@ -70,11 +70,11 @@ public class RicProfileDTO extends GenericEntityDTO {
 		this.status = status;
 	}
 
-	public List<RicDocumentDTO> getDocuments() {
-		return documents;
+	public RicDocumentDTO getDocument() {
+		return document;
 	}
 
-	public void setDocuments(List<RicDocumentDTO> documents) {
-		this.documents = documents;
+	public void setDocument(RicDocumentDTO documents) {
+		this.document = documents;
 	}
 }
