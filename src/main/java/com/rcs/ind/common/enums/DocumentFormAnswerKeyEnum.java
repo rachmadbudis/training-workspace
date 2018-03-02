@@ -17,7 +17,9 @@ public enum DocumentFormAnswerKeyEnum {
 	DOCUMENTEN_IRAN_TRANSLATION("faanmeldformulierdocumenten.documenteniran.welkedocumenten_translation"),
 	DOCUMENTEN_VANDAAGBIJ_TRANSLATION("faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten_translation"),
 	DOCUMENTEN_DATUMAFGIFTEIDENTITEITSKAART("faanmeldformulierdocumenten.datumafgifteidentiteitskaart"),
-	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.datumafgiftepaspoort");
+	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.datumafgiftepaspoort"),
+	DOCUMENTEN_WELKEINSTANTIEIDENTITEITSKAARTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven"),
+	DOCUMENTEN_WELKEINSTANTIEPASPOORTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantiepaspoortafgegeven");
 
 	private final String key;
 
