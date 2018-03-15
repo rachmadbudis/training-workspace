@@ -5,10 +5,10 @@ import java.util.List;
 
 public enum DocumentFormAnswerKeyEnum {
 	DOCUMENTEN_VANDAAGBIJ("faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten", "faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten_translation"),
-	DOCUMENTEN_DATUMAFGIFTEIDENTITEITSKAART("faanmeldformulierdocumenten.welkedocumentenbij.datumafgifteidentiteitskaart", "faanmeldformulierdocumenten.welkedocumentenbij.datumafgifteidentiteitskaart_translation"),
-	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.welkedocumentenbij.datumafgiftepaspoort", "faanmeldformulierdocumenten.welkedocumentenbij.datumafgiftepaspoort_translation"),
-	DOCUMENTEN_WELKEINSTANTIEIDENTITEITSKAARTAFGEGEVEN("faanmeldformulierdocumenten.welkedocumentenbij.welkeinstantieidentiteitskaartafgegeven", "faanmeldformulierdocumenten.welkedocumentenbij.welkeinstantieidentiteitskaartafgegeven_translation"),
-	DOCUMENTEN_WELKEINSTANTIEPASPOORTAFGEGEVEN("faanmeldformulierdocumenten.welkedocumentenbij.welkeinstantiepaspoortafgegeven", "faanmeldformulierdocumenten.welkedocumentenbij.welkeinstantiepaspoortafgegeven_translation"),;
+	DOCUMENTEN_DATUMAFGIFTEIDENTITEITSKAART("faanmeldformulierdocumenten.datumafgifteidentiteitskaart", "faanmeldformulierdocumenten.datumafgifteidentiteitskaart_translation"),
+	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.datumafgiftepaspoort", "faanmeldformulierdocumenten.datumafgiftepaspoort_translation"),
+	DOCUMENTEN_WELKEINSTANTIEIDENTITEITSKAARTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven", "faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven_translation"),
+	DOCUMENTEN_WELKEINSTANTIEPASPOORTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantiepaspoortafgegeven", "faanmeldformulierdocumenten.welkeinstantiepaspoortafgegeven_translation");
 
 	private final String key;
 	private final String translation;
@@ -24,6 +24,14 @@ public enum DocumentFormAnswerKeyEnum {
 
 	public String getTranslation() {
 		return translation;
+	}
+
+	public static List<String> getFormAnswerKeys() {
+		List<String> list = new ArrayList<>();
+		for (DocumentFormAnswerKeyEnum formAnswerKey : DocumentFormAnswerKeyEnum.values()) {
+			list.add(formAnswerKey.getKey());
+		}
+		return list;
 	}
 
 	public static List<String> getFormAnswerKeysAndTranslation() {
