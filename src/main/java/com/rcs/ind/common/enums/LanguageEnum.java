@@ -28,8 +28,8 @@ public enum LanguageEnum {
 	KROATISCH(new Locale("hr","HR"),"language.kr",false),
 	BOSNISCH(new Locale("sr","BA"),"language.bs",false),
 	AMHARIC(new Locale("am", "ET"), "language.am", false),
-	PUNJABI(new Locale("pa", "IN"), "language.pa", false),
-	URDU(new Locale("ur", "IN"), "language.ur", true),
+	PUNJABI(new Locale("sa", "IN"), "language.pa", false),
+	URDU(new Locale("ur", "PK"), "language.ur", true),
 	TURKISH(new Locale("tr", "TR"), "language.tr", false),
 	RUSSIAN(new Locale("ru", "RU"), "language.ru", false);
 
