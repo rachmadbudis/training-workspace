@@ -17,6 +17,7 @@ public enum FormAnswerKeyEnum {
 	MARITAL_STATUS("faanmeldformuliergezinenfamilie.watisburgerlijkestaat"),
 	SEX("faanmeldformulierpersonalia.geslacht"),
 	RELIGION("faanmeldformulierpersonalia.religie"),
+	RELIGION_OTHERS("faanmeldformulierpersonalia.religieanders"),
 	COUNTRY("faanmeldformulierpersonalia.land");
 	
 	private final String key;
