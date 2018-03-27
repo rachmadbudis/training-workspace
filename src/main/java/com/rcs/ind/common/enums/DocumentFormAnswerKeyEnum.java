@@ -5,6 +5,7 @@ import java.util.List;
 
 public enum DocumentFormAnswerKeyEnum {
 	DOCUMENTEN_VANDAAGBIJ("faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten", "faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten_translation"),
+	DOCUMENTEN_VANDAAGBIJ_ANDERS("faanmeldformulierdocumenten.welkedocumentenbijanders", "faanmeldformulierdocumenten.welkedocumentenbijanders_translation"),
 	DOCUMENTEN_DATUMAFGIFTEIDENTITEITSKAART("faanmeldformulierdocumenten.datumafgifteidentiteitskaart", "faanmeldformulierdocumenten.datumafgifteidentiteitskaart_translation"),
 	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.datumafgiftepaspoort", "faanmeldformulierdocumenten.datumafgiftepaspoort_translation"),
 	DOCUMENTEN_WELKEINSTANTIEIDENTITEITSKAARTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven", "faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven_translation"),
