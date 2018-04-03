@@ -18,6 +18,7 @@ public enum FormAnswerKeyEnum {
 	SEX("faanmeldformulierpersonalia.geslacht"),
 	RELIGION("faanmeldformulierpersonalia.religie"),
 	RELIGION_OTHERS("faanmeldformulierpersonalia.religieanders"),
+	RELIGION_YESNO("faanmeldformulierpersonalia.belijdtueenreligie"),
 	COUNTRY("faanmeldformulierpersonalia.land");
 	
 	private final String key;

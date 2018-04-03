@@ -30,7 +30,7 @@ public enum LanguageEnum {
 	AMHARIC(new Locale("am", "ET"), "language.am", false),
 	PUNJABI(new Locale("sa", "IN"), "language.pa", false),
 	URDU(new Locale("ur", "PK"), "language.ur", true),
-	TURKISH(new Locale("tr", "RU"), "language.tr", false),
+	TURKISH(new Locale("tt", "RU"), "language.tr", false),
 	RUSSIAN(new Locale("ru", "RU"), "language.ru", false);
 
 	private final Locale language;

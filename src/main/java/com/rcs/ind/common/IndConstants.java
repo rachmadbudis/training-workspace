@@ -13,6 +13,7 @@ public final class IndConstants {
 	public static final String SYSTEM = "SYSTEM";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String DUTCH_YES = "Ja";
+	public static final String DUTCH_NONE = "Geen";
 	public static final String DUTCH_NO = "Nee";
 	public static final String DUTCH_OTHERS = "Anders";
 	public static final String DUTCH_MALE = "Man";
