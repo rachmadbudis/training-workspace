@@ -107,6 +107,7 @@ public final class IndConstants {
 	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
 	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
 	public static final String ANDERS_RULE = "anders.drl";
+	public static final String LOOP_DATA_RULE = "LoopData.drl";
 	public static final String SIMPLE_DOCUMENT_RULES_DIR = "SimpleDocument";
 	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
 
