@@ -63,7 +63,6 @@ public class InterviewPreparationDTO {
 	private String religion;
 	
 	private boolean signature;
-	private boolean simplified;
 	
 	public InterviewPreparationDTO() {
 	}
@@ -534,14 +533,6 @@ public class InterviewPreparationDTO {
 
 	public void setSignature(boolean signature) {
 		this.signature = signature;
-	}
-
-	public boolean getSimplified() {
-		return simplified;
-	}
-
-	public void setSimplified(boolean simplified) {
-		this.simplified = simplified;
 	}
 
 }
