@@ -12,19 +12,13 @@ public enum TrackEnum {
 	Normal("com.rcs.ind.track.normal", true)
 	;
 
-	private final String key;
-	private final boolean simplified;
+    private final String key;
 
-	private TrackEnum(String key, boolean simplified) {
-		this.key = key;
-		this.simplified = simplified;
-	}
+    private TrackEnum(String key, boolean simplified) {
+        this.key = key;
+    }
 
-	public String getKey() {
-		return key;
-	}
-	
-	public boolean getSimplified() {
-		return simplified;
-	}
+    public String getKey() {
+        return key;
+    }
 }
