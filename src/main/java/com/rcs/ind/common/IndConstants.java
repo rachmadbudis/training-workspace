@@ -33,7 +33,7 @@ public final class IndConstants {
 	public static final String RESUME_KEY = "resume";
 	public static final String APPLICATION_ID_KEY = "applicationId";
 
-	// Nationality Syrian and Eritrean constants
+	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
 	public static final String IRAK = "Iraakse";
@@ -43,7 +43,11 @@ public final class IndConstants {
 	public static final String PALESTIJNS_STAATSLOOS = "Palestijns Staatsloos";
 	public static final String PALESTIJNSE_SYRISCHE = "Palestijns Syrische";
 	public static final String PALESTIJNSE = "Palestijnse";
+	public static final String Marokkaanse = "Marokkaanse";
 	public static final String STAATLOOS = "Staatloos";
+	public static final String MOROCCAN = "Marokkaans";
+	public static final String ALGERIAN = "Algerijnse";
+	public static final String TUNISIAN = "Tunesische";
 	
 	//Country Constant
 	public static final String SYRIE = "Syrië";
