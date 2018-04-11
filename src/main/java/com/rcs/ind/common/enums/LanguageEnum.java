@@ -86,6 +86,10 @@ public enum LanguageEnum {
 		return EnumSet.of(FARSI, DARI, ERITREA, ARABICSGENERAL, ALBANIAN, SERBIAN, KROATISCH, BOSNISCH, AMHARIC, PUNJABI, URDU, ENGLISH, TURKISH, RUSSIAN);
 	}
 	
+	public static EnumSet<LanguageEnum> getNonAutoTranslatedLanguageList() {
+		return EnumSet.of(ARABICSGENERAL, TURKISH, RUSSIAN, FARSI, DARI, ERITREA, AMHARIC, PUNJABI, URDU);
+	}
+	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
 
 	static {
