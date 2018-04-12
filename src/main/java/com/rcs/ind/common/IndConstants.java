@@ -36,6 +36,7 @@ public final class IndConstants {
 	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
+	public static final String LIBYAN = "Libische";
 	public static final String IRAK = "Iraakse";
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
