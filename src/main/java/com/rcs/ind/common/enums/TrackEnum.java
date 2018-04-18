@@ -7,9 +7,6 @@ public enum TrackEnum {
 	NationalitySyErValid("com.rcs.ind.track.nationality.sy.er.valid", false),
 	NationalityElse("com.rcs.ind.track.nationality.else", false),
 	NationalitySyErInvalid("com.rcs.ind.track.nationality.sy.er.invalid", false),
-	DublinAMG("com.rcs.ind.track.dublinAMG", true),
-	VLG("com.rcs.ind.track.vlg", true),
-	Normal("com.rcs.ind.track.normal", true)
 	;
 
     private final String key;
