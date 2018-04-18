@@ -13,16 +13,11 @@ public final class IndConstants {
 	public static final String SYSTEM = "SYSTEM";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String DUTCH_YES = "Ja";
+	public static final String DUTCH_NONE = "Geen";
 	public static final String DUTCH_NO = "Nee";
+	public static final String DUTCH_OTHERS = "Anders";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
-
-	// TripleForms constants.
-	public static final String XML_ANSWERS_QUESTION_ID = "__XmlAnswers";
-	public static final String TRANSLATION_FORM_SCENARIO_ID = "scAsielVertaalFormulier";
-	public static final String PAPER_FORM_SCENARIO_ID = "scAsielDigibetenAanmeldFormulier";
-	public static final String CUSTOMER_FORM_SCENARIO_ID = "scAsielAanmeldFormulier";
-	public static final String SIMPLIFIED_FORM_SCENARIO_ID = "scAsielBlokjesformulier";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
@@ -38,9 +33,10 @@ public final class IndConstants {
 	public static final String RESUME_KEY = "resume";
 	public static final String APPLICATION_ID_KEY = "applicationId";
 
-	// Nationality Syrian and Eritrean constants
+	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
 	public static final String SYRIAN = "Syrische";
+	public static final String LIBYAN = "Libische";
 	public static final String IRAK = "Iraakse";
 	public static final String IRAN = "Iraanse";
 	public static final String AFGHANISTAN = "Afghaanse";
@@ -48,7 +44,11 @@ public final class IndConstants {
 	public static final String PALESTIJNS_STAATSLOOS = "Palestijns Staatsloos";
 	public static final String PALESTIJNSE_SYRISCHE = "Palestijns Syrische";
 	public static final String PALESTIJNSE = "Palestijnse";
+	public static final String Marokkaanse = "Marokkaanse";
 	public static final String STAATLOOS = "Staatloos";
+	public static final String MOROCCAN = "Marokkaans";
+	public static final String ALGERIAN = "Algerijnse";
+	public static final String TUNISIAN = "Tunesische";
 	
 	//Country Constant
 	public static final String SYRIE = "Syrië";
@@ -82,12 +82,6 @@ public final class IndConstants {
 	public static final String TRACK_2B_DOCUMENT_URL_TITLE = "bwst_amg_sp2b";
 	public static final String TRACK_3_DOCUMENT_URL_TITLE = "bwst_amg_sp3";
 	public static final String TRACK_4_DOCUMENT_URL_TITLE = "bwst_amg_sp4";
-	public static final String TRACK_NORMAL_DOCUMENT_URL_TITLE = "bwst_amg_normal";
-	public static final String TRACK_VLG_DOCUMENT_URL_TITLE = "bwst_amg_vlg";
-	public static final String TRACK_DUBLIN_DOCUMENT_URL_TITLE = "simplifiedDublin";
-	public static final String TRACK_NORMAL_DOCUMENT_NAME = "Aanmeldgehoor";
-	public static final String TRACK_VLG_DOCUMENT_NAME = "VLG";
-	public static final String TRACK_DUBLIN_DOCUMENT_NAME = "Aanmeldgehoor Dublin AMG";
 	public static final String MILITARY_ERITREA_TITLE = "bwst_amg_military_eritrea";
 	public static final String MILITARY_SYRIA_TITLE = "bwst_amg_military_syria";
 	public static final String MILITARY_IRAK_TITLE = "bwst_amg_military_irak";
@@ -112,7 +106,8 @@ public final class IndConstants {
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
 	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
 	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
-	public static final String SIMPLE_DOCUMENT_RULES_DIR = "SimpleDocument";
+	public static final String ANDERS_RULE = "anders.drl";
+	public static final String LOOP_DATA_RULE = "LoopData.drl";
 	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
 
 	// Tester parameters
