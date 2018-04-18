@@ -24,7 +24,6 @@ public class ApplicationDTO {
 	private String nationality;
 	private String applicationType;
 	private ApplicationStatusEnum status;
-	private boolean simplified;
 
 	public ApplicationDTO() {
 	}
@@ -193,15 +192,4 @@ public class ApplicationDTO {
 		builder.append("]");
 		return builder.toString();
 	}
-
-	public boolean getSimplified() {
-		return simplified;
-	}
-
-	public void setSimplified(boolean simplified) {
-		this.simplified = simplified;
-	}
-	
-	
-
 }

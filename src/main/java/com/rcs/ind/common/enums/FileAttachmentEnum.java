@@ -17,7 +17,7 @@ public enum FileAttachmentEnum {
 	private final String fileName;
 	private final String key;
 	private final String indigoName;
-	
+
 	private FileAttachmentEnum(String fileName, String key, String indigoName) {
 		this.fileName = fileName;
 		this.key = key;
@@ -34,8 +34,8 @@ public enum FileAttachmentEnum {
 	
 	public String getIndigoName() {
 		return indigoName;
-	}	
-	
+	}
+
 	public static FileAttachmentEnum fromFileName(String filename, String smartflowNumber) {
 		if (filename != null) {
 			for (FileAttachmentEnum e : FileAttachmentEnum.values()) {

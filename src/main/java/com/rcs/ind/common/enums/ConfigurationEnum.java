@@ -52,7 +52,6 @@ public enum ConfigurationEnum {
 	TF_SCENARIO_CUSTOMER("3fScenarioCustomer"),
 	TF_SCENARIO_TRANSLATOR("3fScenarioTranslator"),
 	TF_SCENARIO_DIGITAL("3fScenarioDigital"),
-	TF_SCENARIO_SIMPLIFIED("3fScenarioSimplified"),
 	TF_REDIRECT_GUEST("3fRedirectGuest"),
 	TF_REDIRECT_TRANSLATOR("3fRedirectTranslator"),
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public enum FormAnswerKeyEnum {
 	NAME("faanmeldformulierpersonalia.voornaam"),
-	SURNAME("faanmeldformulierpersonalia.achternaam"),
+	SURNAME("faanmeldformulierpersonalia.naamachternaamfamilienaam"),
 	BIRTH_DATE("faanmeldformulierpersonalia.geboortedatum"),
 	NATIONALITY("faanmeldformulierpersonalia.nationaliteit"),
 	MULTIPLE_NATIONALITY("faanmeldformulierpersonalia.meerdaneennationaliteit"),
@@ -13,10 +13,12 @@ public enum FormAnswerKeyEnum {
 	PROVIDED_DOCUMENTS("faanmeldformulierdocumenten.documentenbij"),
 	BIRTH_PLACE("faanmeldformulierpersonalia.geboorteplaats"),
 	COUNTRY_OF_BIRTH("faanmeldformulierpersonalia.geboorteland"),
-	MARITAL_STATUS_MARRIED_YESNO("faanmeldformuliergezinssituatie.bentugehuwd"),
-	MARITAL_STATUS("faanmeldformuliergezinssituatie.watisuwburgelijkestaat"),
+	MARITAL_STATUS_MARRIED_YESNO("faanmeldformuliergezinenfamilie.bentugehuwd"),
+	MARITAL_STATUS("faanmeldformuliergezinenfamilie.watisburgerlijkestaat"),
 	SEX("faanmeldformulierpersonalia.geslacht"),
 	RELIGION("faanmeldformulierpersonalia.religie"),
+	RELIGION_OTHERS("faanmeldformulierpersonalia.religieanders"),
+	RELIGION_YESNO("faanmeldformulierpersonalia.belijdtueenreligie"),
 	COUNTRY("faanmeldformulierpersonalia.land");
 	
 	private final String key;
