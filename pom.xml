@@ -4,11 +4,10 @@
 	<parent>
 		<groupId>com.rcs.ind</groupId>
 		<artifactId>asiel-parent</artifactId>
-		<version>3.8.3</version>
+		<version>4.0.0</version>
 		<relativePath>../asiel-parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.rcs.ind</groupId>
 	<artifactId>asiel-util</artifactId>
 	<name>Asiel Util</name>
 	<version>${project.parent.version}</version>
