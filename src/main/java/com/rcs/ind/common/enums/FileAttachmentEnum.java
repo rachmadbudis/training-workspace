@@ -1,7 +1,7 @@
 package com.rcs.ind.common.enums;
 
 public enum FileAttachmentEnum {
-	INTERVIEW_DOC_PDF_NAME("%s_Interview_Document.pdf", "com.rcs.ind.filename.interview","Verslag gehoor aanmeldfase"),
+	INTERVIEW_DOC_PDF_NAME("%s_Interview_Document.pdf", "com.rcs.ind.filename.interview","Verslag gehoor aanmeld fase"),
 	TRACK_HISTORY_PDF_NAME("%s_Track_History.pdf", "com.rcs.ind.filename.track.history",""),
 	RIC_DOC_NAME("INTERN_%s_RIC_Bevindingen.pdf", "com.rcs.ind.filename.ric","Herkomst indicatie"),
 	CUSTOMER_DOC_NAME("%s_Customer_File.pdf", "com.rcs.ind.filename.customer.form", "Formulier persoonsgegevens"),
