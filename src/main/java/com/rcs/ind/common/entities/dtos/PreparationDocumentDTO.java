@@ -9,6 +9,7 @@ public class PreparationDocumentDTO {
 	private String documentNumber;
 	private String releaseLocation;
 	private Date releaseDate;
+	private String issueOrganization;
 	private InterviewPreparationDTO interviewPreparation;
 
 	public PreparationDocumentDTO() {
@@ -48,6 +49,14 @@ public class PreparationDocumentDTO {
 
 	public void setReleaseLocation(String releaseLocation) {
 		this.releaseLocation = releaseLocation;
+	}
+	
+	public String getIssueOrganization() {
+		return issueOrganization;
+	}
+
+	public void setIssueOrganization(String issueOrganization) {
+		this.issueOrganization = issueOrganization;
 	}
 
 	public Date getReleaseDate() {
