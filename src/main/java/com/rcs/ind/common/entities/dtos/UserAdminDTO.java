@@ -2,9 +2,9 @@ package com.rcs.ind.common.entities.dtos;
 
 public class UserAdminDTO {
 
-    private Boolean notification;
-    private String password;
-    private Boolean changePassword;
+    private Boolean notification=false;
+    private String password="";
+    private Boolean changePassword=false;
 
     public Boolean getNotification() {
         return notification;
