@@ -11,7 +11,7 @@ public enum ApplicationStatusEnum {
 	ReadyForInterview(6, "com.rcs.ind.application.status.ready.for.interview", "com.rcs.ind.screener.status.prepared"),
 	ReviewInProgress(7, "com.rcs.ind.application.status.review.in.progress", "com.rcs.ind.screener.status.in.progress"),
 	Reviewed(8, "com.rcs.ind.application.status.reviewed", "com.rcs.ind.screener.status.finished"),
-	SentToIndigo(9, "com.rcs.ind.application.status.sent", "com.rcs.ind.application.status.sent"),
+	SentToIndigo(9, "com.rcs.ind.application.status.upload.sent", "com.rcs.ind.application.status.upload.sent"),
 	UploadSuccess(10, "com.rcs.ind.application.status.upload.success", "com.rcs.ind.screener.status.upload.success"),
 	UploadFailed(10, "com.rcs.ind.application.status.upload.failed", "com.rcs.ind.screener.status.upload.failed");
 

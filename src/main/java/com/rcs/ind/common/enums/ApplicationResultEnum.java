@@ -1,6 +1,7 @@
 package com.rcs.ind.common.enums;
 
 public enum ApplicationResultEnum {
+    SENT("com.rcs.ind.application.result.sent"),
     SUCCESS("com.rcs.ind.application.result.success"),
     FAILED("com.rcs.ind.application.result.failed");
     
