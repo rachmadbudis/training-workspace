@@ -145,11 +145,6 @@ public final class IndConstants {
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
 	
 	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_GENERIC = "faanmeldformulierdocumenten.documenteninbezit.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_ERITREA = "faanmeldformulierdocumenten.documenteneritera.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_AFGHANISTAN = "faanmeldformulierdocumenten.documentenafghanistan.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAK = "faanmeldformulierdocumenten.documentenirak.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAN = "faanmeldformulierdocumenten.documenteniran.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_SYRIA = "faanmeldformulierdocumenten.documentensyria.welkedocumenten";
 	
 	public static final String MULTIPLE_NATIONALITIES_PREFIX = "faanmeldformulierpersonalia.nationaliteiten.";
 	public static final String MULTIPLE_NATIONALITIES_SUFIX = ".welkenationaliteiten";
