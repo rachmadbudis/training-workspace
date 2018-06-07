@@ -9,7 +9,7 @@ public enum FileAttachmentEnum {
 	PAPER_FORM_DOC_NAME("%s_Paper_Form_File.pdf", "com.rcs.ind.filename.paper.form","Formulier persoonsgegevens"),
 	M117C_DOCUMENT_TITLE("M117C_%s.doc", "com.rcs.ind.filename.m117c",""),
 	ANTECEDENTEN_VERKLARING_DOCUMENT_TITLE("Antecedentenverklaring_%s.docx", "com.rcs.ind.filename.antecedentenverklaring",""),
-	BRP_PROFILE_DOC_PDF_NAME("%s_BRP_Profile_Document.pdf","com.rcs.ind.filename.brp.profile","Overzicht voor inschrijving BRP"),
+	BRP_PROFILE_DOC_NAME("%s_BRP_Profile_Document.docx","com.rcs.ind.filename.brp.profile","Overzicht voor inschrijving BRP"),
 	NAREIS_PROFILE_DOC_PDF_NAME("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Formulier persoonsgegevens tbv Nareis"),
 	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml","")
 	;
