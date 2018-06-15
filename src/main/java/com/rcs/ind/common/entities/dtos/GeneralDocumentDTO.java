@@ -1,21 +1,21 @@
 package com.rcs.ind.common.entities.dtos;
 
-public class DocumentDTO {
+public class GeneralDocumentDTO {
 
 	private Long documentId;
 	private String fileName;
-	private ApplicationDTO application;
+	private String documentType;
 	private byte[] data;
 	private boolean active;
 	private String modificationUser;
 
-	public DocumentDTO() {
+	public GeneralDocumentDTO() {
 	}
 
-	public DocumentDTO(Long documentId, String fileName, ApplicationDTO application) {
+	public GeneralDocumentDTO(Long documentId, String fileName, String documentType) {
 		this.documentId = documentId;
 		this.fileName = fileName;
-		this.application = application;
+		this.documentType = documentType;
 	}
 
 	public Long getDocumentId() {
@@ -34,12 +34,12 @@ public class DocumentDTO {
 		this.fileName = fileName;
 	}
 
-	public ApplicationDTO getApplication() {
-		return application;
+	public String getDocumentType() {
+		return documentType;
 	}
 
-	public void setApplication(ApplicationDTO application) {
-		this.application = application;
+	public void setDocumentType(String documentType) {
+		this.documentType = documentType;
 	}
 
 	public byte[] getData() {

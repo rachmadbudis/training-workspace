@@ -70,4 +70,5 @@ public class ApplicationFiltersDTO extends PaginationFiltersDTO {
 		this.priority = priority;
 	}
 
+
 }

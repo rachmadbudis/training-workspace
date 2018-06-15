@@ -23,6 +23,7 @@ public enum LiferayRoleEnum {
 	EMPLOYEE("Employee", LiferayRoleTypeEnum.SITE),
 	TRANSLATOR("Translator", LiferayRoleTypeEnum.SITE),
 	INTERVIEWER("Interviewer", LiferayRoleTypeEnum.SITE),
+	EMM("EMM", LiferayRoleTypeEnum.SITE),
 	SUPERVISOR("Supervisor", LiferayRoleTypeEnum.SITE),
 	AVIM("Avim", LiferayRoleTypeEnum.SITE),
 	PLANNER("Planner", LiferayRoleTypeEnum.SITE),

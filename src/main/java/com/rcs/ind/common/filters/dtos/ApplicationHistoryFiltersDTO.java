@@ -35,6 +35,7 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	private String nationality;
 	private String startDateTimestamp;
 	private ApplicationTypeEnum appType;
+	private Date emmDownloadDate;
 
 	public ApplicationHistoryFiltersDTO() {
 	}
@@ -206,4 +207,13 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 	public void setAppType(ApplicationTypeEnum appType) {
 		this.appType = appType;
 	}
+
+	public Date getEmmDownloadDate() {
+		return emmDownloadDate;
+	}
+
+	public void setEmmDownloadDate(Date emmDownloadDate) {
+		this.emmDownloadDate = emmDownloadDate;
+	}
+
 }

@@ -1,5 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -18,12 +19,13 @@ public class ApplicationDTO {
 	private boolean priority;
 	private String xmlAnswer;
 	private Long createUser;
-	private List<DocumentDTO> documents;
+	private List<ApplicationDocumentDTO> documents;
 	private ApplicationReleaseReasonEnum releaseReason;
 	private String tfaStream;
 	private String nationality;
 	private String applicationType;
 	private ApplicationStatusEnum status;
+	private Date emmDownloadDate;
 
 	public ApplicationDTO() {
 	}
@@ -83,11 +85,11 @@ public class ApplicationDTO {
 		this.createUser = createUser;
 	}
 
-	public List<DocumentDTO> getDocuments() {
+	public List<ApplicationDocumentDTO> getDocuments() {
 		return documents;
 	}
 
-	public void setDocuments(List<DocumentDTO> documents) {
+	public void setDocuments(List<ApplicationDocumentDTO> documents) {
 		this.documents = documents;
 	}
 
@@ -156,6 +158,14 @@ public class ApplicationDTO {
 		this.applicationType = applicationType;
 	}
 	
+	public Date getEmmDownloadDate() {
+		return emmDownloadDate;
+	}
+
+	public void setDownloadDate(Date emmDownloadDate) {
+		this.emmDownloadDate = emmDownloadDate;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
