@@ -1,6 +1,8 @@
 package com.rcs.ind.common.entities.dtos;
 
-public class GeneralDocumentDTO {
+import com.rcs.ind.common.dtos.GenericEntityDTO;
+
+public class GeneralDocumentDTO extends GenericEntityDTO{
 
 	private Long documentId;
 	private String fileName;
