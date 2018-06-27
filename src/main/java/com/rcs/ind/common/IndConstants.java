@@ -110,6 +110,8 @@ public final class IndConstants {
 	public static final String ANDERS_RULE = "anders.drl";
 	public static final String LOOP_DATA_RULE = "LoopData.drl";
 	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
+	public static final String RULES_FOLDER_PATH = "/webapps/rules/";
+	
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
