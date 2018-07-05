@@ -152,7 +152,14 @@ public final class IndConstants {
 	public static final String MULTIPLE_NATIONALITIES_PREFIX = "faanmeldformulierpersonalia.nationaliteiten.";
 	public static final String MULTIPLE_NATIONALITIES_SUFIX = ".welkenationaliteiten";
 	
-	// Constants for DDLs	
+	// Constants for DDL
+
+	//RIC Applicable DDL
+	public static final String RIC_APPLICABLE_DDL_NAME = "RIC Applicable";
+	public static final String RIC_NATIONALITY = "Nationality";
+	public static final String RIC_ALWAYS = "Always";
+	public static final String RIC_ONLY_IF_NO_DOCUMENTS = "Only_if_no_documents";
+
 	// Location DDL
 	public static final String LOCATION_DDL_NAME = "Location";
 	public static final String LOCATION = "location";
