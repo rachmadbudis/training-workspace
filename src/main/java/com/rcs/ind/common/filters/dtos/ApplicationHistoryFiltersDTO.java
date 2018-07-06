@@ -216,4 +216,71 @@ public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 		this.emmDownloadDate = emmDownloadDate;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("ApplicationHistoryFiltersDTO [applicationHistoryId=");
+		builder.append(applicationHistoryId);
+		builder.append(", statuses=");
+		builder.append(statuses);
+		builder.append(", startDate=");
+		builder.append(startDate);
+		builder.append(", endDate=");
+		builder.append(endDate);
+		builder.append(", creationStartDate=");
+		builder.append(creationStartDate);
+		builder.append(", creationEndDate=");
+		builder.append(creationEndDate);
+		builder.append(", applicationId=");
+		builder.append(applicationId);
+		builder.append(", smartflowNumber=");
+		builder.append(smartflowNumber);
+		builder.append(", language=");
+		builder.append(language);
+		builder.append(", assignedUserId=");
+		builder.append(assignedUserId);
+		builder.append(", assignedUserIds=");
+		builder.append(assignedUserIds);
+		builder.append(", assignedUserName=");
+		builder.append(assignedUserName);
+		builder.append(", location=");
+		builder.append(location);
+		builder.append(", registered=");
+		builder.append(registered);
+		builder.append(", languages=");
+		builder.append(languages);
+		builder.append(", userRole=");
+		builder.append(userRole);
+		builder.append(", vNumber=");
+		builder.append(vNumber);
+		builder.append(", track=");
+		builder.append(track);
+		builder.append(", nationality=");
+		builder.append(nationality);
+		builder.append(", startDateTimestamp=");
+		builder.append(startDateTimestamp);
+		builder.append(", appType=");
+		builder.append(appType);
+		builder.append(", emmDownloadDate=");
+		builder.append(emmDownloadDate);
+		builder.append(", getSidx()=");
+		builder.append(getSidx());
+		builder.append(", getSord()=");
+		builder.append(getSord());
+		builder.append(", getPage()=");
+		builder.append(getPage());
+		builder.append(", getRows()=");
+		builder.append(getRows());
+		builder.append(", getDraw()=");
+		builder.append(getDraw());
+		builder.append(", getClass()=");
+		builder.append(getClass());
+		builder.append(", hashCode()=");
+		builder.append(hashCode());
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+
 }
