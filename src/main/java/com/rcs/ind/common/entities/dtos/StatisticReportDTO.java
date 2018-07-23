@@ -8,6 +8,8 @@ public class StatisticReportDTO {
     private Date startDate;
     private Date endDate;
     private String smartflowNumber;
+    private int totalRecords;
+    private boolean result;
 
     public String getRequester() {
         return requester;
@@ -39,5 +41,21 @@ public class StatisticReportDTO {
 
     public void setSmartflowNumber(String smartflowNumber) {
         this.smartflowNumber = smartflowNumber;
+    }
+
+    public int getTotalRecords() {
+        return totalRecords;
+    }
+
+    public void setTotalRecords(int totalRecords) {
+        this.totalRecords = totalRecords;
+    }
+
+    public boolean isResult() {
+        return result;
+    }
+
+    public void setResult(boolean result) {
+        this.result = result;
     }
 }

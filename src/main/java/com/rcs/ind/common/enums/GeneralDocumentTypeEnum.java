@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum GeneralDocumentTypeEnum {
-	EMM_EXPORT("EMM Export");
+	EMM_EXPORT("EMM Export"),
+	STATISTIC_REPORT("Statistic Report");
 
 	private final String label;
 	private static final Map<String, GeneralDocumentTypeEnum> lookupLabel = new HashMap<String, GeneralDocumentTypeEnum>();
