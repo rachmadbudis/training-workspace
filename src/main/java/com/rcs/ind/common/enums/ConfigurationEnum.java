@@ -42,6 +42,7 @@ public enum ConfigurationEnum {
 	
 	// Configuration key for automated deletion and release of old application
 	AT_APPLICATION_DELETION_PASSED_DAYS("atApplicationDeletionPassedDays", "7"),
+	AT_EVENTS_DELETION_PASSED_DAYS("atEventsDeletionPassedDays", "21"),
 	AT_INCOMPLETE_EMAIL_TEMPLATE_TITLE("atIncompleteEmailTemplateTitle", "incomplete-email-template"),
 	
 	//Configuration key for websocket
