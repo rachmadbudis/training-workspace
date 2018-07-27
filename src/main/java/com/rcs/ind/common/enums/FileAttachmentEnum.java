@@ -11,7 +11,8 @@ public enum FileAttachmentEnum {
 	ANTECEDENTEN_VERKLARING_DOCUMENT_TITLE("Antecedentenverklaring_%s.docx", "com.rcs.ind.filename.antecedentenverklaring",""),
 	BRP_PROFILE_DOC_NAME("%s_BRP_Profile_Document.docx","com.rcs.ind.filename.brp.profile","Overzicht voor inschrijving BRP"),
 	NAREIS_PROFILE_DOC_PDF_NAME("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Formulier persoonsgegevens tbv Nareis"),
-	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml","")
+	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml",""),
+	STATISTIC_REPORT("Statistic_Report.xls", "com.rcs.ind.filename.statistic.report.xls","")
 	;
 
 	private final String fileName;

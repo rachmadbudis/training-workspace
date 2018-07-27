@@ -196,4 +196,7 @@ public final class IndConstants {
 	public static final String TRACK_DDL_NAME = "Tracks";
 	public static final String TRACK_KEY = "Key";
 	public static final String TRACK_LABEL = "Label";
+
+	//Statistic Report
+	public static final String STATISTIC_SHEET_NAME = "Statistic Report";
 }
