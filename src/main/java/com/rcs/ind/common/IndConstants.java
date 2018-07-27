@@ -8,6 +8,7 @@ public final class IndConstants {
 	// General constants.
 	public static final int UNDEFINED = -1;
 	public static final String DATE_FORMAT = "dd-MM-yyyy";
+	public static final String DATE_TIME_FORMAT = "dd-MM-yyyy-HHmmss";
 	public static final String UNKNOWN_ERROR_KEY = "com.rcs.common.error.unknown";
 	public static final String TRIPLE_FORMS = "TripleForms";
 	public static final String INDIGO = "Indigo";
@@ -196,4 +197,6 @@ public final class IndConstants {
 	public static final String TRACK_DDL_NAME = "Tracks";
 	public static final String TRACK_KEY = "Key";
 	public static final String TRACK_LABEL = "Label";
+	
+	public static final String STATISTICS_REPORT_FILENAME = "stats_report_%s.xslx";
 }
