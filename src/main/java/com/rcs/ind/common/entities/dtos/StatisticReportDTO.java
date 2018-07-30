@@ -1,7 +1,5 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.util.Date;
-
 public class StatisticReportDTO {
 
     private String requester;
