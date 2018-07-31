@@ -2,6 +2,7 @@ package com.rcs.ind.common.enums;
 
 public enum StatisticReportHeaderEnum {
     SMARTFLOW_NUMBER("com.rcs.ind.application.label.smartflownumber"),
+    STEP("com.rcs.ind.application.label.step"),
     STATUS("com.rcs.ind.marketplace.status"),
     NATIONALITY("com.rcs.ind.application.label.nationality"),
     LOCATION("com.rcs.ind.application.label.location"),
