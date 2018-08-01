@@ -7,7 +7,7 @@ public enum ApplicationStatusEnum {
 	TranslateInProgress(3, "com.rcs.ind.application.status.translate.in.progress", "", ApplicationStepEnum.New),
 	Translated(4, "com.rcs.ind.application.status.translated", "", ApplicationStepEnum.Translated),
 	Illiterate(4, "com.rcs.ind.application.status.illiterate", "", ApplicationStepEnum.Translated),
-	PreparationInProgress(5, "com.rcs.ind.application.status.preparation.in.progress", "com.rcs.ind.screener.status.being.prepared", ApplicationStepEnum.Translated),
+	PreparationInProgress(5, "com.rcs.ind.application.status.preparation.in.progress", "com.rcs.ind.screener.status.being.prepared", ApplicationStepEnum.Prepared),
 	ReadyForInterview(6, "com.rcs.ind.application.status.ready.for.interview", "com.rcs.ind.screener.status.prepared", ApplicationStepEnum.Prepared),
 	ReviewInProgress(7, "com.rcs.ind.application.status.review.in.progress", "com.rcs.ind.screener.status.in.progress", ApplicationStepEnum.Prepared),
 	Reviewed(8, "com.rcs.ind.application.status.reviewed", "com.rcs.ind.screener.status.finished", ApplicationStepEnum.Interviewed),
