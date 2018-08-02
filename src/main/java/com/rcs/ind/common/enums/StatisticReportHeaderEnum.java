@@ -5,6 +5,7 @@ public enum StatisticReportHeaderEnum {
     STEP("com.rcs.ind.application.label.step"),
     STATUS("com.rcs.ind.marketplace.status"),
     NATIONALITY("com.rcs.ind.application.label.nationality"),
+    LANGUAGE("com.rcs.ind.application.label.language"),
     LOCATION("com.rcs.ind.application.label.location"),
     TRACK("com.rcs.ind.application.label.track"),
     START_DATE("com.rcs.ind.common.date.start"),
