@@ -2,22 +2,22 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
-public class customerDTO extends GenericEntityDTO {
+public class CustomerDTO extends GenericEntityDTO {
 
 	private Long customerId;
 
-	public customerDTO() {
+	public CustomerDTO() {
 	}
 
-	public customerDTO(Long customerId) {
+	public CustomerDTO(Long customerId) {
 		this.customerId = customerId;
 	}
 
-	public Long getcustomerId() {
+	public Long getCustomerId() {
 		return customerId;
 	}
 
-	public void setcustomerId(Long customerId) {
+	public void setCustomerId(Long customerId) {
 		this.customerId = customerId;
 	}
 }
