@@ -1,11 +1,9 @@
 package com.rcs.ind.common.dtos;
 
-import java.util.Date;
-
 public class MissionGridDTO {
     private Long missionId;
     private String name;
-    private Date startDate;
+    private String targetGroup;
 
     public Long getMissionId() {
         return missionId;
@@ -23,11 +21,11 @@ public class MissionGridDTO {
         this.name = name;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public String getTargetGroup() {
+        return targetGroup;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setTargetGroup(String targetGroup) {
+        this.targetGroup = targetGroup;
     }
 }
