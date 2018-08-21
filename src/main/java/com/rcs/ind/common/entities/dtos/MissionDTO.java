@@ -2,10 +2,12 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 
+import java.util.Date;
+
 public class MissionDTO extends GenericEntityDTO {
     private long missionId;
     private String name;
-    private String date;
+    private Date missionDate;
     private String status;
     private String targetGroup;
     private String groupNumber;
@@ -33,12 +35,12 @@ public class MissionDTO extends GenericEntityDTO {
         this.name = name;
     }
 
-    public String getDate() {
-        return date;
+    public Date getMissionDate() {
+        return missionDate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setMissionDate(Date missionDate) {
+        this.missionDate = missionDate;
     }
 
     public String getStatus() {
