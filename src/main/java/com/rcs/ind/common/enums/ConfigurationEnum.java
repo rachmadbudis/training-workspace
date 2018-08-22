@@ -4,6 +4,8 @@ public enum ConfigurationEnum {
 	// General Configuration that doesn't belong to other category
 	DEFAULT_GROUP("defaultGroup"),
 	DEFAULT_COMPANYID("defaultCompanyId"),
+	FRONTEND_URL("frontendUrl"),
+	BACKEND_URL("backendUrl"),
 	
 	// Configuration key for email
 	EmailSender("emailSender", ""),
