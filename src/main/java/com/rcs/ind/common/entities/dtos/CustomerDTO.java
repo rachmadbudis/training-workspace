@@ -4,7 +4,7 @@ import com.rcs.ind.common.dtos.GenericEntityDTO;
 
 public class CustomerDTO extends GenericEntityDTO {
 
-	private Long customerId;
+	private long customerId;
 
 	private boolean ricApplicable;
 
@@ -29,15 +29,15 @@ public class CustomerDTO extends GenericEntityDTO {
 	public CustomerDTO() {
 	}
 
-	public CustomerDTO(Long customerId) {
+	public CustomerDTO(long customerId) {
 		this.customerId = customerId;
 	}
 
-	public Long getCustomerId() {
+	public long getCustomerId() {
 		return customerId;
 	}
 
-	public void setCustomerId(Long customerId) {
+	public void setCustomerId(long customerId) {
 		this.customerId = customerId;
 	}
 
