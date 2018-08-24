@@ -5,7 +5,7 @@ import com.rcs.ind.common.dtos.GenericEntityDTO;
 import java.util.Date;
 
 public class MissionDTO extends GenericEntityDTO {
-    private Long missionId;
+    private long missionId;
     private String name;
     private Date missionDate;
     private String status;
@@ -15,15 +15,15 @@ public class MissionDTO extends GenericEntityDTO {
     public MissionDTO() {
     }
 
-    public MissionDTO(Long missionId) {
+    public MissionDTO(long missionId) {
         this.missionId = missionId;
     }
 
-    public Long getMissionId() {
+    public long getMissionId() {
         return missionId;
     }
 
-    public void setMissionId(Long missionId) {
+    public void setMissionId(long missionId) {
         this.missionId = missionId;
     }
 
