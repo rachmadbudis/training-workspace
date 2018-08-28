@@ -1,6 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.ApprovalStatusEnum;
 
 public class CustomerDTO extends GenericEntityDTO {
 
@@ -22,9 +23,7 @@ public class CustomerDTO extends GenericEntityDTO {
 
 	private String residence;
 
-	private boolean withdrawn;
-
-	private boolean postponed;
+	private ApprovalStatusEnum approvalStatus;
 
 	public CustomerDTO() {
 	}
@@ -105,19 +104,11 @@ public class CustomerDTO extends GenericEntityDTO {
 		this.residence = residence;
 	}
 
-	public boolean isWithdrawn() {
-		return withdrawn;
+	public ApprovalStatusEnum getApprovalStatus() {
+		return approvalStatus;
 	}
 
-	public void setWithdrawn(boolean withdrawn) {
-		this.withdrawn = withdrawn;
-	}
-
-	public boolean isPostponed() {
-		return postponed;
-	}
-
-	public void setPostponed(boolean postponed) {
-		this.postponed = postponed;
+	public void setApprovalStatus(ApprovalStatusEnum approvalStatus) {
+		this.approvalStatus = approvalStatus;
 	}
 }
