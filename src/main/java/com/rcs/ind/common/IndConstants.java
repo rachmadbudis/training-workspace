@@ -21,6 +21,7 @@ public final class IndConstants {
 	public static final String DUTCH_OTHERS = "Anders";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
+	public static final String TYPE_SEPERATOR = ";";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
