@@ -36,6 +36,7 @@ public final class IndConstants {
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
 	public static final String RESUME_KEY = "resume";
 	public static final String APPLICATION_ID_KEY = "applicationId";
+	public static final String CUSTOMER_ID_KEY = "customerId";
 
 	// Nationality constants
 	public static final String ERITREAN = "Eritrese";

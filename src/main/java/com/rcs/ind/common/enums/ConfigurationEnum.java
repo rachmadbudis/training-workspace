@@ -41,7 +41,9 @@ public enum ConfigurationEnum {
 	RD_RIC_MARKETPLACE("rdRicMarketplace"),
 	RD_SUPERVISOR_DETAIL("rdSupervisorDetail"),
 	RD_SUPERVISOR_MARKETPLACE("rdSupervisorMarketplace"),
-	
+	RD_CUSTOMER_DETAIL("rdCustomerDetail"),
+	RD_HVZ_MARKETPLACE("rdHVZMarketplace"),
+
 	// Configuration key for automated deletion and release of old application
 	AT_APPLICATION_DELETION_PASSED_DAYS("atApplicationDeletionPassedDays", "7"),
 	AT_EVENTS_DELETION_PASSED_DAYS("atEventsDeletionPassedDays", "21"),
