@@ -3,112 +3,225 @@ package com.rcs.ind.common.entities.dtos;
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
 
+import java.util.Date;
+
 public class CustomerDTO extends GenericEntityDTO {
 
-	private long customerId;
+    private long customerId;
+    private boolean ricApplicable;
+    private String vNumber;
+    private String zNumber;
+    private String firstName;
+    private String lastName;
+    private Date dateOfBirth;
+    private String gender;
+    private String caseNumber;
+    private String nationality;
+    private String maritalStatus;
+    private String language;
+    private String approvalGrounds;
+    private String birthPlace;
+    private String birthCountry;
+    private String selectionMode;
+    private String quotaYear;
+    private String decisionScreener;
+    private Date flightDate;
+    private String remarks;
+    private String spokenLanguage;
+    private String countryOfResidence;
+    private String crossReference;
 
-	private boolean ricApplicable;
+    private ApprovalStatusEnum approvalStatus;
 
-	private String caseNumber;
+    public long getCustomerId() {
+        return customerId;
+    }
 
-	private String vNumber;
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
+    }
 
-	private String firstName;
+    public boolean isRicApplicable() {
+        return ricApplicable;
+    }
 
-	private String birthDate;
+    public void setRicApplicable(boolean ricApplicable) {
+        this.ricApplicable = ricApplicable;
+    }
 
-	private String lastName;
+    public String getvNumber() {
+        return vNumber;
+    }
 
-	private String birthPlace;
+    public void setvNumber(String vNumber) {
+        this.vNumber = vNumber;
+    }
 
-	private String residence;
+    public String getzNumber() {
+        return zNumber;
+    }
 
-	private ApprovalStatusEnum approvalStatus;
+    public void setzNumber(String zNumber) {
+        this.zNumber = zNumber;
+    }
 
-	public CustomerDTO() {
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public CustomerDTO(long customerId) {
-		this.customerId = customerId;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public long getCustomerId() {
-		return customerId;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	public boolean isRicApplicable() {
-		return ricApplicable;
-	}
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-	public void setRicApplicable(boolean ricApplicable) {
-		this.ricApplicable = ricApplicable;
-	}
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
-	public String getCaseNumber() {
-		return caseNumber;
-	}
+    public String getGender() {
+        return gender;
+    }
 
-	public void setCaseNumber(String caseNumber) {
-		this.caseNumber = caseNumber;
-	}
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-	public String getvNumber() {
-		return vNumber;
-	}
+    public String getCaseNumber() {
+        return caseNumber;
+    }
 
-	public void setvNumber(String vNumber) {
-		this.vNumber = vNumber;
-	}
+    public void setCaseNumber(String caseNumber) {
+        this.caseNumber = caseNumber;
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public String getNationality() {
+        return nationality;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 
-	public String getBirthDate() {
-		return birthDate;
-	}
+    public String getMaritalStatus() {
+        return maritalStatus;
+    }
 
-	public void setBirthDate(String birthDate) {
-		this.birthDate = birthDate;
-	}
+    public void setMaritalStatus(String maritalStatus) {
+        this.maritalStatus = maritalStatus;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public String getLanguage() {
+        return language;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 
-	public String getBirthPlace() {
-		return birthPlace;
-	}
+    public String getApprovalGrounds() {
+        return approvalGrounds;
+    }
 
-	public void setBirthPlace(String birthPlace) {
-		this.birthPlace = birthPlace;
-	}
+    public void setApprovalGrounds(String approvalGrounds) {
+        this.approvalGrounds = approvalGrounds;
+    }
 
-	public String getResidence() {
-		return residence;
-	}
+    public String getBirthPlace() {
+        return birthPlace;
+    }
 
-	public void setResidence(String residence) {
-		this.residence = residence;
-	}
+    public void setBirthPlace(String birthPlace) {
+        this.birthPlace = birthPlace;
+    }
 
-	public ApprovalStatusEnum getApprovalStatus() {
-		return approvalStatus;
-	}
+    public String getBirthCountry() {
+        return birthCountry;
+    }
 
-	public void setApprovalStatus(ApprovalStatusEnum approvalStatus) {
-		this.approvalStatus = approvalStatus;
-	}
+    public void setBirthCountry(String birthCountry) {
+        this.birthCountry = birthCountry;
+    }
+
+    public String getSelectionMode() {
+        return selectionMode;
+    }
+
+    public void setSelectionMode(String selectionMode) {
+        this.selectionMode = selectionMode;
+    }
+
+    public String getQuotaYear() {
+        return quotaYear;
+    }
+
+    public void setQuotaYear(String quotaYear) {
+        this.quotaYear = quotaYear;
+    }
+
+    public String getDecisionScreener() {
+        return decisionScreener;
+    }
+
+    public void setDecisionScreener(String decisionScreener) {
+        this.decisionScreener = decisionScreener;
+    }
+
+    public Date getFlightDate() {
+        return flightDate;
+    }
+
+    public void setFlightDate(Date flightDate) {
+        this.flightDate = flightDate;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
+
+    public String getSpokenLanguage() {
+        return spokenLanguage;
+    }
+
+    public void setSpokenLanguage(String spokenLanguage) {
+        this.spokenLanguage = spokenLanguage;
+    }
+
+    public String getCountryOfResidence() {
+        return countryOfResidence;
+    }
+
+    public void setCountryOfResidence(String countryOfResidence) {
+        this.countryOfResidence = countryOfResidence;
+    }
+
+    public String getCrossReference() {
+        return crossReference;
+    }
+
+    public void setCrossReference(String crossReference) {
+        this.crossReference = crossReference;
+    }
+
+    public ApprovalStatusEnum getApprovalStatus() {
+        return approvalStatus;
+    }
+
+    public void setApprovalStatus(ApprovalStatusEnum approvalStatus) {
+        this.approvalStatus = approvalStatus;
+    }
 }

@@ -11,7 +11,7 @@ public class CustomerGridDTO {
     private String vNumber;
     private String firstName;
     private String lastName;
-    private Date birthDate;
+    private Date dateOfBirth;
     private String relationship;
     private Locale language;
     private String birthCountry;
@@ -75,12 +75,12 @@ public class CustomerGridDTO {
         this.lastName = lastName;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
+    public Date getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getRelationship() {
