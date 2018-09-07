@@ -1,5 +1,8 @@
 package com.rcs.ind.common.enums;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum RelationEnum {
     Unknown("com.rcs.ind.relation.unknown", ""),
     Husband("com.rcs.ind.relation.husband", "Husband"),
@@ -9,7 +12,12 @@ public enum RelationEnum {
     Daughter("com.rcs.ind.relation.daughter", "Daughter"),
     Son("com.rcs.ind.relation.son", "Son"),
     GrandSon("com.rcs.ind.relation.grandson", "GrandSon"),
-    GrandDaughter("com.rcs.ind.relation.granddaughter", "GrandDaughter");
+    GrandDaughter("com.rcs.ind.relation.granddaughter", "GrandDaughter"),
+    GrandFather("com.rcs.ind.relation.grandfather", "GrandFather"),
+    GrandMother("com.rcs.ind.relation.grandmother", "GrandMother"),
+    ;
+
+    private static final Map<String, RelationEnum> lookupIndigoKey = new HashMap<>();
 
     private final String key;
     private final String indigoKey;
@@ -27,5 +35,13 @@ public enum RelationEnum {
         return indigoKey;
     }
 
+    static {
+        for (RelationEnum re : RelationEnum.values()) {
+            lookupIndigoKey.put(re.getIndigoKey(), re);
+        }
+    }
 
+    public static RelationEnum getByIndigoKey(String value) {
+        return lookupIndigoKey.get(value);
+    }
 }
