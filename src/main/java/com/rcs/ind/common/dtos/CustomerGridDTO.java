@@ -15,7 +15,7 @@ public class CustomerGridDTO {
     private Date dateOfBirth;
     private RelationEnum relativeType;
     private Locale language;
-    private String approval;
+    private String approvalGrounds; //TODO: Change to enum
 
     public Long getCustomerId() {
         return customerId;
@@ -89,11 +89,11 @@ public class CustomerGridDTO {
         this.language = language;
     }
 
-    public String getApproval() {
-        return approval;
+    public String getApprovalGrounds() {
+        return approvalGrounds;
     }
 
-    public void setApproval(String approval) {
-        this.approval = approval;
+    public void setApprovalGrounds(String approvalGrounds) {
+        this.approvalGrounds = approvalGrounds;
     }
 }
