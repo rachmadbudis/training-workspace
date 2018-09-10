@@ -1,22 +1,20 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.RelationEnum;
+
 import java.util.Date;
 import java.util.Locale;
 
 public class CustomerGridDTO {
     private Long customerId;
-    private String ricApplicable;
     private String ricResult;
     private String caseNumber;
     private String vNumber;
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String relationship;
+    private RelationEnum relativeType;
     private Locale language;
-    private String birthCountry;
-    private String birthPlace;
-    private String residence;
     private String approval;
 
     public Long getCustomerId() {
@@ -25,14 +23,6 @@ public class CustomerGridDTO {
 
     public void setCustomerId(Long customerId) {
         this.customerId = customerId;
-    }
-
-    public String getRicApplicable() {
-        return ricApplicable;
-    }
-
-    public void setRicApplicable(String ricApplicable) {
-        this.ricApplicable = ricApplicable;
     }
 
     public String getRicResult() {
@@ -83,12 +73,12 @@ public class CustomerGridDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getRelationship() {
-        return relationship;
+    public RelationEnum getRelativeType() {
+        return relativeType;
     }
 
-    public void setRelationship(String relationship) {
-        this.relationship = relationship;
+    public void setRelativeType(RelationEnum relativeType) {
+        this.relativeType = relativeType;
     }
 
     public Locale getLanguage() {
@@ -97,30 +87,6 @@ public class CustomerGridDTO {
 
     public void setLanguage(Locale language) {
         this.language = language;
-    }
-
-    public String getBirthCountry() {
-        return birthCountry;
-    }
-
-    public void setBirthCountry(String birthCountry) {
-        this.birthCountry = birthCountry;
-    }
-
-    public String getBirthPlace() {
-        return birthPlace;
-    }
-
-    public void setBirthPlace(String birthPlace) {
-        this.birthPlace = birthPlace;
-    }
-
-    public String getResidence() {
-        return residence;
-    }
-
-    public void setResidence(String residence) {
-        this.residence = residence;
     }
 
     public String getApproval() {

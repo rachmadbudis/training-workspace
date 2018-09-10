@@ -5,6 +5,7 @@ import java.util.Map;
 
 public enum RelationEnum {
     Unknown("com.rcs.ind.relation.unknown", ""),
+    PRA("com.rcs.ind.relation.pra", "PRA"),
     Husband("com.rcs.ind.relation.husband", "Husband"),
     Wife("com.rcs.ind.relation.wife", "Wife"),
     Father("com.rcs.ind.relation.father", "Father"),

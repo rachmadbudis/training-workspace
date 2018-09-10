@@ -2,8 +2,10 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
+import com.rcs.ind.common.enums.MaritalStatusEnum;
 
 import java.util.Date;
+import java.util.Locale;
 
 public class CustomerDTO extends GenericEntityDTO {
 
@@ -18,7 +20,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String caseNumber;
     private String nationality;
     private String maritalStatus;
-    private String language;
+    private Locale language;
     private String approvalGrounds;
     private String birthPlace;
     private String birthCountry;
@@ -27,7 +29,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String decisionScreener;
     private Date flightDate;
     private String remarks;
-    private String spokenLanguage;
+    private Locale spokenLanguage;
     private String countryOfResidence;
     private String crossReference;
 
@@ -121,11 +123,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.maritalStatus = maritalStatus;
     }
 
-    public String getLanguage() {
+    public Locale getLanguage() {
         return language;
     }
 
-    public void setLanguage(String language) {
+    public void setLanguage(Locale language) {
         this.language = language;
     }
 
@@ -193,11 +195,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.remarks = remarks;
     }
 
-    public String getSpokenLanguage() {
+    public Locale getSpokenLanguage() {
         return spokenLanguage;
     }
 
-    public void setSpokenLanguage(String spokenLanguage) {
+    public void setSpokenLanguage(Locale spokenLanguage) {
         this.spokenLanguage = spokenLanguage;
     }
 

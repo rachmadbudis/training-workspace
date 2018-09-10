@@ -202,4 +202,7 @@ public final class IndConstants {
 
 	//Statistic Report
 	public static final String STATISTIC_SHEET_NAME = "Statistic Report";
+
+	//HVZ Constants
+	public static final String HVZ_PRA = "PRA";
 }
