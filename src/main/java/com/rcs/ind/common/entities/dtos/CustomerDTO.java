@@ -11,7 +11,7 @@ import java.util.Locale;
 public class CustomerDTO extends GenericEntityDTO {
 
     private long customerId;
-    private boolean ricApplicable;
+    private String ricResult;
     private String vNumber;
     private String zNumber;
     private String firstName;
@@ -45,12 +45,12 @@ public class CustomerDTO extends GenericEntityDTO {
         this.customerId = customerId;
     }
 
-    public boolean isRicApplicable() {
-        return ricApplicable;
+    public String getRicResult() {
+        return ricResult;
     }
 
-    public void setRicApplicable(boolean ricApplicable) {
-        this.ricApplicable = ricApplicable;
+    public void setRicResult(String ricResult) {
+        this.ricResult = ricResult;
     }
 
     public String getvNumber() {
