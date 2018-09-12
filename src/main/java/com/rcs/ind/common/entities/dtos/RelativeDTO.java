@@ -5,11 +5,20 @@ import com.rcs.ind.common.enums.RelationEnum;
 import java.util.Date;
 
 public class RelativeDTO {
+    private long customerId;
     private String vNumber;
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
     private RelationEnum relatie;
+
+    public long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(long customerId) {
+        this.customerId = customerId;
+    }
 
     public String getvNumber() {
         return vNumber;
