@@ -2,7 +2,6 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
-import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 
 import java.util.Date;
@@ -34,6 +33,8 @@ public class CustomerDTO extends GenericEntityDTO {
     private String countryOfResidence;
     private String crossReference;
     private RelationEnum relation;
+    private String missionName;
+    private String comments;
 
     private ApprovalStatusEnum approvalStatus;
 
@@ -235,5 +236,21 @@ public class CustomerDTO extends GenericEntityDTO {
 
     public void setRelation(RelationEnum relation) {
         this.relation = relation;
+    }
+
+    public String getMissionName() {
+        return missionName;
+    }
+
+    public void setMissionName(String missionName) {
+        this.missionName = missionName;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 }
