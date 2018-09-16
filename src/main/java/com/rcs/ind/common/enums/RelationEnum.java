@@ -12,6 +12,7 @@ public enum RelationEnum {
     Mother("com.rcs.ind.relation.mother", "Mother"),
     Daughter("com.rcs.ind.relation.daughter", "Daughter"),
     Son("com.rcs.ind.relation.son", "Son"),
+    Children("com.rcs.ind.relation.children", "Kinder"),
     GrandSon("com.rcs.ind.relation.grandson", "GrandSon"),
     GrandDaughter("com.rcs.ind.relation.granddaughter", "GrandDaughter"),
     GrandFather("com.rcs.ind.relation.grandfather", "GrandFather"),

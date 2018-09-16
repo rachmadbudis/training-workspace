@@ -2,39 +2,36 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
+import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class CustomerDTO extends GenericEntityDTO {
 
     private long customerId;
-    private String ricResult;
-    private String vNumber;
     private String zNumber;
+    private String vNumber;
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
     private String gender;
     private String caseNumber;
     private String nationality;
-    private String maritalStatus;
-    private Locale language;
-    private String approvalGrounds;
+    private MaritalStatusEnum maritalStatus;
+    private String treatmentResult;
+    private String settlementResult;
+    private String selectionMode;
     private String birthPlace;
     private String birthCountry;
-    private String selectionMode;
-    private String quotaYear;
-    private String decisionScreener;
-    private Date flightDate;
-    private String remarks;
-    private Locale spokenLanguage;
-    private String countryOfResidence;
-    private String crossReference;
+    private String residence;
     private RelationEnum relation;
+    private Locale language;
     private String missionName;
-    private String comments;
+    private String remarks;
+    private List<String> comments;
 
     private ApprovalStatusEnum approvalStatus;
 
@@ -46,12 +43,12 @@ public class CustomerDTO extends GenericEntityDTO {
         this.customerId = customerId;
     }
 
-    public String getRicResult() {
-        return ricResult;
+    public String getzNumber() {
+        return zNumber;
     }
 
-    public void setRicResult(String ricResult) {
-        this.ricResult = ricResult;
+    public void setzNumber(String zNumber) {
+        this.zNumber = zNumber;
     }
 
     public String getvNumber() {
@@ -60,14 +57,6 @@ public class CustomerDTO extends GenericEntityDTO {
 
     public void setvNumber(String vNumber) {
         this.vNumber = vNumber;
-    }
-
-    public String getzNumber() {
-        return zNumber;
-    }
-
-    public void setzNumber(String zNumber) {
-        this.zNumber = zNumber;
     }
 
     public String getFirstName() {
@@ -118,28 +107,36 @@ public class CustomerDTO extends GenericEntityDTO {
         this.nationality = nationality;
     }
 
-    public String getMaritalStatus() {
+    public MaritalStatusEnum getMaritalStatus() {
         return maritalStatus;
     }
 
-    public void setMaritalStatus(String maritalStatus) {
+    public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
         this.maritalStatus = maritalStatus;
     }
 
-    public Locale getLanguage() {
-        return language;
+    public String getTreatmentResult() {
+        return treatmentResult;
     }
 
-    public void setLanguage(Locale language) {
-        this.language = language;
+    public void setTreatmentResult(String treatmentResult) {
+        this.treatmentResult = treatmentResult;
     }
 
-    public String getApprovalGrounds() {
-        return approvalGrounds;
+    public String getSettlementResult() {
+        return settlementResult;
     }
 
-    public void setApprovalGrounds(String approvalGrounds) {
-        this.approvalGrounds = approvalGrounds;
+    public void setSettlementResult(String settlementResult) {
+        this.settlementResult = settlementResult;
+    }
+
+    public String getSelectionMode() {
+        return selectionMode;
+    }
+
+    public void setSelectionMode(String selectionMode) {
+        this.selectionMode = selectionMode;
     }
 
     public String getBirthPlace() {
@@ -158,76 +155,12 @@ public class CustomerDTO extends GenericEntityDTO {
         this.birthCountry = birthCountry;
     }
 
-    public String getSelectionMode() {
-        return selectionMode;
+    public String getResidence() {
+        return residence;
     }
 
-    public void setSelectionMode(String selectionMode) {
-        this.selectionMode = selectionMode;
-    }
-
-    public String getQuotaYear() {
-        return quotaYear;
-    }
-
-    public void setQuotaYear(String quotaYear) {
-        this.quotaYear = quotaYear;
-    }
-
-    public String getDecisionScreener() {
-        return decisionScreener;
-    }
-
-    public void setDecisionScreener(String decisionScreener) {
-        this.decisionScreener = decisionScreener;
-    }
-
-    public Date getFlightDate() {
-        return flightDate;
-    }
-
-    public void setFlightDate(Date flightDate) {
-        this.flightDate = flightDate;
-    }
-
-    public String getRemarks() {
-        return remarks;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
-    }
-
-    public Locale getSpokenLanguage() {
-        return spokenLanguage;
-    }
-
-    public void setSpokenLanguage(Locale spokenLanguage) {
-        this.spokenLanguage = spokenLanguage;
-    }
-
-    public String getCountryOfResidence() {
-        return countryOfResidence;
-    }
-
-    public void setCountryOfResidence(String countryOfResidence) {
-        this.countryOfResidence = countryOfResidence;
-    }
-
-    public String getCrossReference() {
-        return crossReference;
-    }
-
-    public void setCrossReference(String crossReference) {
-        this.crossReference = crossReference;
-    }
-
-    public ApprovalStatusEnum getApprovalStatus() {
-        return approvalStatus;
-    }
-
-    public void setApprovalStatus(ApprovalStatusEnum approvalStatus) {
-        this.approvalStatus = approvalStatus;
+    public void setResidence(String residence) {
+        this.residence = residence;
     }
 
     public RelationEnum getRelation() {
@@ -238,6 +171,14 @@ public class CustomerDTO extends GenericEntityDTO {
         this.relation = relation;
     }
 
+    public Locale getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(Locale language) {
+        this.language = language;
+    }
+
     public String getMissionName() {
         return missionName;
     }
@@ -246,11 +187,27 @@ public class CustomerDTO extends GenericEntityDTO {
         this.missionName = missionName;
     }
 
-    public String getComments() {
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
+
+    public ApprovalStatusEnum getApprovalStatus() {
+        return approvalStatus;
+    }
+
+    public void setApprovalStatus(ApprovalStatusEnum approvalStatus) {
+        this.approvalStatus = approvalStatus;
+    }
+
+    public List<String> getComments() {
         return comments;
     }
 
-    public void setComments(String comments) {
+    public void setComments(List<String> comments) {
         this.comments = comments;
     }
 }
