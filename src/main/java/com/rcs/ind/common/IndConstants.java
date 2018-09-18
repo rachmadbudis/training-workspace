@@ -8,8 +8,11 @@ public final class IndConstants {
 	// General constants.
 	public static final int UNDEFINED = -1;
 	public static final String DATE_FORMAT = "dd-MM-yyyy";
+	public static final String DATE_TIME_FORMAT = "dd-MM-yyyy-HHmmss";
 	public static final String UNKNOWN_ERROR_KEY = "com.rcs.common.error.unknown";
 	public static final String TRIPLE_FORMS = "TripleForms";
+	public static final String INDIGO = "Indigo";
+	public static final Long INDIGO_USERID = 1L;
 	public static final String SYSTEM = "SYSTEM";
 	public static final int MARKETPLACE_MAX_ROWS = 10;
 	public static final String DUTCH_YES = "Ja";
@@ -109,6 +112,8 @@ public final class IndConstants {
 	public static final String ANDERS_RULE = "anders.drl";
 	public static final String LOOP_DATA_RULE = "LoopData.drl";
 	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
+	public static final String RULES_FOLDER_PATH = "/webapps/rules/";
+	
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
@@ -144,17 +149,19 @@ public final class IndConstants {
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_KEY = "faanmeldformulierleefomgeving.welketalenleerdeu.welketalenleerdeu";
 	public static final String SIMPLIFIED_WELKETALENLEERDEU_ARABISCH_KEY = "faanmeldformulierleefomgeving.welketalenleerdeuarabisch.welketalenleerdeu";
 	
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_GENERIC = "faanmeldformulierdocumenten.documenteninbezit.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_ERITREA = "faanmeldformulierdocumenten.documenteneritera.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_AFGHANISTAN = "faanmeldformulierdocumenten.documentenafghanistan.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAK = "faanmeldformulierdocumenten.documentenirak.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_IRAN = "faanmeldformulierdocumenten.documenteniran.welkedocumenten";
-	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_SYRIA = "faanmeldformulierdocumenten.documentensyria.welkedocumenten";
+	public static final String DOCUMENTENBEZIT_WELKEDOCUMENTEN_GENERIC = "faanmeldformulierdocumenten.welkedocumentenbij.welkedocumenten";
 	
 	public static final String MULTIPLE_NATIONALITIES_PREFIX = "faanmeldformulierpersonalia.nationaliteiten.";
 	public static final String MULTIPLE_NATIONALITIES_SUFIX = ".welkenationaliteiten";
 	
-	// Constants for DDLs	
+	// Constants for DDL
+
+	//RIC Applicable DDL
+	public static final String RIC_APPLICABLE_DDL_NAME = "RIC Applicable";
+	public static final String RIC_NATIONALITY = "Nationality";
+	public static final String RIC_ALWAYS = "Always";
+	public static final String RIC_ONLY_IF_NO_DOCUMENTS = "Only_if_no_documents";
+
 	// Location DDL
 	public static final String LOCATION_DDL_NAME = "Location";
 	public static final String LOCATION = "location";
@@ -190,4 +197,7 @@ public final class IndConstants {
 	public static final String TRACK_DDL_NAME = "Tracks";
 	public static final String TRACK_KEY = "Key";
 	public static final String TRACK_LABEL = "Label";
+
+	//Statistic Report
+	public static final String STATISTIC_SHEET_NAME = "Statistic Report";
 }

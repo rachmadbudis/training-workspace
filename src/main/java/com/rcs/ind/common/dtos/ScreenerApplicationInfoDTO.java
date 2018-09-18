@@ -2,7 +2,7 @@ package com.rcs.ind.common.dtos;
 
 import java.util.Locale;
 
-import com.rcs.ind.common.entities.dtos.DocumentDTO;
+import com.rcs.ind.common.entities.dtos.ApplicationDocumentDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 

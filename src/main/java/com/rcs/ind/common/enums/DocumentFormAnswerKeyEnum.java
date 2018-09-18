@@ -10,6 +10,8 @@ public enum DocumentFormAnswerKeyEnum {
 	DOCUMENTEN_DATUMAFGIFTEPASPOORT("faanmeldformulierdocumenten.datumafgiftepaspoort", "faanmeldformulierdocumenten.datumafgiftepaspoort_translation"),
 	DOCUMENTEN_WELKEINSTANTIEIDENTITEITSKAARTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven", "faanmeldformulierdocumenten.welkeinstantieidentiteitskaartafgegeven_translation"),
 	DOCUMENTEN_WELKEINSTANTIEPASPOORTAFGEGEVEN("faanmeldformulierdocumenten.welkeinstantiepaspoortafgegeven", "faanmeldformulierdocumenten.welkeinstantiepaspoortafgegeven_translation");
+	
+											    
 
 	private final String key;
 	private final String translation;

@@ -7,4 +7,6 @@
 /target/
 /test-bin/
 .project
-
+*.iml
+pom.xml.versionsBackup
+src/main/resources/rebel.xml

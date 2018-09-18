@@ -1,7 +1,5 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.util.List;
-
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.RicStatusEnum;
 

@@ -4,11 +4,11 @@ import java.util.List;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 
-public class DocumentFiltersDTO extends PaginationFiltersDTO {
+public class GeneralDocumentFiltersDTO extends PaginationFiltersDTO {
 
 	private Long documentId;
-	private Long applicationId;
 	private List<String> fileNames;
+	private List<String> documentTypes;
 
 	public Long getDocumentId() {
 		return documentId;
@@ -17,14 +17,6 @@ public class DocumentFiltersDTO extends PaginationFiltersDTO {
 	public void setDocumentId(Long documentId) {
 		this.documentId = documentId;
 	}
-
-	public Long getApplicationId() {
-		return applicationId;
-	}
-
-	public void setApplicationId(Long applicationId) {
-		this.applicationId = applicationId;
-	}
 	
 	public List<String> getFileNames() {
 		return fileNames;
@@ -32,6 +24,14 @@ public class DocumentFiltersDTO extends PaginationFiltersDTO {
 	
 	public void setFileNames(List<String> fileNames) {
 		this.fileNames = fileNames;
+	}
+
+	public List<String> getDocumentTypes() {
+		return documentTypes;
+	}
+
+	public void setDocumentTypes(List<String> documentTypes) {
+		this.documentTypes = documentTypes;
 	}
 
 }

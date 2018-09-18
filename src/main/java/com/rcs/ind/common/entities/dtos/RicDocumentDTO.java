@@ -1,6 +1,6 @@
 package com.rcs.ind.common.entities.dtos;
 
-public class RicDocumentDTO extends DocumentDTO {
+public class RicDocumentDTO extends ApplicationDocumentDTO {
 
 	private Long ricDocumentId;
 
