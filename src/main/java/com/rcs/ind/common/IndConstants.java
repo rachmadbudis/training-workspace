@@ -21,6 +21,7 @@ public final class IndConstants {
 	public static final String DUTCH_OTHERS = "Anders";
 	public static final String DUTCH_MALE = "Man";
 	public static final String DUTCH_FEMALE = "Vrouw";
+	public static final String TYPE_SEPERATOR = ";";
 
 	// User constants
 	public static final String DEFAULT_PASSWORD = "test123";
@@ -35,6 +36,7 @@ public final class IndConstants {
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
 	public static final String RESUME_KEY = "resume";
 	public static final String APPLICATION_ID_KEY = "applicationId";
+	public static final String CUSTOMER_ID_KEY = "customerId";
 
 	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
@@ -200,4 +202,7 @@ public final class IndConstants {
 
 	//Statistic Report
 	public static final String STATISTIC_SHEET_NAME = "Statistic Report";
+
+	//HVZ Constants
+	public static final String HVZ_PRA = "PRA";
 }
