@@ -1,12 +1,10 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.IndConstants;
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
 import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -18,7 +16,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String vNumber;
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String gender;
     private String caseNumber;
     private String nationality;
@@ -77,11 +75,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.lastName = lastName;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
