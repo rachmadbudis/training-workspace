@@ -14,6 +14,7 @@ public class CustomerGridDTO {
     private String lastName;
     private Date dateOfBirth;
     private RelationEnum relativeType;
+    private String nationality;
     private Locale language;
     private String settlementResult; //TODO: Change to enum
 
@@ -79,6 +80,14 @@ public class CustomerGridDTO {
 
     public void setRelativeType(RelationEnum relativeType) {
         this.relativeType = relativeType;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
     }
 
     public Locale getLanguage() {
