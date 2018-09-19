@@ -6,18 +6,19 @@ import java.util.Map;
 public enum RelationEnum {
     Unknown("com.rcs.ind.relation.unknown", ""),
     PRA("com.rcs.ind.relation.pra", "PRA"),
-    Echtgenote("com.rcs.ind.relation.partner", "Echtgenote"),
-    Echtgenoot("com.rcs.ind.relation.husband", "Husband"),
-    Vrouw("com.rcs.ind.relation.wife", "Wife"),
-    Zoon("com.rcs.ind.relation.son", "Son"),
-    Dochter("com.rcs.ind.relation.daughter", "Daughter"),
-    Kind("com.rcs.ind.relation.children", "Kinder"),
-    Vader("com.rcs.ind.relation.father", "Father"),
-    Moeder("com.rcs.ind.relation.mother", "Mother"),
-    Kleinzoon("com.rcs.ind.relation.grandson", "GrandSon"),
-    Kleindochter("com.rcs.ind.relation.granddaughter", "GrandDaughter"),
-    Grootvader("com.rcs.ind.relation.grandfather", "GrandFather"),
-    Grootmoeder("com.rcs.ind.relation.grandmother", "GrandMother"),
+    Husband("com.rcs.ind.relation.husband", "Husband"),
+    Wife("com.rcs.ind.relation.wife", "Wife"),
+    Partner("com.rcs.ind.relation.partner", "Partnet"),
+    Son("com.rcs.ind.relation.son", "Son"),
+    Daughter("com.rcs.ind.relation.daughter", "Daughter"),
+    Child("com.rcs.ind.relation.child", "Kind"),
+    Children("com.rcs.ind.relation.children", "Kinder"),
+    Father("com.rcs.ind.relation.father", "Father"),
+    Mother("com.rcs.ind.relation.mother", "Mother"),
+    GrandSon("com.rcs.ind.relation.grandson", "GrandSon"),
+    GrandDaughter("com.rcs.ind.relation.granddaughter", "GrandDaughter"),
+    GrandFather("com.rcs.ind.relation.grandfather", "GrandFather"),
+    GrandMother("com.rcs.ind.relation.grandmother", "GrandMother"),
     ;
 
     private static final Map<String, RelationEnum> lookupIndigoKey = new HashMap<>();
@@ -45,9 +46,6 @@ public enum RelationEnum {
     }
 
     public static RelationEnum getByIndigoKey(String value) {
-        if (lookupIndigoKey.get(value) == null) {
-            return RelationEnum.Unknown;
-        }
         return lookupIndigoKey.get(value);
     }
 }
