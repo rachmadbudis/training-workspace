@@ -15,7 +15,7 @@ public class CustomerGridDTO {
     private Date dateOfBirth;
     private RelationEnum relativeType;
     private Locale language;
-    private String approvalGrounds; //TODO: Change to enum
+    private String settlementResult; //TODO: Change to enum
 
     public Long getCustomerId() {
         return customerId;
@@ -89,11 +89,11 @@ public class CustomerGridDTO {
         this.language = language;
     }
 
-    public String getApprovalGrounds() {
-        return approvalGrounds;
+    public String getSettlementResult() {
+        return settlementResult;
     }
 
-    public void setApprovalGrounds(String approvalGrounds) {
-        this.approvalGrounds = approvalGrounds;
+    public void setSettlementResult(String settlementResult) {
+        this.settlementResult = settlementResult;
     }
 }
