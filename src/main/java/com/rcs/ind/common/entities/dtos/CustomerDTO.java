@@ -2,6 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
+import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 
@@ -32,6 +33,10 @@ public class CustomerDTO extends GenericEntityDTO {
     private String missionName;
     private String remarks;
     private List<String> comments;
+
+    private Boolean ricApplicable;
+    private String assignee;
+    private HvzRicStatusEnum hvzRicStatus;
 
     private ApprovalStatusEnum approvalStatus;
 
@@ -209,5 +214,29 @@ public class CustomerDTO extends GenericEntityDTO {
 
     public void setComments(List<String> comments) {
         this.comments = comments;
+    }
+
+    public Boolean getRicApplicable() {
+        return ricApplicable;
+    }
+
+    public void setRicApplicable(Boolean ricApplicable) {
+        this.ricApplicable = ricApplicable;
+    }
+
+    public String getAssignee() {
+        return assignee;
+    }
+
+    public void setAssignee(String assignee) {
+        this.assignee = assignee;
+    }
+
+    public HvzRicStatusEnum getHvzRicStatus() {
+        return hvzRicStatus;
+    }
+
+    public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
+        this.hvzRicStatus = hvzRicStatus;
     }
 }
