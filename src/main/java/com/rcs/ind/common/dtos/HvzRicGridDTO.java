@@ -1,5 +1,6 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RicStatusEnum;
 
 public class HvzRicGridDTO {
@@ -7,9 +8,9 @@ public class HvzRicGridDTO {
     private String caseNumber;
     private String nationality;
     private String residence;
-    private String birthplace;
+    private String birthPlace;
     private String assignee;
-    private RicStatusEnum status;
+    private HvzRicStatusEnum hvzRicStatus;
 
     public String getvNumber() {
         return vNumber;
@@ -43,12 +44,12 @@ public class HvzRicGridDTO {
         this.residence = residence;
     }
 
-    public String getBirthplace() {
-        return birthplace;
+    public String getBirthPlace() {
+        return birthPlace;
     }
 
-    public void setBirthplace(String birthplace) {
-        this.birthplace = birthplace;
+    public void setBirthPlace(String birthPlace) {
+        this.birthPlace = birthPlace;
     }
 
     public String getAssignee() {
@@ -59,11 +60,11 @@ public class HvzRicGridDTO {
         this.assignee = assignee;
     }
 
-    public RicStatusEnum getStatus() {
-        return status;
+    public HvzRicStatusEnum getHvzRicStatus() {
+        return hvzRicStatus;
     }
 
-    public void setStatus(RicStatusEnum status) {
-        this.status = status;
+    public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
+        this.hvzRicStatus = hvzRicStatus;
     }
 }
