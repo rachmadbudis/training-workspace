@@ -4,6 +4,7 @@ import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RicStatusEnum;
 
 public class HvzRicGridDTO {
+    private Long customerId;
     private String vNumber;
     private String caseNumber;
     private String nationality;
@@ -11,6 +12,14 @@ public class HvzRicGridDTO {
     private String birthPlace;
     private String assignee;
     private HvzRicStatusEnum hvzRicStatus;
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
+    }
 
     public String getvNumber() {
         return vNumber;
