@@ -37,6 +37,8 @@ public class CustomerDTO extends GenericEntityDTO {
     private Boolean ricApplicable;
     private String assignee;
     private HvzRicStatusEnum hvzRicStatus;
+    private String fileName;
+    private byte[] file;
 
     private ApprovalStatusEnum approvalStatus;
 
@@ -238,5 +240,21 @@ public class CustomerDTO extends GenericEntityDTO {
 
     public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
         this.hvzRicStatus = hvzRicStatus;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public byte[] getFile() {
+        return file;
+    }
+
+    public void setFile(byte[] file) {
+        this.file = file;
     }
 }
