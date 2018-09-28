@@ -1,5 +1,6 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 
 import java.util.Date;
@@ -17,6 +18,7 @@ public class CustomerGridDTO {
     private String nationality;
     private Locale language;
     private String settlementResult; //TODO: Change to enum
+    private HvzRicStatusEnum hvzRicStatus;
 
     public Long getCustomerId() {
         return customerId;
@@ -104,5 +106,13 @@ public class CustomerGridDTO {
 
     public void setSettlementResult(String settlementResult) {
         this.settlementResult = settlementResult;
+    }
+
+    public HvzRicStatusEnum getHvzRicStatus() {
+        return hvzRicStatus;
+    }
+
+    public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
+        this.hvzRicStatus = hvzRicStatus;
     }
 }
