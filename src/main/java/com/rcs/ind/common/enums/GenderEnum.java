@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum  GenderEnum {
-    Male("com.rcs.ind.gender.male", "male"),
-    Female("com.rcs.ind.gender.female", "female"),
-    Other("com.rcs.ind.gender.other", "other" ),
+    Male("com.rcs.ind.gender.male", "M"),
+    Female("com.rcs.ind.gender.female", "F"),
+    Other("com.rcs.ind.gender.other", ""),
     ;
 
     private static final Map<String, GenderEnum> lookupIndigoKey= new HashMap<>();

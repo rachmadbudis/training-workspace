@@ -2,6 +2,7 @@ package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
+import com.rcs.ind.common.enums.GenderEnum;
 import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.MaritalStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
@@ -18,7 +19,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String gender;
+    private GenderEnum gender;
     private String caseNumber;
     private String nationality;
     private MaritalStatusEnum maritalStatus;
@@ -90,11 +91,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getGender() {
+    public GenderEnum getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(GenderEnum gender) {
         this.gender = gender;
     }
 
