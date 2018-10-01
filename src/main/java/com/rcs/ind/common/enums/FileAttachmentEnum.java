@@ -12,7 +12,8 @@ public enum FileAttachmentEnum {
 	BRP_PROFILE_DOC_NAME("%s_BRP_Profile_Document.docx","com.rcs.ind.filename.brp.profile","Overzicht voor inschrijving BRP"),
 	NAREIS_PROFILE_DOC_PDF_NAME("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Formulier persoonsgegevens tbv Nareis"),
 	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml",""),
-	STATISTIC_REPORT("stats_report_%s.xlsx", "com.rcs.ind.filename.statistic.report.xls","")
+	STATISTIC_REPORT("stats_report_%s.xlsx", "com.rcs.ind.filename.statistic.report.xls",""),
+	HVZ_RIC_PACKAGE("", "com.rcs.ind.filename.emm.xml","");
 	;
 
 	private final String fileName;
