@@ -194,6 +194,11 @@ public final class IndConstants {
 	public static final String NATIONALITY_DDL_NAME = "Nationalities";
 	public static final String NATIONALITY = "nationalities";
 	public static final String NATIONALITY_SAFE_COUNTRY = "safeCountry";
+	
+	// Mission target groups DDL
+	public static final String MISSION_TARGET_GROUPS_DDL_NAME = "Mission Target Groups";
+	public static final String MISSION_TARGET_GROUPS_FIELD_VALUE = "value";
+	public static final String MISSION_TARGET_GROUPS_FIELD_CODE = "code";
 
 	// Tracks DDL
 	public static final String TRACK_DDL_NAME = "Tracks";
