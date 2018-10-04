@@ -6,7 +6,7 @@ import com.rcs.ind.common.enums.RelationEnum;
 import java.util.Date;
 import java.util.Locale;
 
-public class CustomerGridDTO {
+public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private Long customerId;
     private String ricResult;
     private String caseNumber;
@@ -19,6 +19,7 @@ public class CustomerGridDTO {
     private Locale language;
     private String settlementResult; //TODO: Change to enum
     private HvzRicStatusEnum hvzRicStatus;
+    private Long documentId;
 
     public Long getCustomerId() {
         return customerId;
@@ -114,5 +115,24 @@ public class CustomerGridDTO {
 
     public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
         this.hvzRicStatus = hvzRicStatus;
+    }
+
+    public Long getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(Long documentId) {
+        this.documentId = documentId;
+    }
+
+    @Override
+    public int compareTo(CustomerGridDTO o) {
+        if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
+        else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
+        else {
+            if (this.getRelativeType().ordinal() > o.getRelativeType().ordinal()) return 1;
+            if (this.getRelativeType().ordinal() < o.getRelativeType().ordinal()) return -1;
+            else return 0;
+        }
     }
 }
