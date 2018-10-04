@@ -42,10 +42,12 @@ public enum ConfigurationEnum {
 	RD_SUPERVISOR_DETAIL("rdSupervisorDetail"),
 	RD_SUPERVISOR_MARKETPLACE("rdSupervisorMarketplace"),
 	
-	// Configuration key for automated deletion and release of old application
+	// Configuration key for automated deletion of general applications and release of old applications
 	AT_APPLICATION_DELETION_PASSED_DAYS("atApplicationDeletionPassedDays", "7"),
 	AT_EVENTS_DELETION_PASSED_DAYS("atEventsDeletionPassedDays", "21"),
 	AT_INCOMPLETE_EMAIL_TEMPLATE_TITLE("atIncompleteEmailTemplateTitle", "incomplete-email-template"),
+	EMM_APPLICATION_DELETION_PASSED_DAYS("emmApplicationDeletionPassedDays", "60"),
+	
 	
 	//Configuration key for websocket
 	WebSocketFE("websocket_fe", "false"),
