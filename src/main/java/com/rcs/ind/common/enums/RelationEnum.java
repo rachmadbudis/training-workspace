@@ -8,7 +8,7 @@ public enum RelationEnum {
     PRA("com.rcs.ind.relation.pra", "PRA"),
     Husband("com.rcs.ind.relation.husband", "Husband"),
     Wife("com.rcs.ind.relation.wife", "Wife"),
-    Partner("com.rcs.ind.relation.partner", "Partnet"),
+    Partner("com.rcs.ind.relation.partner", "Partner"),
     Son("com.rcs.ind.relation.son", "Son"),
     Daughter("com.rcs.ind.relation.daughter", "Daughter"),
     Child("com.rcs.ind.relation.child", "Kind"),
@@ -19,6 +19,7 @@ public enum RelationEnum {
     GrandDaughter("com.rcs.ind.relation.granddaughter", "GrandDaughter"),
     GrandFather("com.rcs.ind.relation.grandfather", "GrandFather"),
     GrandMother("com.rcs.ind.relation.grandmother", "GrandMother"),
+    Family("com.rcs.ind.relation.family", "Gezin"),
     ;
 
     private static final Map<String, RelationEnum> lookupIndigoKey = new HashMap<>();
