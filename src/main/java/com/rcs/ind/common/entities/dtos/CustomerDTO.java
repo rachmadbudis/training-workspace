@@ -19,6 +19,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
+    private Date flightDate;
     private GenderEnum gender;
     private String caseNumber;
     private String nationality;
@@ -30,7 +31,8 @@ public class CustomerDTO extends GenericEntityDTO {
     private String birthCountry;
     private String residence;
     private RelationEnum relation;
-    private Locale language;
+    private String language;
+    private String spokenLanguage;
     private String missionName;
     private String remarks;
     private List<String> comments;
@@ -179,11 +181,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.relation = relation;
     }
 
-    public Locale getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(Locale language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 
@@ -257,5 +259,21 @@ public class CustomerDTO extends GenericEntityDTO {
 
     public void setFile(byte[] file) {
         this.file = file;
+    }
+
+    public String getSpokenLanguage() {
+        return spokenLanguage;
+    }
+
+    public void setSpokenLanguage(String spokenLanguage) {
+        this.spokenLanguage = spokenLanguage;
+    }
+
+    public Date getFlightDate() {
+        return flightDate;
+    }
+
+    public void setFlightDate(Date flightDate) {
+        this.flightDate = flightDate;
     }
 }
