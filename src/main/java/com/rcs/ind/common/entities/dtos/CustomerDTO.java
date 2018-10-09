@@ -15,6 +15,7 @@ public class CustomerDTO extends GenericEntityDTO {
 
     private long customerId;
     private String zNumber;
+    private String iNumber;
     private String vNumber;
     private String firstName;
     private String lastName;
@@ -276,4 +277,14 @@ public class CustomerDTO extends GenericEntityDTO {
     public void setFlightDate(Date flightDate) {
         this.flightDate = flightDate;
     }
+
+	
+	public String getiNumber() {
+		return iNumber;
+	}
+
+	
+	public void setiNumber(String iNumber) {
+		this.iNumber = iNumber;
+	}
 }
