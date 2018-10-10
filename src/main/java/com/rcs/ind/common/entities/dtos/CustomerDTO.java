@@ -18,6 +18,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String iNumber;
     private String vNumber;
     private String firstName;
+    private String prefix;
     private String lastName;
     private Date dateOfBirth;
     private Date flightDate;
@@ -286,5 +287,13 @@ public class CustomerDTO extends GenericEntityDTO {
 	
 	public void setiNumber(String iNumber) {
 		this.iNumber = iNumber;
+	}
+
+	public String getPrefix() {
+		return prefix;
+	}
+
+	public void setPrefix(String prefix) {
+		this.prefix = prefix;
 	}
 }
