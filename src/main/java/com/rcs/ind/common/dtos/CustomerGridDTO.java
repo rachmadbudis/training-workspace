@@ -16,7 +16,7 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private Date dateOfBirth;
     private RelationEnum relativeType;
     private String nationality;
-    private Locale language;
+    private String language;
     private String settlementResult; //TODO: Change to enum
     private HvzRicStatusEnum hvzRicStatus;
     private Long documentId;
@@ -93,11 +93,11 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         this.nationality = nationality;
     }
 
-    public Locale getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(Locale language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 

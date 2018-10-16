@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum  GenderEnum {
-    Male("com.rcs.ind.gender.male", "M"),
-    Female("com.rcs.ind.gender.female", "F"),
+    Male("com.rcs.ind.gender.male", "Man"),
+    Female("com.rcs.ind.gender.female", "Vrouw"),
     Other("com.rcs.ind.gender.other", ""),
     ;
 
