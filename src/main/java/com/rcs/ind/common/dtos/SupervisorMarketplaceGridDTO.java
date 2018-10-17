@@ -19,6 +19,7 @@ public class SupervisorMarketplaceGridDTO  {
 	private Date startDate;
 	private String nationality;
 	private Locale language;
+	private Date creationDate;
 	
 	public String getvNumber() {
 		return vNumber;
@@ -100,6 +101,14 @@ public class SupervisorMarketplaceGridDTO  {
 
 	public void setTrackLabel(String trackLabel) {
 		this.trackLabel = trackLabel;
+	}
+
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
 	}
 	
 	}
