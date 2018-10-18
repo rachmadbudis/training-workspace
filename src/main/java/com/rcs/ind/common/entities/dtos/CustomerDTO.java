@@ -1,15 +1,11 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.dtos.GenericEntityDTO;
-import com.rcs.ind.common.enums.ApprovalStatusEnum;
-import com.rcs.ind.common.enums.GenderEnum;
-import com.rcs.ind.common.enums.HvzRicStatusEnum;
-import com.rcs.ind.common.enums.MaritalStatusEnum;
-import com.rcs.ind.common.enums.RelationEnum;
-
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
+
+import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.ApprovalStatusEnum;
+import com.rcs.ind.common.enums.HvzRicStatusEnum;
 
 public class CustomerDTO extends GenericEntityDTO {
 
@@ -22,17 +18,17 @@ public class CustomerDTO extends GenericEntityDTO {
     private String lastName;
     private Date dateOfBirth;
     private Date flightDate;
-    private GenderEnum gender;
+    private String gender;
     private String caseNumber;
     private String nationality;
-    private MaritalStatusEnum maritalStatus;
+    private String maritalStatus;
     private String treatmentResult;
     private String settlementResult;
     private String selectionMode;
     private String birthPlace;
     private String birthCountry;
     private String residence;
-    private RelationEnum relation;
+    private String relation;
     private String language;
     private String spokenLanguage;
     private String missionName;
@@ -95,11 +91,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public GenderEnum getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(GenderEnum gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -119,11 +115,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.nationality = nationality;
     }
 
-    public MaritalStatusEnum getMaritalStatus() {
+    public String getMaritalStatus() {
         return maritalStatus;
     }
 
-    public void setMaritalStatus(MaritalStatusEnum maritalStatus) {
+    public void setMaritalStatus(String maritalStatus) {
         this.maritalStatus = maritalStatus;
     }
 
@@ -175,11 +171,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.residence = residence;
     }
 
-    public RelationEnum getRelation() {
+    public String getRelation() {
         return relation;
     }
 
-    public void setRelation(RelationEnum relation) {
+    public void setRelation(String relation) {
         this.relation = relation;
     }
 

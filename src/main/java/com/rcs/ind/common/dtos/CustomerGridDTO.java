@@ -1,10 +1,9 @@
 package com.rcs.ind.common.dtos;
 
+import java.util.Date;
+
 import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
-
-import java.util.Date;
-import java.util.Locale;
 
 public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private Long customerId;
@@ -14,10 +13,10 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private RelationEnum relativeType;
+    private String relativeType;
     private String nationality;
     private String language;
-    private String settlementResult; //TODO: Change to enum
+    private String settlementResult;
     private HvzRicStatusEnum hvzRicStatus;
     private Long documentId;
 
@@ -77,11 +76,11 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public RelationEnum getRelativeType() {
+    public String getRelativeType() {
         return relativeType;
     }
 
-    public void setRelativeType(RelationEnum relativeType) {
+    public void setRelativeType(String relativeType) {
         this.relativeType = relativeType;
     }
 
@@ -127,11 +126,12 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
 
     @Override
     public int compareTo(CustomerGridDTO o) {
+    	;
         if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
         else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
         else {
-            if (this.getRelativeType().ordinal() > o.getRelativeType().ordinal()) return 1;
-            if (this.getRelativeType().ordinal() < o.getRelativeType().ordinal()) return -1;
+            if (RelationEnum.getByIndigoKey(getRelativeType()).ordinal() > RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal()) return 1;
+            if (RelationEnum.getByIndigoKey(getRelativeType()).ordinal() < RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal()) return -1;
             else return 0;
         }
     }

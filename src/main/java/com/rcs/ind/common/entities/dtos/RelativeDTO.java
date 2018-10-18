@@ -1,7 +1,5 @@
 package com.rcs.ind.common.entities.dtos;
 
-import com.rcs.ind.common.enums.RelationEnum;
-
 import java.util.Date;
 
 public class RelativeDTO {
@@ -10,7 +8,7 @@ public class RelativeDTO {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private RelationEnum relatie;
+    private String relatie;
 
     public long getCustomerId() {
         return customerId;
@@ -52,11 +50,11 @@ public class RelativeDTO {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public RelationEnum getRelatie() {
+    public String getRelatie() {
         return relatie;
     }
 
-    public void setRelatie(RelationEnum relatie) {
+    public void setRelatie(String relatie) {
         this.relatie = relatie;
     }
 }
