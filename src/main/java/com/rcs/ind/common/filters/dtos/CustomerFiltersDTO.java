@@ -1,6 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
+import com.rcs.ind.common.enums.RelationEnum;
 
 import java.util.Date;
 
@@ -10,6 +11,7 @@ public class CustomerFiltersDTO extends PaginationFiltersDTO {
     private String vNumber;
     private String lastName;
     private Date dateOfBirth;
+    private RelationEnum relationEnum;
 
     public String getMission() {
         return mission;
@@ -49,5 +51,13 @@ public class CustomerFiltersDTO extends PaginationFiltersDTO {
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public RelationEnum getRelationEnum() {
+        return relationEnum;
+    }
+
+    public void setRelationEnum(RelationEnum relationEnum) {
+        this.relationEnum = relationEnum;
     }
 }
