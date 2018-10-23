@@ -7,8 +7,15 @@ public class HvzRicFiltersDTO extends PaginationFiltersDTO {
     private Boolean ricApplicable;
     private String assignee;
     private HvzRicStatusEnum hvzRicStatus;
-
     private String relation;
+    private String vNumber;
+    private String caseNumber;
+    private String nationality;
+    private String placeOfResidence;
+    private String placeOfBirth;
+    private String missionName;
+
+   
 
     public Boolean getRicApplicable() {
         return ricApplicable;
@@ -41,4 +48,64 @@ public class HvzRicFiltersDTO extends PaginationFiltersDTO {
     public void setRelation(String relation) {
         this.relation = relation;
     }
+
+	
+	public String getvNumber() {
+		return vNumber;
+	}
+
+	
+	public void setvNumber(String vNumber) {
+		this.vNumber = vNumber;
+	}
+
+	
+	public String getCaseNumber() {
+		return caseNumber;
+	}
+
+	
+	public void setCaseNumber(String caseNumber) {
+		this.caseNumber = caseNumber;
+	}
+
+	
+	public String getNationality() {
+		return nationality;
+	}
+
+	
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	
+	public String getPlaceOfResidence() {
+		return placeOfResidence;
+	}
+
+	
+	public void setPlaceOfResidence(String placeOfResidence) {
+		this.placeOfResidence = placeOfResidence;
+	}
+
+	
+	public String getPlaceOfBirth() {
+		return placeOfBirth;
+	}
+
+	
+	public void setPlaceOfBirth(String placeOfBirth) {
+		this.placeOfBirth = placeOfBirth;
+	}
+
+	
+	public String getMissionName() {
+		return missionName;
+	}
+
+	
+	public void setMissionName(String missionName) {
+		this.missionName = missionName;
+	}
 }
