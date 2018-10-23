@@ -13,7 +13,10 @@ public enum FileAttachmentEnum {
 	NAREIS_PROFILE_DOC_PDF_NAME("%s_Nareis_Profile_Document.pdf","com.rcs.ind.filename.nareis.profile","Formulier persoonsgegevens tbv Nareis"),
 	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml",""),
 	STATISTIC_REPORT("stats_report_%s.xlsx", "com.rcs.ind.filename.statistic.report.xls",""),
-	HVZ_RIC_PACKAGE("", "com.rcs.ind.filename.emm.xml","");
+	HVZ_RIC_PACKAGE("", "com.rcs.ind.filename.hvz.attachment",""),
+	HVZ_RESETTLEMENT_INTERVIEW("Gehoor_Vervestiging_%s.docx", "com.rcs.ind.filename.hvz.resettlement.interview", "Gehoor Vervestiging"),
+	HVZ_DECISION_RESULT("Beschikking_Uitgenodigde_Vluchteling_%s.docx", "com.rcs.ind.filename.hvz.decision.result", "Beschikking Uitgenodigde Vluchteling"),
+	HVZ_RESETTLEMENT_MINUTES("Minuut_Hervestiging_%s.docx", "com.rcs.ind.filename.hvz.resettlement.minutes", "Minuut Hervestiging"),
 	;
 
 	private final String fileName;
