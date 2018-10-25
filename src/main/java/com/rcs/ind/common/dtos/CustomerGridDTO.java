@@ -126,7 +126,6 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
 
     @Override
     public int compareTo(CustomerGridDTO o) {
-    	;
         if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
         else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
         else {

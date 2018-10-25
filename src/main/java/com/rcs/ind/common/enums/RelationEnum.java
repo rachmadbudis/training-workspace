@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum RelationEnum {
-	UNKNOWN("com.rcs.ind.relation.unknown","Onbekend"),
 	PRA("com.rcs.ind.relation.pra","PRA"),
 	SPOUSE("com.rcs.ind.relation.spouse","Echtgeno(o)t(e)"),
 	REGISTEREDPARTNER("com.rcs.ind.relation.registeredpartner","Geregistreerd partner"),
@@ -13,8 +12,8 @@ public enum RelationEnum {
 	REFERENTPARTNER("com.rcs.ind.relation.referentpartner","Referent (partner)"),
 	ADOPTIVECHILD("com.rcs.ind.relation.adoptivechild","Adoptief kind"),
 	ADOPTIVEPARENT("com.rcs.ind.relation.adoptiveparent","Adoptie-ouder"),
-	BIOLOGICALCHILD("com.rcs.ind.relation.biologicalchild","Biologisch kind"),
-	BIOLOGICALFATHER("com.rcs.ind.relation.biologicalfather","Biologische vader"),
+	BIOLOGICALCHILD("com.rcs.ind.relation.biologicalchild","Biologisch kind"),	
+	BIOLOGICALFATHER("com.rcs.ind.relation.biologicalfather","Biologische vader"),
 	SIBLING("com.rcs.ind.relation.sibling","Broer/zus"),
 	RECOGNIZEROFCHILD("com.rcs.ind.relation.recognizerofchild","Erkenner van het kind"),
 	GUESTCHILD("com.rcs.ind.relation.guestchild","Gastkind"),
@@ -37,7 +36,8 @@ public enum RelationEnum {
 	UNCLEAUNT("com.rcs.ind.relation.uncleaunt","Oom/tante"),
 	GREATGRANDPARENT("com.rcs.ind.relation.greatgrandparent","Overgrootouder"),
 	OTHERFAMILYMEMBER("com.rcs.ind.relation.otherfamilymember","Overig familielid"),
-    ;
+	UNKNOWN("com.rcs.ind.relation.unknown","Onbekend"),
+	;
 
     private static final Map<String, RelationEnum> lookupIndigoKey = new HashMap<>();
 
