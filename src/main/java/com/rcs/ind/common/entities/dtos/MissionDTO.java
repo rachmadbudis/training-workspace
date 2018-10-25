@@ -11,6 +11,7 @@ public class MissionDTO extends GenericEntityDTO {
     private String status;
     private String targetGroup;
     private String groupNumber;
+    private Date ricEndDate;
 
     public MissionDTO() {
     }
@@ -66,5 +67,15 @@ public class MissionDTO extends GenericEntityDTO {
     public void setGroupNumber(String groupNumber) {
         this.groupNumber = groupNumber;
     }
+
+	
+	public Date getRicEndDate() {
+		return ricEndDate;
+	}
+
+	
+	public void setRicEndDate(Date ricEndDate) {
+		this.ricEndDate = ricEndDate;
+	}
 }
 
