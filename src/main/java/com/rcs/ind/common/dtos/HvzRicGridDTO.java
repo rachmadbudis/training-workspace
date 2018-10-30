@@ -1,7 +1,6 @@
 package com.rcs.ind.common.dtos;
 
 import com.rcs.ind.common.enums.HvzRicStatusEnum;
-import com.rcs.ind.common.enums.RicStatusEnum;
 
 public class HvzRicGridDTO {
     private Long customerId;
@@ -10,6 +9,7 @@ public class HvzRicGridDTO {
     private String nationality;
     private String residence;
     private String birthPlace;
+    private String birthCountry;
     private String assignee;
     private HvzRicStatusEnum hvzRicStatus;
 
@@ -76,4 +76,14 @@ public class HvzRicGridDTO {
     public void setHvzRicStatus(HvzRicStatusEnum hvzRicStatus) {
         this.hvzRicStatus = hvzRicStatus;
     }
+
+	
+	public String getBirthCountry() {
+		return birthCountry;
+	}
+
+	
+	public void setBirthCountry(String birthCountry) {
+		this.birthCountry = birthCountry;
+	}
 }
