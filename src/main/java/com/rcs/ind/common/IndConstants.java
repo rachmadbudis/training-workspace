@@ -104,9 +104,9 @@ public final class IndConstants {
 	public static final String BWST_AMG_MILITARY_VRIJGESTELD = "bwst_amg_military_vrijgesteld";
 	public static final String BWST_AMG_MILITARY_UITSTEL = "bwst_amg_military_uitstel";
 	public static final String RIC_IDENTITEITSKAARTAANGEVRAAGD = "RIC_identiteitskaartaangevraagd";
-	public static final String HVZ_RESETTLEMENT_INTERVIEW = "HVZ_gehoor_hervestiging";
+	public static final String HVZ_INTERVIEW = "HVZ_gehoor_hervestiging";
 	public static final String HVZ_DECISION_RESULT = "HVZ_beschikking_uitgenodigde_vluchteling";
-	public static final String HVZ_RESETTLEMENT_MINUTES = "HVZ_minuut_hervestiging";
+	public static final String HVZ_MINUTES = "HVZ_minuut_hervestiging";
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
 	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
