@@ -17,6 +17,7 @@ public enum FileAttachmentEnum {
 	HVZ_RESETTLEMENT_INTERVIEW("%s_Gehoor.docx", "com.rcs.ind.filename.hvz.resettlement.interview", "Gehoor Vervestiging"),
 	HVZ_DECISION_RESULT("%s_Beschikking.docx", "com.rcs.ind.filename.hvz.decision.result", "Beschikking Uitgenodigde Vluchteling"),
 	HVZ_RESETTLEMENT_MINUTES("%s_Minuut.docx", "com.rcs.ind.filename.hvz.resettlement.minutes", "Minuut Hervestiging"),
+	HVZ_WERKLIJST("%s - Werklijst.xlsx", "com.rcs.ind.filename.hvz.werklijst", "Werklijst"),
 	;
 
 	private final String fileName;
