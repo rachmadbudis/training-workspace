@@ -3,22 +3,27 @@ package com.rcs.ind.common.dtos;
 import com.rcs.ind.common.entities.dtos.CustomerDTO;
 import com.rcs.ind.common.entities.dtos.GeneralDocumentDTO;
 
+import java.util.List;
+import java.util.Set;
+
 public class HvzDocumentDTO extends GeneralDocumentDTO {
 
-    private CustomerDTO customer;
+    private List<CustomerDTO> customers;
 
     public HvzDocumentDTO() {
     }
 
-    public HvzDocumentDTO(CustomerDTO customer) {
-        this.customer = customer;
+    public HvzDocumentDTO(Long documentId, String fileName, List<CustomerDTO> customers) {
+        super.setDocumentId(documentId);
+        super.setFileName(fileName);
+        this.customers = customers;
     }
 
-    public CustomerDTO getCustomer() {
-        return customer;
+    public List<CustomerDTO> getCustomers() {
+        return customers;
     }
 
-    public void setCustomer(CustomerDTO customer) {
-        this.customer = customer;
+    public void setCustomers(List<CustomerDTO> customers) {
+        this.customers = customers;
     }
 }
