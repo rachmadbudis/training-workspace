@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.FastDateFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -211,6 +212,7 @@ public class CommonUtil {
 	 * @return
 	 */
 	public static String formatDate(Date date, String pattern) {
+		if (date == null) return "";
 		try {
 			return FastDateFormat.getInstance(pattern).format(date);
 		} catch (Exception e) {
