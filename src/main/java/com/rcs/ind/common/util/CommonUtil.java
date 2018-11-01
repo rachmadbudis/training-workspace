@@ -189,39 +189,6 @@ public class CommonUtil {
 	}
 
 	/**
-	 * Parse date string to date by given pattern
-	 * 
-	 * @param date
-	 * @param pattern
-	 * @return
-	 */
-	public static Date parseDate(String date, String pattern) {
-		try {
-			return FastDateFormat.getInstance(pattern).parse(date);
-		} catch (ParseException e) {
-			logger.error("Cannot parse String to Date: " + e.getMessage(), e);
-			return null;
-		}
-	}
-
-	/**
-	 * Parse date to date string by given pattern
-	 * 
-	 * @param date
-	 * @param pattern
-	 * @return
-	 */
-	public static String formatDate(Date date, String pattern) {
-		if (date == null) return "";
-		try {
-			return FastDateFormat.getInstance(pattern).format(date);
-		} catch (Exception e) {
-			logger.error("Cannot parse Date to String: " + e.getMessage(), e);
-			return null;
-		}
-	}
-
-	/**
 	 * Generate string that contains random character
 	 * 
 	 * @param length

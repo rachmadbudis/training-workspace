@@ -1,12 +1,13 @@
 package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.DocumentTypeEnum;
 
 public class GeneralDocumentDTO extends GenericEntityDTO{
 
 	private Long documentId;
 	private String fileName;
-	private String documentType;
+	private DocumentTypeEnum documentType;
 	private byte[] data;
 	private boolean active;
 	private String modificationUser;
@@ -14,7 +15,7 @@ public class GeneralDocumentDTO extends GenericEntityDTO{
 	public GeneralDocumentDTO() {
 	}
 
-	public GeneralDocumentDTO(Long documentId, String fileName, String documentType) {
+	public GeneralDocumentDTO(Long documentId, String fileName, DocumentTypeEnum documentType) {
 		this.documentId = documentId;
 		this.fileName = fileName;
 		this.documentType = documentType;
@@ -36,11 +37,11 @@ public class GeneralDocumentDTO extends GenericEntityDTO{
 		this.fileName = fileName;
 	}
 
-	public String getDocumentType() {
+	public DocumentTypeEnum getDocumentType() {
 		return documentType;
 	}
 
-	public void setDocumentType(String documentType) {
+	public void setDocumentType(DocumentTypeEnum documentType) {
 		this.documentType = documentType;
 	}
 

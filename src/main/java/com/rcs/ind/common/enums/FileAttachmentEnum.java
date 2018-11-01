@@ -14,7 +14,7 @@ public enum FileAttachmentEnum {
 	EMM_XML("Klantformulier_%s.xml","com.rcs.ind.filename.emm.xml",""),
 	STATISTIC_REPORT("stats_report_%s.xlsx", "com.rcs.ind.filename.statistic.report.xls",""),
 	HVZ_RIC_PACKAGE("", "com.rcs.ind.filename.hvz.attachment",""),
-	HVZ_INTERVIEW("%s_Gehoor.docx", "com.rcs.ind.filename.hvz.resettlement.interview", "Gehoor Vervestiging"),
+	HVZ_INTERVIEW("%s_Gehoor.docx", "com.rcs.ind.filename.hvz.resettlement.interview", "Gehoor Hervestiging"),
 	HVZ_DECISION_RESULT("%s_Beschikking.docx", "com.rcs.ind.filename.hvz.decision.result", "Beschikking Uitgenodigde Vluchteling"),
 	HVZ_MINUTES("%s_Minuut.docx", "com.rcs.ind.filename.hvz.resettlement.minutes", "Minuut Hervestiging"),
 	HVZ_WERKLIJST("%s - Werklijst.xlsx", "com.rcs.ind.filename.hvz.werklijst", "Werklijst"),
