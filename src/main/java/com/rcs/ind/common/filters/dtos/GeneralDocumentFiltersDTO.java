@@ -3,12 +3,13 @@ package com.rcs.ind.common.filters.dtos;
 import java.util.List;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
+import com.rcs.ind.common.enums.DocumentTypeEnum;
 
 public class GeneralDocumentFiltersDTO extends PaginationFiltersDTO {
 
 	private Long documentId;
 	private List<String> fileNames;
-	private List<String> documentTypes;
+	private List<DocumentTypeEnum> documentTypes;
 
 	public Long getDocumentId() {
 		return documentId;
@@ -26,11 +27,11 @@ public class GeneralDocumentFiltersDTO extends PaginationFiltersDTO {
 		this.fileNames = fileNames;
 	}
 
-	public List<String> getDocumentTypes() {
+	public List<DocumentTypeEnum> getDocumentTypes() {
 		return documentTypes;
 	}
 
-	public void setDocumentTypes(List<String> documentTypes) {
+	public void setDocumentTypes(List<DocumentTypeEnum> documentTypes) {
 		this.documentTypes = documentTypes;
 	}
 
