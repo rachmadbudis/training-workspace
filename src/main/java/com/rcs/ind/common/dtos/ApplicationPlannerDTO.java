@@ -24,7 +24,7 @@ public class ApplicationPlannerDTO {
 	private String applicationType;
 	private Long assignedUser;
 	private String interviewPreparationNationality;
-	private Set<FormAnswerTranslationDTO> formAnswersNationalities;
+	private String formAnswersNationality;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -142,13 +142,13 @@ public class ApplicationPlannerDTO {
 		this.interviewPreparationNationality = interviewPreparationNationality;
 	}
 
-	public Set<FormAnswerTranslationDTO> getFormAnswersNationalities() {
-		return formAnswersNationalities;
+	public String getFormAnswersNationality() {
+		return formAnswersNationality;
 	}
 
 	
-	public void setFormAnswersNationalities(Set<FormAnswerTranslationDTO> formAnswersNationalities) {
-		this.formAnswersNationalities = formAnswersNationalities;
+	public void setFormAnswersNationality(String formAnswersNationality) {
+		this.formAnswersNationality = formAnswersNationality;
 	}
 	
 }
