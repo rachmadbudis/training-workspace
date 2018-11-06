@@ -2,11 +2,17 @@ package com.rcs.ind.common.dtos;
 
 import java.util.Date;
 
+import com.rcs.ind.common.enums.TrackEnum;
+
 public class RICApplicationGridDTO extends ApplicationGridDTO {
 
 	private Date startDate;
 	private Date updateDate;
 	private String nationality;
+	private TrackEnum track;
+	private String interviewPreparationNationality;
+	private String formAnswersNationality;
+	
 
 	public String getNationality() {
 		return nationality;
@@ -30,6 +36,36 @@ public class RICApplicationGridDTO extends ApplicationGridDTO {
 
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
+	}
+
+	
+	public String getInterviewPreparationNationality() {
+		return interviewPreparationNationality;
+	}
+
+	
+	public void setInterviewPreparationNationality(String interviewPreparationNationality) {
+		this.interviewPreparationNationality = interviewPreparationNationality;
+	}
+
+	
+	public String getFormAnswersNationality() {
+		return formAnswersNationality;
+	}
+
+	
+	public void setFormAnswersNationality(String formAnswersNationality) {
+		this.formAnswersNationality = formAnswersNationality;
+	}
+
+	
+	public TrackEnum getTrack() {
+		return track;
+	}
+
+	
+	public void setTrack(TrackEnum track) {
+		this.track = track;
 	}
 
 }

@@ -10,7 +10,6 @@ import com.rcs.ind.common.enums.ApplicationStatusEnum;
 import com.rcs.ind.common.enums.ApplicationTypeEnum;
 import com.rcs.ind.common.enums.TrackEnum;
 import com.rcs.ind.liferay.enums.LiferayRoleEnum;
-import org.apache.commons.lang3.StringUtils;
 
 public class ApplicationHistoryFiltersDTO extends PaginationFiltersDTO {
 

@@ -2,8 +2,11 @@ package com.rcs.ind.common.dtos;
 
 import java.util.Date;
 import java.util.Locale;
+import java.util.Set;
 
+import com.rcs.ind.common.entities.dtos.FormAnswerTranslationDTO;
 import com.rcs.ind.common.enums.ApplicationStatusEnum;
+import com.rcs.ind.common.enums.TrackEnum;
 
 public class ApplicationPlannerDTO {
 
@@ -14,10 +17,14 @@ public class ApplicationPlannerDTO {
 	private Date creationDate;
 	private Boolean priority;
 	private String trackLabel;
+	private TrackEnum track;
 	private Locale language;
 	private String nationality;
 	private Date startDate;
 	private String applicationType;
+	private Long assignedUser;
+	private String interviewPreparationNationality;
+	private String formAnswersNationality;
 
 	public Long getApplicationId() {
 		return applicationId;
@@ -106,5 +113,42 @@ public class ApplicationPlannerDTO {
 	public void setApplicationType(String applicationType) {
 		this.applicationType = applicationType;
 	}
+	
+	public TrackEnum getTrack() {
+		return track;
+	}
+	
+	public void setTrack(TrackEnum track) {
+		this.track = track;
+	}
 
+	
+	public Long getAssignedUser() {
+		return assignedUser;
+	}
+
+	
+	public void setAssignedUser(Long assignedUser) {
+		this.assignedUser = assignedUser;
+	}
+
+	
+	public String getInterviewPreparationNationality() {
+		return interviewPreparationNationality;
+	}
+
+	
+	public void setInterviewPreparationNationality(String interviewPreparationNationality) {
+		this.interviewPreparationNationality = interviewPreparationNationality;
+	}
+
+	public String getFormAnswersNationality() {
+		return formAnswersNationality;
+	}
+
+	
+	public void setFormAnswersNationality(String formAnswersNationality) {
+		this.formAnswersNationality = formAnswersNationality;
+	}
+	
 }
