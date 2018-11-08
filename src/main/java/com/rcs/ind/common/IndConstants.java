@@ -109,15 +109,17 @@ public final class IndConstants {
 	public static final String HVZ_MINUTES = "HVZ_minuut_hervestiging";
 	// Drools Rule Filename
 	public static final String TRACK_RULE = "Track.drl";
-	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
 	public static final String RIC_PROFILE_RULE = "RICProfile.drl";
 	public static final String BRP_PROFILE_RULE = "BRPProfile.drl";
 	public static final String NAREIS_PROFILE_RULE = "NareisProfile.drl";
 	public static final String ANDERS_RULE = "anders.drl";
+	public static final String HVZ_RULE = "HvzInterview.drl";
 	public static final String LOOP_DATA_RULE = "LoopData.drl";
-	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
+
 	public static final String RULES_FOLDER_PATH = "/webapps/rules/";
-	
+	public static final String INTERVIEW_DOCUMENT_RULES_DIR = "InterviewDocument";
+	public static final String BRP_NAREIS_RULES_DIR = "BRP_Nareis";
+	public static final String HVZ_RULES_DIR = "HVZ";
 
 	// Tester parameters
 	public static final String TESTER_TOKEN = "aNATiCT";
