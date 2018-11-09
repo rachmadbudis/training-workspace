@@ -29,6 +29,7 @@ public enum LiferayRoleEnum {
 	PLANNER("Planner", LiferayRoleTypeEnum.SITE),
 	SCREENER("Screener", LiferayRoleTypeEnum.SITE),
 	RIC("RIC", LiferayRoleTypeEnum.SITE),
+	HVZ("HVZ Employee", LiferayRoleTypeEnum.SITE),
 	
 	// Translator's Language Role
 	AR_SY("Language Arabic Syria", LiferayRoleTypeEnum.SITE),
