@@ -4,6 +4,7 @@ import java.util.Date;
 
 import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
+import com.rcs.ind.common.enums.SettlementResultEnum;
 
 public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private Long customerId;
@@ -16,7 +17,7 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private String relativeType;
     private String nationality;
     private String language;
-    private String settlementResult;
+    private SettlementResultEnum settlementResult;
     private HvzRicStatusEnum hvzRicStatus;
     private Long documentId;
     private boolean formsGenerated;
@@ -101,11 +102,11 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         this.language = language;
     }
 
-    public String getSettlementResult() {
+    public SettlementResultEnum getSettlementResult() {
         return settlementResult;
     }
 
-    public void setSettlementResult(String settlementResult) {
+    public void setSettlementResult(SettlementResultEnum settlementResult) {
         this.settlementResult = settlementResult;
     }
 

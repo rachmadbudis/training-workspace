@@ -6,6 +6,7 @@ import java.util.List;
 import com.rcs.ind.common.dtos.GenericEntityDTO;
 import com.rcs.ind.common.enums.ApprovalStatusEnum;
 import com.rcs.ind.common.enums.HvzRicStatusEnum;
+import com.rcs.ind.common.enums.SettlementResultEnum;
 
 public class CustomerDTO extends GenericEntityDTO {
 
@@ -23,7 +24,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private String nationality;
     private String maritalStatus;
     private String treatmentResult;
-    private String settlementResult;
+    private SettlementResultEnum settlementResult;
     private String selectionMode;
     private String birthPlace;
     private String birthCountry;
@@ -131,11 +132,11 @@ public class CustomerDTO extends GenericEntityDTO {
         this.treatmentResult = treatmentResult;
     }
 
-    public String getSettlementResult() {
+    public SettlementResultEnum getSettlementResult() {
         return settlementResult;
     }
 
-    public void setSettlementResult(String settlementResult) {
+    public void setSettlementResult(SettlementResultEnum settlementResult) {
         this.settlementResult = settlementResult;
     }
 
