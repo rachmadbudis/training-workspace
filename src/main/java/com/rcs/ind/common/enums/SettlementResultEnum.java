@@ -43,7 +43,7 @@ public enum SettlementResultEnum {
     	else return EMPTY;
     }
     
-    public static List<SettlementResultEnum> ignoredInWorklist(){
+    public static List<SettlementResultEnum> negativeResult(){
     	return Arrays.asList(NIET_TOELATING,INTREKKING_DOOR_KLANT,OVERLIJDEN,ONTERECHTE_OPVOERING);
     }
 }
