@@ -10,6 +10,7 @@ public enum DocumentTypeEnum {
 	HvzInterview("com.rcs.ind.hvz.resettlement.interview", "Gehoor Hervestiging"),
 	HvzDecision("com.rcs.ind.hvz.decision.result", "Beschikking Uitgenodigde Vluchteling"),
 	HvzMinutes("com.rcs.ind.hvz.resettlement.minutes", "Minuut Hervestiging"),
+	HvzBRP("com.rcs.ind.hvz.brp", "BRP Profile"),
 	HvzWerklijst("com.rcs.ind.hvz.werklijst", "Werklijst"),
 	HvzRicPackage("com.rcs.ind.hvz.ric.package", "Go Packet"),
 	EMM_EXPORT("", "EMM Export"),

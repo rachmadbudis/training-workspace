@@ -19,6 +19,7 @@ public enum FileAttachmentEnum {
 	HVZ_MINUTES("%s_Minuut.docx", "com.rcs.ind.filename.hvz.resettlement.minutes", "Minuut Hervestiging"),
 	HVZ_WERKLIJST("%s - Werklijst.xlsx", "com.rcs.ind.filename.hvz.werklijst", "Werklijst"),
 	HVZ_RIC_ZIP("%s - RIC.zip", "com.rcs.ind.filename.hvz.ric.zip", ""),
+	HVZ_BRP_ZIP("%s - BRP.zip", "com.rcs.ind.filename.hvz.brp.zip", ""),
 	;
 
 	private final String fileName;
