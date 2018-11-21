@@ -35,15 +35,14 @@ public class CustomerDTO extends GenericEntityDTO {
     private String missionName;
     private String remarks;
     private List<String> comments;
-
     private Boolean ricApplicable;
     private String assignee;
     private HvzRicStatusEnum hvzRicStatus;
     private String fileName;
     private byte[] file;
-
     private ApprovalStatusEnum approvalStatus;
-
+    private Date legalStartDate;
+    
     public long getCustomerId() {
         return customerId;
     }
@@ -292,5 +291,12 @@ public class CustomerDTO extends GenericEntityDTO {
 
 	public void setPrefix(String prefix) {
 		this.prefix = prefix;
+	}
+	public Date getLegalStartDate() {
+		return legalStartDate;
+	}
+	
+	public void setLegalStartDate(Date legalStartDate) {
+		this.legalStartDate = legalStartDate;
 	}
 }
