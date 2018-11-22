@@ -6,7 +6,9 @@ public class MissionGridDTO {
     private Long missionId;
     private String name;
     private String targetGroup;
-    private boolean customerExists;
+    private Boolean customerExists;
+    private Boolean finished;
+    private Boolean closed;
     private Date ricEndDate;
 
     public Long getMissionId() {
@@ -33,16 +35,31 @@ public class MissionGridDTO {
         this.targetGroup = targetGroup;
     }
 
-    public boolean getCustomerExists() {
+    public Boolean getCustomerExists() {
         return customerExists;
     }
 
-    public void setCustomerExists(boolean customerExists) {
+    public void setCustomerExists(Boolean customerExists) {
         this.customerExists = customerExists;
     }
 
-	
-	public Date getRicEndDate() {
+    public Boolean getFinished() {
+        return finished;
+    }
+
+    public void setFinished(Boolean finished) {
+        this.finished = finished;
+    }
+
+    public Boolean getClosed() {
+        return closed;
+    }
+
+    public void setClosed(Boolean closed) {
+        this.closed = closed;
+    }
+
+    public Date getRicEndDate() {
 		return ricEndDate;
 	}
 

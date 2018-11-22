@@ -1,6 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
 import com.rcs.ind.common.dtos.GenericEntityDTO;
+import com.rcs.ind.common.enums.MissionStatusEnum;
 
 import java.util.Date;
 
@@ -8,7 +9,7 @@ public class MissionDTO extends GenericEntityDTO {
     private long missionId;
     private String name;
     private Date missionDate;
-    private String status;
+    private MissionStatusEnum status;
     private String targetGroup;
     private String groupNumber;
     private Date ricEndDate;
@@ -44,11 +45,11 @@ public class MissionDTO extends GenericEntityDTO {
         this.missionDate = missionDate;
     }
 
-    public String getStatus() {
+    public MissionStatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(MissionStatusEnum status) {
         this.status = status;
     }
 
