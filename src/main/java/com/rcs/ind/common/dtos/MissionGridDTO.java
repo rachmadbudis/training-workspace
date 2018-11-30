@@ -9,6 +9,7 @@ public class MissionGridDTO {
     private Boolean customerExists;
     private Boolean finished;
     private Boolean closed;
+    private Boolean incomplete;
     private Date ricEndDate;
 
     public Long getMissionId() {
@@ -62,10 +63,16 @@ public class MissionGridDTO {
     public Date getRicEndDate() {
 		return ricEndDate;
 	}
-
 	
 	public void setRicEndDate(Date ricEndDate) {
 		this.ricEndDate = ricEndDate;
 	}
 
+    public Boolean getIncomplete() {
+        return incomplete;
+    }
+
+    public void setIncomplete(Boolean incomplete) {
+        this.incomplete = incomplete;
+    }
 }

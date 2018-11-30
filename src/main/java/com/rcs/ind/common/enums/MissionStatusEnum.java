@@ -6,6 +6,7 @@ import java.util.Map;
 public enum MissionStatusEnum {
     EMPTY("com.rcs.ind.hvz.mission.status.empty", ""),
     ACTIVE("com.rcs.ind.hvz.mission.status.active", "Actief"),
+    INCOMPLETE("com.rcs.ind.hvz.mission.status.incomplete", ""),
     FINISHED("com.rcs.ind.hvz.mission.status.closed", "Afgewerkt"),
     CLOSED("com.rcs.ind.hvz.mission.status.closed", "Sluiten"),
     ;
