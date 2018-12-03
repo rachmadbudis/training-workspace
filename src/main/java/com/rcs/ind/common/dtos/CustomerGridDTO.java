@@ -20,6 +20,7 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private SettlementResultEnum settlementResult;
     private HvzRicStatusEnum hvzRicStatus;
     private Long documentId;
+    private String errorMessage;
     private boolean formsGenerated;
 
     public Long getCustomerId() {
@@ -126,17 +127,23 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         this.documentId = documentId;
     }
 
-    
 	public boolean isFormsGenerated() {
 		return formsGenerated;
 	}
 
-	
 	public void setFormsGenerated(boolean formsGenerated) {
 		this.formsGenerated = formsGenerated;
 	}
 
-	@Override
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+
+    @Override
     public int compareTo(CustomerGridDTO o) {
         if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
         else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
