@@ -5,13 +5,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
+
 public enum SettlementResultEnum {
 	EMPTY("com.rcs.ind.hvz.settlementresult.empty",""),
 	TOELATING("com.rcs.ind.hvz.settlementresult.toelating","Toelating"),
-	NIET_TOELATING("com.rcs.ind.hvz.settlementresult.niet.toelating","Niet toelating"),
+	NIET_TOELATING("com.rcs.ind.hvz.settlementresult.niet.toelating","Niet-Toelating"),
 	INTREKKING_DOOR_KLANT("com.rcs.ind.hvz.settlementresult.intrekking.door.klant","Intrekking door klant"),
 	OVERLIJDEN("com.rcs.ind.hvz.settlementresult.overlijden","Overlijden"),
-	ONTERECHTE_OPVOERING("com.rcs.ind.hvz.settlementresult.onterechte.opvoering","Onterechte Opvoering")
+	ONTERECHTE_OPVOERING("com.rcs.ind.hvz.settlementresult.onterechte.opvoering","Onterechte opvoering"),
+	ONBEKEND("com.rcs.ind.relation.unknown","Onbekend")
 	;
 
 	private static final Map<String, SettlementResultEnum> lookupIndigoKey = new HashMap<>();
@@ -40,6 +43,7 @@ public enum SettlementResultEnum {
 	
     public static SettlementResultEnum getByIndigoKey(String value) {
     	if(lookupIndigoKey.get(value)!=null) return lookupIndigoKey.get(value);
+    	if(StringUtils.isNotBlank(value)) return SettlementResultEnum.ONBEKEND;
     	else return EMPTY;
     }
     
