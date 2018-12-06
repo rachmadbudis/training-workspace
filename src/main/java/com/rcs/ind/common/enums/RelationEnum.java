@@ -63,9 +63,9 @@ public enum RelationEnum {
         }
     }
 
-    public static RelationEnum getByIndigoKey(String value) {
-    	if(lookupIndigoKey.get(value)!=null) return lookupIndigoKey.get(value);
-    	else return UNKNOWN;
-    }
+	public static RelationEnum getByIndigoKey(String value) {
+		if (lookupIndigoKey.get(value) != null) return lookupIndigoKey.get(value);
+		else return UNKNOWN;
+	}
     
 }
