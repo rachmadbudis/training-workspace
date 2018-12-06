@@ -18,8 +18,8 @@ public enum FileAttachmentEnum {
 	HVZ_DECISION_RESULT("%s_Beschikking.docx", "com.rcs.ind.filename.hvz.decision.result", "Beschikking Uitgenodigde Vluchteling"),
 	HVZ_MINUTES("%s_Minuut.docx", "com.rcs.ind.filename.hvz.resettlement.minutes", "Minuut Hervestiging"),
 	HVZ_WERKLIJST("%s - Werklijst.xlsx", "com.rcs.ind.filename.hvz.werklijst", "Werklijst"),
-	HVZ_RIC_ZIP("%s - RIC.zip", "com.rcs.ind.filename.hvz.ric.zip", ""),
-	HVZ_BRP_ZIP("%s - BRP.zip", "com.rcs.ind.filename.hvz.brp.zip", ""),
+	HVZ_RIC_ZIP("%s - RIC.zip", "com.rcs.ind.filename.hvz.ric.zip", "Herkomst indicatie"),
+	HVZ_BRP_ZIP("%s - BRP.zip", "com.rcs.ind.filename.hvz.brp.zip", "Overzicht voor inschrijving BRP"),
 	;
 
 	private final String fileName;
