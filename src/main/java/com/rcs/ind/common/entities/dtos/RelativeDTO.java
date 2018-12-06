@@ -1,9 +1,7 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.util.Date;
-
-import com.rcs.ind.common.dtos.CustomerGridDTO;
 import com.rcs.ind.common.enums.RelationEnum;
+import java.util.Date;
 
 public class RelativeDTO implements Comparable<RelativeDTO>{
     private long customerId;
@@ -11,7 +9,7 @@ public class RelativeDTO implements Comparable<RelativeDTO>{
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String relatie;
+    private RelationEnum relatie;
 
     public long getCustomerId() {
         return customerId;
@@ -53,19 +51,17 @@ public class RelativeDTO implements Comparable<RelativeDTO>{
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getRelatie() {
+    public RelationEnum getRelatie() {
         return relatie;
     }
 
-    public void setRelatie(String relatie) {
+    public void setRelatie(RelationEnum relatie) {
         this.relatie = relatie;
     }
 
 	@Override
 	public int compareTo(RelativeDTO o) {
-        if (RelationEnum.getByIndigoKey(getRelatie()).ordinal() > RelationEnum.getByIndigoKey(o.getRelatie()).ordinal()) return 1;
-        if (RelationEnum.getByIndigoKey(getRelatie()).ordinal() < RelationEnum.getByIndigoKey(o.getRelatie()).ordinal()) return -1;
-        else return 0;
-	}
+        return Integer.compare(getRelatie().ordinal(), o.getRelatie().ordinal());
+    }
 
 }

@@ -148,9 +148,7 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
         else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
         else {
-            if (RelationEnum.getByIndigoKey(getRelativeType()).ordinal() > RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal()) return 1;
-            if (RelationEnum.getByIndigoKey(getRelativeType()).ordinal() < RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal()) return -1;
-            else return 0;
+            return Integer.compare(RelationEnum.getByIndigoKey(getRelativeType()).ordinal(), RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal());
         }
     }
 }
