@@ -9,7 +9,8 @@ public enum StatisticReportHeaderEnum {
     LOCATION("com.rcs.ind.application.label.location"),
     TRACK("com.rcs.ind.application.label.track"),
     START_DATE("com.rcs.ind.common.date.start"),
-    END_DATE("com.rcs.ind.common.date.end");
+    END_DATE("com.rcs.ind.common.date.end"),
+    PREPARATION_LOCATION("com.rcs.ind.common.preparation.location");
 
     private final String key;
 
