@@ -10,10 +10,9 @@ public class HvzRicFiltersDTO extends PaginationFiltersDTO {
     private String relation;
     private String vNumber;
     private String caseNumber;
-    private String nationality;
-    private String placeOfResidence;
     private String placeOfBirth;
     private String missionName;
+    private String countryOfBirth;
 
    
 
@@ -70,26 +69,6 @@ public class HvzRicFiltersDTO extends PaginationFiltersDTO {
 	}
 
 	
-	public String getNationality() {
-		return nationality;
-	}
-
-	
-	public void setNationality(String nationality) {
-		this.nationality = nationality;
-	}
-
-	
-	public String getPlaceOfResidence() {
-		return placeOfResidence;
-	}
-
-	
-	public void setPlaceOfResidence(String placeOfResidence) {
-		this.placeOfResidence = placeOfResidence;
-	}
-
-	
 	public String getPlaceOfBirth() {
 		return placeOfBirth;
 	}
@@ -107,5 +86,13 @@ public class HvzRicFiltersDTO extends PaginationFiltersDTO {
 	
 	public void setMissionName(String missionName) {
 		this.missionName = missionName;
+	}
+
+	public String getCountryOfBirth() {
+		return countryOfBirth;
+	}
+
+	public void setCountryOfBirth(String countryOfBirth) {
+		this.countryOfBirth = countryOfBirth;
 	}
 }
