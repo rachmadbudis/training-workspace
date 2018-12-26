@@ -10,6 +10,7 @@ public class MissionGridDTO {
     private Boolean finished;
     private Boolean closed;
     private Boolean incomplete;
+    private Boolean goPackagesAvailable;
     private Date ricEndDate;
 
     public Long getMissionId() {
@@ -74,5 +75,13 @@ public class MissionGridDTO {
 
     public void setIncomplete(Boolean incomplete) {
         this.incomplete = incomplete;
+    }
+
+    public Boolean getGoPackagesAvailable() {
+        return goPackagesAvailable;
+    }
+
+    public void setGoPackagesAvailable(Boolean goPackagesAvailable) {
+        this.goPackagesAvailable = goPackagesAvailable;
     }
 }

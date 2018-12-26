@@ -1,5 +1,8 @@
 package com.rcs.ind.common.enums;
 
+import java.util.Arrays;
+import java.util.List;
+
 public enum HvzRicStatusEnum {
     EMPTY("com.rcs.ind.hvz.ric.status.empty"),
     IN_PROGRESS("com.rcs.ind.hvz.ric.status.inprogress"),
@@ -14,5 +17,9 @@ public enum HvzRicStatusEnum {
 
     public String getKey() {
         return key;
+    }
+
+    public static List<HvzRicStatusEnum> finishedStatus(){
+        return Arrays.asList(FINISHED, FINISHED_WITHOUT_ATTACHMENT);
     }
 }
