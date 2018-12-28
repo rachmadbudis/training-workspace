@@ -12,6 +12,7 @@ public class RicProfileDTO extends GenericEntityDTO {
 	private Long applicationId;
 	private RicDocumentDTO document;
 	private RicStatusEnum status;
+	private String assignee;
 
 	public RicProfileDTO() {
 	}
@@ -74,5 +75,13 @@ public class RicProfileDTO extends GenericEntityDTO {
 
 	public void setDocument(RicDocumentDTO documents) {
 		this.document = documents;
+	}
+
+	public String getAssignee() {
+		return assignee;
+	}
+
+	public void setAssignee(String assignee) {
+		this.assignee = assignee;
 	}
 }
