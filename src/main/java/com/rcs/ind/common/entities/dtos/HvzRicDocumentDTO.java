@@ -1,15 +1,15 @@
 package com.rcs.ind.common.entities.dtos;
 
-import java.util.List;
-
 public class HvzRicDocumentDTO extends GeneralDocumentDTO {
-    private List<CustomerDTO> customers;
+    private CustomerDTO customer;
 
-    public List<CustomerDTO> getCustomers() {
-        return customers;
+    public CustomerDTO getCustomer() {
+        return customer;
     }
 
-    public void setCustomers(List<CustomerDTO> customers) {
-        this.customers = customers;
+    public void setCustomer(CustomerDTO customer) {
+        this.customer = customer;
     }
+
+    
 }
