@@ -1,15 +1,13 @@
 package com.rcs.ind.common.entities.dtos;
 
 public class HvzRicDocumentDTO extends GeneralDocumentDTO {
-    private CustomerDTO customer;
+    private String caseNumber;
 
-    public CustomerDTO getCustomer() {
-        return customer;
+    public String getCaseNumber() {
+        return caseNumber;
     }
 
-    public void setCustomer(CustomerDTO customer) {
-        this.customer = customer;
+    public void setCaseNumber(String caseNumber) {
+        this.caseNumber = caseNumber;
     }
-
-    
 }
