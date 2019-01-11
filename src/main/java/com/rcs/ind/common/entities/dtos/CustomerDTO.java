@@ -28,7 +28,8 @@ public class CustomerDTO extends GenericEntityDTO {
     private String selectionMode;
     private String birthPlace;
     private String birthCountry;
-    private String residence;
+    private String countryOfOrigin;
+    private String placeOfOrigin; 
     private String relation;
     private String language;
     private String spokenLanguage;
@@ -163,15 +164,23 @@ public class CustomerDTO extends GenericEntityDTO {
         this.birthCountry = birthCountry;
     }
 
-    public String getResidence() {
-        return residence;
+    public String getCountryOfOrigin() {
+        return countryOfOrigin;
     }
 
-    public void setResidence(String residence) {
-        this.residence = residence;
+    public void setCountryOfOrigin(String countryOfOrigin) {
+        this.countryOfOrigin = countryOfOrigin;
     }
 
-    public String getRelation() {
+    public String getPlaceOfOrigin() {
+		return placeOfOrigin;
+	}
+
+	public void setPlaceOfOrigin(String placeOfOrigin) {
+		this.placeOfOrigin = placeOfOrigin;
+	}
+
+	public String getRelation() {
         return relation;
     }
 
