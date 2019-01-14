@@ -10,7 +10,6 @@ public class GeneralDocumentFiltersDTO extends PaginationFiltersDTO {
 	private Long documentId;
 	private List<String> fileNames;
 	private List<DocumentTypeEnum> documentTypes;
-	private boolean excludeData;
 
 	public Long getDocumentId() {
 		return documentId;
@@ -34,14 +33,6 @@ public class GeneralDocumentFiltersDTO extends PaginationFiltersDTO {
 
 	public void setDocumentTypes(List<DocumentTypeEnum> documentTypes) {
 		this.documentTypes = documentTypes;
-	}
-
-	public boolean getExcludeData() {
-		return excludeData;
-	}
-
-	public void setExcludeData(boolean excludeData) {
-		this.excludeData = excludeData;
 	}
 	
 }
