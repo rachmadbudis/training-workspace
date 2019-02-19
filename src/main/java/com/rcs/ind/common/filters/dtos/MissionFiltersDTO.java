@@ -8,6 +8,7 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
     String[] targetGroups;
     Date startDate;
     Date endDate;
+    Boolean excludeEmpty;
 
     public String[] getTargetGroups() {
         return targetGroups;
@@ -31,5 +32,13 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public Boolean getExcludeEmpty() {
+        return excludeEmpty;
+    }
+
+    public void setExcludeEmpty(Boolean excludeEmpty) {
+        this.excludeEmpty = excludeEmpty;
     }
 }

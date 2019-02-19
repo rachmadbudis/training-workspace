@@ -21,6 +21,7 @@ public enum FileAttachmentEnum {
 	HVZ_DEFINITIEFLIJST("%s - Definitieflijst.xlsx", "com.rcs.ind.filename.hvz.definitieflijst", "Definitieflijst"),
 	HVZ_RIC_ZIP("%s - RIC.zip", "com.rcs.ind.filename.hvz.ric.zip", "Herkomst indicatie"),
 	HVZ_BRP_ZIP("%s - BRP.zip", "com.rcs.ind.filename.hvz.brp.zip", "Overzicht voor inschrijving BRP"),
+	MISSION_ZIP("%s.zip", "com.rcs.ind.filename.mission.zip", "Mission Documents"),
 	;
 
 	private final String fileName;
