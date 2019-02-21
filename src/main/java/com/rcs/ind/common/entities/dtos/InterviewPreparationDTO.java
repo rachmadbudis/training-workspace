@@ -63,7 +63,9 @@ public class InterviewPreparationDTO {
 	private String religion;
 	
 	private boolean signature;
-	
+
+	private IndigoPreparationDTO indigo;
+
 	public InterviewPreparationDTO() {
 	}
 
@@ -535,4 +537,11 @@ public class InterviewPreparationDTO {
 		this.signature = signature;
 	}
 
+	public IndigoPreparationDTO getIndigo() {
+		return indigo;
+	}
+
+	public void setIndigo(IndigoPreparationDTO indigo) {
+		this.indigo = indigo;
+	}
 }
