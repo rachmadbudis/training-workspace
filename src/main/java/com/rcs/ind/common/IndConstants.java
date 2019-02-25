@@ -162,6 +162,11 @@ public final class IndConstants {
 	
 	// Constants for DDL
 
+	//INDIGO DDL
+	public static final String INDIGO_DDL_NAME = "Indigo Codes";
+	public static final String INDIGO_CODE = "code";
+	public static final String INDIGO_VALUE = "value";
+
 	//RIC Applicable DDL
 	public static final String RIC_APPLICABLE_DDL_NAME = "RIC Applicable";
 	public static final String RIC_NATIONALITY = "Nationality";

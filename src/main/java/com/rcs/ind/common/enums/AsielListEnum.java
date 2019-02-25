@@ -9,7 +9,8 @@ public enum AsielListEnum {
 	NATIONALITIES ("Nationalities"),
 	LANGUAGES("Language"),
 	CLAIMLAND ("Claimland"),
-	LOCATION("Location");
+	LOCATION("Location"),
+	INDIGO ("Indigo Codes"),;
 	
 	String name;
 	public String getName() {
