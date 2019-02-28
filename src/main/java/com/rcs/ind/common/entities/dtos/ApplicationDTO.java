@@ -11,6 +11,7 @@ public class ApplicationDTO {
 
 	private Long applicationId;
 	private String smartflowNumber;
+	private String vNumber;
 	private Locale language;
 	private String location;
 	private Boolean registered;
@@ -51,6 +52,14 @@ public class ApplicationDTO {
 
 	public void setSmartflowNumber(String smartflowNumber) {
 		this.smartflowNumber = smartflowNumber;
+	}
+
+	public String getvNumber() {
+		return vNumber;
+	}
+
+	public void setvNumber(String vNumber) {
+		this.vNumber = vNumber;
 	}
 
 	public Locale getLanguage() {
