@@ -6,7 +6,7 @@ import com.rcs.ind.common.enums.HvzRicStatusEnum;
 import com.rcs.ind.common.enums.RelationEnum;
 import com.rcs.ind.common.enums.SettlementResultEnum;
 
-public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
+public class CustomerGridDTO {
     private Long customerId;
     private String ricResult;
     private String caseNumber;
@@ -14,7 +14,7 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
-    private String relativeType;
+    private RelationEnum relativeType;
     private String nationality;
     private String language;
     private SettlementResultEnum settlementResult;
@@ -79,11 +79,11 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getRelativeType() {
+    public RelationEnum getRelativeType() {
         return relativeType;
     }
 
-    public void setRelativeType(String relativeType) {
+    public void setRelativeType(RelationEnum relativeType) {
         this.relativeType = relativeType;
     }
 
@@ -141,14 +141,5 @@ public class CustomerGridDTO implements Comparable<CustomerGridDTO> {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
-    }
-
-    @Override
-    public int compareTo(CustomerGridDTO o) {
-        if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) > 0) return 1;
-        else if (this.getCaseNumber().compareToIgnoreCase(o.getCaseNumber()) < 0) return -1;
-        else {
-            return Integer.compare(RelationEnum.getByIndigoKey(getRelativeType()).ordinal(), RelationEnum.getByIndigoKey(o.getRelativeType()).ordinal());
-        }
     }
 }
