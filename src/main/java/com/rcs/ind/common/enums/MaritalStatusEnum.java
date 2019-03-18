@@ -7,8 +7,8 @@ public enum MaritalStatusEnum {
 	Single("com.rcs.ind.marital.single", "Ongehuwd en alleenstaand", "Alleenstaand"),
 	Married("com.rcs.ind.marital.merried", "Gehuwd", "Gehuwd"),
 	Divorced("com.rcs.ind.marital.divorced", "Gescheiden", "Gescheiden"),
-	Widowed("com.rcs.ind.marital.widowed", "Weduwe of Weduwnaar", "Weduwe"),
-	Widower("com.rcs.ind.marital.widowed", "Weduwe of Weduwnaar", "Weduwnaar"),
+	Widowed("com.rcs.ind.marital.widowed", "Weduwe of weduwnaar", "Weduwe"),
+	Widower("com.rcs.ind.marital.widowed", "Weduwe of weduwnaar", "Weduwnaar"),
 	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd en samenwonend", "Samenwonend");
 
 	private static final Map<String, MaritalStatusEnum> lookupLabel = new HashMap<>();
