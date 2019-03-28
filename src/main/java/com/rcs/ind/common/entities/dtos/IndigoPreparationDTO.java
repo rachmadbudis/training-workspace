@@ -1,13 +1,16 @@
 package com.rcs.ind.common.entities.dtos;
 
+import java.util.Date;
+
 public class IndigoPreparationDTO {
 
     private String customerNumber;
     private String name;
     private String surname;
-    private String dateBirth;
+    private Date dateBirth;
     private String nationality;
     private String placeBirth;
+    private String countryBirth;
     private String maritalStatus;
     private String sex;
 
@@ -38,11 +41,11 @@ public class IndigoPreparationDTO {
         this.surname = surname;
     }
 
-    public String getDateBirth() {
+    public Date getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(String dateBirth) {
+    public void setDateBirth(Date dateBirth) {
         this.dateBirth = dateBirth;
     }
 
@@ -77,4 +80,14 @@ public class IndigoPreparationDTO {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+	
+	public String getCountryBirth() {
+		return countryBirth;
+	}
+
+	
+	public void setCountryBirth(String countryBirth) {
+		this.countryBirth = countryBirth;
+	}
 }
