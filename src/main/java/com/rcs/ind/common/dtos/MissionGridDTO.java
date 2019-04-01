@@ -11,6 +11,8 @@ public class MissionGridDTO {
     private Boolean closed;
     private Boolean incomplete;
     private Boolean goPackagesAvailable;
+    private Boolean formInProgress;
+    private Boolean formAvailable;
     private Date ricEndDate;
 
     public Long getMissionId() {
@@ -83,5 +85,21 @@ public class MissionGridDTO {
 
     public void setGoPackagesAvailable(Boolean goPackagesAvailable) {
         this.goPackagesAvailable = goPackagesAvailable;
+    }
+
+    public Boolean getFormInProgress() {
+        return formInProgress;
+    }
+
+    public void setFormInProgress(Boolean formInProgress) {
+        this.formInProgress = formInProgress;
+    }
+
+    public Boolean getFormAvailable() {
+        return formAvailable;
+    }
+
+    public void setFormAvailable(Boolean formAvailable) {
+        this.formAvailable = formAvailable;
     }
 }
