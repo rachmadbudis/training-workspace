@@ -12,7 +12,7 @@ public class MissionGridDTO {
     private Boolean incomplete;
     private Boolean goPackagesAvailable;
     private Boolean formInProgress;
-    private Boolean formAvailable;
+    private Boolean filesAvailable;
     private Date ricEndDate;
 
     public Long getMissionId() {
@@ -95,11 +95,11 @@ public class MissionGridDTO {
         this.formInProgress = formInProgress;
     }
 
-    public Boolean getFormAvailable() {
-        return formAvailable;
+    public Boolean getFilesAvailable() {
+        return filesAvailable;
     }
 
-    public void setFormAvailable(Boolean formAvailable) {
-        this.formAvailable = formAvailable;
+    public void setFilesAvailable(Boolean filesAvailable) {
+        this.filesAvailable = filesAvailable;
     }
 }

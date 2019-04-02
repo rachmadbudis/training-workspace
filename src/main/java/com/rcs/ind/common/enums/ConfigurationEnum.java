@@ -43,6 +43,7 @@ public enum ConfigurationEnum {
 	RD_SUPERVISOR_MARKETPLACE("rdSupervisorMarketplace"),
 	RD_CUSTOMER_DETAIL("rdCustomerDetail"),
 	RD_HVZ_MARKETPLACE("rdHVZMarketplace"),
+	RD_MISSION_FILES("rdMissionFiles"),
 
 	// Configuration key for automated deletion and release of old application
 	
