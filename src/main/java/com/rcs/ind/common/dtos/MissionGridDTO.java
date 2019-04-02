@@ -14,6 +14,7 @@ public class MissionGridDTO {
     private Boolean formInProgress;
     private Boolean filesAvailable;
     private Date ricEndDate;
+    private MissionFileDTO file;
 
     public Long getMissionId() {
         return missionId;
@@ -101,5 +102,13 @@ public class MissionGridDTO {
 
     public void setFilesAvailable(Boolean filesAvailable) {
         this.filesAvailable = filesAvailable;
+    }
+
+    public MissionFileDTO getFile() {
+        return file;
+    }
+
+    public void setFile(MissionFileDTO file) {
+        this.file = file;
     }
 }
