@@ -221,4 +221,5 @@ public final class IndConstants {
 	//HVZ Constants
 	public static final String HVZ_PRA = "PRA";
 	public static final Integer ELLIGIBLE_AGE = 15;
+	public static final String FORM_THREAD_PREFIX = "Formulieren - ";
 }
