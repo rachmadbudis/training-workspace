@@ -1,22 +1,15 @@
 package com.rcs.ind.common.dtos;
 
-public class MissionFileDTO {
-    private Long fileId;
-    private String fileName;
+import com.rcs.ind.common.entities.dtos.GeneralDocumentDTO;
 
-    public String getFileName() {
-        return fileName;
+public class MissionFileDTO extends GeneralDocumentDTO {
+    private String note;
+
+    public String getNote() {
+        return note;
     }
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
-
-    public Long getFileId() {
-        return fileId;
-    }
-
-    public void setFileId(Long fileId) {
-        this.fileId = fileId;
+    public void setNote(String note) {
+        this.note = note;
     }
 }
