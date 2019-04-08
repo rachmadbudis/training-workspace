@@ -37,6 +37,7 @@ public final class IndConstants {
 	public static final String RESUME_KEY = "resume";
 	public static final String APPLICATION_ID_KEY = "applicationId";
 	public static final String CUSTOMER_ID_KEY = "customerId";
+	public static final String MISSION_ID_KEY = "missionId";
 
 	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
@@ -220,4 +221,5 @@ public final class IndConstants {
 	//HVZ Constants
 	public static final String HVZ_PRA = "PRA";
 	public static final Integer ELLIGIBLE_AGE = 15;
+	public static final String FORM_THREAD_PREFIX = "Formulieren - ";
 }
