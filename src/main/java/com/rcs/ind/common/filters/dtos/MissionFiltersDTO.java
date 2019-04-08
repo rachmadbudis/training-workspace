@@ -5,11 +5,12 @@ import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import java.util.Date;
 
 public class MissionFiltersDTO extends PaginationFiltersDTO {
-    String[] targetGroups;
-    Date startDate;
-    Date endDate;
-    Boolean excludeEmpty;
-    Long missionId;
+    private String[] targetGroups;
+    private Date startDate;
+    private Date endDate;
+    private Boolean excludeEmpty;
+    private Long missionId;
+    private String[] missionNames;
 
     public String[] getTargetGroups() {
         return targetGroups;
@@ -49,5 +50,13 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
 
     public void setMissionId(Long missionId) {
         this.missionId = missionId;
+    }
+    
+    public String[] getMissionNames() {
+    	return missionNames;
+    }
+
+    public void setMissionNames(String[] missionNames) {
+    	this.missionNames = missionNames;
     }
 }
