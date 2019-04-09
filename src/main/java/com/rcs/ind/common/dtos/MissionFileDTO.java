@@ -1,16 +1,17 @@
 package com.rcs.ind.common.dtos;
 
 import com.rcs.ind.common.entities.dtos.GeneralDocumentDTO;
+import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
 
 public class MissionFileDTO extends GeneralDocumentDTO {
-    private String status;
+    private RunnableTaskStatusEnum status;
     private String notes;
 
-    public String getStatus() {
+    public RunnableTaskStatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(RunnableTaskStatusEnum status) {
         this.status = status;
     }
 
