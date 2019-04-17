@@ -14,7 +14,17 @@ public enum DocumentTypeEnum {
 	HvzWerklijst("com.rcs.ind.hvz.werklijst", "Werklijst"),
 	HvzRicPackage("com.rcs.ind.hvz.ric.package", "Go Packet"),
 	EMM_EXPORT("", "EMM Export"),
-	STATISTIC_REPORT("", "Statistic Report");
+	STATISTIC_REPORT("", "Statistic Report"),
+	M117C("com.rcs.ind.filename.m117c", "M117c"),
+	ANTECEDENTS_DECLARATION("com.rcs.ind.filename.antecedentenverklaring", "antecedentenverklaring"),
+	DAF_INTERVIEW("", ""),
+	DAF_RIC("", ""),
+	DAF_TRACK_HISTORY("", ""),
+	DAF_BRP("", ""),
+	DAF_NAREIS("", ""),
+	HVZ_MISSION_ZIP("", ""),
+	TRIPLEFORMS_ATTACHMENT("", "")
+	;
 
 	private final String key;
 	private final String label;
