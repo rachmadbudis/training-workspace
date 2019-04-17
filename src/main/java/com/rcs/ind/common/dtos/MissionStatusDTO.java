@@ -1,12 +1,14 @@
 package com.rcs.ind.common.dtos;
 
-import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
-
 public class MissionStatusDTO {
     String name;
     String status;
     String errorMessage;
 
+    
+	public MissionStatusDTO() {
+	}
+    
     public MissionStatusDTO(String name, String status, String errorMessage) {
         this.name = name;
         this.status = status;
