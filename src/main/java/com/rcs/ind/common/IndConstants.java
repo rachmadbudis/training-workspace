@@ -31,6 +31,10 @@ public final class IndConstants {
 	public static final String INTERVIEW_DOC_PREFIX = "interview_doc_";
 	public static final String LOGO_FILENAME = "logo_ind";
 	public static final String CUSTOM_QUESTION_FOLDER = "Custom Question";
+	public static final String INTERVIEW_FOLDER = "Interview Templates";
+	public static final String MINUTES_FOLDER = "Minutes Templates";
+	public static final String DECISION_FOLDER = "Decision Templates";
+	public static final String HVZ_FOLDER = "HVZ";
 
 	// Url Key
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
