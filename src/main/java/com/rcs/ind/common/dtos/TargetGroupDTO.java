@@ -4,7 +4,7 @@ public class TargetGroupDTO {
     private long targetGroupId;
     private String name;
     private String interviewTemplate;
-    private String minuutTemplate;
+    private String minuteTemplate;
     private String decisionTemplate;
     private boolean selected;
 
@@ -32,12 +32,12 @@ public class TargetGroupDTO {
         this.interviewTemplate = interviewTemplate;
     }
 
-    public String getMinuutTemplate() {
-        return minuutTemplate;
+    public String getMinuteTemplate() {
+        return minuteTemplate;
     }
 
-    public void setMinuutTemplate(String minuutTemplate) {
-        this.minuutTemplate = minuutTemplate;
+    public void setMinuteTemplate(String minuteTemplate) {
+        this.minuteTemplate = minuteTemplate;
     }
 
     public String getDecisionTemplate() {
