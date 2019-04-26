@@ -1,19 +1,19 @@
 package com.rcs.ind.common.dtos;
 
-public class TargetGroupDTO {
-    private long targetGroupId;
+public class TargetGroupDTO extends GenericEntityDTO {
+    private long id;
     private String name;
     private String interviewTemplate;
     private String minuteTemplate;
     private String decisionTemplate;
     private boolean selected;
 
-    public long getTargetGroupId() {
-        return targetGroupId;
+    public long getId() {
+        return id;
     }
 
-    public void setTargetGroupId(long targetGroupId) {
-        this.targetGroupId = targetGroupId;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
