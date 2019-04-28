@@ -65,8 +65,6 @@ public enum ConfigurationEnum {
 	//Configuration key for logging level
 	LoggingLevel("loggingLevel", "error"),
 
-	//Configuration for mission type filter
-	MISSION_TYPE_GROUPS("missionTypeGroups", "")
 	;
 
 	private final String key;
