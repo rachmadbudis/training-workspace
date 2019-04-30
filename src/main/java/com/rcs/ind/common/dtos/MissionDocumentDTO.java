@@ -3,7 +3,8 @@ package com.rcs.ind.common.dtos;
 import com.rcs.ind.common.entities.dtos.GeneralDocumentDTO;
 import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
 
-public class MissionFileDTO extends GeneralDocumentDTO {
+public class MissionDocumentDTO extends GeneralDocumentDTO {
+		
     private RunnableTaskStatusEnum status;
     private String notes;
 
