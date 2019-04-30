@@ -35,6 +35,7 @@ public final class IndConstants {
 	public static final String MINUTES_FOLDER = "Minutes Templates";
 	public static final String DECISION_FOLDER = "Decision Templates";
 	public static final String HVZ_FOLDER = "HVZ";
+	public static final String HVZ_TEMPLATE_NONE = "None";
 
 	// Url Key
 	public static final String SMARTFLOW_NUMBER_KEY = "smartflowNumber";
