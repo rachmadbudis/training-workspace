@@ -13,6 +13,7 @@ public enum DocumentTypeEnum {
 	HvzBRP("com.rcs.ind.hvz.brp", "BRP Profile"),
 	HvzWerklijst("com.rcs.ind.hvz.werklijst", "Werklijst"),
 	HvzRicPackage("com.rcs.ind.hvz.ric.package", "Go Packet"),
+	HvzRFF("com.rcs.ind.hvz.rff", "RFF Document"),
 	EMM_EXPORT("", "EMM Export"),
 	STATISTIC_REPORT("", "Statistic Report"),
 	M117C("com.rcs.ind.filename.m117c", "M117c"),

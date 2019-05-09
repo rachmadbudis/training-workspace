@@ -43,6 +43,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private byte[] file;
     private ApprovalStatusEnum approvalStatus;
     private Date legalStartDate;
+    private String RFFDocumentId;
     
     public long getCustomerId() {
         return customerId;
@@ -283,13 +284,11 @@ public class CustomerDTO extends GenericEntityDTO {
     public void setFlightDate(Date flightDate) {
         this.flightDate = flightDate;
     }
-
 	
 	public String getiNumber() {
 		return iNumber;
 	}
 
-	
 	public void setiNumber(String iNumber) {
 		this.iNumber = iNumber;
 	}
@@ -308,4 +307,12 @@ public class CustomerDTO extends GenericEntityDTO {
 	public void setLegalStartDate(Date legalStartDate) {
 		this.legalStartDate = legalStartDate;
 	}
+
+    public String getRFFDocumentId() {
+        return RFFDocumentId;
+    }
+
+    public void setRFFDocumentId(String RFFDocumentId) {
+        this.RFFDocumentId = RFFDocumentId;
+    }
 }
