@@ -3,6 +3,7 @@ package com.rcs.ind.common.dtos;
 public class MissionStatusDTO {
     String name;
     String status;
+    String type;
     String errorMessage;
 
     
@@ -29,6 +30,14 @@ public class MissionStatusDTO {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getErrorMessage() {
