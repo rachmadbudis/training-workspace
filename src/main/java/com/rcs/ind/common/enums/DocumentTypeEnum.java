@@ -23,7 +23,10 @@ public enum DocumentTypeEnum {
 	DAF_TRACK_HISTORY("", ""),
 	DAF_BRP("", ""),
 	DAF_NAREIS("", ""),
+	HVZ_DEFINITIVE_LIST("", ""),
 	HVZ_MISSION_ZIP("", ""),
+	HVZ_BRP_ZIP("", ""),
+	HVZ_GO_PACKAGE_ZIP("", ""),
 	TRIPLEFORMS_ATTACHMENT("", "")
 	;
 
