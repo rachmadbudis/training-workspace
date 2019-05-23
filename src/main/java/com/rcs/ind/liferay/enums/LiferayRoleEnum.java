@@ -45,6 +45,7 @@ public enum LiferayRoleEnum {
 	SITE_ADMINISTRATOR("Site Administrator", LiferayRoleTypeEnum.SITE),
 	SITE_MEMBER("Site Member", LiferayRoleTypeEnum.SITE),
 	SITE_OWNER("Site Owner", LiferayRoleTypeEnum.SITE),
+	CONTENT_MANAGER("Content Manager", LiferayRoleTypeEnum.SITE),
 
 	// Organization Roles.
 	ORGANIZATION_ADMINISTRATOR("Organization Administrator", LiferayRoleTypeEnum.ORGANIZATION),
