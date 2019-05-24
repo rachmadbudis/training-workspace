@@ -1,19 +1,23 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.DocumentTypeEnum;
+import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
+
+import java.util.List;
+import java.util.Map;
+
 public class MissionStatusDTO {
     String name;
-    String status;
-    String type;
-    String errorMessage;
+    List<String> errorMessages;
+    Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap;
 
-    
 	public MissionStatusDTO() {
 	}
-    
-    public MissionStatusDTO(String name, String status, String errorMessage) {
+
+    public MissionStatusDTO(String name, List<String> errorMessages, Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap) {
         this.name = name;
-        this.status = status;
-        this.errorMessage = errorMessage;
+        this.errorMessages = errorMessages;
+        this.documentMap = documentMap;
     }
 
     public String getName() {
@@ -24,27 +28,19 @@ public class MissionStatusDTO {
         this.name = name;
     }
 
-    public String getStatus() {
-        return status;
+    public List<String> getErrorMessages() {
+        return errorMessages;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setErrorMessages(List<String> errorMessages) {
+        this.errorMessages = errorMessages;
     }
 
-    public String getType() {
-        return type;
+    public Map<DocumentTypeEnum, RunnableTaskStatusEnum> getDocumentMap() {
+        return documentMap;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getErrorMessage() {
-        return errorMessage;
-    }
-
-    public void setErrorMessage(String errorMessage) {
-        this.errorMessage = errorMessage;
+    public void setDocumentMap(Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap) {
+        this.documentMap = documentMap;
     }
 }

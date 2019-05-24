@@ -227,4 +227,11 @@ public final class IndConstants {
 	public static final String HVZ_PRA = "PRA";
 	public static final Integer ELLIGIBLE_AGE = 15;
 	public static final String FORM_THREAD_PREFIX = "Formulieren - ";
+
+	//HVZ process identifier
+	public static final String HVZ_FORM_SUFFIX = "-Forms";
+	public static final String HVZ_BRP_SUFFIX = "-BRP";
+	public static final String HVZ_GO_SUFFIX = "-Go-Package";
+	public static final String HVZ_LIST_SUFFIX = "-Definitive-List";
+
 }
