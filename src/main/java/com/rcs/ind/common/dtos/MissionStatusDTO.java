@@ -1,23 +1,17 @@
 package com.rcs.ind.common.dtos;
 
-import com.rcs.ind.common.enums.DocumentTypeEnum;
-import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
-
 import java.util.List;
-import java.util.Map;
 
 public class MissionStatusDTO {
-    String name;
-    List<String> errorMessages;
-    Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap;
+    private String name;
+    private List<RunnableTaskDTO> documents;
 
 	public MissionStatusDTO() {
 	}
 
-    public MissionStatusDTO(String name, List<String> errorMessages, Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap) {
+    public MissionStatusDTO(String name, List<RunnableTaskDTO> documents) {
         this.name = name;
-        this.errorMessages = errorMessages;
-        this.documentMap = documentMap;
+        this.documents = documents;
     }
 
     public String getName() {
@@ -28,19 +22,11 @@ public class MissionStatusDTO {
         this.name = name;
     }
 
-    public List<String> getErrorMessages() {
-        return errorMessages;
+    public List<RunnableTaskDTO> getDocuments() {
+        return documents;
     }
 
-    public void setErrorMessages(List<String> errorMessages) {
-        this.errorMessages = errorMessages;
-    }
-
-    public Map<DocumentTypeEnum, RunnableTaskStatusEnum> getDocumentMap() {
-        return documentMap;
-    }
-
-    public void setDocumentMap(Map<DocumentTypeEnum, RunnableTaskStatusEnum> documentMap) {
-        this.documentMap = documentMap;
+    public void setDocuments(List<RunnableTaskDTO> documents) {
+        this.documents = documents;
     }
 }
