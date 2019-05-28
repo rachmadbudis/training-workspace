@@ -44,6 +44,7 @@ public class CustomerDTO extends GenericEntityDTO {
     private ApprovalStatusEnum approvalStatus;
     private Date legalStartDate;
     private String RFFDocumentId;
+    private String RFFDocumentName;
     
     public long getCustomerId() {
         return customerId;
@@ -315,4 +316,14 @@ public class CustomerDTO extends GenericEntityDTO {
     public void setRFFDocumentId(String RFFDocumentId) {
         this.RFFDocumentId = RFFDocumentId;
     }
+
+	
+	public String getRFFDocumentName() {
+		return RFFDocumentName;
+	}
+
+	
+	public void setRFFDocumentName(String rFFDocumentName) {
+		RFFDocumentName = rFFDocumentName;
+	}
 }
