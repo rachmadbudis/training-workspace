@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
 import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
+import com.rcs.ind.common.enums.RunnableTaskTypeEnum;
 
 public class MissionFileFiltersDTO extends PaginationFiltersDTO {
 
@@ -11,6 +12,7 @@ public class MissionFileFiltersDTO extends PaginationFiltersDTO {
 	private String name;
 	private List<String> names;
 	private List<RunnableTaskStatusEnum> statuses;
+	private List<RunnableTaskTypeEnum> taskTypes;
 	private Boolean active;
 
 	public long getMissionId() {
@@ -43,6 +45,14 @@ public class MissionFileFiltersDTO extends PaginationFiltersDTO {
 
 	public void setStatuses(List<RunnableTaskStatusEnum> statuses) {
 		this.statuses = statuses;
+	}
+
+	public List<RunnableTaskTypeEnum> getTaskTypes() {
+		return taskTypes;
+	}
+
+	public void setTaskTypes(List<RunnableTaskTypeEnum> taskTypes) {
+		this.taskTypes = taskTypes;
 	}
 
 	public Boolean getActive() {

@@ -4,16 +4,17 @@ import com.rcs.ind.common.enums.RunnableTaskStatusEnum;
 import com.rcs.ind.common.enums.RunnableTaskTypeEnum;
 
 public class RunnableTaskDTO {
-    private RunnableTaskTypeEnum type;
+    private RunnableTaskTypeEnum taskType;
     private RunnableTaskStatusEnum status;
     private String notes;
+    private String mission;
 
-    public RunnableTaskTypeEnum getType() {
-        return type;
+    public RunnableTaskTypeEnum getTaskType() {
+        return taskType;
     }
 
-    public void setType(RunnableTaskTypeEnum type) {
-        this.type = type;
+    public void setTaskType(RunnableTaskTypeEnum taskType) {
+        this.taskType = taskType;
     }
 
     public RunnableTaskStatusEnum getStatus() {
@@ -30,5 +31,13 @@ public class RunnableTaskDTO {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public String getMission() {
+        return mission;
+    }
+
+    public void setMission(String mission) {
+        this.mission = mission;
     }
 }
