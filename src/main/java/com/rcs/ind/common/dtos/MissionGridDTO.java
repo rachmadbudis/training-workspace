@@ -12,6 +12,9 @@ public class MissionGridDTO {
     private Boolean incomplete;
     private Boolean goPackagesAvailable;
     private Boolean formInProgress;
+    private Boolean brpInProgress;
+    private Boolean goPackageInProgress;
+    private Boolean defListInProgress;
     private Boolean filesAvailable;
     private Date ricEndDate;
 
@@ -93,6 +96,30 @@ public class MissionGridDTO {
 
     public void setFormInProgress(Boolean formInProgress) {
         this.formInProgress = formInProgress;
+    }
+
+    public Boolean getBrpInProgress() {
+        return brpInProgress;
+    }
+
+    public void setBrpInProgress(Boolean brpInProgress) {
+        this.brpInProgress = brpInProgress;
+    }
+
+    public Boolean getGoPackageInProgress() {
+        return goPackageInProgress;
+    }
+
+    public void setGoPackageInProgress(Boolean goPackageInProgress) {
+        this.goPackageInProgress = goPackageInProgress;
+    }
+
+    public Boolean getDefListInProgress() {
+        return defListInProgress;
+    }
+
+    public void setDefListInProgress(Boolean defListInProgress) {
+        this.defListInProgress = defListInProgress;
     }
 
     public Boolean getFilesAvailable() {
