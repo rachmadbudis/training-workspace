@@ -31,10 +31,9 @@ public enum LanguageEnum {
 	PUNJABI(new Locale("sa", "IN"), "language.pa", false),
 	URDU(new Locale("ur", "PK"), "language.ur", true),
 	TURKISH(new Locale("tt", "RU"), "language.tr", false),
-	RUSSIAN(new Locale("ru", "RU"), "language.ru", false);
-//	SPANISH(new Locale("es", "ES"), "language.es", false),
-//	FRENCH(new Locale("fr", "FR"), "language.fr", false),
-//	PORTUGUESE(new Locale("pt", "PT"), "language.pt", false);
+	RUSSIAN(new Locale("ru", "RU"), "language.ru", false),
+	SPANISH(new Locale("es", "ES"), "language.es", false),
+	FRENCH(new Locale("fr", "FR"), "language.fr", false);
 
 	private final Locale language;
 	private final String label;
@@ -85,17 +84,13 @@ public enum LanguageEnum {
 		return AUTOCOMPLETE_LIST;
 	}
 
-	//New languages are now disabled until new request
-//	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-//		return EnumSet.of(FARSI, DARI, ERITREA, ARABICSGENERAL, ALBANIAN, SERBIAN, KROATISCH, BOSNISCH, AMHARIC, PUNJABI, URDU, ENGLISH, TURKISH, RUSSIAN, FRENCH,SPANISH,PORTUGUESE);
-//	}
-	
+
 	public static EnumSet<LanguageEnum> getCustomerLanguageList() {
-		return EnumSet.of(FARSI, DARI, ERITREA, ARABICSGENERAL, ALBANIAN, SERBIAN, KROATISCH, BOSNISCH, AMHARIC, PUNJABI, URDU, ENGLISH, TURKISH, RUSSIAN);
+		return EnumSet.of(FARSI, DARI, ERITREA, ARABICSGENERAL, ALBANIAN, SERBIAN, KROATISCH, BOSNISCH, AMHARIC, PUNJABI, URDU, ENGLISH, TURKISH, RUSSIAN, FRENCH,SPANISH);
 	}
-	
+		
 	public static EnumSet<LanguageEnum> getNonAutoTranslatedLanguageList() {
-		return EnumSet.of(ARABICSGENERAL, TURKISH, RUSSIAN, FARSI, DARI, ERITREA, AMHARIC, PUNJABI, URDU);
+		return EnumSet.of(ARABICSGENERAL, TURKISH, RUSSIAN, FARSI, DARI, ERITREA, AMHARIC, PUNJABI, URDU, FRENCH,SPANISH);
 	}
 	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
