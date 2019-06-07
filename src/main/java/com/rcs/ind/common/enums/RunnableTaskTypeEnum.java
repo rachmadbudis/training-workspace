@@ -5,6 +5,7 @@ public enum RunnableTaskTypeEnum {
     HVZ_GO_PACKAGE(""),
     HVZ_BRP(""),
     HVZ_DEFINITIVE_LIST(""),
+    HVZ_WORKLIST(""),
     ;
 
     private final String key;

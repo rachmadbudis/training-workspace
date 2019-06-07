@@ -4,14 +4,14 @@ import java.util.List;
 
 public class MissionStatusDTO {
     private String name;
-    private List<RunnableTaskDTO> documents;
+    private List<RunnableTaskDTO> runnableTaskDTOs; 
 
 	public MissionStatusDTO() {
 	}
 
-    public MissionStatusDTO(String name, List<RunnableTaskDTO> documents) {
+    public MissionStatusDTO(String name, List<RunnableTaskDTO> runnableTaskDTOs) {
         this.name = name;
-        this.documents = documents;
+        this.setRunnableTaskDTOs(runnableTaskDTOs);
     }
 
     public String getName() {
@@ -22,11 +22,13 @@ public class MissionStatusDTO {
         this.name = name;
     }
 
-    public List<RunnableTaskDTO> getDocuments() {
-        return documents;
-    }
+    public List<RunnableTaskDTO> getRunnableTaskDTOs() {
+		return runnableTaskDTOs;
+	}
 
-    public void setDocuments(List<RunnableTaskDTO> documents) {
-        this.documents = documents;
-    }
+    public void setRunnableTaskDTOs(List<RunnableTaskDTO> runnableTaskDTOs) {
+		this.runnableTaskDTOs = runnableTaskDTOs;
+	}
+
+
 }

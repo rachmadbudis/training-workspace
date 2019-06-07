@@ -233,5 +233,6 @@ public final class IndConstants {
 	public static final String HVZ_BRP_SUFFIX = "-BRP";
 	public static final String HVZ_GO_SUFFIX = "-Go-Package";
 	public static final String HVZ_LIST_SUFFIX = "-Definitive-List";
+	public static final String HVZ_WORKLIST_SUFFIX = "-WorkList";
 
 }
