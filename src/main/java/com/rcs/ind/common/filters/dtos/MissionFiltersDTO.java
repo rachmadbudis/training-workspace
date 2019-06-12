@@ -1,6 +1,7 @@
 package com.rcs.ind.common.filters.dtos;
 
 import com.rcs.ind.common.dtos.PaginationFiltersDTO;
+import com.rcs.ind.common.enums.RunnableTaskTypeEnum;
 
 import java.util.Date;
 
@@ -11,6 +12,7 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
     private Boolean excludeEmpty;
     private Long missionId;
     private String[] missionNames;
+    private RunnableTaskTypeEnum taskType;
 
     public String[] getTargetGroups() {
         return targetGroups;
@@ -58,5 +60,13 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
 
     public void setMissionNames(String[] missionNames) {
     	this.missionNames = missionNames;
+    }
+
+    public RunnableTaskTypeEnum getTaskType() {
+        return taskType;
+    }
+
+    public void setTaskType(RunnableTaskTypeEnum taskType) {
+        this.taskType = taskType;
     }
 }
