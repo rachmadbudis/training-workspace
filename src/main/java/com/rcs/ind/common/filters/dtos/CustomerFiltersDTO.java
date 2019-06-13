@@ -6,19 +6,28 @@ import com.rcs.ind.common.enums.RelationEnum;
 import java.util.Date;
 
 public class CustomerFiltersDTO extends PaginationFiltersDTO {
-    private String mission;
+    private Long missionId;
+    private String missionName;
     private String caseNumber;
     private String vNumber;
     private String lastName;
     private Date dateOfBirth;
     private RelationEnum relationEnum;
 
-    public String getMission() {
-        return mission;
+    public Long getMissionId() {
+        return missionId;
     }
 
-    public void setMission(String mission) {
-        this.mission = mission;
+    public void setMissionId(Long missionId) {
+        this.missionId = missionId;
+    }
+
+    public String getMissionName() {
+        return missionName;
+    }
+
+    public void setMissionName(String missionName) {
+        this.missionName = missionName;
     }
 
     public String getCaseNumber() {

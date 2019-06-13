@@ -43,6 +43,7 @@ public final class IndConstants {
 	public static final String APPLICATION_ID_KEY = "applicationId";
 	public static final String CUSTOMER_ID_KEY = "customerId";
 	public static final String MISSION_ID_KEY = "missionId";
+	public static final String HVZ_MARKETPLACE_KEY = "hvz";
 
 	// Nationality constants
 	public static final String ERITREAN = "Eritrese";
