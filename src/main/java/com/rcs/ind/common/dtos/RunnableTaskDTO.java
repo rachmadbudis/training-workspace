@@ -9,6 +9,7 @@ public class RunnableTaskDTO {
     private String message;
     private String mission;
     private String name;
+    private boolean documentAvailable;
 
     public RunnableTaskTypeEnum getTaskType() {
         return taskType;
@@ -49,4 +50,13 @@ public class RunnableTaskDTO {
     public void setName(String name) {
         this.name = name;
     }
+
+    public boolean isDocumentAvailable() {
+        return documentAvailable;
+    }
+
+    public void setDocumentAvailable(boolean documentAvailable) {
+        this.documentAvailable = documentAvailable;
+    }
 }
+
