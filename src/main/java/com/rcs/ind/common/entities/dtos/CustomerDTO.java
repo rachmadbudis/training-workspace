@@ -45,6 +45,8 @@ public class CustomerDTO extends GenericEntityDTO {
     private Date legalStartDate;
     private String RFFDocumentId;
     private String RFFDocumentName;
+    private Boolean formsGenerated;
+    private Long ricDocumentId;
     
     public long getCustomerId() {
         return customerId;
@@ -326,4 +328,20 @@ public class CustomerDTO extends GenericEntityDTO {
 	public void setRFFDocumentName(String rFFDocumentName) {
 		RFFDocumentName = rFFDocumentName;
 	}
+
+    public Boolean getFormsGenerated() {
+        return formsGenerated;
+    }
+
+    public void setFormsGenerated(Boolean formsGenerated) {
+        this.formsGenerated = formsGenerated;
+    }
+
+    public Long getRicDocumentId() {
+        return ricDocumentId;
+    }
+
+    public void setRicDocumentId(Long ricDocumentId) {
+        this.ricDocumentId = ricDocumentId;
+    }
 }
