@@ -90,7 +90,7 @@ public enum LanguageEnum {
 	}
 		
 	public static EnumSet<LanguageEnum> getNonAutoTranslatedLanguageList() {
-		return EnumSet.of(ARABICSGENERAL, TURKISH, RUSSIAN, FARSI, DARI, ERITREA, AMHARIC, PUNJABI, URDU, FRENCH,SPANISH);
+		return EnumSet.of(ARABICSGENERAL, TURKISH, RUSSIAN, FARSI, DARI, ERITREA, AMHARIC, PUNJABI, URDU);
 	}
 	
 	private static final Map<String, LanguageEnum> lookup = new HashMap<String, LanguageEnum>();
