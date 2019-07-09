@@ -21,7 +21,7 @@ public class CustomerGridDTO {
     private HvzRicStatusEnum hvzRicStatus;
     private Long documentId;
     private String errorMessage;
-    private boolean formsGenerated;
+    private Boolean formsGenerated;
 
     public Long getCustomerId() {
         return customerId;
@@ -127,13 +127,13 @@ public class CustomerGridDTO {
         this.documentId = documentId;
     }
 
-	public boolean isFormsGenerated() {
-		return formsGenerated;
-	}
+    public Boolean getFormsGenerated() {
+        return formsGenerated;
+    }
 
-	public void setFormsGenerated(boolean formsGenerated) {
-		this.formsGenerated = formsGenerated;
-	}
+    public void setFormsGenerated(Boolean formsGenerated) {
+        this.formsGenerated = formsGenerated;
+    }
 
     public String getErrorMessage() {
         return errorMessage;
