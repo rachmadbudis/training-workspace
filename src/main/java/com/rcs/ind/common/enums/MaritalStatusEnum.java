@@ -9,7 +9,11 @@ public enum MaritalStatusEnum {
 	Divorced("com.rcs.ind.marital.divorced", "Gescheiden", "Gescheiden"),
 	Widowed("com.rcs.ind.marital.widowed", "Weduwe of weduwnaar", "Weduwe"),
 	Widower("com.rcs.ind.marital.widowed", "Weduwe of weduwnaar", "Weduwnaar"),
-	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd en samenwonend", "Samenwonend");
+	LivingTogether("com.rcs.ind.marital.living.together", "Ongehuwd en samenwonend", "Samenwonend"),
+	RegisteredPartnership("com.rcs.ind.marital.registered.partnership", "Geregistreerd partnerschap", "Geregistreerd partnerschap"),
+	Onbekend("com.rcs.ind.marital.unknown", "Onbekend", "Onbekend");
+	
+	
 
 	private static final Map<String, MaritalStatusEnum> lookupLabel = new HashMap<>();
 	private static final Map<String, MaritalStatusEnum> lookupIndigoKey = new HashMap<>();
