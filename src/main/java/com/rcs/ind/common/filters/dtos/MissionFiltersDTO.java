@@ -9,7 +9,7 @@ public class MissionFiltersDTO extends PaginationFiltersDTO {
     private String[] targetGroups;
     private Date startDate;
     private Date endDate;
-    private Boolean excludeEmpty;
+    private Boolean excludeEmpty; //TODO: No longer needed?
     private Long missionId;
     private String[] missionNames;
     private RunnableTaskTypeEnum taskType;

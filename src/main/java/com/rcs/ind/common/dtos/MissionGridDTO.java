@@ -6,16 +6,16 @@ public class MissionGridDTO {
     private Long missionId;
     private String name;
     private String targetGroup;
-    private Boolean customerExists;
-    private Boolean finished;
-    private Boolean closed;
-    private Boolean incomplete;
-    private Boolean goPackagesAvailable;
-    private Boolean formInProgress;
-    private Boolean brpInProgress;
-    private Boolean goPackageInProgress;
-    private Boolean defListInProgress;
-    private Boolean filesAvailable;
+    private boolean customerExists;
+    private boolean finished;
+    private boolean closed;
+    private boolean incomplete;
+    private boolean goPackagesAvailable;
+    private boolean formInProgress;
+    private boolean brpInProgress;
+    private boolean goPackageInProgress;
+    private boolean defListInProgress;
+    private boolean filesAvailable;
     private Date ricEndDate;
 
     public Long getMissionId() {
