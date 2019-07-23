@@ -1,5 +1,7 @@
 package com.rcs.ind.common.dtos;
 
+import com.rcs.ind.common.enums.MissionStatusEnum;
+
 import java.util.Date;
 
 public class MissionGridDTO {
@@ -7,9 +9,7 @@ public class MissionGridDTO {
     private String name;
     private String targetGroup;
     private boolean customerExists;
-    private boolean finished;
-    private boolean closed;
-    private boolean incomplete;
+    private MissionStatusEnum status;
     private boolean goPackagesAvailable;
     private boolean formInProgress;
     private boolean brpInProgress;
@@ -50,36 +50,12 @@ public class MissionGridDTO {
         this.customerExists = customerExists;
     }
 
-    public Boolean getFinished() {
-        return finished;
+    public MissionStatusEnum getStatus() {
+        return status;
     }
 
-    public void setFinished(Boolean finished) {
-        this.finished = finished;
-    }
-
-    public Boolean getClosed() {
-        return closed;
-    }
-
-    public void setClosed(Boolean closed) {
-        this.closed = closed;
-    }
-
-    public Date getRicEndDate() {
-		return ricEndDate;
-	}
-	
-	public void setRicEndDate(Date ricEndDate) {
-		this.ricEndDate = ricEndDate;
-	}
-
-    public Boolean getIncomplete() {
-        return incomplete;
-    }
-
-    public void setIncomplete(Boolean incomplete) {
-        this.incomplete = incomplete;
+    public void setStatus(MissionStatusEnum status) {
+        this.status = status;
     }
 
     public Boolean getGoPackagesAvailable() {
