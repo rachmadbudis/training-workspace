@@ -65,6 +65,14 @@ public enum ConfigurationEnum {
 	//Configuration key for logging level
 	LoggingLevel("loggingLevel", "error"),
 
+	// Configuration key for indigo parameter
+	IND_USERNAME("indUsername"),
+	IND_PASSWORD("indPassword"),
+	IND_SERVICE_URL("indServiceUrl"),
+	IND_MISSION_ENDPOINT("indMissionEndpoint"),
+	IND_CUSTOMER_ENDPOINT("indCustomerEndpoint"),
+	IND_DEBUG_MODE("indDebugMode","false"),
+
 	;
 
 	private final String key;
